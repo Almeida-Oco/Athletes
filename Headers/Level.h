@@ -3,6 +3,8 @@
 #include "Globals.h"
 #include "Player.h"
 #include "Date.h"
+#include "Tournament.h"
+#include "Training.h"
 #include <vector>
 #include <fstream>
 #include <string>
@@ -14,13 +16,15 @@ class Level {
 	std::vector <Event *> events;
 	std::string coach;
 public:
-	Level();
+	Level(){};
 	virtual ~Level();
-	virtual bool addPlayer(Player player)=0;
-	bool addEvent(Event * Event);
+	inline vector<Player *> getPlayers() const{return this->players;};
+	inline vector<Event *> getEvents() const{return this->events;};
+	virtual bool addPlayer(Player * player){players.push_back(player);return true;};
+	void addEvent(Event * event){events.push_back(event);}
 	virtual void playerOutput(std::ofstream &out) const;
-	bool setCoach(std::string coach);
-	std::string getCoach();
+	void setCoach(std::string coach){this->coach=coach;};
+	inline string getCoach() const {return this->coach;};
 };
 
 #endif

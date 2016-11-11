@@ -9,8 +9,13 @@ class Training: public Event{
 
 
 public:
-	~Training();
-	void eventOutput(std::ofstream &out) const;
+	Training(){};
+	virtual ~Training(){};
+	virtual bool Istraining() const{return true;};
+	//void eventOutput(std::ofstream &out) const;
+	friend ostream& operator<<(ostream& out, const Training & training);//writes training in ostream out
+	friend istream& operator>>(istream& in, Training & training);//gets training from instream in
+	virtual void writetofile(ostream & out) const {out<<*this;};
 
 };
 

@@ -6,11 +6,12 @@
 #include <fstream>
 
 class Juniors : public Level{
-    const uint age_min = 9 , age_max = 13;
+    const uint age_min = 14 , age_max = 18;
 public:
-    ~Juniors();
-	bool addPlayer(Player *player);
+    Juniors(){};
+    ~Juniors(){};
 	virtual void playerOutput(std::ofstream &out) const;
+	bool addPlayer(Player * player);
 
 };
 #endif
