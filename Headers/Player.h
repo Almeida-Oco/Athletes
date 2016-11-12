@@ -17,6 +17,8 @@ class Player{
 public:
 	Player():birth(Date(0,0,0)),last_eletro(Date(0,0,0)){};//default constructor
 	Player(std::string name, Date birth_date, float height);
+
+
 	inline std::string getName() const {return this->name;}
 	inline Date getBirth() const {return this->birth;}
 	inline Date getLast_Eletro() const {return this->last_eletro;}
@@ -24,8 +26,8 @@ public:
 	void setEletro(bool eletro);
 	void setCheck(bool check);
 	void output(std::ofstream &out) const;
-	friend ostream& operator<<(ostream& out, const Player & player);//writes date in ostream out
-	friend istream& operator>>(istream& in, Player & player);//gets date from instream in
+	friend std::ostream& operator<<(std::ostream& out, const Player & player);//writes date in ostream out
+	friend std::istream& operator>>(std::istream& in, Player & player);//gets date from instream in
 
 
 };

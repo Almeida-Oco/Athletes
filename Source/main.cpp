@@ -1,11 +1,13 @@
 #include "../Headers/Club.h"
 #include "../Headers/menus.h"
+#include <iostream>
+
+using namespace std;
 
 int main(){
-	Club * club=Club::getinstance();//gets new instance of class Vendemaismais
-	
- 
-	if (readplayers() != 0) {
+	Club *club = new Club();
+
+	if (readplayers(club) != 0) {
 		return 1;//this means that the program caught an exception
 	}
 	if (club->getleaveprogram()){
@@ -13,7 +15,7 @@ int main(){
 	}
 
 
-	if (readtrainings() != 0) {
+	if (readtrainings(club) != 0) {
 		return 1;//this means that the program caught an exception
 	}
 	if (club->getleaveprogram()){
@@ -21,7 +23,7 @@ int main(){
 	}
 
 
-	if (readtournaments() != 0) {
+	if (readtournaments(club) != 0) {
 		return 1;//this means that the program caught an exception
 	}
 	if (club->getleaveprogram()){
@@ -30,6 +32,8 @@ int main(){
 
 	club->writeplayers();
 	club->writetrainings();
+
+
 	club->writetournaments();
 
 	return 0;

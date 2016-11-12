@@ -7,15 +7,13 @@
 class Training: public Event{
 	bool game; // True -> jogo-treino , False -> normal training
 
-
 public:
-	Training(){};
 	virtual ~Training(){};
 	virtual bool Istraining() const{return true;};
 	//void eventOutput(std::ofstream &out) const;
-	friend ostream& operator<<(ostream& out, const Training & training);//writes training in ostream out
-	friend istream& operator>>(istream& in, Training & training);//gets training from instream in
-	virtual void writetofile(ostream & out) const {out<<*this;};
+	friend std::ostream& operator<<(std::ostream& out, const Training & training);//writes training in ostream out
+	friend std::istream& operator>>(std::istream& in, Training & training);//gets training from instream in
+	virtual void writetofile(std::ostream & out) const {out<<*this;};
 
 };
 

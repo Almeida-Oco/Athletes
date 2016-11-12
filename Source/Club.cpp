@@ -1,6 +1,5 @@
 #include "../Headers/Club.h"
-#include "../Headers/Level.h"
-#include"../Headers/utilities.h"
+#include "../Headers/utilities.h"
 #include "../Headers/Minis.h"
 #include "../Headers/Juveniles.h"
 #include "../Headers/Juniors.h"
@@ -13,39 +12,22 @@
 
 using namespace std;
 
-Club * Club::singleton_instance = NULL; //Initially singleton_instance points to null
-
 /*
- * Private Default Constructor
+ * Public Default Constructor
  */
-Club::Club() :
-		minis(new Minis()), juveniles(new Juveniles()), juniors(new Juniors()), seniors(
-				new Seniors()), current_date(Date()) {
-	leaveprogram = false;
+Club::Club() :	minis(new Minis()), juveniles(new Juveniles()), juniors(new Juniors()), seniors(new Seniors()), current_date(Date()), leaveprogram(0) {};
 
-}
 
 /*
- *Private Destructor
+ *Public Destructor
  */
 Club::~Club() {
 	delete minis;
 	delete juveniles;
 	delete juniors;
 	delete seniors;
-	delete singleton_instance;
-	singleton_instance = NULL;
 }
 
-/*
- Gets instance of Vendemaismais Class
- */
-Club * Club::getinstance() {
-	if (!singleton_instance) {
-		singleton_instance = new Club;
-	}
-	return singleton_instance;
-}
 
 /*
  *Reads players file
@@ -79,7 +61,7 @@ void Club::readtrainings(istream &in) {
 	minis->setCoach(removespaces(coach_name));
 	in >> n_trainings;
 	for (int i = 0; i < n_trainings; i++) {
-		Training *t = new Training;
+		Training *t = new Training();
 		in >> (*t);
 		minis->addEvent(t);
 	}
@@ -90,7 +72,7 @@ void Club::readtrainings(istream &in) {
 	juveniles->setCoach(removespaces(coach_name));
 	in >> n_trainings;
 	for (int i = 0; i < n_trainings; i++) {
-		Training *t = new Training;
+		Training *t = new Training();
 		in >> (*t);
 		juveniles->addEvent(t);
 	}
@@ -100,7 +82,7 @@ void Club::readtrainings(istream &in) {
 	juniors->setCoach(removespaces(coach_name));
 	in >> n_trainings;
 	for (int i = 0; i < n_trainings; i++) {
-		Training *t = new Training;
+		Training *t = new Training();
 		in >> (*t);
 		juniors->addEvent(t);
 	}
@@ -110,7 +92,7 @@ void Club::readtrainings(istream &in) {
 	seniors->setCoach(removespaces(coach_name));
 	in >> n_trainings;
 	for (int i = 0; i < n_trainings; i++) {
-		Training *t = new Training;
+		Training *t = new Training();
 		in >> (*t);
 		seniors->addEvent(t);
 	}

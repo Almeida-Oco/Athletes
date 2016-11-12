@@ -10,8 +10,8 @@ using namespace std;
 /*
  This function gets information from the clients file into the vector clients
  */
-int readplayers() {
-	Club *club = Club::getinstance(); //gets intance of class Club
+int readplayers(Club *club) {
+
 	ifstream file_players; //players file
 	string filename_players; //name of the file with the players
 	bool errormessage = false; //if true it will display an error message
@@ -50,8 +50,7 @@ int readplayers() {
 	return 0;
 }
 
-int readtrainings() {
-	Club *club = Club::getinstance(); //gets intance of class Club
+int readtrainings(Club *club) {
 	ifstream file_trainings; //players file
 	string filename_trainings; //name of the file with the trainings
 	bool errormessage = false; //if true it will display an error message
@@ -86,8 +85,7 @@ int readtrainings() {
 	return 0;
 }
 
-int readtournaments() {
-	Club *club = Club::getinstance(); //gets intance of class Club
+int readtournaments(Club *club) {
 	ifstream file_tournaments; //tournaments file
 	string filename_tournaments; //name of the file with the tournaments
 	bool errormessage = false; //if true it will display an error message

@@ -1,27 +1,38 @@
 #include "../Headers/Date.h"
 #include "../Headers/utilities.h"
 #include "../Headers/exceptions.h"
-#include <ctime>
 using namespace std;
 
 
-Date::Date(){
-	struct tm timeinfo;
-	time_t t = time(0);   // gets current time
-	localtime_s(&timeinfo, &t);
-	year = timeinfo.tm_year + 1900;
-	month = timeinfo.tm_mon + 1;
-	day = timeinfo.tm_mday;
-
+Date::Date() : day(0) , month(0) , year(0){};
+/*
+ * Checks if number of month is correct and if number of days is also correct
+ * Ignores undefined dates (d = 0, m=0, y=0)
+ */
+bool Date::checkDate(const unsigned int day , const unsigned int month , const unsigned int year) const{
+	unsigned int months[13] = {0,31, 28 + isLeap(year),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
+	if ( (month > 12) || day > months[month])
+		return false;
+	else
+		return true;
 }
 
-//This constructor throws an exception if a date is not valid, although it ignores dates with zero parameters 
-Date::Date(unsigned int d,unsigned int m , unsigned int y){
-	unsigned int months[13] = {0, 31,28 + Isleap(y),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
-	if ((m>12) || (d > months[m])) {
-		throw InvalidDate(d, m, y);
+bool Date::isLeap(const unsigned int y) const{
+	if ((y % 4) == 0 ){
+		if ( (y % 400) == 0)
+			return true;
+		else
+			return false;
 	}
-	this->day=d; this->month = m; this->year = y;
+	return false;
+}
+//This constructor throws an exception if a date is not valid, althougsh it ignores dates with zero parameters
+Date::Date(unsigned int d,unsigned int m , unsigned int y){
+	if (checkDate(d,m,y)){
+		this->day=d; this->month = m; this->year = y;
+	}else
+		throw InvalidDate(d, m, y);
+
 }
 
 bool Date::operator> (const Date &D1) const
@@ -64,46 +75,46 @@ bool Date::operator== (const Date &D1) const{
 	return (this->day == D1.day && this->month == D1.month && this->year == D1.year);
 }
 
+
 /* Computes the difference between two dates
  * parameter: d1 - Date to be subtracted from the object date
  * Returns the subtraction between the object date and d1
  */
-vector<int> Date::operator-(const Date &d1) const{
+Date Date::operator-(const Date &d1) const{
+	Date result;
 	if(*this >= d1){
 		int d,m,y;
-		if(this->day>=d1.day){
-			d=this->day-d1.day;
+		if(this->day >= d1.day){
+			result.day=this->day-d1.day;
 			if(this->month>=d1.month){
-				m=this->month-d1.month;
-				y=this->year-d1.year;
+				result.month = this->month-d1.month;
+				result.year=this->year-d1.year;
 			}
 			else{
-				m=this->month+12-d1.month;
-				y=this->year-d1.year-1;
+				result.month=this->month+12-d1.month;
+				result.year=this->year-d1.year-1;
 			}
 		}
 		else{
-			d=this->day+30-d1.day;
+			result.day=this->day+30-d1.day;
 			if(this->month>=d1.month+1){
-				m=this->month-d1.month-1;
-				y=this->year-d1.year;
+				result.month=this->month-d1.month-1;
+				result.year=this->year-d1.year;
 			}
 			else{
-				m=this->month+12-d1.month-1;
-				y=this->year-d1.year-1;
+				result.month=this->month+12-d1.month-1;
+				result.year=this->year-d1.year-1;
 			}
 		}
-		vector<int> v = { y,m,d };
-		return v;
+		return result;
 	}
-	else{
-		vector<int> v=d1-*this;
-		v[0] = -v[0];
-		v[1] = -v[1];
-		v[2] = -v[2];
-		return v;
-	}
+	else
+		return d1-*this;
+
 }
+
+
+
 /*
 parameter: ostream & out - ostream where date is going to be written
 parameter: const Date & date - date

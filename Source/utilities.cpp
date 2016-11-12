@@ -1,5 +1,7 @@
 #include "../Headers/utilities.h"
 
+using namespace std;
+
 /*
 This functions eliminates extra spaces between words, so that if there is more than one space in
 the string, this function returns a string with only one space between two words. It also eliminates extra
@@ -35,32 +37,21 @@ string removespaces(string s){
 	return s;
 }
 
+Date currentDate(){
+	struct tm *time_info;
+	time_t current_time;
+	time(&current_time);// gets current time
+
+	time_info = localtime(&current_time);
+	Date t = Date(time_info->tm_mday , time_info->tm_mon+1 , time_info->tm_year+1900);
+	return t;
+}
+
+unsigned int actualAge(const Date &birth){
+	return (currentDate() - birth).getYear();
+}
 /*
  * This function returns the date of someone that was born on day birth
  * parameter: birth - day where the person was born
  * Returns the age that the person currently has
  */
-int actualage(Date birth){
-	Date current_date;
-	vector<int> v=current_date-birth;
-	return v[0];
-}
-
-/*This function checks if a year is leap or not
-* parameter: year - year that is going to be checked
-* Returns true if the year is leap and false if not
-*/
-bool Isleap(int year) {
-	if (year % 4 != 0) {
-		return false;
-	}
-	else if (year % 100 != 0) {
-		return true;
-	}
-	else if (year % 400 != 0) {
-		return false;
-	}
-	else {
-		return true;
-	}
-}

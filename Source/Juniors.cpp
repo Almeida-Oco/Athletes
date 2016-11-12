@@ -13,7 +13,7 @@ void Juniors::playerOutput(ofstream &out) const{
 *Returns true if insert operation was successfuland false if not
 */
 bool Juniors::addPlayer(Player * player){
-	unsigned int age=actualage(player->getBirth());
+	unsigned int age = actualAge(player->getBirth());
 	if(age>=age_min && age<=age_max){
 		Level::addPlayer(player);
 		return true;
