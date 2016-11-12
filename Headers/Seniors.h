@@ -8,7 +8,6 @@ class Seniors: public Level{
     const uint age_min = 19 , age_max = 35;
 public:
     ~Seniors();
-	bool addPlayer(Player player);
 	virtual void playerOutput(std::ofstream &out) const;
 };
 
