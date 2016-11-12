@@ -4,24 +4,32 @@
 #include "Player.h"
 #include "Event.h"
 #include "Date.h"
+#include "Tournament.h"
+#include "Training.h"
 #include <vector>
 #include <fstream>
 #include <string>
+
 
 class Level {
 	std::vector <Player *> players;
 	std::vector <Event *> events;
 	std::string coach;
 public:
-	Level();
 	virtual ~Level();
-	bool addPlayer(Player *player);
+
+	virtual bool addPlayer(Player *player) = 0;
 	bool removePlayer(std::string &name);
 	bool addEvent(Event * Event);
 	bool removeEvent(const Date &day);
+
+
+	inline std::vector<Player *> getPlayers() const{return this->players;};
+	inline std::vector<Event *> getEvents() const{return this->events;};
+
 	virtual void playerOutput(std::ofstream &out) const;
-	bool setCoach(std::string coach);
-	std::string getCoach();
+	void setCoach(std::string coach){this->coach=coach;};
+	inline std::string getCoach() const {return this->coach;};
 };
 
 #endif

@@ -35,8 +35,8 @@ vector<string> string_split(const string &line, const string &spliter)
 }
 
 
-int main(){
+/*int main(){
 	string m = "S";
 	cout << "HELLO" << endl;
 	cout << m;
-}
+}*/
