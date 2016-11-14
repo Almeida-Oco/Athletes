@@ -9,7 +9,7 @@ spaces at the beginning and at the end of a string
 parameter: string s - string that will have extra spaces eliminated from
 return value: string s without extra spaces
 */
-string removespaces(string s){
+string removeSpaces(string s){
 	unsigned int i = 0;
 	//the following loop removes newlines
 	while (i < s.size()){
@@ -50,7 +50,43 @@ Date currentDate(){
 unsigned int actualAge(const Date &birth){
 	return (currentDate() - birth).getYear();
 }
+
 /*
+ * Receives string and splitter and returns vector with strings which where separated by splitter
+ */
+vector<string> stringSplit(const string &line, const string &spliter)
+{
+	unsigned int pos_spliter = 0, cont_spliter = 0, sz = line.size(), splt_sz = spliter.size(), inicio = 0;
+	vector<string> split_string;
+
+	for (unsigned int i = 0; i < sz; i++)
+	{
+		if (i == sz - 1)
+		{
+			pos_spliter = i + 1;
+			split_string.push_back(line.substr(inicio, pos_spliter - inicio));
+			break;
+		}
+
+		if (line.at(i) == spliter.at(cont_spliter))
+		{
+			if (cont_spliter != splt_sz)
+				cont_spliter++;
+			if (cont_spliter == splt_sz)
+			{
+				pos_spliter = i - (splt_sz - 1);
+				split_string.push_back(line.substr(inicio, pos_spliter - inicio));
+				inicio = pos_spliter + 1;
+				inicio = i + 1;
+				cont_spliter = 0;
+			}
+		}
+	}
+	return split_string;
+}
+
+/*
+ *
  * This function returns the date of someone that was born on day birth
  * parameter: birth - day where the person was born
  * Returns the age that the person currently has

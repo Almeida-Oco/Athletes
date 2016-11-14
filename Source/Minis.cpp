@@ -14,12 +14,6 @@ bool Minis::addPlayer(Player * player){
 		Level::addPlayer(player);
 		return true;
 	}
-	else{
+	else
 		return false;
-	}
-}
-
-void Minis::playerOutput(ofstream &out) const {
-	out << MINI_ID << endl;
-	 Level::playerOutput(out);
 }

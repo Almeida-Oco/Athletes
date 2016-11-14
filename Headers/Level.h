@@ -1,6 +1,6 @@
 #ifndef LEVEL_H
 #define LEVEL_H
-#include "Globals.h"
+
 #include "Player.h"
 #include "Event.h"
 #include "Date.h"
@@ -27,9 +27,11 @@ public:
 	inline std::vector<Player *> getPlayers() const{return this->players;};
 	inline std::vector<Event *> getEvents() const{return this->events;};
 
-	virtual void playerOutput(std::ofstream &out) const;
+	virtual unsigned int countTrainings(const std::vector<Event *> &ev)const;
 	void setCoach(std::string coach){this->coach=coach;};
 	inline std::string getCoach() const {return this->coach;};
+
+	Player *findPlayer(const std::string &name) const;
 };
 
 #endif

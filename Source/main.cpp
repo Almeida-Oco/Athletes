@@ -1,40 +1,75 @@
 #include "../Headers/Club.h"
 #include "../Headers/menus.h"
+#include "../Headers/exceptions.h"
 #include <iostream>
 
 using namespace std;
 
+const unsigned int PLAYER = 1;
+const unsigned int TRAINING = 2;
+const unsigned int TOURNAMENT = 3;
+
 int main(){
 	Club *club = new Club();
+	ifstream fin;
+	string line;
 
-	if (readplayers(club) != 0) {
-		return 1;//this means that the program caught an exception
+	if(openFile(club,fin,PLAYER))
+		return 1; // USER INSERTED "L" WHICH MEANS LEAVE PROGRAM
+	else
+		for(unsigned int i = 1 ; i<5 ; i++){ //I ->{1,2,3,4}, EACH NUMBER IS A LEVEL
+			try{  club->readPlayers(fin,i); }
+
+			catch (InvalidDate &d){
+				cout << "Date not valid : " << d << "The file is corrupted";
+				return 1;
+			}
+			catch (InvalidPlayer &p){
+				cout << p;
+				return 1;
+			}
+		}
+	fin.close();
+
+	if(openFile(club,fin,TRAINING))
+		return 1;
+	else
+		for (unsigned int i = 1 ; i<5 ; i++){ //I ->{1,2,3,4}, EACH NUMBER IS A LEVEL
+			try{ club->readTrainings(fin,i); }
+
+			catch (InvalidDate &d){
+				cout << "Date not valid : " << d << "The file is corrupted";
+				return 1;
+			}
+			catch (UnexistingPlayer &p){
+				cout << p;
+				return 1;
+			}
+		}
+
+	fin.close();
+
+	if(openFile(club,fin,TOURNAMENT))
+		return 1;
+	else
+		for (unsigned int i = 1 ; i<5 ; i++){ //I ->{1,2,3,4}, EACH NUMBER IS A LEVEL
+		try{ club->readTournaments(fin,i); }
+
+		catch (InvalidDate &d){
+			cout << "Date not valid : " << d << "The file is corrupted";
+			return 1;
+		}
+		catch (UnexistingPlayer &p){
+			cout << p;
+			return 1;
+		}
 	}
-	if (club->getleaveprogram()){
-		return 1;//leaves the program
-	}
+	fin.close();
 
+	club->writePlayers();
+	club->writeTrainings();
+	club->writeTournaments();
 
-	if (readtrainings(club) != 0) {
-		return 1;//this means that the program caught an exception
-	}
-	if (club->getleaveprogram()){
-		return 1;//leaves the program
-	}
-
-
-	if (readtournaments(club) != 0) {
-		return 1;//this means that the program caught an exception
-	}
-	if (club->getleaveprogram()){
-		return 1;//leaves the program
-	}
-
-	club->writeplayers();
-	club->writetrainings();
-
-
-	club->writetournaments();
 
 	return 0;
 

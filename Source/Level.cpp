@@ -1,20 +1,15 @@
 #include "../Headers/Level.h"
+#include "../Headers/exceptions.h"
 
 using namespace std;
 
-
+/*
 void Level::playerOutput(ofstream &out) const{
 	out << P_OPEN;
 	for (unsigned int i = 0 ; i< this->players.size() ; i++){
 		//this->players.at(i)->output(out);
 	}
 	out << P_CLOSE << endl;
-}
-
-bool Level::addPlayer(Player *player){
-	this->players.push_back(player);
-
-	return true;
 }
 
 bool Level::removePlayer(string &name){
@@ -28,9 +23,14 @@ bool Level::removePlayer(string &name){
 	}
 	return false;
 }
-
+*/
 bool Level::addEvent(Event * event){
 	this->events.push_back(event);
+	return true;
+}
+
+bool Level::addPlayer(Player *player){
+	this->players.push_back(player);
 	return true;
 }
 
@@ -43,6 +43,21 @@ bool Level::removeEvent(const Date &date){
 		}
 	}
 	return false;
+}
+
+unsigned int Level::countTrainings(const vector<Event *> &ev) const{
+	unsigned int count = 0;
+	for (unsigned int i = 0 ; i<ev.size() ; i++)
+		count += ev.at(i)->Istraining();
+
+	return count;
+}
+
+Player *Level::findPlayer(const string &name) const{
+	for (unsigned int i = 0 ; this->players.size() ; i++)
+		if (this->players.at(i)->getName() == name)
+			return this->players.at(i);
+	throw UnexistingPlayer(name);
 }
 
 Level::~Level() {

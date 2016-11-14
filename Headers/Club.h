@@ -3,6 +3,9 @@
 
 #include "../Headers/Date.h"
 #include "../Headers/Level.h"
+#include <string>
+#include <stdlib.h>
+#include <fstream>
 
 
 class Club{
@@ -13,41 +16,39 @@ class Club{
 	Level * seniors;
 	Date current_date;
 	//Date end_of_season;
-	bool leaveprogram;//boolean that will tell the program when to leave
 	//static Club * singleton_instance;//pointer to instance of class Club
-	std::string filename_players;//players filename
-	std::string filename_trainings;//trainings filename
-	std::string filename_tournaments;//tournaments filename
+	std::string p_fname;//players filename
+	std::string tr_fname;//trainings filename
+	std::string to_fname;//tournaments filename
 
 public:
 	Club();
 	~Club();//destructor
-	static Club * instance();//gets instance of class Club
-	bool getleaveprogram() const{return leaveprogram;};//gets leaveprogram
-	void setleaveprogram(bool leaveprogram){this->leaveprogram=leaveprogram;}//sets leaveprogram
+	//static Club * instance();//gets instance of class Club
 
-	std::string getfilename_players() const{return this->filename_players;}//gets filename_players
-	std::string getfilename_trainings() const{return this->filename_trainings;}//gets filename_trainings
-	std::string getfilename_tournaments() const{return this->filename_tournaments;}//gets filename_tournaments
+	inline std::string getPFname() const{return this->p_fname;}//gets filename_players
+	inline std::string getTrFname() const{return this->tr_fname;}//gets filename_trainings
+	inline std::string getToFname() const{return this->to_fname;}//gets filename_tournaments
 
-	void setfilename_players(std::string filename_players){this->filename_players=filename_players;}//sets filename_players
-	void setfilename_trainings(std::string filename_trainings){this->filename_trainings=filename_trainings;}//sets filename_trainings
-	void setfilename_tournaments(std::string filename_tournaments){this->filename_tournaments=filename_tournaments;}//sets filename_tournaments
+	inline void setPFname(std::string file_name){this->p_fname=file_name;}//sets filename_players
+	inline void setTrFname(std::string file_name){this->tr_fname=file_name;}//sets filename_trainings
+	inline void setToFname(std::string file_name){this->to_fname=file_name;}//sets filename_tournaments
 
-	void readplayers(std::istream &in);//reads players from an istream
-	void readtrainings(std::istream &in);//reads players from an istream
-	void readtournaments(std::istream & in);//reads tournaments from an istream
+	void readPlayers(std::ifstream &in, unsigned int lvl);//reads players from an istream
+	void readTrainings(std::ifstream &in, unsigned int lvl);//reads players from an istream
+	void readTournaments(std::ifstream & in , unsigned int lvl);//reads tournaments from an istream
 
-	void writeplayers();//writes players in a file
-	void writetrainings();//writes trainings in a file
-	void writetournaments();//writes tournaments in a file
+	void writePlayers();//writes players in a file
+	void writeTrainings();//writes trainings in a file
+	void writeTournaments();//writes tournaments in a file
 
-	void setMinis(Level * minis);
-	void setJuveniles(Level * juveniles);
-	void setJuniors(Level * juniors);
-	void setSeniors(Level * seniors);
-	void setCurrentDate();
+	void assignPlayers(std::ifstream &in, unsigned int lvl, Event *ev);
 
+	inline void setMinis(Level * minis) {this->minis = minis;}
+	inline void setJuveniles(Level * juveniles) {this->juveniles = juveniles;}
+	inline void setJuniors(Level * juniors) {this->juniors = juniors;}
+	inline void setSeniors(Level * seniors) {this->seniors = seniors;}
+	inline void setCurrentDate();
 };
 
 

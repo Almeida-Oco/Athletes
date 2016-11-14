@@ -138,7 +138,7 @@ parameter: Date & date - variable where the date extracted from stream is going 
 Reads date from istream
 */
 istream& operator>>(istream& in, Date& date){
-	int d, m, y;//day, month and year of the date that is going to be read
+	unsigned int d, m, y;//day, month and year of the date that is going to be read
 	in >> d;
 	in.ignore(1);
 	in >> m;

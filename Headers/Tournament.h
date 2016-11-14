@@ -1,7 +1,6 @@
 #ifndef TOURNAMENT_H
 #define TOURNAMENT_H
 
-#include "Globals.h"
 #include "Date.h"
 #include "Event.h"
 
@@ -13,12 +12,11 @@ class Tournament:public Event{
     std::vector< std::pair<unsigned int, unsigned int> > results;
 public:
     virtual ~Tournament(){};
-	//Tournament(Date date);
-	virtual bool Istraining() const{return false;};
-	//void eventOutput(std::ofstream &out) const;
+	inline bool Istraining() const{return false;};
+	void fileOutput(std::ofstream &out) const {out << *this << std::endl;}
+
 	friend std::ostream& operator<<(std::ostream& out, const Tournament & tournament);//writes tournament in ostream out
 	friend std::istream& operator>>(std::istream& in, Tournament & tournament);//gets tournament from instream in
-	virtual void writetofile(std::ostream & out) const {out<<*this;};
 
 };
 

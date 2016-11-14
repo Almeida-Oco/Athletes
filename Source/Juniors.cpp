@@ -2,11 +2,6 @@
 #include "../Headers/utilities.h"
 using namespace std;
 
-void Juniors::playerOutput(ofstream &out) const{
-	out << JUN_ID << endl;
-	Level::playerOutput(out);
-}
-
 /*
 *This function adds a new player to the vector of players
 *parameter : player - player to be added to the list

@@ -2,34 +2,36 @@
 #define PLAYER_H
 
 #include "Date.h"
-#include "Globals.h"
 #include <string>
+#include <iostream>
 #include <fstream>
+
 
 class Player{
     std::string name;
-    Date birth;
     Date last_eletro;
+    Date birth;
     unsigned int height;
-    unsigned int assiduity;//this parameter gives the assiduity of a player in the trainings
-    unsigned int presences_games;//this parameter gives the assiduity of a player in the training games
-    unsigned int presences_stournaments;////this parameter gives the assiduity of a player in the small tournaments
+    unsigned int assiduity;//this parameter gives the assiduity of a player in events
+
 public:
-	Player():birth(Date(0,0,0)),last_eletro(Date(0,0,0)){};//default constructor
-	Player(std::string name, Date birth_date, float height);
+
+
+	Player();//default constructor
+	Player(std::string name, Date birth_date, Date eletro , unsigned int height, unsigned int assi);
 
 
 	inline std::string getName() const {return this->name;}
 	inline Date getBirth() const {return this->birth;}
 	inline Date getLast_Eletro() const {return this->last_eletro;}
 	inline unsigned int getHeight() const {return this->height;}
+	inline unsigned int getAssiduity() const {return this->assiduity;}
+
 	void setEletro(bool eletro);
 	void setCheck(bool check);
-	void output(std::ofstream &out) const;
-	friend std::ostream& operator<<(std::ostream& out, const Player & player);//writes date in ostream out
-	friend std::istream& operator>>(std::istream& in, Player & player);//gets date from instream in
 
-
+	friend std::ostream& operator<<(std::ostream& os, const Player&p);
+	friend std::istream &operator>>(std::istream &in, Player &player);//gets date from instream in
 };
 
 #endif
