@@ -1,38 +1,27 @@
 #include "../Headers/Date.h"
 #include "../Headers/utilities.h"
 #include "../Headers/exceptions.h"
+#include <ctime>
 using namespace std;
 
 
-Date::Date() : day(0) , month(0) , year(0){};
-/*
- * Checks if number of month is correct and if number of days is also correct
- * Ignores undefined dates (d = 0, m=0, y=0)
- */
-bool Date::checkDate(const unsigned int day , const unsigned int month , const unsigned int year) const{
-	unsigned int months[13] = {0,31, 28 + isLeap(year),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
-	if ( (month > 12) || day > months[month])
-		return false;
-	else
-		return true;
+Date::Date(){
+	struct tm timeinfo;
+	time_t t = time(0);   // gets current time
+	localtime_s(&timeinfo, &t);
+	year = timeinfo.tm_year + 1900;
+	month = timeinfo.tm_mon + 1;
+	day = timeinfo.tm_mday;
+
 }
 
-bool Date::isLeap(const unsigned int y) const{
-	if ((y % 4) == 0 ){
-		if ( (y % 400) == 0)
-			return true;
-		else
-			return false;
-	}
-	return false;
-}
-//This constructor throws an exception if a date is not valid, althougsh it ignores dates with zero parameters
+//This constructor throws an exception if a date is not valid, although it ignores dates with zero parameters 
 Date::Date(unsigned int d,unsigned int m , unsigned int y){
-	if (checkDate(d,m,y)){
-		this->day=d; this->month = m; this->year = y;
-	}else
+	unsigned int months[13] = {0, 31,28 + Isleap(y),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
+	if ((m>12) || (d > months[m])) {
 		throw InvalidDate(d, m, y);
-
+	}
+	this->day=d; this->month = m; this->year = y;
 }
 
 bool Date::operator> (const Date &D1) const
@@ -75,46 +64,46 @@ bool Date::operator== (const Date &D1) const{
 	return (this->day == D1.day && this->month == D1.month && this->year == D1.year);
 }
 
-
 /* Computes the difference between two dates
  * parameter: d1 - Date to be subtracted from the object date
  * Returns the subtraction between the object date and d1
  */
-Date Date::operator-(const Date &d1) const{
-	Date result;
+vector<int> Date::operator-(const Date &d1) const{
 	if(*this >= d1){
 		int d,m,y;
-		if(this->day >= d1.day){
-			result.day=this->day-d1.day;
+		if(this->day>=d1.day){
+			d=this->day-d1.day;
 			if(this->month>=d1.month){
-				result.month = this->month-d1.month;
-				result.year=this->year-d1.year;
+				m=this->month-d1.month;
+				y=this->year-d1.year;
 			}
 			else{
-				result.month=this->month+12-d1.month;
-				result.year=this->year-d1.year-1;
+				m=this->month+12-d1.month;
+				y=this->year-d1.year-1;
 			}
 		}
 		else{
-			result.day=this->day+30-d1.day;
+			d=this->day+30-d1.day;
 			if(this->month>=d1.month+1){
-				result.month=this->month-d1.month-1;
-				result.year=this->year-d1.year;
+				m=this->month-d1.month-1;
+				y=this->year-d1.year;
 			}
 			else{
-				result.month=this->month+12-d1.month-1;
-				result.year=this->year-d1.year-1;
+				m=this->month+12-d1.month-1;
+				y=this->year-d1.year-1;
 			}
 		}
-		return result;
+		vector<int> v = { y,m,d };
+		return v;
 	}
-	else
-		return d1-*this;
-
+	else{
+		vector<int> v=d1-*this;
+		v[0] = -v[0];
+		v[1] = -v[1];
+		v[2] = -v[2];
+		return v;
+	}
 }
-
-
-
 /*
 parameter: ostream & out - ostream where date is going to be written
 parameter: const Date & date - date
@@ -138,7 +127,7 @@ parameter: Date & date - variable where the date extracted from stream is going 
 Reads date from istream
 */
 istream& operator>>(istream& in, Date& date){
-	unsigned int d, m, y;//day, month and year of the date that is going to be read
+	int d, m, y;//day, month and year of the date that is going to be read
 	in >> d;
 	in.ignore(1);
 	in >> m;
@@ -148,5 +137,27 @@ istream& operator>>(istream& in, Date& date){
 	date = date2;
 	return in;
 }
+
+/*
+Prints the date on the screen
+*/
+void Date::show() const {
+	cout << year;
+	cout << "/";
+	if (month < 10) {
+		std::cout << 0 << month;
+	}
+	else {
+		cout << month;
+	}
+	cout << "/";
+	if (day < 10) {
+		cout << 0 << day;
+	}
+	else {
+		cout << day;
+	}
+}
+
 
 

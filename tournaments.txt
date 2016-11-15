@@ -1,8 +1,10 @@
+Minis
 2
-5/04/2016 ; 1 ; 4 ; 2 ; 1 5 ; 1 7
-João Rodrigues ; Ivo Marques
-21/04/2016 ; 0 ; 1 ; 2 ; 1 0 ; 2 1
-Ivo Marques ; João Rodrigues
+5/04/2016 ; 1 ; 4 ; 2 ; 1 5;1 7;2 ; Joao Rodrigues ; Ivo Marques ; 
+21/04/2016 ; 0 ; 1 ; 2 ; 1 0;2 1;0 ; 
+Juveniles
 0
+Juniors
 0
+Seniors
 0

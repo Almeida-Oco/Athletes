@@ -2,38 +2,33 @@
 #define DATE_H
 #include<iostream>
 #include<vector>
-#include <ctime>
-
-
+using namespace std;
 class Date {
 	unsigned int day;
 	unsigned int month;
 	unsigned int year;
 public:
-	Date();
+	Date();//default constructor sets date to current time
 	Date(unsigned int day ,unsigned int month, unsigned int year);
 
-	inline unsigned int getDay() const {return this->day;}
-	inline unsigned int getMonth() const {return this->month;}
-	inline unsigned int getYear() const {return this->year;}
-	inline Date getDate() const {return *this;}
+	inline int getDay() const {return this->day;}//gets day
+	inline int getMonth() const {return this->month;}//gets month
+	inline int getYear() const {return this->year;}//gets year
 
 	bool operator>(const Date &d1) const;
 	bool operator>=(const Date &d1) const;
 	bool operator<(const Date &d1) const;
 	bool operator<=(const Date &d1) const;
 	bool operator==(const Date &d1) const;
-	Date operator-(const Date &d1) const;//this operator return the time that passed between two dates
+	vector<int> operator-(const Date &d1) const;//this operator return the time that passed between two dates
 
-	bool checkDate(const unsigned int day , const unsigned int month , const unsigned int year) const;
-	bool isLeap(const unsigned int y) const;
+	void show() const;//prints the date on the screen
 
-	unsigned int actualAge(const Date &birth , const Date &current_date) const;
 
 };
 
-std::ostream& operator<<(std::ostream& out, const Date & date);//writes date in ostream out
-std::istream& operator>> (std::istream& in, Date & date);//gets date from instream in
+ostream& operator<<(ostream& out, const Date & date);//writes date in ostream out
+istream& operator >> (istream& in, Date & date);//gets date from instream in
 
 
 #endif

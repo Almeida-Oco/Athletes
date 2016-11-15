@@ -1,18 +1,22 @@
+Minis
+Paulo Bento
 2
-5/06/2016 ; 1
-João Rodrigues ; Ivo Marques
-5/05/2014 ; 0
-Ivo Marques ; João Rodrigues
+5/05/2014 ; 0 ; 2 ; Joao Rodrigues ; Ivo Marques ; 
+5/06/2016 ; 1 ; 1 ; Joao Rodrigues ; 
+Juveniles
+Jorge Jesus
 1
-6/07/2013 ; 1
-Carlos Santos
+6/07/2013 ; 1 ; 0 ; 
+Juniors
+Fernando Santos
 2
-5/06/2016 ; 1
-Pedro Soares ; Bruno da Silva
-5/05/2014 ; 0
-Bruno da Silva ; Pedro Soares 
-2
-5/05/2013 ; 0
-Francisco Piedade
-5/06/2016 ; 1
-Francisco Piedade
+5/05/2014 ; 0 ; 0 ; 
+5/06/2016 ; 1 ; 0 ; 
+Seniors
+Nuno Espirito Santo
+5
+5/05/2013 ; 0 ; 2 ; Francisco Piedade ; Ronaldinho ; 
+9/09/2014 ; 0 ; 0 ; 
+5/06/2016 ; 1 ; 0 ; 
+8/06/2016 ; 1 ; 2 ; Francisco Piedade ; Cristiano Ronaldo ; 
+23/06/2016 ; 0 ; 0 ; 
