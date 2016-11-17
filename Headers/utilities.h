@@ -1,3 +1,10 @@
+//USED TO CLEAR SCREEN ON MULTIPLATFORM
+#ifdef _WIN32
+#define CLEAR "cls"
+#else //In any other OS
+#define CLEAR "clear"
+#endif
+
 #ifndef UTILITIES_H
 #define UTILITIES_H
 

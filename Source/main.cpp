@@ -3,8 +3,8 @@
 
 int main(){
 	Club * club=Club::getinstance();//gets new instance of class Vendemaismais
-	
- 
+
+
 	if (readplayers() != 0) {
 		return 1;//this means that the program caught an exception
 	}
@@ -33,8 +33,6 @@ int main(){
 	club->writeplayers();//writes players information in the file
 	club->writetrainings();//writes trainings information in the file
 	club->writetournaments();//writes tournaments information in the file
-
+	system(CLEAR);
 	return 0;
-
-
 }

@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 /*
 This functions eliminates extra spaces between words, so that if there is more than one space in
 the string, this function returns a string with only one space between two words. It also eliminates extra

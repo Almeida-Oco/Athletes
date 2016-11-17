@@ -225,7 +225,7 @@ void initialmenu() {
 		bool errormessage = false;//If true will display an error message
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
-			system("cls");// clears the screen
+			system(CLEAR);// clears the screen
 			cout << "INITIAL MENU - Club\n" << endl;
 			if (errormessage) {
 				cout << "The option you introduced is not valid \n" << endl;//tells the user the option he had previously introduced is not valid
@@ -286,7 +286,7 @@ void levelmenu(unsigned int level) {
 		bool errormessage = false;//If true will display an error message
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
-			system("cls");// clears the screen
+			system(CLEAR);// clears the screen
 			printlevel(level);
 			cout <<"Coach: "<<club_levels[level]->getCoach()<<"\n\n";
 			if (errormessage) {
@@ -347,7 +347,7 @@ void playersmenu(unsigned int level) {
 		bool errormessage = false;//If true will display an error message
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
-			system("cls");// clears the screen
+			system(CLEAR);// clears the screen
 			club_levels[level]->showPlayers();
 			if (errormessage) {
 				cout << "The ID you introduced is not valid " << endl;//tells the user the option he had previously introduced is not valid
@@ -389,7 +389,7 @@ void individualplayermenu(unsigned int level, unsigned int id) {
 		bool errormessage = false;//If true will display an error message
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
-			system("cls");
+			system(CLEAR);
 			cout << "Name: " << player->getName() << endl;
 			cout << "Level: ";
 			printlevel(level);
@@ -450,7 +450,7 @@ void actualizeECG(unsigned int level, unsigned int id) {
 	vector<Level *> club_levels = club->getLevels();//gets pointers to levels of the club
 	vector<Player *> vector_players = club_levels[level]->getPlayers();//gets vector of players of the chosen level
 	Player * player = vector_players[id-1];//gets pointer to the chosen player
-	system("cls");//clears the screen
+	system(CLEAR);//clears the screen
 	cout << "Name: " << player->getName() << endl;
 	cout << "Level: ";
 	printlevel(level);
@@ -472,7 +472,7 @@ void actualizeheight(unsigned int level, unsigned int id) {
 	bool cancelflag = false;//if true it is going cancel
 	bool errormessage = false;//if true it's going to display an errormessage
 	while (!cancelflag) {
-		system("cls");//clears the screen
+		system(CLEAR);//clears the screen
 		cout << "Name: " << player->getName() << endl;
 		cout << "Level: ";
 		printlevel(level);
@@ -502,7 +502,7 @@ Removes a player from the team
 */
 void removeplayer(unsigned int level,unsigned int id) {
 
-	system("cls");
+	system(CLEAR);
 	cout << "Are you sure you want to remove " << Club::getinstance()->getLevels().at(level)->getPlayers().at(id-1)->getName() << " from the team ?" << endl;
 	cout << "Press y for yes and any other key for no: ";
 	string key;
@@ -524,7 +524,7 @@ void regnewplayermenu() {
 	string player_name;//name of the player
 	Date player_birth, player_last_eletro;//date of birth and date of last ECG of the player
 	unsigned int player_height;
-	system("cls");
+	system(CLEAR);
 	while (!cancelflag && !successflag) {
 		if (errormessage) {
 			cout << "The name you introduced is not valid" << endl;
@@ -639,7 +639,7 @@ void trainingsmenu(unsigned int level) {
 		bool errormessage = false;//If true will display an error message
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
-			system("cls");// clears the screen
+			system(CLEAR);// clears the screen
 			club_levels[level]->showTrainings();
 			if (errormessage) {
 				cout << "\nThe ID you introduced is not valid " << endl;//tells the user the option he had previously introduced is not valid
@@ -680,7 +680,7 @@ void tournamentsmenu(unsigned int level) {
 		bool errormessage = false;//If true will display an error message
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
-			system("cls");// clears the screen
+			system(CLEAR);// clears the screen
 			club_levels[level]->showTournaments();
 			if (errormessage) {
 				cout << "\nThe ID you introduced is not valid " << endl;//tells the user the option he had previously introduced is not valid
@@ -722,7 +722,7 @@ void individualtrainingmenu(unsigned int level, unsigned int id) {
 		bool errormessage = false;//If true will display an error message
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
-			system("cls");
+			system(CLEAR);
 			cout << "Training" << endl;
 			cout << "Date: " << training->getDay() << endl;
 			cout << "Level: ";
@@ -781,7 +781,7 @@ void editplayerstraining(unsigned int level, Event * ev){
 	vector<string > participant_players;//vector with the players that participated in the tournament
 
 
-	system("cls");//clears screen
+	system(CLEAR);//clears screen
 	cout << "Edit Players that participated in the Training" << endl;
 	club_levels[level]->showPlayers();//shows players that participated in the training
 

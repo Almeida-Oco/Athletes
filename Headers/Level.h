@@ -44,8 +44,7 @@ public:
 
 	void raiseAssiduity(const vector<string> &players, unsigned int type);//raises assiduity for the players in the vector
 	void lowerAssiduity(const vector<string> &players, unsigned int type);//lowers assiduity for the players in the vector
-
-	virtual void playerOutput(std::ofstream &out) const;
+	
 	Player *findPlayer(const std::string &name) const;
 };
 
