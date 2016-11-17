@@ -3,27 +3,27 @@
 
 using namespace std;
 
-/*
-void Level::playerOutput(ofstream &out) const{
-	out << P_OPEN;
-	for (unsigned int i = 0 ; i< this->players.size() ; i++){
-		//this->players.at(i)->output(out);
-	}
-	out << P_CLOSE << endl;
-}
-
 bool Level::removePlayer(string &name){
-	//THROW EXCEPTION UNKNOWN/PLAYER NOT FOUND
+	bool found = false;
+
 	for(vector<Player*>::iterator it = this->players.begin() ; it !=this->players.end() ; it++){
 		if ((*it)->getName() == name){
 			it = this->players.erase(it);
-			return true;
+			found = true;
 		}
-
 	}
-	return false;
+
+	for (vector<Event *>::iterator it = this->events.begin() ; it!=this->events.end() ; it++){
+		for (vector<Player *>::iterator p_it = (*it)->getPresence().begin() ; p_it != (*it)->getPresence().end() ; p_it++){
+			if ( (*p_it)->getName() == name)
+				(*it)->getPresence().erase((*p_it));
+				continue;
+			}
+		}
+	}
+	return found;
 }
-*/
+
 bool Level::addEvent(Event * event){
 	this->events.push_back(event);
 	return true;
@@ -68,3 +68,21 @@ Level::~Level() {
 		delete events[i];
 	}
 }
+
+
+set<pScore> Level::calcScores(){
+	set<pScore> score_board;
+	pScore temp;
+
+	for (vector<Event *>::iterator e_it = this->events.begin() ; e_it != this->events.end() ; e_it++){
+		for (vector<Player *>::iterator p_it = (*e_it)->getPresence().begin() ; p_it != (*e_it)->getPresence().end() ; p_it++){
+			if( find(score_board.begin() , score_board.end() , (*p_it)->getName()) != score_board.end() ){
+
+			}
+		}
+	}
+
+	return score_board;
+}
+
+bool repeated()

@@ -16,7 +16,7 @@ public:
 	virtual bool Istraining() const = 0;
 
 	inline Date getDay() const {return this->day;}
-	inline std::vector<Player *> getPresence() const {return this->presence;}
+	inline std::vector<Player *> &getPresence() {return this->presence;}
 
 	void setDay(Date day){this->day=day;};
 

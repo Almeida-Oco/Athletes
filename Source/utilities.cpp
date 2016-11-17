@@ -46,7 +46,11 @@ Date currentDate(){
 	Date t = Date(time_info->tm_mday , time_info->tm_mon+1 , time_info->tm_year+1900);
 	return t;
 }
-
+/*
+ * This function returns the date of someone that was born on day birth
+ * parameter: birth - day where the person was born
+ * Returns the age that the person currently has
+ */
 unsigned int actualAge(const Date &birth){
 	return (currentDate() - birth).getYear();
 }
@@ -85,9 +89,3 @@ vector<string> stringSplit(const string &line, const string &spliter)
 	return split_string;
 }
 
-/*
- *
- * This function returns the date of someone that was born on day birth
- * parameter: birth - day where the person was born
- * Returns the age that the person currently has
- */

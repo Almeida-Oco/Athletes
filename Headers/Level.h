@@ -6,7 +6,9 @@
 #include "Date.h"
 #include "Tournament.h"
 #include "Training.h"
+#include "utilities.h"
 #include <vector>
+#include <set>
 #include <fstream>
 #include <string>
 
@@ -23,6 +25,7 @@ public:
 	bool addEvent(Event * Event);
 	bool removeEvent(const Date &day);
 
+	std::set<pScore> calcScores();
 
 	inline std::vector<Player *> getPlayers() const{return this->players;};
 	inline std::vector<Event *> getEvents() const{return this->events;};

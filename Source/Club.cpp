@@ -248,3 +248,4 @@ void Club::assignPlayers(ifstream &fin , unsigned int lvl , Event *ev){
 
 	cout << "DONE PLAYERS " << endl;
 }
+

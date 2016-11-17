@@ -3,6 +3,7 @@
 
 #include "../Headers/Date.h"
 #include "../Headers/Level.h"
+#include <set>
 #include <string>
 #include <stdlib.h>
 #include <fstream>
