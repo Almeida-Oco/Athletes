@@ -1,5 +1,7 @@
 #include "../Headers/utilities.h"
 
+using namespace std;
+
 /*
 This functions eliminates extra spaces between words, so that if there is more than one space in
 the string, this function returns a string with only one space between two words. It also eliminates extra
@@ -33,6 +35,14 @@ string removespaces(string s){
 		s.erase(s.size() - 1, 1);//deletes space at the end of a string
 	}
 	return s;
+}
+
+Date currentDate(){
+	time_t t = time(0);   // gets current time
+	struct tm *now = localtime(&t);
+	Date d(now->tm_mday , now->tm_mon +1 , now->tm_year +1900);
+
+	return d;
 }
 
 /*
@@ -74,7 +84,7 @@ bool isInteger(const string & s)
 	if (s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+'))) return false;
 
 	char * p;
-	strtol(s.c_str(), &p, 10);
+		strtol(s.c_str(), &p, 10);
 
 	return (*p == 0);
 }
@@ -85,10 +95,8 @@ parameter: string s-string that is going to be converted
 return value - integer that corresponds to the string
 */
 int convint(string s) {
-	if (!isInteger(s)) {
+	if (!isInteger(s))
 		return -1;
-	}
-	else {
-		return stoi(s);
-	}
+	else
+		return atoi(s.c_str());
 }

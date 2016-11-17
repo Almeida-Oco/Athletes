@@ -1,6 +1,6 @@
 #ifndef LEVEL_H
 #define LEVEL_H
-#include "Globals.h"
+
 #include "Player.h"
 #include "Date.h"
 #include "Tournament.h"
@@ -8,6 +8,7 @@
 #include "utilities.h"
 #include <vector>
 #include <set>
+#include <algorithm>
 #include <fstream>
 #include <string>
 
@@ -18,11 +19,9 @@ class Level {
 	std::vector <Event *> events;
 	std::string coach;
 public:
-	Level(){};
 	virtual ~Level();
-	std::set<pScore> calcScores();
 
-	virtual unsigned int countTrainings(const std::vector<Event *> &ev)const;
+	virtual unsigned int countTrainings(const std::vector<Event *> &ev) const;
 
 	inline vector<Player *> getPlayers() const{return this->players;};//gets vector of players
 	inline vector<Event *> getEvents() const{return this->events;};//gets vector of events
@@ -35,18 +34,19 @@ public:
 
 	void setCoach(std::string coach){this->coach=coach;};//sets a new coach
 
-	virtual void showplayers() const;//shows the players on the screen
-	virtual void showtrainings() const;//shows the trainings on the screen
-	virtual void showtournaments() const;//shows the tournaments on the screen
+	virtual void showPlayers() const;//shows the players on the screen
+	virtual void showTrainings() const;//shows the trainings on the screen
+	virtual void showTournaments() const;//shows the tournaments on the screen
 
 
-	bool removePlayer(string &name);//removes player from the database, including events
+	bool removePlayer(const string &name);//removes player from the database, including events
 	bool removeEvent(const Date &day); //removes event on that day
 
-	void raiseassiduity(vector<string> players, unsigned int type);//raises assiduity for the players in the vector
-	void lowerassiduity(vector<string> players, unsigned int type);//lowers assiduity for the players in the vector
+	void raiseAssiduity(const vector<string> &players, unsigned int type);//raises assiduity for the players in the vector
+	void lowerAssiduity(const vector<string> &players, unsigned int type);//lowers assiduity for the players in the vector
 
 	virtual void playerOutput(std::ofstream &out) const;
+	Player *findPlayer(const std::string &name) const;
 };
 
 #endif

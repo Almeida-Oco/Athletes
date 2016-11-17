@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 #include "../Headers/Level.h"
 #include "../Headers/exceptions.h"
 #include<iomanip>
 
 using namespace std;
 
-bool Level::removePlayer(string &name){
+bool Level::removePlayer(const string &name){
 	bool found = false;
 
 	for(vector<Player*>::iterator it = this->players.begin() ; it !=this->players.end() ; it++){
@@ -16,16 +15,15 @@ bool Level::removePlayer(string &name){
 	}
 
 	for (vector<Event *>::iterator it = this->events.begin() ; it!=this->events.end() ; it++){
-		for (vector<Player *>::iterator p_it = (*it)->getPresence().begin() ; p_it != (*it)->getPresence().end() ; p_it++){
-			if ( (*p_it)->getName() == name)
-				(*it)->getPresence().erase((*p_it));
+		for (vector<string>::iterator p_it = (*it)->getPresences().begin() ; p_it != (*it)->getPresences().end() ; p_it++){
+			if ( (*p_it) == name)
+				(*it)->getPresences().erase(p_it);
 				continue;
 			}
 		}
-	}
-	return found;
-}
 
+	return found;
+	}
 bool Level::removeEvent(const Date &date){
 	//THROW EXCEPTION EVENT NOT FOUND
 	for(vector<Event*>::iterator it = this->events.begin() ; it!=this->events.end() ; it++){
@@ -51,22 +49,6 @@ Player *Level::findPlayer(const string &name) const{
 			return this->players.at(i);
 	throw UnexistingPlayer(name);
 }
-
-set<pScore> Level::calcScores(){
-	set<pScore> score_board;
-	pScore temp;
-
-	for (vector<Event *>::iterator e_it = this->events.begin() ; e_it != this->events.end() ; e_it++){
-		for (vector<Player *>::iterator p_it = (*e_it)->getPresence().begin() ; p_it != (*e_it)->getPresence().end() ; p_it++){
-			if( find(score_board.begin() , score_board.end() , (*p_it)->getName()) != score_board.end() ){
-
-			}
-		}
-	}
-
-	return score_board;
-}
-
 /*
 * Destructor
 */
@@ -138,7 +120,7 @@ void Level::addEvent(Event * ev) {
 /*
 * Shows players on the screen
 */
-void Level::showplayers() const {
+void Level::showPlayers() const {
 	cout <<setw(4)<<"ID|"<< setw(21) << "Name |" << setw(16) << "Birthday|" << setw(16) << "Last ECG|" <<setw(10)<<"Height(cm)|"<< setw(5) << "Assiduity|" << setw(5) << "   Games|" << setw(5) << "Small Tournaments" << endl;
 	for (unsigned int i = 0; i < players.size(); i++) {
 		cout <<"  "<< i + 1 << "|";
@@ -150,7 +132,7 @@ void Level::showplayers() const {
 /*
 * Shows trainings that already happened on the screen
 */
-void Level::showtrainings() const {
+void Level::showTrainings() const {
 	cout <<setw(4)<<"ID|"<< setw(16) << "Date|" << setw(6) << "Game|" << "No. of players present"<<endl;
 	vector<Event *> trainings = this->getTrainings();//gets vector of pointers to the trainings of this level
 	unsigned int count = 1;//counts the training that have already been displayed
@@ -168,7 +150,7 @@ void Level::showtrainings() const {
 /*
 * Shows tournaments that already happened on the screen
 */
-void Level::showtournaments() const {
+void Level::showTournaments() const {
 	cout << setw(4) << " ID| " << setw(15) << "Date|" << setw(12) << " Major Tournament|" << setw(10) <<"   Rank|  No. of games| No. of players present"<<endl;
 	vector<Event *> tournaments = this->getTournaments();//gets vector of pointers to the tournaments of this level
 	unsigned int count = 1;//counts the training that have already been displayed
@@ -188,9 +170,9 @@ void Level::showtournaments() const {
 * parameter: players_names - vector with the names of players whose assiduity is going to be raise
 * parameeter: type - changes the score of assiduity to be added (training -> 1, small game -> 2, small tournament -> 3, tournament ->4)
 */
-void Level::raiseassiduity(vector<string> players_names, unsigned int type) {
-	for (unsigned int i = 0; i < players.size(); i++) {
-		if (find(players_names.begin(), players_names.end(), players[i]->getName()) != players_names.end()) {
+void Level::raiseAssiduity(const vector<string> &players_names, unsigned int type) {
+	for (unsigned int i = 0; i < this->players.size(); i++) {
+		if ( find( players_names.begin(), players_names.end(), this->players[i]->getName()) != players_names.end() ) {
 			players[i]->setAssiduity(players[i]->getAssiduity() + type);
 		}
 	}
@@ -200,18 +182,10 @@ void Level::raiseassiduity(vector<string> players_names, unsigned int type) {
 *Decreases by 1 the assiduity of all players whose name appears in the vector of strings
 * parameter: players_names - vector with the names of players whose assiduity is going to be raised
 */
-void Level::lowerassiduity(vector<string> players_names, unsigned int type) {
+void Level::lowerAssiduity(const vector<string> &players_names, unsigned int type) {
 	for (unsigned int i = 0; i < players.size(); i++) {
 		if (find(players_names.begin(), players_names.end(), players[i]->getName()) != players_names.end()) {
 			players[i]->setAssiduity(players[i]->getAssiduity() - type);
 		}
 	}
-}
-
-void Level::playerOutput(ofstream &out) const {
-	out << P_OPEN;
-	for (unsigned int i = 0; i < this->players.size(); i++) {
-		//this->players.at(i)->output(out);
-	}
-	out << P_CLOSE << endl;
 }

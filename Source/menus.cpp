@@ -2,9 +2,6 @@
 #include "../Headers/Club.h"
 #include "../Headers/exceptions.h"
 #include "../Headers/utilities.h"
-#include <iostream>
-#include <string>
-#include <fstream>
 using namespace std;
 
 /*
@@ -26,7 +23,7 @@ int readplayers() {
 		if ((filename_players.size() == 1) && (filename_players[0] == 'l')) {
 			club->setleaveprogram(true);
 		} else {
-			file_players.open(filename_players);
+			file_players.open(filename_players.c_str());
 		}
 	} while (file_players.fail() && !club->getleaveprogram());
 	if (!club->getleaveprogram()) {
@@ -70,7 +67,7 @@ int readtrainings() {
 				&& (filename_trainings[0] == 'l')) {
 			club->setleaveprogram(true);
 		} else {
-			file_trainings.open(filename_trainings);
+			file_trainings.open(filename_trainings.c_str());
 		}
 	} while (file_trainings.fail() && !club->getleaveprogram());
 	if (!club->getleaveprogram()) {
@@ -108,7 +105,7 @@ int readtournaments() {
 		if ((filename_tournaments.size() == 1) && (filename_tournaments[0] == 'l')) {
 			club->setleaveprogram(true);
 		} else {
-			file_tournaments.open(filename_tournaments);
+			file_tournaments.open(filename_tournaments.c_str());
 		}
 	} while (file_tournaments.fail() && !club->getleaveprogram());
 	if (!club->getleaveprogram()) {
@@ -351,7 +348,7 @@ void playersmenu(unsigned int level) {
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
 			system("cls");// clears the screen
-			club_levels[level]->showplayers();
+			club_levels[level]->showPlayers();
 			if (errormessage) {
 				cout << "The ID you introduced is not valid " << endl;//tells the user the option he had previously introduced is not valid
 			}
@@ -503,19 +500,16 @@ void actualizeheight(unsigned int level, unsigned int id) {
 /*
 Removes a player from the team
 */
-void removeplayer(unsigned int level, unsigned int id) {
-	Club *club = Club::getinstance();//gets intance of class Club
-	vector<Level *> club_levels = club->getLevels();//gets pointers to levels of the club
-	vector<Player *> vector_players = club_levels[level]->getPlayers();//gets vector of players of the chosen level
-	Player * player = vector_players[id-1];//gets pointer to the chosen player
+void removeplayer(unsigned int level,unsigned int id) {
+
 	system("cls");
-	cout << "Are you sure you want to remove " << player->getName() << " from the team ?" << endl;
+	cout << "Are you sure you want to remove " << Club::getinstance()->getLevels().at(level)->getPlayers().at(id-1)->getName() << " from the team ?" << endl;
 	cout << "Press y for yes and any other key for no: ";
 	string key;
 	getline(cin, key);
-	if (key[0] = 'y') {
-		club_levels[level]->removeplayer(id);
-	}
+	if (key[0] == 'y')
+		Club::getinstance()->getLevels().at(level)->removePlayer
+		( Club::getinstance()->getLevels().at(level)->getPlayers().at(id-1)->getName());
 }
 
 /*
@@ -543,10 +537,9 @@ void regnewplayermenu() {
 		}
 		else if ((name.size() >= 4) && (name.size() <= 20)) {
 			vector<string> vector_players = club->getPlayers();
-			if (find(vector_players.begin(), vector_players.end(), removespaces(name)) == vector_players.end()) {
-				player_name = removespaces(name);
+			player_name = removespaces(name);
+			if ( find(vector_players.begin() , vector_players.end() , player_name) == vector_players.end())
 				successflag = true;
-			}
 			else {
 				cout << "There is already a player on the team with the same name." << endl;
 			}
@@ -647,7 +640,7 @@ void trainingsmenu(unsigned int level) {
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
 			system("cls");// clears the screen
-			club_levels[level]->showtrainings();
+			club_levels[level]->showTrainings();
 			if (errormessage) {
 				cout << "\nThe ID you introduced is not valid " << endl;//tells the user the option he had previously introduced is not valid
 			}
@@ -688,7 +681,7 @@ void tournamentsmenu(unsigned int level) {
 		bool repeatmenu = true;//If true will keep showing the initial menu to the user and asking him to type an option
 		while (repeatmenu) {
 			system("cls");// clears the screen
-			club_levels[level]->showtournaments();
+			club_levels[level]->showTournaments();
 			if (errormessage) {
 				cout << "\nThe ID you introduced is not valid " << endl;//tells the user the option he had previously introduced is not valid
 			}
@@ -779,46 +772,41 @@ void individualtrainingmenu(unsigned int level, unsigned int id) {
 }
 
 void editplayerstraining(unsigned int level, Event * ev){
+
 	Club *club = Club::getinstance();//gets intance of class Club
 	vector<Level *> club_levels = club->getLevels();//gets pointers to levels of the club
 	vector<Player *> vector_players = club_levels[level]->getPlayers();//gets vector of players of the chosen level
 	vector<bool> alreadychosen(vector_players.size(), false); //each entry of this vector will be set to true if the player that is in the same position of that entry was already chosen
 	bool repeatquestion = true;//if set to true it will repeat the question asking the user to select a player
 	vector<string > participant_players;//vector with the players that participated in the tournament
-	system("cls");
+
+
+	system("cls");//clears screen
 	cout << "Edit Players that participated in the Training" << endl;
-	club_levels[level]->showplayers();//shows players that participated in the training
+	club_levels[level]->showPlayers();//shows players that participated in the training
+
 	while (repeatquestion)
 	{   
 		cout << "\nType the ID of the player a that was present in the training (or press f if you have already chosen all the players that participated in the training): ";
-		string id;//product typed by the user
+		string id;//player typed by the user
 		cin.clear();
 		getline(cin, id);
-		if (id=="f") {
+
+		if (id=="f")
 			repeatquestion = false;
-		}
-		else if (convint(id) <= 0 || unsigned int(convint(id))>vector_players.size()) {//checks if it was typed a valid player
+		else if (convint(id) <= 0 || (convint(id))>vector_players.size()) //checks if it was typed a valid player
 			cout << "The player you selected is not valid" << endl;
-		}
-		else if (alreadychosen[convint(id) - 1]) {//checks if the product has already been chosen
+		else if (alreadychosen[convint(id) - 1]) //checks if the player has already been chosen
 			cout << "You have already selected that player" << endl;
-		}
 		else {
 			alreadychosen[convint(id) - 1] = true;
 			participant_players.push_back(vector_players[convint(id)-1]->getName());
 		}
 	}
-	if (ev->getGame()) {
-		club_levels[level]->lowerpgames(ev->getPresences());
-		club_levels[level]->raisepgames(participant_players);
-		ev->setPresences(participant_players);
-	}
-	else {
-		club_levels[level]->lowerassiduity(ev->getPresences());
-		club_levels[level]->raiseassiduity(participant_players);
-		ev->setPresences(participant_players);
-	}
 
+	club_levels[level]->lowerAssiduity(ev->getPresences() , 1 + ev->getGame());
+	club_levels[level]->raiseAssiduity(participant_players , 1 + ev->getGame());
+	ev->setPresences(participant_players);
 }
 /*
 *displays the menu with the individual information of a certain tournament

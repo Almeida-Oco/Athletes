@@ -1,19 +1,7 @@
 #include "../Headers/Player.h"
-#include <iostream>
 #include"../Headers/utilities.h"
-#include<iomanip>
+
 using namespace std;
-
-/*void Player::output(ofstream &out) const{
-	out << this->getName() <<
-					SEPARATOR << this->getHeight() <<
-					SEPARATOR << this->getEletro() <<
-					SEPARATOR << this->getCheck() <<
-					SEPARATOR << this->getYear().getDay() <<
-					SEPARATOR << this->getYear().getMonth() <<
-					SEPARATOR << this->getYear().getYear();
-}*/
-
 
 /*
 *This function prints the player on the screen

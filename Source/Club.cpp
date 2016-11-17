@@ -155,7 +155,7 @@ void Club::readtournaments(istream & in) {
  */
 void Club::writeplayers() {
 	ofstream out; //file
-	out.open(filename_players);
+	out.open(filename_players.c_str());
 	vector<Player *> minis_players = minis->getPlayers();
 	vector<Player *> juveniles_players = juveniles->getPlayers();
 	vector<Player *> juniors_players = juniors->getPlayers();
@@ -182,7 +182,7 @@ void Club::writeplayers() {
  */
 void Club::writetrainings() {
 	ofstream out; //file
-	out.open(filename_trainings);
+	out.open(filename_trainings.c_str());
 	vector<Event *> minis_events = minis->getEvents();
 	vector<Event *> juveniles_events = juveniles->getEvents();
 	vector<Event *> juniors_events = juniors->getEvents();
@@ -242,7 +242,7 @@ void Club::writetrainings() {
  */
 void Club::writetournaments() {
 	ofstream out; //file
-	out.open(filename_tournaments);
+	out.open(filename_tournaments.c_str());
 	vector<Event *> minis_events = minis->getEvents();
 	vector<Event *> juveniles_events = juveniles->getEvents();
 	vector<Event *> juniors_events = juniors->getEvents();

@@ -1,6 +1,5 @@
 #include "../Headers/Minis.h"
 #include "../Headers/utilities.h"
-#include <fstream>
 using namespace std;
 
 /*
@@ -9,7 +8,7 @@ using namespace std;
 *Returns true if insert operation was successfuland false if not
 */
 bool Minis::addPlayer(Player * player){
-	unsigned int age=actualage(player->getBirth());
+	unsigned int age = actualAge(player->getBirth());
 	if(age>=age_min && age<=age_max){
 		return Level::addPlayer(player);
 	}
@@ -21,30 +20,23 @@ bool Minis::addPlayer(Player * player){
 /*
 * This function shows the list of players on the screen
 */
-void Minis::showplayers() const {
+void Minis::showPlayers() const {
 	cout << "Minis - Players" << endl;
-	Level::showplayers();
+	Level::showPlayers();
 }
 
 /*
 * This function shows the list of trainings on the screen
 */
-void Minis::showtrainings() const {
+void Minis::showTrainings() const {
 	cout << "Minis - Trainings" << endl;
-	Level::showtrainings();
+	Level::showTrainings();
 }
 
 /*
 * This function shows the list of tournaments on the screen
 */
-void Minis::showtournaments() const {
+void Minis::showTournaments() const {
 	cout << "Minis - Tournaments" << endl;
-	Level::showtournaments();
-}
-
-
-
-void Minis::playerOutput(ofstream &out) const {
-	out << MINI_ID << endl;
-	 Level::playerOutput(out);
+	Level::showTournaments();
 }

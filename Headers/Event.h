@@ -17,14 +17,14 @@ public:
 	//virtual void eventOutput(std::ofstream &out) const = 0;
 	inline Date getDay() const {return this->day;}
 
-	void setDay(Date day){this->day=day;};
-	vector<string> getPresences() const { return presences; };//gets vector of presences
-	void setPresences(vector<string> presences) { this->presences = presences; };//sets new vector of presences
-	void addPresence(string presence) { presences.push_back(presence); };
+	inline void setDay(Date day){this->day=day;};
+	inline vector<string> getPresences() const { return presences; };//gets vector of presences
+	inline void setPresences(vector<string> presences) { this->presences = presences; };//sets new vector of presences
+	inline void addPresence(const string &presence) { presences.push_back(presence); };
 	virtual void show() const = 0;
 	bool operator< (const Event & ev1) const { return day < ev1.day; };
-	//inline std::vector<Player *> getPresence() const {return this->presence;}
-	inline std::vector<Player *> &getPresence() {return this->presence;}
+
+	void outputNames(std::ofstream &out) const;
 
 };
 

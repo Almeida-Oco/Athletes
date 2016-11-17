@@ -1,6 +1,6 @@
 #ifndef TRAINING_H
 #define TRAINING_H
-#include "Globals.h"
+
 #include "Event.h"
 
 

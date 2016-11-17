@@ -1,5 +1,6 @@
 #ifndef DATE_H
 #define DATE_H
+
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -20,7 +21,7 @@ public:
 	bool operator<(const Date &d1) const;
 	bool operator<=(const Date &d1) const;
 	bool operator==(const Date &d1) const;
-	vector<int> operator-(const Date &d1) const;//this operator return the time that passed between two dates
+	Date operator-(const Date &d1) const;//this operator return the time that passed between two dates
 
 	void show() const;//prints the date on the screen
 

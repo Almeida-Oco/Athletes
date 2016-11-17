@@ -1,18 +1,16 @@
 #include "../Headers/Date.h"
 #include "../Headers/utilities.h"
 #include "../Headers/exceptions.h"
+#include "../Headers/utilities.h"
 #include <ctime>
 using namespace std;
 
 
 Date::Date(){
-	struct tm timeinfo;
-	time_t t = time(0);   // gets current time
-	localtime_s(&timeinfo, &t);
-	year = timeinfo.tm_year + 1900;
-	month = timeinfo.tm_mon + 1;
-	day = timeinfo.tm_mday;
-
+	Date d = currentDate();
+	this->year = d.year;
+	this->month = d.month;
+	this->day = d.day;
 }
 
 //This constructor throws an exception if a date is not valid, although it ignores dates with zero parameters 
@@ -68,7 +66,7 @@ bool Date::operator== (const Date &D1) const{
  * parameter: d1 - Date to be subtracted from the object date
  * Returns the subtraction between the object date and d1
  */
-vector<int> Date::operator-(const Date &d1) const{
+Date Date::operator-(const Date &d1) const{
 	if(*this >= d1){
 		int d,m,y;
 		if(this->day>=d1.day){
@@ -93,15 +91,15 @@ vector<int> Date::operator-(const Date &d1) const{
 				y=this->year-d1.year-1;
 			}
 		}
-		vector<int> v = { y,m,d };
-		return v;
+		Date dat(d,m,y);
+		return dat;
 	}
 	else{
-		vector<int> v=d1-*this;
-		v[0] = -v[0];
-		v[1] = -v[1];
-		v[2] = -v[2];
-		return v;
+		Date date = d1-*this;
+		date.year = -date.year;
+		date.month = -date.month;
+		date.day = -date.day;
+		return date;
 	}
 }
 /*

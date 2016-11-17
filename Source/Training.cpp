@@ -4,20 +4,6 @@
 
 using namespace std;
 
-/*void Training::eventOutput(ofstream &out) const{
-	out << TRAIN_ID  <<
-			SEPARATOR << this->game <<
-			SEPARATOR << this->getDay().getDay() <<
-			SEPARATOR << this->getDay().getMonth() <<
-			SEPARATOR << this->getDay().getYear() <<
-			SEPARATOR;
-	out << P_OPEN;*/
-	/*for (unsigned int i = 0 ; i<this->getPresence().size() ; i++){
-		this->getPresence().at(i)->output(out);
-	}*/
-	/*out << P_CLOSE << endl;
-}*/
-
 void Training::show() const{
 	(this->getDay()).show();
 	cout<< "| ";
@@ -27,8 +13,7 @@ void Training::show() const{
 	else {
 		cout << " No |";
 	}
-	vector<string> vector_presences = this->getPresences();
-	cout << setw(7) << vector_presences.size();
+	cout << setw(7) << this->getPresences().size();
 }
 
 /*

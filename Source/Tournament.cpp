@@ -4,20 +4,6 @@
 
 using namespace std;
 
-/*void Tournament::eventOutput(ofstream &out) const{
-	 out << TOUR_ID <<
-			 SEPARATOR << this->major <<
-			 SEPARATOR << this->rank <<
-			 SEPARATOR << this->getDay().getDay() <<
-			 SEPARATOR << this->getDay().getMonth() <<
-			 SEPARATOR << this->getDay().getYear() <<
-			 SEPARATOR;*/
-
-	 /*for (unsigned int i = 0 ; i<this->getPresence().size() ; i++){
-		 this->getPresence().at(i)->output(out);
-	 }*/
-/*}*/
-
 void Tournament::show() const {
 	(this->getDay()).show();
 	cout << "| ";
@@ -28,8 +14,7 @@ void Tournament::show() const {
 		cout << "       No       |";
 	}
 	cout << setw(7) << rank <<"|"<< setw(14) << results.size()<<"|";
-	vector<string> vector_presences = this->getPresences();
-	cout << setw(12) << vector_presences.size();
+	cout << setw(12) << this->getPresences().size();
 }
 
 /*

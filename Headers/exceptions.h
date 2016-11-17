@@ -2,8 +2,8 @@
 #define EXCEPTIONS_H
 
 #include<iostream>
+#include <string>
 #include"../Headers/Date.h"
-using namespace std;
 
 class InvalidDate {//throws an exception if date is invalid
 	int day;
@@ -15,11 +15,19 @@ public:
 };
 
 class InvalidPlayer {//a player is invalid if he doesn't have the minimum age to be on the team: 4 years old
-	string name;
+	std::string name;
 	Date birth;
 	
 public:
-	InvalidPlayer(string name, Date birth);
+	InvalidPlayer(std::string name, Date birth);
+	void show() const;
+};
+
+class UnexistingPlayer{
+	std::string name;
+	Date birth;
+public:
+	UnexistingPlayer(const std::string &name) : name(name) {};
 	void show() const;
 };
 
