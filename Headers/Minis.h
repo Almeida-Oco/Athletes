@@ -3,10 +3,15 @@
 #include "Level.h"
 
 class Minis:public Level{
-    const unsigned int age_min = 4 , age_max = 8;
+    const uint age_min = 4 , age_max = 8;
 public:
-    ~Minis(){};
-	bool addPlayer(Player *player);
+    Minis(){};//default constructor
+    ~Minis(){};//destructor
+	bool addPlayer(Player * player);//adds player to the vector of players
+	virtual void showplayers() const;//shows the players on the screen
+	virtual void showtrainings() const;//shows the trainings on the screen
+	virtual void showtournaments() const;//shows the tournaments on the screen;
+	virtual void playerOutput(std::ofstream &out) const;
 };
 
 #endif

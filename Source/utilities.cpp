@@ -1,7 +1,5 @@
 #include "../Headers/utilities.h"
 
-using namespace std;
-
 /*
 This functions eliminates extra spaces between words, so that if there is more than one space in
 the string, this function returns a string with only one space between two words. It also eliminates extra
@@ -9,7 +7,7 @@ spaces at the beginning and at the end of a string
 parameter: string s - string that will have extra spaces eliminated from
 return value: string s without extra spaces
 */
-string removeSpaces(string s){
+string removespaces(string s){
 	unsigned int i = 0;
 	//the following loop removes newlines
 	while (i < s.size()){
@@ -37,15 +35,6 @@ string removeSpaces(string s){
 	return s;
 }
 
-Date currentDate(){
-	struct tm *time_info;
-	time_t current_time;
-	time(&current_time);// gets current time
-
-	time_info = localtime(&current_time);
-	Date t = Date(time_info->tm_mday , time_info->tm_mon+1 , time_info->tm_year+1900);
-	return t;
-}
 /*
  * This function returns the date of someone that was born on day birth
  * parameter: birth - day where the person was born
@@ -55,37 +44,51 @@ unsigned int actualAge(const Date &birth){
 	return (currentDate() - birth).getYear();
 }
 
-/*
- * Receives string and splitter and returns vector with strings which where separated by splitter
- */
-vector<string> stringSplit(const string &line, const string &spliter)
-{
-	unsigned int pos_spliter = 0, cont_spliter = 0, sz = line.size(), splt_sz = spliter.size(), inicio = 0;
-	vector<string> split_string;
-
-	for (unsigned int i = 0; i < sz; i++)
-	{
-		if (i == sz - 1)
-		{
-			pos_spliter = i + 1;
-			split_string.push_back(line.substr(inicio, pos_spliter - inicio));
-			break;
-		}
-
-		if (line.at(i) == spliter.at(cont_spliter))
-		{
-			if (cont_spliter != splt_sz)
-				cont_spliter++;
-			if (cont_spliter == splt_sz)
-			{
-				pos_spliter = i - (splt_sz - 1);
-				split_string.push_back(line.substr(inicio, pos_spliter - inicio));
-				inicio = pos_spliter + 1;
-				inicio = i + 1;
-				cont_spliter = 0;
-			}
-		}
+/*This function checks if a year is leap or not
+* parameter: year - year that is going to be checked
+* Returns true if the year is leap and false if not
+*/
+bool Isleap(int year) {
+	if (year % 4 != 0) {
+		return false;
 	}
-	return split_string;
+	else if (year % 100 != 0) {
+		return true;
+	}
+	else if (year % 400 != 0) {
+		return false;
+	}
+	else {
+		return true;
+	}
 }
 
+/*
+This functions checks if a string is an integer
+parameter: const string &s-The function will check if this string is an integer
+return value- true if string is an integer and false if not
+source:http://stackoverflow.com/questions/2844817/how-do-i-check-if-a-c-string-is-an-int
+*/
+bool isInteger(const string & s)
+{
+	if (s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+'))) return false;
+
+	char * p;
+	strtol(s.c_str(), &p, 10);
+
+	return (*p == 0);
+}
+
+/*
+This function converts a string to an integer and returns -1 if string is not an integer
+parameter: string s-string that is going to be converted
+return value - integer that corresponds to the string
+*/
+int convint(string s) {
+	if (!isInteger(s)) {
+		return -1;
+	}
+	else {
+		return stoi(s);
+	}
+}

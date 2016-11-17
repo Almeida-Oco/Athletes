@@ -1,14 +1,9 @@
-Paulo Bento
-2
-João Rodrigues ; 25/09/2010; 5/7/2016; 156 ; 24
-Ivo Marques ; 5/07/2011 ; 5/8/2016; 147 ; 8
-Jorge Jesus
-1
-Carlos Santos ; 25/10/2003; 5/8/2015 ; 160 ; 29 
-Nuno Santos
-2
-Pedro Soares ; 5/7/2001 ; 20/8/2016; 161 ; 8 
-Bruno da Silva ; 6/1/2000 ; 5/12/2016; 135 ; 70
-Fernando Santos
-1
-Francisco Piedade ; 3/4/1997 ; 5/4/2016 ; 138 ; 30
+8
+Antonio Sousa ; 3/04/2011 ; 4/04/2015 ; 132 ; 0 ; 0 ; 0
+Ivo Marques ; 5/07/2011 ; 13/11/2016 ; 160 ; 8 ; 6 ; 8
+Joao Rodrigues ; 25/06/2010 ; 7/07/2016 ; 156 ; 24 ; 5 ; 6
+Ricardo Goncalves ; 4/04/2010 ; 3/03/2016 ; 130 ; 0 ; 0 ; 0
+Pedro Soares ; 5/07/2001 ; 20/08/2016 ; 161 ; 8 ; 6 ; 8
+Cristiano Ronaldo ; 3/03/1985 ; 2/03/2016 ; 185 ; 0 ; 0 ; 0
+Francisco Piedade ; 3/04/1997 ; 5/04/2016 ; 138 ; 31 ; 5 ; 4
+Ronaldinho ; 2/02/1984 ; 3/03/2016 ; 179 ; 1 ; 0 ; 0

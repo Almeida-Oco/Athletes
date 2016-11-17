@@ -1,17 +1,20 @@
 #ifndef UTILITIES_H
 #define UTILITIES_H
 
-#include<iostream>
-#include <string>
-#include <vector>
 #include "Player.h"
 #include "Date.h"
+#include<iostream>
+#include <string>
+#include<vector>
 
-std::string removeSpaces(std::string s);//removes extra spaces from a string
-unsigned int actualAge(const Date &birth);
+
+using namespace std;
+
+string removespaces(string s);//removes extra spaces from a string
+int actualage(Date birth);//gives the age that someone born on birth has today
 bool Isleap(int year);//checks if a year is leap or not
-Date currentDate();
-std::vector<std::string> stringSplit(const std::string &line, const std::string &spliter);
+bool isInteger(const string & s);//checks if a string is an integer
+int convint(string s);//converts an integer to a string
 
 struct pScore{
 	Player * player;
