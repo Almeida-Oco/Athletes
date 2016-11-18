@@ -1,6 +1,7 @@
 #include "../Headers/Level.h"
 #include "../Headers/exceptions.h"
-#include<iomanip>
+#include "../Headers/Tournament.h"
+#include "../Headers/Training.h"
 
 using namespace std;
 
@@ -164,6 +165,14 @@ void Level::showTournaments() const {
 		}
 	}
 }
+/*
+* Shows the assiduity score of the first n players, (vector is sorted by score)
+*/
+void Level::showScores(vector<pair<unsigned int,string> > &scores, unsigned int n){
+	for (unsigned int i = 0 ; i < n ; i++){
+		cout << scores.at(i).second << " : " << scores.at(i).first << endl;
+	}
+}
 
 /*
 *Increases by 1 the assiduity of all players whose name appears in the vector of strings
@@ -188,4 +197,29 @@ void Level::lowerAssiduity(const vector<string> &players_names, unsigned int typ
 			players[i]->setAssiduity(players[i]->getAssiduity() - type);
 		}
 	}
+}
+
+vector< pair<unsigned int,string> > Level::calcScores(){
+	vector< pair<unsigned int, string> > scores(this->players.size());
+	for (vector<Player *>::iterator it = this->players.begin() ; it != this->players.end() ; it++)
+		scores.push_back(make_pair( calcScorePlayer( (*it)->getName()) , (*it)->getName() ));
+
+	sort(scores.begin() , scores.end() , sortByScore());
+	return scores;
+}
+
+unsigned int Level::calcScorePlayer(const std::string &name){
+	unsigned int score = 0;
+	for (vector<Event *>::iterator it = this->events.begin() ; it!= this->events.end() ; it++){
+		for (vector<string>::iterator p_it = (*it)->getPresences().begin() ; p_it != (*it)->getPresences().end() ; p_it++){
+			if ( (*p_it) == name){
+				score += (*it)->score();
+				break;
+			}
+		}
+	}
+}
+
+bool sortByScore::operator() (const pair<unsigned int , string> P1, const pair<unsigned int , string> P2){
+	return P1.first < P2.first;
 }

@@ -22,7 +22,7 @@ parameter: const Training & training - training
 Writes the training passed as a parameter in out
 */
 ostream& operator<<(ostream& out, const Training & training){
-	out << training.getDay() << " ; " << training.game << " ; ";
+	out << training.getDay() << " ; " << training.getGame() << " ; ";
 	vector<string> presences = training.getPresences();
 	out << presences.size() << " ; ";
 	for (unsigned int i = 0; i < presences.size(); i++) {
@@ -36,7 +36,7 @@ parameter: istream & in - istream from where training is going to be read
 parameter: Training & training - variable where the training extracted from stream is going to be stored
 Reads training from istream
 */
-istream& operator>>(istream& in, Training & training){
+istream& operator>>(istream& in, Training &training){
 	char semicolon;
 	Date date_day(0,0,0);
 	in>>date_day;

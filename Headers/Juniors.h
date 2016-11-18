@@ -1,5 +1,6 @@
 #ifndef JUNIORS_H
 #define JUNIORS_H
+
 #include "Level.h"
 
 #include <fstream>

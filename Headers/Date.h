@@ -3,7 +3,8 @@
 
 #include<iostream>
 #include<vector>
-using namespace std;
+
+
 class Date {
 	unsigned int day;
 	unsigned int month;
@@ -28,8 +29,8 @@ public:
 
 };
 
-ostream& operator<<(ostream& out, const Date & date);//writes date in ostream out
-istream& operator >> (istream& in, Date & date);//gets date from instream in
+std::ostream& operator<<(std::ostream& out, const Date & date);//writes date in ostream out
+std::istream& operator>>(std::istream& in, Date & date);//gets date from instream in
 
 
 #endif
