@@ -1,6 +1,6 @@
 #include "../Headers/Club.h"
 #include "../Headers/Level.h"
-#include "../Headers/utilities.h"
+#include"../Headers/utilities.h"
 #include "../Headers/Minis.h"
 #include "../Headers/Juveniles.h"
 #include "../Headers/Juniors.h"
@@ -21,7 +21,7 @@ Club * Club::singleton_instance = NULL; //Initially singleton_instance points to
  */
 Club::Club() :
 		minis(new Minis()), juveniles(new Juveniles()), juniors(new Juniors()), seniors(
-				new Seniors()), current_date(Date()) {
+				new Seniors()){
 	leaveprogram = false;
 
 }
@@ -155,7 +155,7 @@ void Club::readtournaments(istream & in) {
  */
 void Club::writeplayers() {
 	ofstream out; //file
-	out.open(filename_players.c_str());
+	out.open(filename_players);
 	vector<Player *> minis_players = minis->getPlayers();
 	vector<Player *> juveniles_players = juveniles->getPlayers();
 	vector<Player *> juniors_players = juniors->getPlayers();
@@ -182,7 +182,7 @@ void Club::writeplayers() {
  */
 void Club::writetrainings() {
 	ofstream out; //file
-	out.open(filename_trainings.c_str());
+	out.open(filename_trainings);
 	vector<Event *> minis_events = minis->getEvents();
 	vector<Event *> juveniles_events = juveniles->getEvents();
 	vector<Event *> juniors_events = juniors->getEvents();
@@ -242,7 +242,7 @@ void Club::writetrainings() {
  */
 void Club::writetournaments() {
 	ofstream out; //file
-	out.open(filename_tournaments.c_str());
+	out.open(filename_tournaments);
 	vector<Event *> minis_events = minis->getEvents();
 	vector<Event *> juveniles_events = juveniles->getEvents();
 	vector<Event *> juniors_events = juniors->getEvents();
@@ -321,34 +321,10 @@ vector<string> Club::getPlayers() const {
 			}
 		}
 	}
-
+	
 	sort(rplayers.begin(), rplayers.end());
 	return rplayers;
 }
 
 
 
-/*
- *Assigns new value to minis
- */
-void Club::setMinis(Level * minis) {
-	this->minis = minis;
-}
-/*
- *Assigns new value to juveniles
- */
-void Club::setJuveniles(Level * juveniles) {
-	this->juveniles = juveniles;
-}
-/*
- *Assigns new value to juniors
- */
-void Club::setJuniors(Level * juniors) {
-	this->juniors = juniors;
-}
-/*
- *Assigns new value to seniors
- */
-void Club::setSeniors(Level * seniors) {
-	this->seniors = seniors;
-}

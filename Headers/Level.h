@@ -1,57 +1,47 @@
 #ifndef LEVEL_H
 #define LEVEL_H
-
+#include "Globals.h"
 #include "Player.h"
 #include "Date.h"
-#include "utilities.h"
+#include "Tournament.h"
+#include "Training.h"
 #include <vector>
-#include <algorithm>
 #include <fstream>
 #include <string>
-#include<iomanip>
 
 class Event;
 
-
-struct sortByScore{
-	bool operator() (const std::pair<unsigned int , std::string> P1 , const std::pair<unsigned int , std::string> P2);
-	//Used to help calculate which players to call for an event
-};
-
 class Level {
-	std::vector <Player *> players;
-	std::vector <Event *> events;
-	std::string coach;
+	vector <Player *> players;//players of this team
+    vector <Event *> events;//events of the level
+	string coach;//level coach
 public:
-	virtual ~Level();
-
-	virtual unsigned int countTrainings(const std::vector<Event *> &ev) const;
-
-	inline std::vector<Player *> getPlayers() const{return this->players;};//gets vector of players
-	inline std::vector<Event *> getEvents() const{return this->events;};//gets vector of events
-	inline std::string getCoach() const { return this->coach; };//gets coach
-	std::vector<Event *> getTrainings() const;//gets vector with the trainings
-	std::vector<Event *> getTournaments() const;//gets vector with the tournaments
-
+	Level(){};//default constructor
+	virtual ~Level();//destructor
+	Level(const Level & level);//copy constructor
+	Level & operator=(const Level & level);//copy assignement operator
+	inline vector<Player *> getPlayers() const{return this->players;};//gets vector of players
+	inline vector<Event *> getEvents() const{return this->events;};//gets vector of events
+	inline string getCoach() const { return this->coach; };//gets coach
+	vector<Event *> getTrainings() const;//gets vector with the trainings
+	vector<Event *> getTournaments() const;//gets vector with the tournaments
 	virtual bool addPlayer(Player * player);//adds player to the vector
 	void addEvent(Event * event);//adds event to the vector
-
 	void setCoach(std::string coach){this->coach=coach;};//sets a new coach
-
-	virtual void showPlayers() const;//shows the players on the screen
-	virtual void showTrainings() const;//shows the trainings on the screen
-	virtual void showTournaments() const;//shows the tournaments on the screen
-	void showScores(std::vector< std::pair<unsigned int , std::string> > &scores, unsigned int n);
-
-	bool removePlayer(const std::string &name);//removes player from the database, including events
-	bool removeEvent(const Date &day); //removes event on that day
-
-	void raiseAssiduity(const std::vector<std::string> &players, unsigned int type);//raises assiduity for the players in the vector
-	void lowerAssiduity(const std::vector<std::string> &players, unsigned int type);//lowers assiduity for the players in the vector
-
-	Player *findPlayer(const std::string &name) const;
-
-	std::vector< std::pair<unsigned int,std::string> > calcScores();
-	unsigned int calcScorePlayer(const std::string &name);
+	virtual void showplayers() const;//shows the players on the screen
+	virtual void showtrainings() const;//shows the trainings on the screen
+	virtual void showtournaments() const;//shows the tournaments on the screen
+	virtual void showevents() const;//shows next events on the calendar on the screen
+	void removeplayer(unsigned int id) { if (id <= players.size()) { players.erase(players.begin() + id - 1); } };//removes player from vector
+	void removeEvent(unsigned int id);//removes event from the vector
+	vector<Event*>getFutureEvents();//shows events scheduled for a posterior date
+	void raiseassiduity(vector<string> players);//raises assiduity for the players in the vector
+	void lowerassiduity(vector<string> players);//lowers assiduity for the players in the vector
+	void raisepgames(vector<string> players);//raises presences in games for the players in the vector
+	void lowerpgames(vector<string> players);//lowers presences in games for the players in the vector
+	void raiseptournaments(vector<string> players);//raises the presences in small tournaments for the players in the vector
+	void lowerptournaments(vector<string> players);//lowers presences in small tournaments for the players in the vector
+	virtual vector<string> getCall(unsigned int size)=0;//returns vector of string with the names of the players called for a tournament
 };
+
 #endif

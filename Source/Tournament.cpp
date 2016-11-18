@@ -4,6 +4,38 @@
 
 using namespace std;
 
+
+/*
+*Copy constructor
+*/
+Tournament::Tournament(const Tournament & tournament) :Event(tournament) { 
+	this->major = tournament.major; 
+	this->rank = rank; 
+	this->results = results; };
+
+/*
+*copy assignement operator
+*/
+Tournament & Tournament::operator=(const Tournament & tournament) { 
+	Event::operator=(tournament); 
+	this->major = tournament.major; 
+	this->rank = rank; 
+	this->results = results; 
+	return *this;
+};
+
+/*
+*constructor with pointer
+*/
+Tournament::Tournament(Event * ev) :Event(*ev) { 
+	this->major = ev->getMajor();
+	this->rank = ev->getRank();
+	this->results = ev->getResults();
+};
+
+/*
+*Prints tournament on the screen
+*/
 void Tournament::show() const {
 	(this->getDay()).show();
 	cout << "| ";
@@ -14,7 +46,8 @@ void Tournament::show() const {
 		cout << "       No       |";
 	}
 	cout << setw(7) << rank <<"|"<< setw(14) << results.size()<<"|";
-	cout << setw(12) << this->getPresences().size();
+	vector<string> vector_presences = this->getPresences();
+	cout << setw(12) << vector_presences.size();
 }
 
 /*

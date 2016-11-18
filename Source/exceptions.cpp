@@ -11,7 +11,3 @@ InvalidPlayer::InvalidPlayer(string name, Date birth) {
 void InvalidPlayer::show() const { 
 	cout << name << " born on: " << birth << " is not a valid player of the team.\n";
 }
-
-void UnexistingPlayer::show() const{
-	cout << name << " does not exist." << endl;
-}
