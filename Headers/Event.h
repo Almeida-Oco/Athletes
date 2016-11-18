@@ -7,24 +7,27 @@
 
 class Event{
 	Date day;
-	std::vector<std::string> presences;
+	vector<string> presences;
 public:
 	Event(){};
+	Event(Date day): day(day){};
 	virtual ~Event(){};
 	virtual bool Istraining() const = 0;
 	virtual bool getGame() const = 0;
-	virtual void writetofile(std::ostream & out) const = 0;
+	virtual void writetofile(ostream & out) const = 0;
+	virtual unsigned int getRank() const = 0;
+	virtual bool getMajor() const = 0;
+	virtual vector<pair<unsigned int, unsigned int>> getResults() = 0;
+	virtual void setResults(vector<pair<unsigned int, unsigned int>> results)=0;
 	inline Date getDay() const {return this->day;}
-
-	inline void setDay(Date day){this->day=day;};
-	virtual inline std::vector<std::string> getPresences() const { return presences; };//gets vector of presences
-	inline void setPresences(std::vector<std::string> presences) { this->presences = presences; };//sets new vector of presences
-	inline void addPresence(const std::string &presence) { presences.push_back(presence); };
+	void setDay(Date day){this->day=day;};
+	vector<string> getPresences() const { return presences; };//gets vector of presences
+	void setPresences(vector<string> presences) { this->presences = presences; };//sets new vector of presences
+	virtual void setRank(unsigned int rank) {};
+	void addPresence(string presence) { presences.push_back(presence); };
 	virtual void show() const = 0;
 	bool operator< (const Event & ev1) const { return day < ev1.day; };
 
-	void outputNames(std::ofstream &out) const;
-	virtual unsigned int score()=0;
 
 };
 
