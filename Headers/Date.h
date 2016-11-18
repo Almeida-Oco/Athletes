@@ -1,10 +1,8 @@
 #ifndef DATE_H
 #define DATE_H
-
 #include<iostream>
 #include<vector>
-
-
+using namespace std;
 class Date {
 	unsigned int day;
 	unsigned int month;
@@ -22,15 +20,17 @@ public:
 	bool operator<(const Date &d1) const;
 	bool operator<=(const Date &d1) const;
 	bool operator==(const Date &d1) const;
-	Date operator-(const Date &d1) const;//this operator return the time that passed between two dates
+
+	Date year_date(unsigned int year) const;//returns the date in year that corresponds to the object date
+	vector<int> operator-(const Date &d1) const;//this operator return the time that passed between two dates
 
 	void show() const;//prints the date on the screen
 
 
 };
 
-std::ostream& operator<<(std::ostream& out, const Date & date);//writes date in ostream out
-std::istream& operator>>(std::istream& in, Date & date);//gets date from instream in
+ostream& operator<<(ostream& out, const Date & date);//writes date in ostream out
+istream& operator >> (istream& in, Date & date);//gets date from instream in
 
 
 #endif

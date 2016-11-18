@@ -1,16 +1,18 @@
 #include "../Headers/Date.h"
 #include "../Headers/utilities.h"
 #include "../Headers/exceptions.h"
-#include "../Headers/utilities.h"
 #include <ctime>
 using namespace std;
 
 
 Date::Date(){
-	Date d = currentDate();
-	this->year = d.year;
-	this->month = d.month;
-	this->day = d.day;
+	struct tm timeinfo;
+	time_t t = time(0);   // gets current time
+	localtime_s(&timeinfo, &t);
+	year = timeinfo.tm_year + 1900;
+	month = timeinfo.tm_mon + 1;
+	day = timeinfo.tm_mday;
+
 }
 
 //This constructor throws an exception if a date is not valid, although it ignores dates with zero parameters 
@@ -30,10 +32,12 @@ bool Date::operator> (const Date &D1) const
 	{
 		if (this->month > D1.month)
 			return true;
-		else if (this->day > D1.day)
-			return true;
-		else
-			return false;
+		else if (this->month == D1.month) {
+			if (this->day > D1.day)
+				return true;
+			else
+				return false;
+		}
 	}
 	return false;
 }
@@ -45,10 +49,12 @@ bool Date::operator>= (const Date &D1) const
 	{
 		if (this->month > D1.month)
 			return true;
-		else if (this->day >= D1.day)
+		else if (this->month == D1.month) {
+		if (this->day >= D1.day)
 			return true;
 		else
 			return false;
+		}
 	}
 	return false;
 }
@@ -62,11 +68,24 @@ bool Date::operator== (const Date &D1) const{
 	return (this->day == D1.day && this->month == D1.month && this->year == D1.year);
 }
 
+/*
+* Gives the date in the current year. For example if the object is 30/07/1997 and the year in 2016 it returns 30/07/2016
+* Return value - Returns the date as described above
+*/
+Date Date::year_date(unsigned int year) const {
+	if ((month == 2) && (day == 29) && !Isleap(year) ) {
+		return Date(28, 2, year);
+	}
+	else {
+		return Date(day, month, year);
+	}
+}
+
 /* Computes the difference between two dates
  * parameter: d1 - Date to be subtracted from the object date
  * Returns the subtraction between the object date and d1
  */
-Date Date::operator-(const Date &d1) const{
+vector<int> Date::operator-(const Date &d1) const{
 	if(*this >= d1){
 		int d,m,y;
 		if(this->day>=d1.day){
@@ -91,15 +110,15 @@ Date Date::operator-(const Date &d1) const{
 				y=this->year-d1.year-1;
 			}
 		}
-		Date dat(d,m,y);
-		return dat;
+		vector<int> v = { y,m,d };
+		return v;
 	}
 	else{
-		Date date = d1-*this;
-		date.year = -date.year;
-		date.month = -date.month;
-		date.day = -date.day;
-		return date;
+		vector<int> v=d1-*this;
+		v[0] = -v[0];
+		v[1] = -v[1];
+		v[2] = -v[2];
+		return v;
 	}
 }
 /*

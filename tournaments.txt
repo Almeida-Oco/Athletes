@@ -1,10 +1,13 @@
 Minis
 2
-5/04/2016 ; 1 ; 4 ; 2 ; 1 5;1 7;2 ; Joao Rodrigues ; Ivo Marques ; 
-21/04/2016 ; 0 ; 1 ; 2 ; 1 0;2 1;0 ; 
+5/04/2016 ; 1 ; 5 ; 2 ; 3 0;1 0;2 ; Joao Rodrigues ; Ivo Marques ; 
+21/04/2016 ; 0 ; 2 ; 2 ; 5 0;7 0;3 ; Antonio Sousa ; Ivo Marques ; Ricardo Goncalves ; 
 Juveniles
 0
 Juniors
 0
 Seniors
-0
+3
+18/11/2016 ; 1 ; 0 ; 0 ; 3 ; Ronaldinho ; Cristiano Ronaldo ; Ricardo Carvalho ; 
+12/12/2016 ; 1 ; 0 ; 0 ; 4 ; Francisco Piedade ; Ronaldinho ; Cristiano Ronaldo ; Ricardo Carvalho ; 
+13/12/2016 ; 1 ; 0 ; 0 ; 4 ; Ronaldinho ; Cristiano Ronaldo ; Ricardo Carvalho ; Zico ; 

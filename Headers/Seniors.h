@@ -5,13 +5,18 @@
 
 
 class Seniors: public Level{
-    const unsigned int age_min = 19 , age_max = 200;
+    const uint age_min = 19 , age_max = 200;
 public:
-    ~Seniors() {};
+    Seniors(){};
+    ~Seniors(){};
+	bool addPlayer(Player player);
 	bool addPlayer(Player * player);
-	virtual void showPlayers() const;//shows the players on the screen
-	virtual void showTrainings() const;//shows the trainings on the screen
-	virtual void showTournaments() const;//shows the tournaments on the screen;
+	virtual void showplayers() const;//shows the players on the screen
+	virtual void showtrainings() const;//shows the trainings on the screen
+	virtual void showtournaments() const;//shows the tournaments on the screen;
+	virtual vector<string> getCall(unsigned int size) ;//returns vector of string with the names of the players called for a tournament
+
+	
 };
 
 #endif

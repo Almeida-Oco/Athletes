@@ -1,16 +1,19 @@
 #ifndef MINIS_H
 #define MINIS_H
 #include "Level.h"
-#include <iostream>
 
 class Minis:public Level{
-    const unsigned int age_min = 4 , age_max = 8;
+    const uint age_min = 4 , age_max = 8;
 public:
-    ~Minis() {};
+    Minis(){};//default constructor
+    ~Minis(){};//destructor
 	bool addPlayer(Player * player);//adds player to the vector of players
-	virtual void showPlayers() const;//shows the players on the screen
-	virtual void showTrainings() const;//shows the trainings on the screen
-	virtual void showTournaments() const;//shows the tournaments on the screen;
+	virtual void showplayers() const;//shows the players on the screen
+	virtual void showtrainings() const;//shows the trainings on the screen
+	virtual void showtournaments() const;//shows the tournaments on the screen;
+	virtual vector<string> getCall( unsigned int size);//returns vector of string with the names of the players called for a tournament
 };
+
+
 
 #endif
