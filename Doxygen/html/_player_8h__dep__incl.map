@@ -1,0 +1,12 @@
+<map id="/home/oco/Documents/gitProjects/Athletes/Headers/Player.h" name="/home/oco/Documents/gitProjects/Athletes/Headers/Player.h">
+<area shape="rect" id="node2" href="$_level_8h.html" title="Contains declaration of Level class. " alt="" coords="209,317,363,373"/>
+<area shape="rect" id="node8" href="$_event_8h.html" title="Contains declaration of class Event and some inline declared functions. " alt="" coords="267,109,422,165"/>
+<area shape="rect" id="node3" href="$_club_8h.html" title="Contains de declaration of the Club class along with its methods and member variables. Some of the methods are already defined in here and declared as inline such as get and set methods. " alt="" coords="209,525,363,581"/>
+<area shape="rect" id="node4" href="$_minis_8h.html" title="Contains the declaration of Level :: Minis. " alt="" coords="30,421,185,477"/>
+<area shape="rect" id="node5" href="$_juveniles_8h.html" title="Contains the declaration of Level :: Juveniles. " alt="" coords="209,421,363,477"/>
+<area shape="rect" id="node6" href="$_juniors_8h.html" title="Contains the declaration of Level :: Juniors. " alt="" coords="387,421,542,477"/>
+<area shape="rect" id="node7" href="$_seniors_8h.html" title="Contains the declaration of Level :: Seniors. " alt="" coords="566,421,721,477"/>
+<area shape="rect" id="node9" href="$_tournament_8h.html" title="Contains the declarations of the class Event :: Tournament. " alt="" coords="265,213,424,269"/>
+<area shape="rect" id="node10" href="$_training_8h.html" title="Contains the declarations of the class Event :: Training. " alt="" coords="449,213,603,269"/>
+<area shape="rect" id="node11" href="$menus_8h.html" title="Contains the declaration of all functions related to the menus. " alt="" coords="627,213,782,269"/>
+</map>

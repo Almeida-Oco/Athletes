@@ -1,0 +1,37 @@
+digraph "/home/oco/Documents/gitProjects/Athletes/Source/Globals.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Globals.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Level.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_level_8h.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Minis.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_minis_8h.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Club.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_club_8h.html",tooltip="Contains de declaration of the Club class along with its methods and member variables. Some of the methods are already defined in here and declared as inline such as get and set methods. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Juveniles.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_juveniles_8h.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Juniors.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_juniors_8h.html"];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Seniors.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_seniors_8h.html"];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Player.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_player_8h.html"];
+  Node8 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Event.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_event_8h.html"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Tournament.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_tournament_8h.html"];
+  Node10 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/Training.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_training_8h.html"];
+  Node11 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="/home/oco/Documents\l/gitProjects/Athletes\l/Source/menus.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$menus_8h.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

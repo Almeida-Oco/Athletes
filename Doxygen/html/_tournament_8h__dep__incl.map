@@ -1,0 +1,8 @@
+<map id="/home/oco/Documents/gitProjects/Athletes/Headers/Tournament.h" name="/home/oco/Documents/gitProjects/Athletes/Headers/Tournament.h">
+<area shape="rect" id="node2" href="$_level_8h.html" title="Contains declaration of Level class. " alt="" coords="209,109,363,165"/>
+<area shape="rect" id="node3" href="$_club_8h.html" title="Contains de declaration of the Club class along with its methods and member variables. Some of the methods are already defined in here and declared as inline such as get and set methods. " alt="" coords="209,317,363,373"/>
+<area shape="rect" id="node4" href="$_minis_8h.html" title="Contains the declaration of Level :: Minis. " alt="" coords="30,213,185,269"/>
+<area shape="rect" id="node5" href="$_juveniles_8h.html" title="Contains the declaration of Level :: Juveniles. " alt="" coords="209,213,363,269"/>
+<area shape="rect" id="node6" href="$_juniors_8h.html" title="Contains the declaration of Level :: Juniors. " alt="" coords="387,213,542,269"/>
+<area shape="rect" id="node7" href="$_seniors_8h.html" title="Contains the declaration of Level :: Seniors. " alt="" coords="566,213,721,269"/>
+</map>

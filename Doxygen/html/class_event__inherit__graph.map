@@ -1,0 +1,4 @@
+<map id="Event" name="Event">
+<area shape="rect" id="node2" href="$class_tournament.html" title="Class to represent the Event Tournament. " alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="$class_training.html" title="Class to represent the Event Training. " alt="" coords="121,80,189,107"/>
+</map>
