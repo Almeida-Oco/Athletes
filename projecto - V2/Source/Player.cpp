@@ -7,7 +7,7 @@ using namespace std;
 
 
 /*
-* This function adds an ECG to the list 
+* This function adds an ECG to the list
 * parameter: ecg_date - date of the ecg that is going to be added to the list
 */
 void Player::addECG(Date ecg_date) {
@@ -49,7 +49,7 @@ Date Player::getLast_Eletro() const {
 * parameter: date - date when  this function is going to check if the ECG is in order
 * Return value: true if the ECG is in order, false otherwise
 */
-bool Player::checkECG(Date & date) const {
+bool Player::checkECG(const Date & date) const {
 	Date last_birthday(0, 0, 0);//date when the player had his last birthday
 	if (date >= birth.year_date(date.getYear())) {
 		last_birthday = birth.year_date(date.getYear());
@@ -125,7 +125,7 @@ bool operator<(const Player_node & pl_left, const Player_node & pl_right) {
 	}
 	else {
 		return pl_left.player->getAssiduity_Curr_Month() + pl_left.player->getGames_Won() > pl_right.player->getAssiduity_Curr_Month() + pl_right.player->getGames_Won();
-	}	
+	}
 }
 
 /*

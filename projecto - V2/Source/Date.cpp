@@ -6,18 +6,18 @@ using namespace std;
 
 
 Date::Date(){
-	struct tm timeinfo;
+	struct tm *timeinfo;
 	time_t t = time(0);   // gets current time
-	localtime_s(&timeinfo, &t);
-	year = timeinfo.tm_year + 1900;
-	month = timeinfo.tm_mon + 1;
-	day = timeinfo.tm_mday;
+	timeinfo = localtime(&t);
+	year = timeinfo->tm_year + 1900;
+	month = timeinfo->tm_mon + 1;
+	day = timeinfo->tm_mday;
 
 }
 
-//This constructor throws an exception if a date is not valid, although it ignores dates with zero parameters 
+//This constructor throws an exception if a date is not valid, although it ignores dates with zero parameters
 Date::Date(unsigned int d,unsigned int m , unsigned int y){
-	unsigned int months[13] = {0, 31,28 + Isleap(y),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
+	unsigned int months[13] = {0, 31,28 + (unsigned int)Isleap(y),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
 	if ((m>12) || (d > months[m])) {
 		throw InvalidDate(d, m, y);
 	}
@@ -175,6 +175,3 @@ void Date::show() const {
 		cout << day;
 	}
 }
-
-
-

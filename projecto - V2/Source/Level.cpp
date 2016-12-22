@@ -77,12 +77,12 @@ vector<Event *> Level::getTournaments() const {
 }
 
 /*
-* Inserts player on the list  
+* Inserts player on the list
 * parameter: player - pointer to the player that is going to be added to the list
 * return value: always true for base class. In derived classes it can be false.
 */
 
-bool Level::addPlayer(Player * player) { 
+bool Level::addPlayer(Player * player) {
 	Player_node node;//node that contains the player player
 	node.player = player;
 	players_tree.insert(node);
@@ -194,13 +194,13 @@ void Level::showevents() const {
 /*
 * This function removes a player from the vector
 */
-void Level::removeplayer(unsigned int id) { 
-	if (id <= players.size()) { 
-		players.erase(players.begin() + id - 1); 
+void Level::removeplayer(unsigned int id) {
+	if (id <= players.size()) {
+		players.erase(players.begin() + id - 1);
 		Player_node node;//node that contains the player player
 		node.player = players[id - 1];
 		players_tree.remove(node);
-	} 
+	}
 };
 
 /*
@@ -230,7 +230,7 @@ vector<Event*> Level::getFutureEvents() {
 */
 void Level::raiseassiduity(vector<string> players_names) {
 	for (unsigned int i = 0; i < players.size(); i++) {
-		if (find(players_names.begin(), players_names.end(), players[i]->getName()) != players_names.end()) {
+		if ( find( players_names.begin(), players_names.end(), players[i]->getName()) != players_names.end()) {
 			players[i]->setAssiduity(players[i]->getAssiduity() + 1);
 		}
 	}
@@ -364,5 +364,3 @@ void Level::makeTree(){
 	}
 
 }
-
-

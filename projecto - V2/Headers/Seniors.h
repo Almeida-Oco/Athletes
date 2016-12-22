@@ -5,7 +5,7 @@
 
 
 class Seniors: public Level{
-    const unsigned int age_min = 19 , age_max = 200;//minimum and maximum age to be on the team
+    const unsigned int age_min = 19 , age_max = 40;//minimum and maximum age to be on the team
 public:
     Seniors(){};//default constructor
     ~Seniors(){};//destructor
@@ -17,7 +17,7 @@ public:
 	virtual void showtournaments() const;//shows the tournaments on the screen;
 	virtual vector<string> getCall(unsigned int size) ;//returns vector of string with the names of the players called for a tournament
 
-	
+
 };
 
 #endif

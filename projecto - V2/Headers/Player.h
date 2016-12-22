@@ -36,7 +36,7 @@ public:
 	void addECG(Date last_eletro);//adds ecg to the list
 	void show() const;//prints the player on the screen
 	Date getLast_Eletro() const;//gets the date when the player had his last ecg
-	bool checkECG(Date & d) const;//checks if the player had his ecg in order on the date d
+	bool checkECG(const Date & d) const;//checks if the player had his ecg in order on the date d
 	bool operator<(const Player & p1) const { return name < p1.name; };//compares players
 	friend ostream& operator<<(ostream& out, const Player & player);//writes date in ostream out
 	friend istream& operator>>(istream& in, Player & player);//gets date from instream in
@@ -52,7 +52,7 @@ struct Player_node {
 bool operator<(const Player_node & pl_left, const Player_node & p_right);//compares players nodes
 
 /*
-This struct will be used to store the players in a priority queue for 
+This struct will be used to store the players in a priority queue for
 */
 struct Player_queue {
 	Player * player;

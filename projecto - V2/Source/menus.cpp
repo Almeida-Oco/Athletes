@@ -189,7 +189,7 @@ Date askfordate() {
 		getline(cin, day);
 		if (isInteger(day) && convint(day) >= 1 && convint(day) <= 31) {
 			day_date = convint(day);
-			unsigned int months[13] = { 0, 31,28 + Isleap(year_date),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
+			unsigned int months[13] = { 0, 31,28 + (unsigned int)Isleap(year_date),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
 			if ((month_date>12) || (day_date > months[month_date])) {
 				cout<< "That day is not valid" << endl;
 			}
@@ -361,7 +361,7 @@ void notifyECG() {
 /*
 * This function displays the main menu for each level(minis, juveniles, juniors, seniors). Then directs the user to the option he chose.
 * parameter: level (0-> minis, 1->juveniles...)
-* 
+*
 */
 void levelmenu(unsigned int level) {
 	Club *club = Club::getinstance();//gets intance of class Club
@@ -445,7 +445,7 @@ void monthlyprizes(unsigned int level) {
 	system(CLEAR);// clears the screen
 	printlevel(level);//prints level
 	cout << "\nMonthly prizes - " << current_date.getMonth() << "/" << current_date.getYear()<<endl<<endl;
-	unsigned int months[13] = { 0, 31,28 + Isleap(current_date.getYear()),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
+	unsigned int months[13] = { 0, 31,28 + (unsigned int)Isleap(current_date.getYear()),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
 	cout << "Temporary list (final prizes will be delivered on " << months[current_date.getMonth()] << "/" << current_date.getMonth() << "/" << current_date.getYear()<<" ):"<<endl;
 	BST<Player_node> tree = club_levels[level]->getPlayers_tree();//players tree
 	BSTItrIn<Player_node> it(tree);//iterator to transverse the tree
@@ -535,7 +535,7 @@ void playersmenu(unsigned int level) {
 				else {
 					errormessage = true;
 				}
-				
+
 			}
 		}
 	} while (!backflag && !club->getleaveprogram());
@@ -732,7 +732,7 @@ void regnewplayermenu() {
 		}
 	}
 
-	
+
 	if (!cancelflag) {
 		cout << "\nIntroduce the date when the player was born" << endl;
 		player_birth = askfordate();
@@ -781,7 +781,7 @@ void regnewplayermenu() {
 	if (!cancelflag) {
 		Player * p = new Player(player_name, player_birth, player_height);
 		p->addECG(player_last_eletro);
-		
+
 		if (club_levels[0]->addPlayer(p)) {
 			cout << player_name << " was registered on the team."<<endl;
 			cout << "He is now part of the Minis team."<<endl;
@@ -968,7 +968,7 @@ void individualtrainingmenu(unsigned int level, unsigned int id) {
 		}
 	} while (!backflag && !club->getleaveprogram());
 
-	
+
 }
 
 void editplayerstraining(unsigned int level, Event * ev){
@@ -982,7 +982,7 @@ void editplayerstraining(unsigned int level, Event * ev){
 	cout << "Edit Players that participated in the Training" << endl;
 	club_levels[level]->showplayers();//shows players that participated in the training
 	while (repeatquestion)
-	{   
+	{
 		cout << "\nType the ID of the player a that was present in the training (or press f if you have already chosen all the players that participated in the training): ";
 		string id;//product typed by the user
 		cin.clear();
@@ -990,7 +990,7 @@ void editplayerstraining(unsigned int level, Event * ev){
 		if (id=="f") {
 			repeatquestion = false;
 		}
-		else if (convint(id) <= 0 || unsigned int(convint(id))>vector_players.size()) {//checks if it was typed a valid player
+		else if (convint(id) <= 0 || (unsigned int)(convint(id))>vector_players.size()) {//checks if it was typed a valid player
 			cout << "The player you selected is not valid" << endl;
 		}
 		else if (alreadychosen[convint(id) - 1]) {//checks if the product has already been chosen
@@ -1017,7 +1017,7 @@ void editplayerstraining(unsigned int level, Event * ev){
 		club_levels[level]->makeTree();//constructs a new tree for this level
 		ev->setPresences(participant_players);
 	}
-	
+
 
 }
 /*
@@ -1153,7 +1153,7 @@ void editplayerstournament(unsigned int level, Event * ev) {
 		if (id == "f") {
 			repeatquestion = false;
 		}
-		else if (convint(id) <= 0 || unsigned int(convint(id))>vector_players.size()) {//checks if it was typed a valid player
+		else if (convint(id) <= 0 || (unsigned int)(convint(id))>vector_players.size()) {//checks if it was typed a valid player
 			cout << "The player you selected is not valid" << endl;
 		}
 		else if (alreadychosen[convint(id) - 1]) {//checks if the product has already been chosen
@@ -1167,20 +1167,20 @@ void editplayerstournament(unsigned int level, Event * ev) {
 			participant_players.push_back(vector_players[convint(id) - 1]->getName());
 		}
 	}
-		
+
 	club_levels[level]->lowerptournaments(ev->getPresences());
 	club_levels[level]->raiseptournaments(participant_players);
 	vector<pair<pair<unsigned int, unsigned int>, string>> results = ev->getResults();//vector with the old results of the tournament
 	vector<string> players_name = ev->getPresences();//vector with the names of the players present in the tournament
 	Date current_date;//current date
 	if (ev->getDay().getMonth() == current_date.getMonth() && ev->getDay().getYear() == current_date.getYear()) {
-	
+
 		club_levels[level]->raisegames_won(players_name, -1, results);
 		club_levels[level]->raisegames_won(participant_players, 1, results);
 		club_levels[level]->makeTree();//constructs a new tree for this level
 	}
 	ev->setPresences(participant_players);
-	
+
 }
 
 
@@ -1355,7 +1355,7 @@ void calendarmenu(unsigned int level) {
 			}
 		}
 	} while (!backflag && !club->getleaveprogram());
-	
+
 }
 
 /*
@@ -1393,7 +1393,7 @@ void individualeventmenu(unsigned int level,unsigned int id) {
 				else {
 					cout << "Small Tournament" << endl;
 				}
-				
+
 			}
 			if (!ev->Istraining() && ev->getMajor()) {
 				cout << "\nPlayers called for the Tournament:" << endl;
@@ -1433,7 +1433,7 @@ void individualeventmenu(unsigned int level,unsigned int id) {
 		}
 	} while (!backflag && !club->getleaveprogram());
 
-	
+
 }
 
 
