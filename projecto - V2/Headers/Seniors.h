@@ -5,12 +5,13 @@
 
 
 class Seniors: public Level{
-    const unsigned int age_min = 19 , age_max = 40;//minimum and maximum age to be on the team
+    const unsigned int age_min = 19 , age_max = 35;//minimum and maximum age to be on the team
 public:
     Seniors(){};//default constructor
     ~Seniors(){};//destructor
 	Seniors(const Seniors & seniors) :Level(seniors) {};//copy constructor
 	Seniors & operator=(const Seniors & seniors) { Level::operator=(seniors); };//assignment operator
+  virtual unsigned int getMaxAge() {return this->age_max;}
 	virtual bool addPlayer(Player * player);//adds player to the team
 	virtual void showplayers() const;//shows the players on the screen
 	virtual void showtrainings() const;//shows the trainings on the screen

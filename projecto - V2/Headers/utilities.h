@@ -20,8 +20,4 @@ bool Isleap(int year);//checks if a year is leap or not
 bool isInteger(const string & s);//checks if a string is an integer
 int convint(string s);//converts an integer to a string
 
-
-
-
-
 #endif

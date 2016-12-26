@@ -1,0 +1,388 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+InvalidPlayer	Source/exceptions.cpp	/^InvalidPlayer::InvalidPlayer(string name, Date birth) {$/;"	f	class:InvalidPlayer
+show	Source/exceptions.cpp	/^void InvalidPlayer::show() const { $/;"	f	class:InvalidPlayer
+removespaces	Source/utilities.cpp	/^string removespaces(string s){$/;"	f
+actualage	Source/utilities.cpp	/^int actualage(Date birth){$/;"	f
+Isleap	Source/utilities.cpp	/^bool Isleap(int year) {$/;"	f
+isInteger	Source/utilities.cpp	/^bool isInteger(const string & s)$/;"	f
+convint	Source/utilities.cpp	/^int convint(string s) {$/;"	f
+Date	Source/Date.cpp	/^Date::Date(){$/;"	f	class:Date
+Date	Source/Date.cpp	/^Date::Date(unsigned int d,unsigned int m , unsigned int y){$/;"	f	class:Date
+operator >	Source/Date.cpp	/^bool Date::operator> (const Date &D1) const{$/;"	f	class:Date
+operator >=	Source/Date.cpp	/^bool Date::operator>= (const Date &D1) const{$/;"	f	class:Date
+operator <=	Source/Date.cpp	/^bool Date::operator<= (const Date &D1) const{$/;"	f	class:Date
+operator <	Source/Date.cpp	/^bool Date::operator< (const Date &D1) const{$/;"	f	class:Date
+operator ==	Source/Date.cpp	/^bool Date::operator== (const Date &D1) const{$/;"	f	class:Date
+addDays	Source/Date.cpp	/^Date Date::addDays(unsigned int n) const{$/;"	f	class:Date
+subtractDays	Source/Date.cpp	/^Date Date::subtractDays(unsigned int n) const{$/;"	f	class:Date
+diffDays	Source/Date.cpp	/^unsigned int Date::diffDays(){$/;"	f	class:Date
+year_date	Source/Date.cpp	/^Date Date::year_date(unsigned int year) const {$/;"	f	class:Date
+operator -	Source/Date.cpp	/^vector<int> Date::operator-(const Date &d1) const{$/;"	f	class:Date
+operator <<	Source/Date.cpp	/^ostream& operator<<(ostream& out, const Date& date){$/;"	f
+operator >>	Source/Date.cpp	/^istream& operator>>(istream& in, Date& date){$/;"	f
+show	Source/Date.cpp	/^void Date::show() const {$/;"	f	class:Date
+Tournament	Source/Tournament.cpp	/^Tournament::Tournament(const Tournament & tournament) :Event(tournament) { $/;"	f	class:Tournament
+operator =	Source/Tournament.cpp	/^Tournament & Tournament::operator=(const Tournament & tournament) { $/;"	f	class:Tournament
+Tournament	Source/Tournament.cpp	/^Tournament::Tournament(Event * ev) :Event(*ev) { $/;"	f	class:Tournament
+show	Source/Tournament.cpp	/^void Tournament::show() const {$/;"	f	class:Tournament
+operator <<	Source/Tournament.cpp	/^ostream & operator<<(ostream& out, const Tournament & tournament){$/;"	f
+operator >>	Source/Tournament.cpp	/^istream & operator>>(istream& in, Tournament & tournament){$/;"	f
+addPlayer	Source/Juveniles.cpp	/^bool Juveniles::addPlayer(Player * player){$/;"	f	class:Juveniles
+showplayers	Source/Juveniles.cpp	/^void Juveniles::showplayers() const {$/;"	f	class:Juveniles
+showtrainings	Source/Juveniles.cpp	/^void Juveniles::showtrainings() const {$/;"	f	class:Juveniles
+showtournaments	Source/Juveniles.cpp	/^void Juveniles::showtournaments() const {$/;"	f	class:Juveniles
+Juvenilescallscore	Source/Juveniles.cpp	/^unsigned int Juvenilescallscore(const Player & player) {$/;"	f
+Juvenilescomp	Source/Juveniles.cpp	/^bool Juvenilescomp(const Player & Player_left, const Player & Player_right) {$/;"	f
+getCall	Source/Juveniles.cpp	/^vector<string> Juveniles::getCall(unsigned int size) {$/;"	f	class:Juveniles
+readplayers	Source/menus.cpp	/^int readplayers() {$/;"	f
+readtrainings	Source/menus.cpp	/^int readtrainings() {$/;"	f
+readtournaments	Source/menus.cpp	/^int readtournaments() {$/;"	f
+askfordate	Source/menus.cpp	/^Date askfordate() {$/;"	f
+printlevel	Source/menus.cpp	/^void printlevel(unsigned int level) {$/;"	f
+initialmenu	Source/menus.cpp	/^void initialmenu() {$/;"	f
+birthdaycards	Source/menus.cpp	/^void birthdaycards() {$/;"	f
+notifyECG	Source/menus.cpp	/^void notifyECG() {$/;"	f
+levelmenu	Source/menus.cpp	/^void levelmenu(unsigned int level) {$/;"	f
+monthlyprizes	Source/menus.cpp	/^void monthlyprizes(unsigned int level) {$/;"	f
+changecoachmenu	Source/menus.cpp	/^void changecoachmenu(unsigned level) {$/;"	f
+playersmenu	Source/menus.cpp	/^void playersmenu(unsigned int level) {$/;"	f
+individualplayermenu	Source/menus.cpp	/^void individualplayermenu(unsigned int level, unsigned int id) {$/;"	f
+actualizeECG	Source/menus.cpp	/^void actualizeECG(unsigned int level, unsigned int id) {$/;"	f
+actualizeheight	Source/menus.cpp	/^void actualizeheight(unsigned int level, unsigned int id) {$/;"	f
+removeplayer	Source/menus.cpp	/^void removeplayer(unsigned int level, unsigned int id) {$/;"	f
+regnewplayermenu	Source/menus.cpp	/^void regnewplayermenu() {$/;"	f
+trainingsmenu	Source/menus.cpp	/^void trainingsmenu(unsigned int level) {$/;"	f
+tournamentsmenu	Source/menus.cpp	/^void tournamentsmenu(unsigned int level) {$/;"	f
+individualtrainingmenu	Source/menus.cpp	/^void individualtrainingmenu(unsigned int level, unsigned int id) {$/;"	f
+editplayerstraining	Source/menus.cpp	/^void editplayerstraining(unsigned int level, Event * ev){$/;"	f
+individualtournamentmenu	Source/menus.cpp	/^void individualtournamentmenu(unsigned int level, unsigned int id) {$/;"	f
+editplayerstournament	Source/menus.cpp	/^void editplayerstournament(unsigned int level, Event * ev) {$/;"	f
+editranktournament	Source/menus.cpp	/^void editranktournament(unsigned int level, Event * tournament) {$/;"	f
+editresultstournament	Source/menus.cpp	/^void editresultstournament(unsigned int level, Event * tournament) {$/;"	f
+calendarmenu	Source/menus.cpp	/^void calendarmenu(unsigned int level) {$/;"	f
+individualeventmenu	Source/menus.cpp	/^void individualeventmenu(unsigned int level,unsigned int id) {$/;"	f
+removeevent	Source/menus.cpp	/^void removeevent(unsigned int level, unsigned int id) {$/;"	f
+scheduleeventmenu	Source/menus.cpp	/^void scheduleeventmenu(unsigned int level) {$/;"	f
+askeventdate	Source/menus.cpp	/^void askeventdate(unsigned int level, unsigned int ev) {$/;"	f
+makecall	Source/menus.cpp	/^void makecall(unsigned int level, Event * tournament) {$/;"	f
+~Level	Source/Level.cpp	/^Level::~Level() {$/;"	f	class:Level
+Level	Source/Level.cpp	/^Level::Level(const Level & level):players_tree(level.players_tree) {$/;"	f	class:Level
+operator =	Source/Level.cpp	/^Level & Level::operator=(const Level & level) {$/;"	f	class:Level
+getTrainings	Source/Level.cpp	/^vector<Event *> Level::getTrainings() const{$/;"	f	class:Level
+getTournaments	Source/Level.cpp	/^vector<Event *> Level::getTournaments() const {$/;"	f	class:Level
+addPlayer	Source/Level.cpp	/^bool Level::addPlayer(Player * player) {$/;"	f	class:Level
+addEvent	Source/Level.cpp	/^void Level::addEvent(Event * ev) {$/;"	f	class:Level
+showplayers	Source/Level.cpp	/^void Level::showplayers() const {$/;"	f	class:Level
+showtrainings	Source/Level.cpp	/^void Level::showtrainings() const {$/;"	f	class:Level
+showtournaments	Source/Level.cpp	/^void Level::showtournaments() const {$/;"	f	class:Level
+showevents	Source/Level.cpp	/^void Level::showevents() const {$/;"	f	class:Level
+removeplayer	Source/Level.cpp	/^void Level::removeplayer(unsigned int id) {$/;"	f	class:Level
+removeEvent	Source/Level.cpp	/^void Level::removeEvent(unsigned int id) {$/;"	f	class:Level
+getFutureEvents	Source/Level.cpp	/^vector<Event*> Level::getFutureEvents() {$/;"	f	class:Level
+raiseassiduity	Source/Level.cpp	/^void Level::raiseassiduity(vector<string> players_names) {$/;"	f	class:Level
+lowerassiduity	Source/Level.cpp	/^void Level::lowerassiduity(vector<string> players_names) {$/;"	f	class:Level
+raisepgames	Source/Level.cpp	/^void Level::raisepgames(vector<string> players_names) {$/;"	f	class:Level
+lowerpgames	Source/Level.cpp	/^void Level::lowerpgames(vector<string> players_names) {$/;"	f	class:Level
+raiseptournaments	Source/Level.cpp	/^void Level::raiseptournaments(vector<string> players_names) {$/;"	f	class:Level
+lowerptournaments	Source/Level.cpp	/^void Level::lowerptournaments(vector<string> players_names) {$/;"	f	class:Level
+raisegames_won	Source/Level.cpp	/^void Level::raisegames_won(vector<string> players_names, int value, vector<pair<pair<unsigned int, unsigned int>, string >> results) {$/;"	f	class:Level
+raiseassiduity_curr	Source/Level.cpp	/^void Level::raiseassiduity_curr(vector<string> players_names, int value) {$/;"	f	class:Level
+actualize_curr_parameters	Source/Level.cpp	/^void Level::actualize_curr_parameters() {$/;"	f	class:Level
+makeTree	Source/Level.cpp	/^void Level::makeTree(){$/;"	f	class:Level
+Club	Source/Club.cpp	/^Club::Club() :$/;"	f	class:Club
+~Club	Source/Club.cpp	/^Club::~Club() {$/;"	f	class:Club
+getinstance	Source/Club.cpp	/^Club * Club::getinstance() {$/;"	f	class:Club
+readplayers	Source/Club.cpp	/^void Club::readplayers(istream &in) {$/;"	f	class:Club
+readtrainings	Source/Club.cpp	/^void Club::readtrainings(istream &in) {$/;"	f	class:Club
+readtournaments	Source/Club.cpp	/^void Club::readtournaments(istream & in) {$/;"	f	class:Club
+writeplayers	Source/Club.cpp	/^void Club::writeplayers() {$/;"	f	class:Club
+writetrainings	Source/Club.cpp	/^void Club::writetrainings() {$/;"	f	class:Club
+writetournaments	Source/Club.cpp	/^void Club::writetournaments() {$/;"	f	class:Club
+getPlayers	Source/Club.cpp	/^vector<string> Club::getPlayers() const {$/;"	f	class:Club
+makeTree	Source/Club.cpp	/^void Club::makeTree() {$/;"	f	class:Club
+makeQueue	Source/Club.cpp	/^void Club::makeQueue() {$/;"	f	class:Club
+addPlayerQueue	Source/Club.cpp	/^void Club::addPlayerQueue(Player * pl) {$/;"	f	class:Club
+removePlayerQueue	Source/Club.cpp	/^void Club::removePlayerQueue(Player * pl) {$/;"	f	class:Club
+showQueue	Source/Club.cpp	/^void Club::showQueue() {$/;"	f	class:Club
+addBirthday	Source/Club.cpp	/^bool Club::addBirthday(Player *p1){$/;"	f	class:Club
+removeBirthday	Source/Club.cpp	/^bool Club::removeBirthday(Player *p1){$/;"	f	class:Club
+findOldPlayer	Source/Club.cpp	/^bool Club::findOldPlayer(Player *p1){$/;"	f	class:Club
+nextBirthdays	Source/Club.cpp	/^list<Player *> Club::nextBirthdays(unsigned int days=10) const{$/;"	f	class:Club
+addPlayer	Source/Seniors.cpp	/^bool Seniors::addPlayer(Player * player){$/;"	f	class:Seniors
+showplayers	Source/Seniors.cpp	/^void Seniors::showplayers() const {$/;"	f	class:Seniors
+showtrainings	Source/Seniors.cpp	/^void Seniors::showtrainings() const {$/;"	f	class:Seniors
+showtournaments	Source/Seniors.cpp	/^void Seniors::showtournaments() const {$/;"	f	class:Seniors
+Seniorscallscore	Source/Seniors.cpp	/^unsigned int Seniorscallscore(const Player & player) {$/;"	f
+Seniorscomp	Source/Seniors.cpp	/^bool Seniorscomp(const Player & Player_left, const Player & Player_right) {$/;"	f
+getCall	Source/Seniors.cpp	/^vector<string> Seniors::getCall(unsigned int size) {$/;"	f	class:Seniors
+addECG	Source/Player.cpp	/^void Player::addECG(Date ecg_date) {$/;"	f	class:Player
+show	Source/Player.cpp	/^void Player::show() const {$/;"	f	class:Player
+getLast_Eletro	Source/Player.cpp	/^Date Player::getLast_Eletro() const {$/;"	f	class:Player
+checkECG	Source/Player.cpp	/^bool Player::checkECG(const Date & date) const {$/;"	f	class:Player
+operator <<	Source/Player.cpp	/^ostream & operator<<(ostream& out, const Player & player){$/;"	f
+operator >>	Source/Player.cpp	/^istream& operator>>(istream& in, Player & player){$/;"	f
+operator <	Source/Player.cpp	/^bool operator<(const Player_node & pl_left, const Player_node & pl_right) {$/;"	f
+operator <	Source/Player.cpp	/^bool operator<(const Player_queue & pl_left, const Player_queue & pl_right) {$/;"	f
+addPlayer	Source/Minis.cpp	/^bool Minis::addPlayer(Player * player){$/;"	f	class:Minis
+showplayers	Source/Minis.cpp	/^void Minis::showplayers() const {$/;"	f	class:Minis
+showtrainings	Source/Minis.cpp	/^void Minis::showtrainings() const {$/;"	f	class:Minis
+showtournaments	Source/Minis.cpp	/^void Minis::showtournaments() const {$/;"	f	class:Minis
+Miniscallscore	Source/Minis.cpp	/^unsigned int Miniscallscore(const Player & player) {$/;"	f
+Miniscomp	Source/Minis.cpp	/^bool Miniscomp(const Player & Player_left,const Player & Player_right) {$/;"	f
+getCall	Source/Minis.cpp	/^vector<string> Minis::getCall(unsigned int size) {$/;"	f	class:Minis
+addPlayer	Source/Juniors.cpp	/^bool Juniors::addPlayer(Player * player){$/;"	f	class:Juniors
+showplayers	Source/Juniors.cpp	/^void Juniors::showplayers() const {$/;"	f	class:Juniors
+showtrainings	Source/Juniors.cpp	/^void Juniors::showtrainings() const {$/;"	f	class:Juniors
+showtournaments	Source/Juniors.cpp	/^void Juniors::showtournaments() const {$/;"	f	class:Juniors
+Juniorscallscore	Source/Juniors.cpp	/^unsigned int Juniorscallscore(const Player & player) {$/;"	f
+Juniorscomp	Source/Juniors.cpp	/^bool Juniorscomp(const Player & Player_left, const Player & Player_right) {$/;"	f
+getCall	Source/Juniors.cpp	/^vector<string> Juniors::getCall(unsigned int size) {$/;"	f	class:Juniors
+Training	Source/Training.cpp	/^Training::Training(const Training & training):Event(training) {$/;"	f	class:Training
+operator =	Source/Training.cpp	/^Training & Training::operator=(const Training & training) {$/;"	f	class:Training
+Training	Source/Training.cpp	/^Training::Training(Event * ev) :Event(*ev) { $/;"	f	class:Training
+show	Source/Training.cpp	/^void Training::show() const{$/;"	f	class:Training
+operator <<	Source/Training.cpp	/^ostream& operator<<(ostream& out, const Training & training){$/;"	f
+operator >>	Source/Training.cpp	/^istream& operator>>(istream& in, Training & training){$/;"	f
+main	Source/main.cpp	/^int main(){$/;"	f
+PLAYER_H	Headers/Player.h	2;"	d
+Player	Headers/Player.h	/^class Player{$/;"	c
+name	Headers/Player.h	/^  string name;\/\/name of the player$/;"	m	class:Player
+birth	Headers/Player.h	/^  Date birth;\/\/date when the player was born$/;"	m	class:Player
+ecg	Headers/Player.h	/^	vector<Date> ecg;\/\/vector of dates when the player had an ecg$/;"	m	class:Player
+got_present	Headers/Player.h	/^  bool got_present = false;$/;"	m	class:Player
+height	Headers/Player.h	/^  unsigned int height;\/\/height of the player in cm$/;"	m	class:Player
+assiduity	Headers/Player.h	/^  unsigned int assiduity;\/\/this parameter gives the assiduity of a player in the trainings$/;"	m	class:Player
+presences_games	Headers/Player.h	/^  unsigned int presences_games;\/\/this parameter gives the assiduity of a player in the training games$/;"	m	class:Player
+presences_stournaments	Headers/Player.h	/^	unsigned int presences_stournaments;\/\/this parameter gives the assiduity of a player in the small tournaments$/;"	m	class:Player
+assiduity_curr_month	Headers/Player.h	/^	unsigned int assiduity_curr_month;\/\/this parameter gives the assiduity of a player in a training in the current month$/;"	m	class:Player
+games_won	Headers/Player.h	/^	unsigned int games_won;\/\/this parameter gives the number of games won by a certain player in the current month$/;"	m	class:Player
+Player	Headers/Player.h	/^	Player():birth(Date(0,0,0)){};\/\/default constructor$/;"	f	class:Player
+Player	Headers/Player.h	/^  Player(Date birth_date) : name("") , birth(birth_date) , got_present(false) , height(0) , assiduity(0) , presences_games(0) , presences_stournaments(0) , assiduity_curr_month(0) , games_won(0) {};$/;"	f	class:Player
+Player	Headers/Player.h	/^	Player(string name, Date birth_date, unsigned int height) :birth(birth_date) { this->name = name; this->height = height; this->assiduity = 0; this->presences_games = 0; this->presences_stournaments = 0; };\/\/constructor with parameters$/;"	f	class:Player
+getName	Headers/Player.h	/^	inline string getName() const {return this->name;}\/\/gets name$/;"	f	class:Player
+getBirth	Headers/Player.h	/^	inline Date getBirth() const {return this->birth;}\/\/gets birth$/;"	f	class:Player
+getECG	Headers/Player.h	/^	inline vector<Date> getECG() const {return this->ecg;}\/\/gets ecg$/;"	f	class:Player
+getHeight	Headers/Player.h	/^	inline unsigned int getHeight() const {return this->height;}\/\/gets height$/;"	f	class:Player
+getAssiduity	Headers/Player.h	/^	inline unsigned int getAssiduity() const { return this->assiduity; };\/\/gets assiduity$/;"	f	class:Player
+getPresences_games	Headers/Player.h	/^	inline unsigned int getPresences_games() const { return this->presences_games; };\/\/gets presences in games$/;"	f	class:Player
+getPresences_stournaments	Headers/Player.h	/^	inline unsigned int getPresences_stournaments() const { return this->presences_stournaments;};\/\/gets presences in s_tournaments$/;"	f	class:Player
+getAssiduity_Curr_Month	Headers/Player.h	/^	inline unsigned int getAssiduity_Curr_Month() const { return assiduity_curr_month;};\/\/gets assiduity in the current month$/;"	f	class:Player
+getGames_Won	Headers/Player.h	/^	inline unsigned int getGames_Won() const { return this->games_won; };\/\/gets games won by the player in the current month$/;"	f	class:Player
+setAssiduity	Headers/Player.h	/^	void setAssiduity(unsigned int assiduity) { this->assiduity = assiduity; };\/\/sets assiduity$/;"	f	class:Player
+setPresences_games	Headers/Player.h	/^	void setPresences_games(unsigned int presences_games) { this->presences_games = presences_games; };\/\/sets presences in games$/;"	f	class:Player
+setPresences_stournaments	Headers/Player.h	/^	void setPresences_stournaments(unsigned int presences_stournaments) { this->presences_stournaments = presences_stournaments; };\/\/sets presences in small tournaments$/;"	f	class:Player
+setAssiduity_Curr_Month	Headers/Player.h	/^	void setAssiduity_Curr_Month(unsigned int assiduity) { this->assiduity_curr_month = assiduity;};\/\/sets the assiduity of the player in the current month$/;"	f	class:Player
+setGames_Won	Headers/Player.h	/^	void setGames_Won(unsigned int games) { this->games_won = games; };\/\/sets the number of games won by the player$/;"	f	class:Player
+setHeight	Headers/Player.h	/^	void setHeight(unsigned int height) { this->height = height; };\/\/sets height$/;"	f	class:Player
+operator <	Headers/Player.h	/^  bool operator<(const Player & p1) const { return name < p1.name; };\/\/compares players$/;"	f	class:Player
+operator ==	Headers/Player.h	/^  bool operator== (const Player &p1) const {return this->name == p1.name;}$/;"	f	class:Player
+Player_node	Headers/Player.h	/^struct Player_node {$/;"	s
+player	Headers/Player.h	/^	Player * player;$/;"	m	struct:Player_node
+Player_queue	Headers/Player.h	/^struct Player_queue {$/;"	s
+player	Headers/Player.h	/^	Player * player;$/;"	m	struct:Player_queue
+JUVENILES_H	Headers/Juveniles.h	2;"	d
+Juveniles	Headers/Juveniles.h	/^class Juveniles : public Level{$/;"	c
+age_min	Headers/Juveniles.h	/^    const unsigned int age_min = 9 , age_max = 13;\/\/minimum and maximum age to be on the team$/;"	m	class:Juveniles
+age_max	Headers/Juveniles.h	/^    const unsigned int age_min = 9 , age_max = 13;\/\/minimum and maximum age to be on the team$/;"	m	class:Juveniles
+Juveniles	Headers/Juveniles.h	/^    Juveniles(){};\/\/default constructor$/;"	f	class:Juveniles
+~Juveniles	Headers/Juveniles.h	/^    ~Juveniles(){};\/\/destructor$/;"	f	class:Juveniles
+Juveniles	Headers/Juveniles.h	/^	Juveniles(const Juveniles & juveniles) :Level(juveniles) {};\/\/copy constructor$/;"	f	class:Juveniles
+operator =	Headers/Juveniles.h	/^	Juveniles & operator=(const Juveniles & juveniles) { Level::operator=(juveniles); };\/\/assignment operator$/;"	f	class:Juveniles
+getMaxAge	Headers/Juveniles.h	/^  virtual unsigned int getMaxAge() {return this->age_max;}$/;"	f	class:Juveniles
+CLEAR	Headers/utilities.h	2;"	d
+CLEAR	Headers/utilities.h	4;"	d
+UTILITIES_H	Headers/utilities.h	8;"	d
+EVENT_H	Headers/Event.h	2;"	d
+Event	Headers/Event.h	/^class Event{$/;"	c
+day	Headers/Event.h	/^	Date day;\/\/day when the event was realized$/;"	m	class:Event
+presences	Headers/Event.h	/^	vector<string> presences;\/\/players that participated in the tournament$/;"	m	class:Event
+Event	Headers/Event.h	/^	Event(){};\/\/default constructor$/;"	f	class:Event
+~Event	Headers/Event.h	/^	virtual ~Event() {};\/\/destructor$/;"	f	class:Event
+Event	Headers/Event.h	/^	Event(const Event & ev) { day = ev.day; presences = ev.presences; };\/\/copy constructor$/;"	f	class:Event
+operator =	Headers/Event.h	/^	Event & operator=(const Event & ev) { day = ev.day; presences = ev.presences; return *this; };\/\/copy assignement$/;"	f	class:Event
+Event	Headers/Event.h	/^	Event(Date day): day(day){};\/\/constructor with parameter day$/;"	f	class:Event
+getPresences	Headers/Event.h	/^	vector<string> getPresences() const { return presences; };\/\/gets vector of presences$/;"	f	class:Event
+getDay	Headers/Event.h	/^	inline Date getDay() const { return this->day; };\/\/gets day$/;"	f	class:Event
+setDay	Headers/Event.h	/^	void setDay(Date day) { this->day = day;};\/\/sets day$/;"	f	class:Event
+setPresences	Headers/Event.h	/^	void setPresences(vector<string> presences) { this->presences = presences; };\/\/sets new vector of presences$/;"	f	class:Event
+addPresence	Headers/Event.h	/^	void addPresence(string presence) { presences.push_back(presence); };\/\/adds the name of a player to presences$/;"	f	class:Event
+operator <	Headers/Event.h	/^	bool operator< (const Event & ev1) const { return day < ev1.day; };\/\/returns true if event obj. happened before ev1$/;"	f	class:Event
+MENUS_H	Headers/menus.h	2;"	d
+_BST_H_	Headers/BST.h	4;"	d
+BinaryNode	Headers/BST.h	/^class BinaryNode$/;"	c
+element	Headers/BST.h	/^  Comparable element;$/;"	m	class:BinaryNode
+left	Headers/BST.h	/^  BinaryNode *left;$/;"	m	class:BinaryNode
+right	Headers/BST.h	/^  BinaryNode *right;$/;"	m	class:BinaryNode
+BinaryNode	Headers/BST.h	/^  BinaryNode( const Comparable & theElement, BinaryNode *lt, BinaryNode *rt )$/;"	f	class:BinaryNode
+BST	Headers/BST.h	/^class BST$/;"	c
+root	Headers/BST.h	/^  BinaryNode<Comparable> *root;$/;"	m	class:BST
+ITEM_NOT_FOUND	Headers/BST.h	/^  const Comparable ITEM_NOT_FOUND;$/;"	m	class:BST
+BST	Headers/BST.h	/^BST<Comparable>::BST( const Comparable & notFound ) :$/;"	f	class:BST
+BST	Headers/BST.h	/^BST<Comparable>::BST( const BST<Comparable> & rhs ) : root( NULL ), ITEM_NOT_FOUND( rhs.ITEM_NOT_FOUND )$/;"	f	class:BST
+~BST	Headers/BST.h	/^BST<Comparable>::~BST( )$/;"	f	class:BST
+insert	Headers/BST.h	/^void BST<Comparable>::insert( const Comparable & x )$/;"	f	class:BST
+remove	Headers/BST.h	/^void BST<Comparable>::remove( const Comparable & x )$/;"	f	class:BST
+findMin	Headers/BST.h	/^const Comparable & BST<Comparable>::findMin( ) const$/;"	f	class:BST
+findMax	Headers/BST.h	/^const Comparable & BST<Comparable>::findMax( ) const$/;"	f	class:BST
+find	Headers/BST.h	/^find( const Comparable & x ) const$/;"	f	class:BST
+makeEmpty	Headers/BST.h	/^void BST<Comparable>::makeEmpty( )$/;"	f	class:BST
+isEmpty	Headers/BST.h	/^bool BST<Comparable>::isEmpty( ) const$/;"	f	class:BST
+printTree	Headers/BST.h	/^void BST<Comparable>::printTree( ) const$/;"	f	class:BST
+operator =	Headers/BST.h	/^operator=( const BST<Comparable> & rhs )$/;"	f	class:BST
+elementAt	Headers/BST.h	/^elementAt( BinaryNode<Comparable> *t ) const$/;"	f	class:BST
+insert	Headers/BST.h	/^insert( const Comparable & x, BinaryNode<Comparable> * & t ) const$/;"	f	class:BST
+remove	Headers/BST.h	/^remove( const Comparable & x, BinaryNode<Comparable> * & t ) const$/;"	f	class:BST
+findMin	Headers/BST.h	/^BST<Comparable>::findMin( BinaryNode<Comparable> *t ) const$/;"	f	class:BST
+findMax	Headers/BST.h	/^BST<Comparable>::findMax( BinaryNode<Comparable> *t ) const$/;"	f	class:BST
+find	Headers/BST.h	/^find( const Comparable & x, BinaryNode<Comparable> *t ) const$/;"	f	class:BST
+makeEmpty	Headers/BST.h	/^makeEmpty( BinaryNode<Comparable> * & t ) const$/;"	f	class:BST
+printTree	Headers/BST.h	/^void BST<Comparable>::printTree( BinaryNode<Comparable> *t ) const$/;"	f	class:BST
+clone	Headers/BST.h	/^BST<Comparable>::clone( BinaryNode<Comparable> * t ) const$/;"	f	class:BST
+BSTItrPost	Headers/BST.h	/^class BSTItrPost {$/;"	c
+retrieve	Headers/BST.h	/^  Comparable &retrieve() { return itrStack.top()->element; }$/;"	f	class:BSTItrPost
+isAtEnd	Headers/BST.h	/^  bool isAtEnd() {return itrStack.empty(); }$/;"	f	class:BSTItrPost
+itrStack	Headers/BST.h	/^  stack<BinaryNode<Comparable> *> itrStack;$/;"	m	class:BSTItrPost
+visitStack	Headers/BST.h	/^  stack<bool> visitStack;$/;"	m	class:BSTItrPost
+BSTItrPost	Headers/BST.h	/^BSTItrPost<Comparable>::BSTItrPost (const BST<Comparable> &bt)$/;"	f	class:BSTItrPost
+advance	Headers/BST.h	/^void BSTItrPost<Comparable>::advance ()$/;"	f	class:BSTItrPost
+slideDown	Headers/BST.h	/^void BSTItrPost<Comparable>::slideDown(BinaryNode<Comparable> *n)$/;"	f	class:BSTItrPost
+BSTItrPre	Headers/BST.h	/^class BSTItrPre {$/;"	c
+retrieve	Headers/BST.h	/^  Comparable &retrieve() { return itrStack.top()->element; }$/;"	f	class:BSTItrPre
+isAtEnd	Headers/BST.h	/^  bool isAtEnd() {return itrStack.empty(); }$/;"	f	class:BSTItrPre
+itrStack	Headers/BST.h	/^  stack<BinaryNode<Comparable> *> itrStack;$/;"	m	class:BSTItrPre
+BSTItrPre	Headers/BST.h	/^BSTItrPre<Comparable>::BSTItrPre (const BST<Comparable> &bt)$/;"	f	class:BSTItrPre
+advance	Headers/BST.h	/^void BSTItrPre<Comparable>::advance()$/;"	f	class:BSTItrPre
+BSTItrIn	Headers/BST.h	/^class BSTItrIn {$/;"	c
+retrieve	Headers/BST.h	/^  Comparable &retrieve() { return itrStack.top()->element; }$/;"	f	class:BSTItrIn
+isAtEnd	Headers/BST.h	/^  bool isAtEnd() {return itrStack.empty(); }$/;"	f	class:BSTItrIn
+itrStack	Headers/BST.h	/^  stack<BinaryNode<Comparable> *> itrStack;$/;"	m	class:BSTItrIn
+BSTItrIn	Headers/BST.h	/^BSTItrIn<Comparable>::BSTItrIn (const BST<Comparable> &bt)$/;"	f	class:BSTItrIn
+slideLeft	Headers/BST.h	/^void BSTItrIn<Comparable>::slideLeft(BinaryNode<Comparable> *n)$/;"	f	class:BSTItrIn
+advance	Headers/BST.h	/^void BSTItrIn<Comparable>::advance()$/;"	f	class:BSTItrIn
+BSTItrLevel	Headers/BST.h	/^class BSTItrLevel {$/;"	c
+retrieve	Headers/BST.h	/^  Comparable &retrieve() { return itrQueue.front()->element; }$/;"	f	class:BSTItrLevel
+isAtEnd	Headers/BST.h	/^  bool isAtEnd() {return itrQueue.empty(); }$/;"	f	class:BSTItrLevel
+itrQueue	Headers/BST.h	/^  queue<BinaryNode<Comparable> *> itrQueue;$/;"	m	class:BSTItrLevel
+BSTItrLevel	Headers/BST.h	/^BSTItrLevel<Comparable>::BSTItrLevel (const BST<Comparable> &bt)$/;"	f	class:BSTItrLevel
+advance	Headers/BST.h	/^void BSTItrLevel<Comparable>::advance()$/;"	f	class:BSTItrLevel
+TOURNAMENT_H	Headers/Tournament.h	2;"	d
+Tournament	Headers/Tournament.h	/^class Tournament:public Event{$/;"	c
+major	Headers/Tournament.h	/^	bool major; \/\/ = True -> major Tournament , = False -> small Tournament$/;"	m	class:Tournament
+rank	Headers/Tournament.h	/^    unsigned int rank;\/\/rank of the team$/;"	m	class:Tournament
+results	Headers/Tournament.h	/^   vector< pair<pair<unsigned int, unsigned int>, string >> results;\/\/results of the team$/;"	m	class:Tournament
+Tournament	Headers/Tournament.h	/^    Tournament(){};\/\/default constructor$/;"	f	class:Tournament
+~Tournament	Headers/Tournament.h	/^    virtual ~Tournament(){};\/\/destructor$/;"	f	class:Tournament
+Tournament	Headers/Tournament.h	/^	Tournament(Date day, bool major) : Event(day) { this->major = major; };\/\/constructor with day and major parameter$/;"	f	class:Tournament
+Istraining	Headers/Tournament.h	/^	virtual bool Istraining() const{return false;};\/\/returns false as the event is not a training$/;"	f	class:Tournament
+getGame	Headers/Tournament.h	/^	virtual bool getGame() const { return false; };\/\/gets game$/;"	f	class:Tournament
+getRank	Headers/Tournament.h	/^	virtual unsigned int getRank() const { return rank;}\/\/gets rank$/;"	f	class:Tournament
+getMajor	Headers/Tournament.h	/^	virtual bool getMajor() const { return major; };\/\/gets major$/;"	f	class:Tournament
+getResults	Headers/Tournament.h	/^	virtual vector<pair<pair<unsigned int, unsigned int>, string >> getResults() const{ return results;};\/\/gets results$/;"	f	class:Tournament
+setResults	Headers/Tournament.h	/^	virtual void setResults(vector<pair<pair<unsigned int, unsigned int>, string >> results) { this->results = results; };\/\/sets results$/;"	f	class:Tournament
+setRank	Headers/Tournament.h	/^	virtual void setRank(unsigned int rank) { this->rank = rank; };\/\/sets rank$/;"	f	class:Tournament
+writetofile	Headers/Tournament.h	/^	virtual void writetofile(ostream & out) const {out<<*this;};\/\/writes tournament to file$/;"	f	class:Tournament
+MINIS_H	Headers/Minis.h	2;"	d
+Minis	Headers/Minis.h	/^class Minis:public Level{$/;"	c
+age_min	Headers/Minis.h	/^    const unsigned int age_min = 4 , age_max = 8;\/\/minimum and maximum age to be on the team$/;"	m	class:Minis
+age_max	Headers/Minis.h	/^    const unsigned int age_min = 4 , age_max = 8;\/\/minimum and maximum age to be on the team$/;"	m	class:Minis
+Minis	Headers/Minis.h	/^    Minis(){};\/\/default constructor$/;"	f	class:Minis
+~Minis	Headers/Minis.h	/^    ~Minis(){};\/\/destructor$/;"	f	class:Minis
+Minis	Headers/Minis.h	/^	Minis(const Minis & minis) :Level(minis) {};\/\/copy constructor$/;"	f	class:Minis
+operator =	Headers/Minis.h	/^	Minis & operator=(const Minis & minis) { Level::operator=(minis); };\/\/assignment operator$/;"	f	class:Minis
+getMaxAge	Headers/Minis.h	/^  virtual unsigned int getMaxAge() {return this->age_max;}$/;"	f	class:Minis
+SENIORS_H	Headers/Seniors.h	2;"	d
+Seniors	Headers/Seniors.h	/^class Seniors: public Level{$/;"	c
+age_min	Headers/Seniors.h	/^    const unsigned int age_min = 19 , age_max = 35;\/\/minimum and maximum age to be on the team$/;"	m	class:Seniors
+age_max	Headers/Seniors.h	/^    const unsigned int age_min = 19 , age_max = 35;\/\/minimum and maximum age to be on the team$/;"	m	class:Seniors
+Seniors	Headers/Seniors.h	/^    Seniors(){};\/\/default constructor$/;"	f	class:Seniors
+~Seniors	Headers/Seniors.h	/^    ~Seniors(){};\/\/destructor$/;"	f	class:Seniors
+Seniors	Headers/Seniors.h	/^	Seniors(const Seniors & seniors) :Level(seniors) {};\/\/copy constructor$/;"	f	class:Seniors
+operator =	Headers/Seniors.h	/^	Seniors & operator=(const Seniors & seniors) { Level::operator=(seniors); };\/\/assignment operator$/;"	f	class:Seniors
+getMaxAge	Headers/Seniors.h	/^  virtual unsigned int getMaxAge() {return this->age_max;}$/;"	f	class:Seniors
+EXCEPTIONS_H	Headers/exceptions.h	2;"	d
+InvalidDate	Headers/exceptions.h	/^class InvalidDate {\/\/throws an exception if date is invalid$/;"	c
+day	Headers/exceptions.h	/^	int day;$/;"	m	class:InvalidDate
+month	Headers/exceptions.h	/^	int month;$/;"	m	class:InvalidDate
+year	Headers/exceptions.h	/^	int year;$/;"	m	class:InvalidDate
+InvalidDate	Headers/exceptions.h	/^	InvalidDate(unsigned int day, unsigned int month, unsigned int year) { this->day = day; this->month = month; this->year = year; }$/;"	f	class:InvalidDate
+show	Headers/exceptions.h	/^	void show() const { cout << year << "\/" << month << "\/" << day; };$/;"	f	class:InvalidDate
+InvalidPlayer	Headers/exceptions.h	/^class InvalidPlayer {\/\/a player is invalid if he doesn't have the minimum age to be on the team: 4 years old$/;"	c
+name	Headers/exceptions.h	/^	string name;$/;"	m	class:InvalidPlayer
+birth	Headers/exceptions.h	/^	Date birth;$/;"	m	class:InvalidPlayer
+LEVEL_H	Headers/Level.h	2;"	d
+Level	Headers/Level.h	/^class Level {$/;"	c
+players	Headers/Level.h	/^	vector <Player *> players;\/\/players of this team$/;"	m	class:Level
+events	Headers/Level.h	/^    vector <Event *> events;\/\/events of the level$/;"	m	class:Level
+players_tree	Headers/Level.h	/^	BST<Player_node> players_tree;\/\/tree with the players that will be used to distribute the monthly prizes$/;"	m	class:Level
+coach	Headers/Level.h	/^	string coach;\/\/level coach$/;"	m	class:Level
+Level	Headers/Level.h	/^	Level():players_tree(Player_node()){};\/\/default constructor$/;"	f	class:Level
+getPlayers	Headers/Level.h	/^	inline vector<Player *> getPlayers() const{return this->players;};\/\/gets vector of players$/;"	f	class:Level
+getEvents	Headers/Level.h	/^	inline vector<Event *> getEvents() const{return this->events;};\/\/gets vector of events$/;"	f	class:Level
+getCoach	Headers/Level.h	/^	inline string getCoach() const { return this->coach; };\/\/gets coach$/;"	f	class:Level
+getPlayers_tree	Headers/Level.h	/^	inline BST<Player_node> getPlayers_tree() const { return this->players_tree; };\/\/gets players_tree$/;"	f	class:Level
+setCoach	Headers/Level.h	/^	void setCoach(std::string coach){this->coach=coach;};\/\/sets a new coach$/;"	f	class:Level
+remove_Tree	Headers/Level.h	/^	void remove_Tree(Player_node pl) { players_tree.remove(pl);};\/\/removes a player from the tree$/;"	f	class:Level
+DATE_H	Headers/Date.h	2;"	d
+Date	Headers/Date.h	/^class Date {$/;"	c
+day	Headers/Date.h	/^	unsigned int day;\/\/Date day$/;"	m	class:Date
+month	Headers/Date.h	/^	unsigned int month;\/\/Date month$/;"	m	class:Date
+year	Headers/Date.h	/^	unsigned int year;\/\/Date year$/;"	m	class:Date
+getDay	Headers/Date.h	/^	inline int getDay() const {return this->day;}\/\/gets day$/;"	f	class:Date
+getMonth	Headers/Date.h	/^	inline int getMonth() const {return this->month;}\/\/gets month$/;"	f	class:Date
+getYear	Headers/Date.h	/^	inline int getYear() const {return this->year;}\/\/gets year$/;"	f	class:Date
+TRAINING_H	Headers/Training.h	2;"	d
+Training	Headers/Training.h	/^class Training: public Event{$/;"	c
+game	Headers/Training.h	/^	bool game; \/\/ True -> jogo-treino , False -> normal training$/;"	m	class:Training
+Training	Headers/Training.h	/^	Training(){};\/\/default constructor$/;"	f	class:Training
+~Training	Headers/Training.h	/^	virtual ~Training() {};\/\/destructor$/;"	f	class:Training
+Training	Headers/Training.h	/^	Training(Date day, bool game) : Event(day) { this->game = game; };\/\/constructor with day and game parameters$/;"	f	class:Training
+getGame	Headers/Training.h	/^	virtual bool getGame() const{ return game; };\/\/gets game$/;"	f	class:Training
+Istraining	Headers/Training.h	/^	virtual bool Istraining() const{return true;};\/\/returns true as this event is a training$/;"	f	class:Training
+getRank	Headers/Training.h	/^	virtual unsigned int getRank() const { return 0; };\/\/returns 0, this event has no parameter rank$/;"	f	class:Training
+getMajor	Headers/Training.h	/^	virtual bool getMajor() const { return false; };\/\/returns false, this event has no parameter major$/;"	f	class:Training
+getResults	Headers/Training.h	/^	virtual vector<pair<pair<unsigned int, unsigned int>, string >> getResults() const { return vector<pair<pair<unsigned int, unsigned int>, string >>();};\/\/gets empty vector as this event has no parameter results$/;"	f	class:Training
+setResults	Headers/Training.h	/^	virtual void setResults(vector<pair<pair<unsigned int, unsigned int>, string >> results) {};\/\/does nothing has this event has no parameter results$/;"	f	class:Training
+setRank	Headers/Training.h	/^	virtual void setRank(unsigned int rank) {};\/\/does nothing as this event has no parameter rank$/;"	f	class:Training
+writetofile	Headers/Training.h	/^	virtual void writetofile(ostream & out) const {out<<*this;};\/\/writes training data to file$/;"	f	class:Training
+JUNIORS_H	Headers/Juniors.h	2;"	d
+Juniors	Headers/Juniors.h	/^class Juniors : public Level{$/;"	c
+age_min	Headers/Juniors.h	/^    const unsigned int age_min = 14 , age_max = 18;\/\/minimum and maximum age to be on the team$/;"	m	class:Juniors
+age_max	Headers/Juniors.h	/^    const unsigned int age_min = 14 , age_max = 18;\/\/minimum and maximum age to be on the team$/;"	m	class:Juniors
+Juniors	Headers/Juniors.h	/^    Juniors(){};\/\/default constructor$/;"	f	class:Juniors
+~Juniors	Headers/Juniors.h	/^    ~Juniors(){};\/\/destructor$/;"	f	class:Juniors
+Juniors	Headers/Juniors.h	/^	Juniors(const Juniors & juniors) :Level(juniors) {};\/\/copy constructor$/;"	f	class:Juniors
+operator =	Headers/Juniors.h	/^	Juniors & operator=(const Juniors & juniors) { Level::operator=(juniors); };\/\/assignment operator$/;"	f	class:Juniors
+getMaxAge	Headers/Juniors.h	/^  virtual unsigned int getMaxAge() {return this->age_max;}$/;"	f	class:Juniors
+CLUB_H	Headers/Club.h	2;"	d
+hashFuncs	Headers/Club.h	/^struct hashFuncs{$/;"	s
+operator ()	Headers/Club.h	/^  size_t operator()(const Player *p1) const{$/;"	f	struct:hashFuncs
+operator ()	Headers/Club.h	/^  bool operator()(const Player *p1 ,const Player *p2) const{$/;"	f	struct:hashFuncs
+Club	Headers/Club.h	/^class Club{$/;"	c
+name	Headers/Club.h	/^	string name;\/\/name of the club$/;"	m	class:Club
+minis	Headers/Club.h	/^	Level *  minis;\/\/pointer to level minis$/;"	m	class:Club
+juveniles	Headers/Club.h	/^	Level *  juveniles;\/\/pointer to level juveniles$/;"	m	class:Club
+juniors	Headers/Club.h	/^	Level *  juniors ;\/\/pointer to level juniors$/;"	m	class:Club
+seniors	Headers/Club.h	/^	Level *  seniors;\/\/pointer to level seniors$/;"	m	class:Club
+leaveprogram	Headers/Club.h	/^	bool leaveprogram;\/\/boolean that will tell the program when to leave$/;"	m	class:Club
+singleton_instance	Headers/Club.h	/^	static Club * singleton_instance;\/\/pointer to instance of class Club$/;"	m	class:Club
+filename_players	Headers/Club.h	/^	string filename_players;\/\/players filename$/;"	m	class:Club
+filename_trainings	Headers/Club.h	/^	string filename_trainings;\/\/trainings filename$/;"	m	class:Club
+filename_tournaments	Headers/Club.h	/^	string filename_tournaments;\/\/tournaments filename$/;"	m	class:Club
+ECG_queue	Headers/Club.h	/^	priority_queue<Player_queue> ECG_queue;\/\/queue with the players that haven't yet delivered the ECG$/;"	m	class:Club
+future_birthdays	Headers/Club.h	/^	tr1::unordered_multiset<Player *,hashFuncs , hashFuncs> future_birthdays = tr1::unordered_multiset<Player *,hashFuncs , hashFuncs>(367);$/;"	m	class:Club
+getname	Headers/Club.h	/^	string getname() const { return name;};\/\/gets name of the club$/;"	f	class:Club
+getleaveprogram	Headers/Club.h	/^	bool getleaveprogram() const{return leaveprogram;};\/\/gets leaveprogram$/;"	f	class:Club
+setleaveprogram	Headers/Club.h	/^	void setleaveprogram(bool leaveprogram){this->leaveprogram=leaveprogram;}\/\/sets leaveprogram$/;"	f	class:Club
+getfilename_players	Headers/Club.h	/^	string getfilename_players() const{return this->filename_players;}\/\/gets filename_players$/;"	f	class:Club
+getfilename_trainings	Headers/Club.h	/^	string getfilename_trainings() const{return this->filename_trainings;}\/\/gets filename_trainings$/;"	f	class:Club
+getfilename_tournaments	Headers/Club.h	/^	string getfilename_tournaments() const{return this->filename_tournaments;}\/\/gets filename_tournaments$/;"	f	class:Club
+setfilename_players	Headers/Club.h	/^	void setfilename_players(string filename_players){this->filename_players=filename_players;}\/\/sets filename_players$/;"	f	class:Club
+setfilename_trainings	Headers/Club.h	/^	void setfilename_trainings(string filename_trainings){this->filename_trainings=filename_trainings;}\/\/sets filename_trainings$/;"	f	class:Club
+setfilename_tournaments	Headers/Club.h	/^	void setfilename_tournaments(string filename_tournaments){this->filename_tournaments=filename_tournaments;}\/\/sets filename_tournaments$/;"	f	class:Club
+getLevels	Headers/Club.h	/^	vector<Level *> getLevels() const { return vector<Level *>{minis,juveniles,juniors,seniors}; };\/\/return a vector with minis, juveniles, juniors...$/;"	f	class:Club
+ECG_notify	Headers/Club.h	/^	void ECG_notify() { ECG_queue.pop(); };\/\/sends a notification to the first player in the queue$/;"	f	class:Club

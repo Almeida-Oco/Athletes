@@ -24,8 +24,7 @@ Date::Date(unsigned int d,unsigned int m , unsigned int y){
 	this->day=d; this->month = m; this->year = y;
 }
 
-bool Date::operator> (const Date &D1) const
-{
+bool Date::operator> (const Date &D1) const{
 	if (this->year > D1.year)
 		return true;
 	else if (this->year == D1.year)
@@ -41,8 +40,7 @@ bool Date::operator> (const Date &D1) const
 	}
 	return false;
 }
-bool Date::operator>= (const Date &D1) const
-{
+bool Date::operator>= (const Date &D1) const{
 	if (this->year > D1.year)
 		return true;
 	else if (this->year == D1.year)
@@ -65,7 +63,79 @@ bool Date::operator< (const Date &D1) const{
 	return !(*this >= D1);
 }
 bool Date::operator== (const Date &D1) const{
-	return (this->day == D1.day && this->month == D1.month && this->year == D1.year);
+	return ( (this->day == D1.day) && (this->month == D1.month) && (this->year == D1.year) );
+}
+
+Date Date::addDays(unsigned int n) const{
+	Date temp(this->day , this->month , this->year);
+	unsigned int months[13] = { 0, 31,28 + (unsigned int)Isleap(this->getYear()),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
+
+
+	while(n > months[temp.month]){
+		n-= months[temp.month];
+
+		temp.month++;
+		if (temp.month > 12){
+			temp.month = 1;
+			temp.year++;
+			months[2] = 28 + (unsigned int)Isleap(temp.year);
+		}
+	}
+	temp.day += n;
+	if (temp.day > months[temp.month]){
+		temp.day -= months[temp.month];
+		temp.month++;
+		if(temp.month > 12){
+			temp.month = 1;
+			temp.year++;
+		}
+	}
+	return temp;
+}
+
+Date Date::subtractDays(unsigned int n) const{
+	Date temp(this->day , this->month , this->year);
+	unsigned int months[13] = { 0, 31,28 + (unsigned int)Isleap(this->getYear()),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
+
+	while(n > months[temp.month]){
+		n-= months[temp.month];
+
+		temp.day = 0;
+		temp.month--;
+		if (temp.month < 1){
+			temp.month = 12;
+			temp.year--;
+			months[2] = 28 + (unsigned int)Isleap(temp.year);
+		}
+	}
+	temp.day -= n;
+
+	return temp;
+}
+
+unsigned int Date::diffDays(){
+	Date current_date,
+			 end_date(this->day , this->month, ( (current_date > (*this) ) ? current_date.year+1 : current_date.year) );
+	unsigned int months[13] = { 0, 31,28 + (unsigned int)Isleap(end_date.year),31,30,31,30,31,31,30,31,30,31 };
+	//array with the number of days in each month
+	unsigned int current_months[13] = { 0, 31,28 + (unsigned int)Isleap(current_date.year),31,30,31,30,31,31,30,31,30,31 };
+	int days = 0, m = current_date.month	, y = current_date.year;
+
+	if( current_date == end_date)
+		return 0;
+
+	while(m != end_date.month || y < end_date.year){
+		days += months[m];
+
+		if (m == 12){
+			m = 1;
+			y++;
+			months[2] = 28 + (unsigned int)Isleap(y); //Update in case now its a leap year
+		}
+		else
+			m++;
+	}
+		return days + (end_date.day - current_date.day);
 }
 
 /*

@@ -1,17 +1,4 @@
 #include "../Headers/Club.h"
-#include "../Headers/Level.h"
-#include"../Headers/utilities.h"
-#include "../Headers/Minis.h"
-#include "../Headers/Juveniles.h"
-#include "../Headers/Juniors.h"
-#include "../Headers/Seniors.h"
-#include "../Headers/Event.h"
-#include "../Headers/Tournament.h"
-#include "../Headers/Training.h"
-#include "../Headers/exceptions.h"
-#include <algorithm>
-#include <stdlib.h>
-#include <iomanip>
 
 using namespace std;
 
@@ -59,10 +46,11 @@ void Club::readplayers(istream &in) {
 	for (unsigned int i = 0; i < size; i++) {
 		Player *p = new Player; //new player to be added to the list of players
 		in >> (*p);
-		if (!minis->addPlayer(p) && !juveniles->addPlayer(p) && !juniors->addPlayer(p) && !seniors->addPlayer(p)) {
+		if (!minis->addPlayer(p) && !juveniles->addPlayer(p) && !juniors->addPlayer(p) && !seniors->addPlayer(p) && !addBirthday(p)) {
 			throw InvalidPlayer(p->getName(), p->getBirth());
 		}
 	}
+
 }
 /*
  *Reads trainings file
@@ -166,7 +154,8 @@ void Club::writeplayers() {
 	vector<Player *> seniors_players = seniors->getPlayers();
 	out
 			<< minis_players.size() + juveniles_players.size()
-					+ juniors_players.size() + seniors_players.size() << "\n";
+					+ juniors_players.size() + seniors_players.size() + future_birthdays.size() << "\n";
+
 	for (unsigned int i = 0; i < minis_players.size(); i++) {
 		out << *minis_players[i] << "\n";
 	}
@@ -179,6 +168,8 @@ void Club::writeplayers() {
 	for (unsigned int i = 0; i < seniors_players.size(); i++) {
 		out << *seniors_players[i] << "\n";
 	}
+	for (auto it = future_birthdays.begin() ; it != future_birthdays.end() ; it++)
+		out << **it << "\n";
 }
 
 /*
@@ -326,7 +317,7 @@ vector<string> Club::getPlayers() const {
 			}
 		}
 	}
-	
+
 	sort(rplayers.begin(), rplayers.end());
 	return rplayers;
 }
@@ -438,3 +429,66 @@ void Club::showQueue() {
 	}
 }
 
+// TODO ADD EXCEPTION TO THROW WHEN DUPLICATE PLAYER
+bool Club::addBirthday(Player *p1){
+	if( this->seniors->getMaxAge() < actualage(p1->getBirth())){
+		if ( hashFuncs()(p1)  != -1){
+			if( !findOldPlayer(p1)){
+				this->future_birthdays.insert(p1);
+				return true;
+			}
+			//else
+				//THROW DUPLICATE PLAYER !!!
+
+		}
+
+	}
+
+	return false;
+}
+
+bool Club::removeBirthday(Player *p1){
+	auto its = this->future_birthdays.equal_range(p1);
+
+	if (its.first != its.second){ //If players are found
+		while(its.first != its.second){
+			if (**(its.first) == *(p1) ){
+				this->future_birthdays.erase(its.first);
+				return true;
+			}
+			its.first++;
+		}
+	}
+
+	return false;
+}
+
+bool Club::findOldPlayer(Player *p1){
+	auto its = this->future_birthdays.equal_range(p1);
+	if (its.first != its.second){
+		while(its.first != its.second){
+			if (*(*its.first) == *p1)
+				return true;
+			its.first++;
+		}
+	}
+
+	return false;
+}
+
+list<Player *> Club::nextBirthdays(unsigned int days=10) const{
+	list<Player *> temp;
+	for(days ; days >= 0 ; days--){
+		Date current_date;
+
+		Player t( current_date.addDays(days) );
+
+		auto its = this->future_birthdays.equal_range( &t );
+		while( its.first != its.second ){
+			temp.push_front( *(its.first) );
+			its.first++;
+		}
+	}
+
+	return temp;
+}

@@ -6,17 +6,19 @@
 #include <fstream>
 
 class Player{
-    string name;//name of the player
-    Date birth;//date when the player was born
+  string name;//name of the player
+  Date birth;//date when the player was born
 	vector<Date> ecg;//vector of dates when the player had an ecg
-    unsigned int height;//height of the player in cm
-    unsigned int assiduity;//this parameter gives the assiduity of a player in the trainings
-    unsigned int presences_games;//this parameter gives the assiduity of a player in the training games
+  bool got_present = false;
+  unsigned int height;//height of the player in cm
+  unsigned int assiduity;//this parameter gives the assiduity of a player in the trainings
+  unsigned int presences_games;//this parameter gives the assiduity of a player in the training games
 	unsigned int presences_stournaments;//this parameter gives the assiduity of a player in the small tournaments
 	unsigned int assiduity_curr_month;//this parameter gives the assiduity of a player in a training in the current month
 	unsigned int games_won;//this parameter gives the number of games won by a certain player in the current month
 public:
 	Player():birth(Date(0,0,0)){};//default constructor
+  Player(Date birth_date) : name("") , birth(birth_date) , got_present(false) , height(0) , assiduity(0) , presences_games(0) , presences_stournaments(0) , assiduity_curr_month(0) , games_won(0) {};
 	Player(string name, Date birth_date, unsigned int height) :birth(birth_date) { this->name = name; this->height = height; this->assiduity = 0; this->presences_games = 0; this->presences_stournaments = 0; };//constructor with parameters
 	inline string getName() const {return this->name;}//gets name
 	inline Date getBirth() const {return this->birth;}//gets birth
@@ -37,7 +39,8 @@ public:
 	void show() const;//prints the player on the screen
 	Date getLast_Eletro() const;//gets the date when the player had his last ecg
 	bool checkECG(const Date & d) const;//checks if the player had his ecg in order on the date d
-	bool operator<(const Player & p1) const { return name < p1.name; };//compares players
+  bool operator<(const Player & p1) const { return name < p1.name; };//compares players
+  bool operator== (const Player &p1) const {return this->name == p1.name;}
 	friend ostream& operator<<(ostream& out, const Player & player);//writes date in ostream out
 	friend istream& operator>>(istream& in, Player & player);//gets date from instream in
 };

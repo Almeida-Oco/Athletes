@@ -302,7 +302,33 @@ void initialmenu() {
 * This function shows the menu that allows the user to send birthday gifts
 */
 void birthdaycards() {
+	system(CLEAR);
+	string placeholder;
+	int option = 0;
+	//ASK USER FOR A NUMBER
+	while(1){
+		cout << "Insert number of days (0 - 366), l to leave :";
+		getline(cin,placeholder);
+		placeholder = removespaces(placeholder);
+		if ( isInteger(placeholder)){
+			option = convint(placeholder);
+			if (option >= 0 && option <= 366)
+				break;
+		}
+		if (placeholder == "l")
+			return;
 
+		system(CLEAR);
+		cout << "Invalid input, please try again " << endl;
+	}
+
+	//PRINTING THE RESULTS
+	list<Player *> temp = Club::getinstance()->nextBirthdays(option);
+	for (Player *pl : temp)
+		cout << *pl << endl;
+
+	cout << "\nPress any keys to leave: ";
+	getline(cin,placeholder);
 }
 
 
