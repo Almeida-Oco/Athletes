@@ -14,13 +14,19 @@ public:
 	void show() const { cout << year << "/" << month << "/" << day; };
 };
 
-class InvalidPlayer {//a player is invalid if he doesn't have the minimum age to be on the team: 4 years old
+class InvalidPlayer { //a player is invalid if he doesn't have the minimum age to be on the team: 4 years old
 	string name;
 	Date birth;
-	
 public:
 	InvalidPlayer(string name, Date birth);
 	void show() const;
+};
+
+class DuplicateName{
+	string name;
+public:
+	DuplicateName(const string &n) : name(n) {};
+	void show() const {cout << this->name << " already exists! " << endl; }
 };
 
 #endif

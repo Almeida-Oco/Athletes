@@ -10,6 +10,7 @@ public:
 	Minis(const Minis & minis) :Level(minis) {};//copy constructor
 	Minis & operator=(const Minis & minis) { Level::operator=(minis); };//assignment operator
   virtual unsigned int getMaxAge() {return this->age_max;}
+  virtual unsigned int getMinAge() {return this->age_min;}
 	virtual bool addPlayer(Player * player);//adds player to the vector of players
 	virtual void showplayers() const;//shows the players on the screen
 	virtual void showtrainings() const;//shows the trainings on the screen

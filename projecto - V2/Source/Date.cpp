@@ -114,8 +114,9 @@ Date Date::subtractDays(unsigned int n) const{
 }
 
 unsigned int Date::diffDays(){
-	Date current_date,
-			 end_date(this->day , this->month, ( (current_date > (*this) ) ? current_date.year+1 : current_date.year) );
+	Date current_date, temp_date(this->day,this->month, current_date.year),
+			 end_date(this->day , this->month, ( (current_date > temp_date) ? (current_date.year +1) : current_date.year) );
+
 	unsigned int months[13] = { 0, 31,28 + (unsigned int)Isleap(end_date.year),31,30,31,30,31,31,30,31,30,31 };
 	//array with the number of days in each month
 	unsigned int current_months[13] = { 0, 31,28 + (unsigned int)Isleap(current_date.year),31,30,31,30,31,31,30,31,30,31 };

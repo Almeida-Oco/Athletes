@@ -5,7 +5,7 @@
 #include "exceptions.h"
 #include "Player.h"
 #include "Date.h"
-#include "Level.h"
+//#include "Level.h"
 #include "Minis.h"
 #include "Juveniles.h"
 #include "Juniors.h"
@@ -19,6 +19,8 @@
 #include <stdlib.h>
 #include <iomanip>
 #include <tr1/unordered_set>
+
+class Level;
 
 struct hashFuncs{
   /**
@@ -112,7 +114,7 @@ public:
 		@detail end day to current day so that list is ordered by the closest birthday to the farthest birthdays
 		@return List of pointer to those players
 	*/
-	list<Player *> nextBirthdays(unsigned int days) const;
+	vector<Player *> nextBirthdays(int days) const;
 
 	/**
 		@brief Tries to find p1 in the future_birthdays hash table

@@ -5,7 +5,10 @@
 #include "Tournament.h"
 #include "Training.h"
 #include "BST.h"
+
+
 #include <vector>
+#include <iomanip>
 #include <fstream>
 #include <string>
 #include <algorithm>
@@ -23,6 +26,7 @@ public:
 	Level(const Level & level);//copy constructor
 	Level & operator=(const Level & level);//copy assignement operator
 	virtual unsigned int getMaxAge()  = 0;
+	virtual unsigned int getMinAge()  = 0;
 	inline vector<Player *> getPlayers() const{return this->players;};//gets vector of players
 	inline vector<Event *> getEvents() const{return this->events;};//gets vector of events
 	inline string getCoach() const { return this->coach; };//gets coach

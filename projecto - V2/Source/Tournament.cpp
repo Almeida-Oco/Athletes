@@ -8,26 +8,26 @@ using namespace std;
 /*
 *Copy constructor
 */
-Tournament::Tournament(const Tournament & tournament) :Event(tournament) { 
-	this->major = tournament.major; 
-	this->rank = rank; 
+Tournament::Tournament(const Tournament & tournament) :Event(tournament) {
+	this->major = tournament.major;
+	this->rank = rank;
 	this->results = results; };
 
 /*
 *copy assignement operator
 */
-Tournament & Tournament::operator=(const Tournament & tournament) { 
-	Event::operator=(tournament); 
-	this->major = tournament.major; 
-	this->rank = rank; 
-	this->results = results; 
+Tournament & Tournament::operator=(const Tournament & tournament) {
+	Event::operator=(tournament);
+	this->major = tournament.major;
+	this->rank = rank;
+	this->results = results;
 	return *this;
 };
 
 /*
 *constructor with pointer
 */
-Tournament::Tournament(Event * ev) :Event(*ev) { 
+Tournament::Tournament(Event * ev) :Event(*ev) {
 	this->major = ev->getMajor();
 	this->rank = ev->getRank();
 	this->results = ev->getResults();
@@ -43,7 +43,7 @@ void Tournament::show() const {
 		cout << "      Yes       |";
 	}
 	else {
-		cout << "       No       |";
+		cout << "      No        |";
 	}
 	cout << setw(7) << rank <<"|"<< setw(14) << results.size()<<"|";
 	vector<string> vector_presences = this->getPresences();
@@ -91,11 +91,11 @@ istream & operator>>(istream& in, Tournament & tournament){
 	tournament.results.clear();
 	for(unsigned int i=0;i<size;i++){
 		pair<pair<unsigned int, unsigned int> , string> game;
-		in >> game.first.first >> game.first.second; 
+		in >> game.first.first >> game.first.second;
 		getline(in,game.second, ';');
 		tournament.results.push_back(game);
 	}
-	
+
 	unsigned int n_presences;
 	in >> n_presences;
 	in >> semicolon;

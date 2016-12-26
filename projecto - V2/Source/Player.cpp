@@ -79,6 +79,7 @@ ostream & operator<<(ostream& out, const Player & player){
 	for (unsigned int i = 0; i < player.ecg.size(); i++) {
 		out << player.ecg[i] << " ; ";
 	}
+	out<<player.got_present<<" ; ";
 	out<<player.height<<" ; ";
 	out<<player.assiduity<<" ; "<<player.presences_games<<" ; "<<player.presences_stournaments;
 	return out;
@@ -104,6 +105,8 @@ istream& operator>>(istream& in, Player & player){
 		player.ecg.push_back(ecg_date);
 		in >> semicolon;
 	}
+	in>>player.got_present;
+	in>>semicolon;
 	in>>player.height;
 	in>>semicolon;
 	in>>player.assiduity;

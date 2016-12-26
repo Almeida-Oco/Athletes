@@ -1,17 +1,17 @@
 Minis
 2
-5/04/2016 ; 1 ; 5 ; 2 ; 3 0                      Leixoes;1 0                      Benfica;2 ; Joao Rodrigues ; Ivo Marques ; 
-21/04/2016 ; 0 ; 3 ; 2 ; 5 0                      Salgueiros;7 0                      Boavista;4 ; Antonio Sousa ; Ivo Marques ; Ricardo Goncalves ; Ruca ; 
+5/04/2016 ; 1 ; 5 ; 2 ; 3 0                         Leixoes;1 0                         Benfica;2 ; Joao Rodrigues ; Ivo Marques ; 
+21/04/2016 ; 0 ; 3 ; 2 ; 5 0                         Salgueiros;7 0                         Boavista;4 ; Antonio Sousa ; Ivo Marques ; Ricardo Goncalves ; Ruca ; 
 Juveniles
 2
-19/11/2016 ; 1 ; 5 ; 2 ; 1 3                    Senhora da Hora;2 1                    Vila Real;0 ; 
-20/11/2016 ; 1 ; 1 ; 1 ; 4 1                  Maia;1 ; Antonio Silva ; 
+19/11/2016 ; 1 ; 5 ; 2 ; 1 3                       Senhora da Hora;2 1                       Vila Real;0 ; 
+20/11/2016 ; 1 ; 1 ; 1 ; 4 1                     Maia;1 ; Antonio Silva ; 
 Juniors
 1
 31/12/2016 ; 1 ; 0 ; 0 ; 0 ; 
 Seniors
 4
-18/11/2016 ; 1 ; 2 ; 2 ; 3 2                 Pedras Rubras;8 1                 Leixoes;1 ; Ronaldinho ; 
+18/11/2016 ; 1 ; 2 ; 2 ; 3 2                    Pedras Rubras;8 1                    Leixoes;1 ; Ronaldinho ; 
 18/11/2016 ; 1 ; 3 ; 0 ; 5 ; Ronaldinho ; Ricardo Carvalho ; Cristiano Ronaldo ; Zico ; Fabio Paim ; 
 18/11/2016 ; 1 ; 0 ; 0 ; 5 ; Ronaldinho ; Ricardo Carvalho ; Cristiano Ronaldo ; Zico ; Fabio Paim ; 
-18/12/2016 ; 0 ; 1 ; 3 ; 4 0        leca;4 2        Porto;1 1        Benfica;2 ; Cristiano Ronaldo ; Zico ; 
+18/12/2016 ; 0 ; 1 ; 3 ; 4 0           leca;4 2           Porto;1 1           Benfica;2 ; Cristiano Ronaldo ; Zico ; 

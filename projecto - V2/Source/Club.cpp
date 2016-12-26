@@ -42,13 +42,22 @@ Club * Club::getinstance() {
  */
 void Club::readplayers(istream &in) {
 	unsigned int size;
+	//READ CURRENT PLAYERS
 	in >> size;
 	for (unsigned int i = 0; i < size; i++) {
 		Player *p = new Player; //new player to be added to the list of players
 		in >> (*p);
-		if (!minis->addPlayer(p) && !juveniles->addPlayer(p) && !juniors->addPlayer(p) && !seniors->addPlayer(p) && !addBirthday(p)) {
+		if (!minis->addPlayer(p) && !juveniles->addPlayer(p) && !juniors->addPlayer(p) && !seniors->addPlayer(p))
 			throw InvalidPlayer(p->getName(), p->getBirth());
-		}
+
+	}
+	//READ OLD PLAYERS
+	in >> size;
+	for (unsigned int i = 0 ; i < size ; i++){
+		Player *p = new Player;
+		in >> (*p);
+		if (!addBirthday(p))
+			throw InvalidPlayer(p->getName(), p->getBirth());
 	}
 
 }
@@ -154,7 +163,7 @@ void Club::writeplayers() {
 	vector<Player *> seniors_players = seniors->getPlayers();
 	out
 			<< minis_players.size() + juveniles_players.size()
-					+ juniors_players.size() + seniors_players.size() + future_birthdays.size() << "\n";
+					+ juniors_players.size() + seniors_players.size() << "\n";
 
 	for (unsigned int i = 0; i < minis_players.size(); i++) {
 		out << *minis_players[i] << "\n";
@@ -168,6 +177,7 @@ void Club::writeplayers() {
 	for (unsigned int i = 0; i < seniors_players.size(); i++) {
 		out << *seniors_players[i] << "\n";
 	}
+	out << future_birthdays.size() << endl;
 	for (auto it = future_birthdays.begin() ; it != future_birthdays.end() ; it++)
 		out << **it << "\n";
 }
@@ -431,14 +441,14 @@ void Club::showQueue() {
 
 // TODO ADD EXCEPTION TO THROW WHEN DUPLICATE PLAYER
 bool Club::addBirthday(Player *p1){
-	if( this->seniors->getMaxAge() < actualage(p1->getBirth())){
+	if( this->minis->getMinAge() < actualage(p1->getBirth())){
 		if ( hashFuncs()(p1)  != -1){
 			if( !findOldPlayer(p1)){
 				this->future_birthdays.insert(p1);
 				return true;
 			}
-			//else
-				//THROW DUPLICATE PLAYER !!!
+			else
+				throw DuplicateName( p1->getName() );
 
 		}
 
@@ -476,19 +486,27 @@ bool Club::findOldPlayer(Player *p1){
 	return false;
 }
 
-list<Player *> Club::nextBirthdays(unsigned int days=10) const{
-	list<Player *> temp;
-	for(days ; days >= 0 ; days--){
-		Date current_date;
+vector<Player *> Club::nextBirthdays(int days=10) const{
+	vector<Player *> temp;
+	temp.reserve(this->future_birthdays.size());
 
-		Player t( current_date.addDays(days) );
+
+	for(int i = 0 ; i <= days ; i++){
+		Date current_date;
+		Date end_date = current_date.addDays(i);
+		Player t( current_date.addDays(i) );
+		//if we have went through all dates
+		if((current_date.getDay() == end_date.getDay()) && (current_date.getMonth() == end_date.getMonth()) && (i != 0))
+			break;
 
 		auto its = this->future_birthdays.equal_range( &t );
-		while( its.first != its.second ){
-			temp.push_front( *(its.first) );
+		while(its.first != its.second){
+			if ( !( (*(its.first))->getPresent() ) )
+				temp.push_back( *(its.first));
 			its.first++;
 		}
 	}
 
+	temp.shrink_to_fit();
 	return temp;
 }

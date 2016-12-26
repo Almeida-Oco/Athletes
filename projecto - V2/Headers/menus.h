@@ -2,13 +2,24 @@
 #define MENUS_H
 #include "Date.h"
 #include "Event.h"
+#include "Club.h"
+#include "exceptions.h"
+#include "utilities.h"
+
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <iomanip>
+#include <climits>
+
 int readplayers();//asks the user for the players file
 int readtrainings();//asks the user for the trainings file
 int readtournaments();//asks the user for the tournaments file
 Date askfordate();//asks the user to type a date
 void printlevel(unsigned int level);//prints a level
 void initialmenu();//displays the initial menu
-void birthdaycards();//displays the menu 
+void printBirthdays(const vector<Player *> &p);
+void birthdaycards();//displays the menu
 void notifyECG();//displays the menu that allows the user to notify the players with the delayed ECG
 void levelmenu(unsigned int level);//displays the main menu for each level
 void monthlyprizes(unsigned int level);//shows the monthly prizes

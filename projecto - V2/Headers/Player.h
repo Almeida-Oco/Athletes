@@ -23,18 +23,20 @@ public:
 	inline string getName() const {return this->name;}//gets name
 	inline Date getBirth() const {return this->birth;}//gets birth
 	inline vector<Date> getECG() const {return this->ecg;}//gets ecg
+  inline bool getPresent() const {return this->got_present;}
 	inline unsigned int getHeight() const {return this->height;}//gets height
 	inline unsigned int getAssiduity() const { return this->assiduity; };//gets assiduity
 	inline unsigned int getPresences_games() const { return this->presences_games; };//gets presences in games
 	inline unsigned int getPresences_stournaments() const { return this->presences_stournaments;};//gets presences in s_tournaments
 	inline unsigned int getAssiduity_Curr_Month() const { return assiduity_curr_month;};//gets assiduity in the current month
 	inline unsigned int getGames_Won() const { return this->games_won; };//gets games won by the player in the current month
-	void setAssiduity(unsigned int assiduity) { this->assiduity = assiduity; };//sets assiduity
-	void setPresences_games(unsigned int presences_games) { this->presences_games = presences_games; };//sets presences in games
-	void setPresences_stournaments(unsigned int presences_stournaments) { this->presences_stournaments = presences_stournaments; };//sets presences in small tournaments
-	void setAssiduity_Curr_Month(unsigned int assiduity) { this->assiduity_curr_month = assiduity;};//sets the assiduity of the player in the current month
-	void setGames_Won(unsigned int games) { this->games_won = games; };//sets the number of games won by the player
-	void setHeight(unsigned int height) { this->height = height; };//sets height
+  inline void setPresent(bool b) {this->got_present = b;}
+  inline void setAssiduity(unsigned int assiduity) { this->assiduity = assiduity; };//sets assiduity
+	inline void setPresences_games(unsigned int presences_games) { this->presences_games = presences_games; };//sets presences in games
+	inline void setPresences_stournaments(unsigned int presences_stournaments) { this->presences_stournaments = presences_stournaments; };//sets presences in small tournaments
+	inline void setAssiduity_Curr_Month(unsigned int assiduity) { this->assiduity_curr_month = assiduity;};//sets the assiduity of the player in the current month
+	inline void setGames_Won(unsigned int games) { this->games_won = games; };//sets the number of games won by the player
+	inline void setHeight(unsigned int height) { this->height = height; };//sets height
 	void addECG(Date last_eletro);//adds ecg to the list
 	void show() const;//prints the player on the screen
 	Date getLast_Eletro() const;//gets the date when the player had his last ecg

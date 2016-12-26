@@ -1,12 +1,5 @@
 #include "../Headers/menus.h"
-#include "../Headers/Club.h"
-#include "../Headers/exceptions.h"
-#include "../Headers/utilities.h"
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <iomanip>
-#include <climits>
+
 using namespace std;
 
 /*
@@ -31,6 +24,7 @@ int readplayers() {
 			file_players.open(filename_players);
 		}
 	} while (file_players.fail() && !club->getleaveprogram());
+
 	if (!club->getleaveprogram()) {
 		club->setfilename_players(filename_players); //sets a new clients filename
 		try {
@@ -51,6 +45,14 @@ int readplayers() {
 			cout << "Press any keys to leave: ";
 			string keys;
 			getline(cin, keys);
+			return 1;
+		}
+		catch (DuplicateName &d){
+			d.show();
+			cout << "The file is corrupted" << endl;
+			cout << "Press any key to leave: ";
+			string keys;
+			getline(cin,keys);
 			return 1;
 		}
 	}
@@ -298,16 +300,31 @@ void initialmenu() {
 
 }
 
+
+void printBirthdays(const vector<Player *> &players){
+	int id = 1;
+
+	cout << setw(4) << right <<  "ID" << " | " << setw(21) << "Name" <<   " | " << setw(10) << "In XXX days" << endl;
+	for (Player * p : players){
+		int n_days = p->getBirth().diffDays();
+		cout << setw(3)  << right << ((id < 10) ? " 0" : "") << id << " | "
+				 << setw(21) << right << p->getName() << " | "
+			   << setw(3) << ((n_days < 9) ? "   00" : ( (n_days < 100) ? "   0" : "") ) << n_days << endl;
+		id++;
+	}
+}
+
 /*
 * This function shows the menu that allows the user to send birthday gifts
 */
 void birthdaycards() {
 	system(CLEAR);
 	string placeholder;
-	int option = 0;
+	bool valid = true, delivered = false;
+	int option = 0 , id = 1;
 	//ASK USER FOR A NUMBER
 	while(1){
-		cout << "Insert number of days (0 - 366), l to leave :";
+		cout << "Insert number of days (0 - 366), l to leave : ";
 		getline(cin,placeholder);
 		placeholder = removespaces(placeholder);
 		if ( isInteger(placeholder)){
@@ -322,13 +339,39 @@ void birthdaycards() {
 		cout << "Invalid input, please try again " << endl;
 	}
 
-	//PRINTING THE RESULTS
-	list<Player *> temp = Club::getinstance()->nextBirthdays(option);
-	for (Player *pl : temp)
-		cout << *pl << endl;
+	vector<Player *> temp = Club::getinstance()->nextBirthdays(option);
+	if (temp.size() != 0){
+		do {
+			system(CLEAR);
+			//PRINTING THE RESULTS
+			printBirthdays(temp);
+			if (!valid)
+				cout << endl << "Invalid input, please try again " << endl;
+			if(delivered) { cout << endl << "Present delivered successfuly!" << endl; delivered= false;}
+			cout << endl << "Enter ID's of Players to give presents (0 to go back) : ";
+			getline(cin,placeholder);
+			placeholder = removespaces(placeholder);
+			if ( isInteger(placeholder))
+			option = convint(placeholder);
+			else
+			valid = false;
 
-	cout << "\nPress any keys to leave: ";
-	getline(cin,placeholder);
+			if (option >= 1 && option <= temp.size() ){
+				temp.at(option-1)->setPresent(true);
+				temp.erase( temp.begin() + option -1);
+				valid = true;
+				delivered = true;
+			}
+			else if (option != 0)
+				valid = false;
+
+		} while(option != 0);
+	}
+	else{
+		cout << "No old players birthday found within " << option << " days." << endl;
+		cout << endl << "Press any keys to continue";
+		getline(cin,placeholder);
+	}
 }
 
 
@@ -808,48 +851,58 @@ void regnewplayermenu() {
 		Player * p = new Player(player_name, player_birth, player_height);
 		p->addECG(player_last_eletro);
 
-		if (club_levels[0]->addPlayer(p)) {
-			cout << player_name << " was registered on the team."<<endl;
-			cout << "He is now part of the Minis team."<<endl;
-			club_levels[0]->makeTree();//constructs a new tree for this level
-			club->addPlayerQueue(p);
-			cout << "Press any keys to leave: ";
-			string keys;
-			getline(cin, keys);
+		try{
+			if (club_levels[0]->addPlayer(p)) {
+				cout << player_name << " was registered on the team."<<endl;
+				cout << "He is now part of the Minis team."<<endl;
+				club_levels[0]->makeTree();//constructs a new tree for this level
+				club->addPlayerQueue(p);
+				cout << "Press any keys to leave: ";
+				string keys;
+				getline(cin, keys);
+			}
+			else if (club_levels[1]->addPlayer(p)) {
+				cout << player_name << " was registered on the team."<<endl;
+				cout << "He is now part of the Juveniles team."<<endl;
+				club_levels[1]->makeTree();//constructs a new tree for this level
+				club->addPlayerQueue(p);
+				cout << "Press any keys to leave: ";
+				string keys;
+				getline(cin, keys);
+			}
+			else if (club_levels[2]->addPlayer(p)) {
+				cout << player_name << " was registered on the team."<<endl;
+				cout << "He is now part of the Juniors team."<<endl;
+				club_levels[2]->makeTree();//constructs a new tree for this level
+				club->addPlayerQueue(p);
+				cout << "Press any keys to leave: ";
+				string keys;
+				getline(cin, keys);
+			}
+			else if (club_levels[3]->addPlayer(p)) {
+				cout << player_name << " was registered on the team. "<<endl;
+				cout << "He is now part of the Seniors team. "<<endl;
+				club_levels[3]->makeTree();//constructs a new tree for this level
+				club->addPlayerQueue(p);
+				cout << "Press any keys to leave: ";
+				string keys;
+				getline(cin, keys);
+			}
+			else if (Club::getinstance()->addBirthday(p)){
+				cout << player_name << " was registered on the club. " << endl;
+				cout << "He is now in the old players database." << endl;
+				cout << "Press any keys to leave: ";
+				string keys;
+				getline(cin,keys);
+			}
+			else {
+				cout << "The player couldn't be registered on the team. He is too young" << endl;
+				cout << "Press any keys to leave: ";
+				string keys;
+				getline(cin, keys);
+			}
 		}
-		else if (club_levels[1]->addPlayer(p)) {
-			cout << player_name << " was registered on the team."<<endl;
-			cout << "He is now part of the Juveniles team."<<endl;
-			club_levels[1]->makeTree();//constructs a new tree for this level
-			club->addPlayerQueue(p);
-			cout << "Press any keys to leave: ";
-			string keys;
-			getline(cin, keys);
-		}
-		else if (club_levels[2]->addPlayer(p)) {
-			cout << player_name << " was registered on the team."<<endl;
-			cout << "He is now part of the Juniors team."<<endl;
-			club_levels[2]->makeTree();//constructs a new tree for this level
-			club->addPlayerQueue(p);
-			cout << "Press any keys to leave: ";
-			string keys;
-			getline(cin, keys);
-		}
-		else if (club_levels[3]->addPlayer(p)) {
-			cout << player_name << " was registered on the team. "<<endl;
-			cout << "He is now part of the Seniors team. "<<endl;
-			club_levels[3]->makeTree();//constructs a new tree for this level
-			club->addPlayerQueue(p);
-			cout << "Press any keys to leave: ";
-			string keys;
-			getline(cin, keys);
-		}
-		else {
-			cout << "The player couldn't be registered on the team. He is too young" << endl;
-			cout << "Press any keys to leave: ";
-			string keys;
-			getline(cin, keys);
-		}
+		catch(DuplicateName &d){ samename = true;}
 	}
 }
 

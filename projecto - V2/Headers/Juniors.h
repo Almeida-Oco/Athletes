@@ -12,6 +12,7 @@ public:
 	Juniors(const Juniors & juniors) :Level(juniors) {};//copy constructor
 	Juniors & operator=(const Juniors & juniors) { Level::operator=(juniors); };//assignment operator
   virtual unsigned int getMaxAge() {return this->age_max;}
+  virtual unsigned int getMinAge() {return this->age_min;}
 	virtual bool addPlayer(Player * player);//adds Player to the team
 	virtual void showplayers() const;//shows players on the screen
 	virtual void showtrainings() const;//shows trainings on the screen

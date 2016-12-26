@@ -1,5 +1,5 @@
 #include "../Headers/Level.h"
-#include<iomanip>
+#include "../Headers/Club.h"
 
 using namespace std;
 /*
@@ -196,6 +196,7 @@ void Level::showevents() const {
 */
 void Level::removeplayer(unsigned int id) {
 	if (id <= players.size()) {
+		Club::getinstance()->addBirthday(this->players.at(id-1));
 		players.erase(players.begin() + id - 1);
 		Player_node node;//node that contains the player player
 		node.player = players[id - 1];
