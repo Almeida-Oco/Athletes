@@ -28,7 +28,7 @@ Tournament & Tournament::operator=(const Tournament & tournament) {
 *constructor with pointer
 */
 Tournament::Tournament(Event * ev) :Event(*ev) {
-	this->major = ev->getMajor();
+	this->major = ev->isMajor();
 	this->rank = ev->getRank();
 	this->results = ev->getResults();
 };
@@ -36,6 +36,7 @@ Tournament::Tournament(Event * ev) :Event(*ev) {
 /*
 *Prints tournament on the screen
 */
+
 void Tournament::show() const {
 	(this->getDay()).show();
 	cout << "| ";

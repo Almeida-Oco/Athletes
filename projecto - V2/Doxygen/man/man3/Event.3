@@ -1,0 +1,338 @@
+.TH "Event" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Event \- Class to hold information about an event\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Event\&.h>\fP
+.PP
+Inherited by \fBTournament\fP, and \fBTraining\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEvent\fP ()"
+.br
+.RI "Default Constructor\&. "
+.ti -1c
+.RI "virtual \fB~Event\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBEvent\fP (const \fBEvent\fP &ev)"
+.br
+.RI "Copy Constructor\&. "
+.ti -1c
+.RI "\fBEvent\fP (\fBDate\fP day)"
+.br
+.RI "Contructor\&. "
+.ti -1c
+.RI "\fBEvent\fP & \fBoperator=\fP (const \fBEvent\fP &ev)"
+.br
+.RI "operator= Used to copy contents of one \fBEvent\fP to other "
+.ti -1c
+.RI "vector< string > \fBgetPresences\fP () const"
+.br
+.RI "Gets the member variable presences\&. "
+.ti -1c
+.RI "\fBDate\fP \fBgetDay\fP () const"
+.br
+.RI "Gets the member variable day\&. "
+.ti -1c
+.RI "void \fBsetDay\fP (\fBDate\fP day)"
+.br
+.RI "Changes the value of member variable day\&. "
+.ti -1c
+.RI "void \fBsetPresences\fP (vector< string > presences)"
+.br
+.RI "Changes the value of member variable presences\&. "
+.ti -1c
+.RI "void \fBaddPresence\fP (string presence)"
+.br
+.RI "Adds a name of \fBPlayer\fP to member variable presences\&. "
+.ti -1c
+.RI "virtual bool \fBIstraining\fP () const =0"
+.br
+.RI "Used to check if this \fBEvent\fP is a Trainings\&. "
+.ti -1c
+.RI "virtual bool \fBisGame\fP () const =0"
+.br
+.RI "Used to check if this \fBEvent\fP is a game (only possible in \fBTraining\fP) "
+.ti -1c
+.RI "virtual unsigned int \fBgetRank\fP () const =0"
+.br
+.RI "Used get rank of team in \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual bool \fBisMajor\fP () const =0"
+.br
+.RI "Used to check if this \fBEvent\fP is a major \fBTournament\fP (only possible in \fBTournament\fP) "
+.ti -1c
+.RI "virtual vector< pair< pair< unsigned int, unsigned int >, string > > \fBgetResults\fP () const =0"
+.br
+.RI "Get the results of the \fBLevel\fP in a \fBTournament\fP (only possible in \fBTournament\fP) "
+.ti -1c
+.RI "virtual void \fBsetResults\fP (vector< pair< pair< unsigned int, unsigned int >, string >> results)=0"
+.br
+.RI "Changes the results of the \fBLevel\fP in a \fBTournament\fP (only possible in \fBTournament\fP) "
+.ti -1c
+.RI "virtual void \fBsetRank\fP (unsigned int rank)=0"
+.br
+.RI "Changes the rank of the \fBLevel\fP in a \fBTournament\fP (only possible in \fBTournament\fP) "
+.ti -1c
+.RI "virtual void \fBshow\fP () const =0"
+.br
+.RI "Printf the \fBEvent\fP in the screen, output of Trainings different from Tournaments\&. "
+.ti -1c
+.RI "virtual void \fBwritetofile\fP (ostream &out) const =0"
+.br
+.RI "Writes information about the Evento to an output stream\&. "
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBEvent\fP &ev1) const"
+.br
+.RI "Operator < compares two events\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class to hold information about an event\&. 
+.PP
+Definition at line 23 of file Event\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Event::Event ()\fC [inline]\fP"
+
+.PP
+Default Constructor\&. 
+.PP
+Definition at line 30 of file Event\&.h\&.
+.SS "virtual Event::~Event ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Destructor\&. 
+.PP
+Definition at line 34 of file Event\&.h\&.
+.SS "Event::Event (const \fBEvent\fP & ev)\fC [inline]\fP"
+
+.PP
+Copy Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIev\fP Object of class \fBEvent\fP to be copied 
+.RE
+.PP
+
+.PP
+Definition at line 39 of file Event\&.h\&.
+.SS "Event::Event (\fBDate\fP day)\fC [inline]\fP"
+
+.PP
+Contructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIday\fP \fBDate\fP of the \fBEvent\fP 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file Event\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Event::addPresence (string presence)\fC [inline]\fP"
+
+.PP
+Adds a name of \fBPlayer\fP to member variable presences\&. 
+.PP
+Definition at line 73 of file Event\&.h\&.
+.SS "\fBDate\fP Event::getDay () const\fC [inline]\fP"
+
+.PP
+Gets the member variable day\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+day (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file Event\&.h\&.
+.SS "vector<string> Event::getPresences () const\fC [inline]\fP"
+
+.PP
+Gets the member variable presences\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+presences (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 56 of file Event\&.h\&.
+.SS "virtual unsigned int Event::getRank () const\fC [pure virtual]\fP"
+
+.PP
+Used get rank of team in \fBTournament\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBTournament\fP member variable rank or 0 if object is not a \fBTournament\fP
+.RE
+.PP
+Pure virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+.SS "virtual vector<pair<pair<unsigned int, unsigned int>, string > > Event::getResults () const\fC [pure virtual]\fP"
+
+.PP
+Get the results of the \fBLevel\fP in a \fBTournament\fP (only possible in \fBTournament\fP) 
+.PP
+\fBReturns:\fP
+.RS 4
+Vector with results of games and the Clubs played against, or empty if object is not \fBTournament\fP
+.RE
+.PP
+Pure virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+.SS "virtual bool Event::isGame () const\fC [pure virtual]\fP"
+
+.PP
+Used to check if this \fBEvent\fP is a game (only possible in \fBTraining\fP) 
+.PP
+\fBReturns:\fP
+.RS 4
+true if \fBEvent\fP is a game, false if not or if not a \fBTraining\fP
+.RE
+.PP
+Pure virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+.SS "virtual bool Event::isMajor () const\fC [pure virtual]\fP"
+
+.PP
+Used to check if this \fBEvent\fP is a major \fBTournament\fP (only possible in \fBTournament\fP) 
+.PP
+\fBReturns:\fP
+.RS 4
+true if \fBEvent\fP is a major \fBTournament\fP, false if not or if not a \fBTraining\fP
+.RE
+.PP
+Pure virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+.SS "virtual bool Event::Istraining () const\fC [pure virtual]\fP"
+
+.PP
+Used to check if this \fBEvent\fP is a Trainings\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if \fBEvent\fP is Trainings, false if not
+.RE
+.PP
+Pure virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+.SS "bool Event::operator< (const \fBEvent\fP & ev1) const\fC [inline]\fP"
+
+.PP
+Operator < compares two events\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIev1\fP \fBEvent\fP to be used for comparison 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if *this is sooner than parameter ev1
+.RE
+.PP
+The Events are compared by \fBDate\fP such that an \fBEvent\fP is bigger than another if it happened later 
+.PP
+Definition at line 134 of file Event\&.h\&.
+.SS "\fBEvent\fP& Event::operator= (const \fBEvent\fP & ev)\fC [inline]\fP"
+
+.PP
+operator= Used to copy contents of one \fBEvent\fP to other 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIev\fP Object of \fBEvent\fP to be copied 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Object of \fBEvent\fP into which parameter ev was copied
+.RE
+.PP
+Copies all of the member variables 
+.PP
+Definition at line 51 of file Event\&.h\&.
+.SS "void Event::setDay (\fBDate\fP day)\fC [inline]\fP"
+
+.PP
+Changes the value of member variable day\&. 
+.PP
+Definition at line 65 of file Event\&.h\&.
+.SS "void Event::setPresences (vector< string > presences)\fC [inline]\fP"
+
+.PP
+Changes the value of member variable presences\&. 
+.PP
+Definition at line 69 of file Event\&.h\&.
+.SS "virtual void Event::setRank (unsigned int rank)\fC [pure virtual]\fP"
+
+.PP
+Changes the rank of the \fBLevel\fP in a \fBTournament\fP (only possible in \fBTournament\fP) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrank\fP The rank of the \fBLevel\fP
+.RE
+.PP
+Pure virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+.SS "virtual void Event::setResults (vector< pair< pair< unsigned int, unsigned int >, string >> results)\fC [pure virtual]\fP"
+
+.PP
+Changes the results of the \fBLevel\fP in a \fBTournament\fP (only possible in \fBTournament\fP) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresults\fP The results of the \fBLevel\fP
+.RE
+.PP
+Pure virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+.SS "virtual void Event::show () const\fC [pure virtual]\fP"
+
+.PP
+Printf the \fBEvent\fP in the screen, output of Trainings different from Tournaments\&. Pure virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+.SS "virtual void Event::writetofile (ostream & out) const\fC [pure virtual]\fP"
+
+.PP
+Writes information about the Evento to an output stream\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP Output Stream to write to
+.RE
+.PP
+Used to output \fBEvent\fP information on a text file 
+.PP
+Implemented in \fBTournament\fP, and \fBTraining\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

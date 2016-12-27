@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_player_8h" kind="file" language="C++">
+    <compoundname>Player.h</compoundname>
+    <includes refid="_date_8h" local="yes">Date.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="_club_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</includedby>
+    <includedby refid="_level_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h</includedby>
+    <includedby refid="_event_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Event.h</includedby>
+    <incdepgraph>
+      <node id="191">
+        <label>string</label>
+      </node>
+      <node id="192">
+        <label>fstream</label>
+      </node>
+      <node id="190">
+        <label>vector</label>
+      </node>
+      <node id="189">
+        <label>iostream</label>
+      </node>
+      <node id="187">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="202">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h</label>
+        <link refid="_tournament_8h"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h</label>
+        <link refid="_training_8h"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</label>
+        <link refid="menus_8h"/>
+      </node>
+      <node id="201">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Minis.h</label>
+        <link refid="_minis_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h</label>
+        <link refid="_level_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juniors.h</label>
+        <link refid="_juniors_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h</label>
+        <link refid="_seniors_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juveniles.h</label>
+        <link refid="_juveniles_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_player" prot="public">Player</innerclass>
+    <innerclass refid="struct_player__node" prot="public">Player_node</innerclass>
+    <innerclass refid="struct_player__queue" prot="public">Player_queue</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_player_8h_1a70a30ae5b016e3f83a50cbd606044d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(const Player_node &amp;pl_left, const Player_node &amp;p_right)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="struct_player__node" kindref="compound">Player_node</ref> &amp;</type>
+          <declname>pl_left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_player__node" kindref="compound">Player_node</ref> &amp;</type>
+          <declname>p_right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_player_8h_1a6e47bba4f40f04dd67cc303a58a098d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(const Player_queue &amp;pl_left, const Player_queue &amp;pl_right)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="struct_player__queue" kindref="compound">Player_queue</ref> &amp;</type>
+          <declname>pl_left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_player__queue" kindref="compound">Player_queue</ref> &amp;</type>
+          <declname>pl_right</declname>
+        </param>
+        <briefdescription>
+<para>Compares two <ref refid="class_player" kindref="compound">Player</ref> nodes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pl_left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_player" kindref="compound">Player</ref> to be compared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pl_right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_player" kindref="compound">Player</ref> to be compared </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if pl_left if younger than pl_right</para></simplesect>
+If pl_left and pl_right were born in the same name it compares their names </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h" line="225" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Francisco Andrade </para></simplesect>
+<simplesect kind="author"><para>João Almeida</para></simplesect>
+Contains the declaration of the class <ref refid="class_player" kindref="compound">Player</ref> and the Struct <ref refid="struct_player__node" kindref="compound">Player_node</ref> and <ref refid="struct_player__queue" kindref="compound">Player_queue</ref> to be used in the <ref refid="class_b_s_t" kindref="compound">BST</ref> and Priority Queue </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>PLAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLAYER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_date_8h" kindref="compound">Date.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_player" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player" kindref="compound">Player</ref>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>birth;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Date&gt;<sp/>ecg;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>got_present<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>assiduity;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>presences_games;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>presences_stournaments;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>assiduity_curr_month;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>games_won;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" kindref="member">Player</ref>():birth(<ref refid="class_date" kindref="compound">Date</ref>(0,0,0)){};</highlight></codeline>
+<codeline lineno="54" refid="class_player_1a74b724a1381ef548891d0f1a583450e0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_player_1a74b724a1381ef548891d0f1a583450e0" kindref="member">Player</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>birth_date)<sp/>:<sp/>name(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>,<sp/>birth(birth_date)<sp/>,<sp/>got_present(false)<sp/>,<sp/>height(0)<sp/>,<sp/>assiduity(0)<sp/>,<sp/>presences_games(0)<sp/>,<sp/>presences_stournaments(0)<sp/>,<sp/>assiduity_curr_month(0)<sp/>,<sp/>games_won(0)<sp/>{};</highlight></codeline>
+<codeline lineno="62" refid="class_player_1a61933c5f779b97caea5e13b58bbb06da" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_player_1a61933c5f779b97caea5e13b58bbb06da" kindref="member">Player</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>birth_date,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height)<sp/>:birth(birth_date)<sp/>{<sp/>this-&gt;name<sp/>=<sp/>name;<sp/>this-&gt;height<sp/>=<sp/>height;<sp/>this-&gt;assiduity<sp/>=<sp/>0;<sp/>this-&gt;presences_games<sp/>=<sp/>0;<sp/>this-&gt;presences_stournaments<sp/>=<sp/>0;<sp/>};</highlight><highlight class="comment">//constructor<sp/>with<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_player_1a4939193fc637f75bf7a11118334dae7e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_player_1a4939193fc637f75bf7a11118334dae7e" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;name;}</highlight><highlight class="comment">//gets<sp/>name</highlight></codeline>
+<codeline lineno="73" refid="class_player_1a40d25243f37af60da51b8020f7518700" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="class_player_1a40d25243f37af60da51b8020f7518700" kindref="member">getBirth</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;birth;}</highlight><highlight class="comment">//gets<sp/>birth</highlight></codeline>
+<codeline lineno="78" refid="class_player_1a2d1d0a9a28323caa4003d1e09645389e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vector&lt;Date&gt;<sp/><ref refid="class_player_1a2d1d0a9a28323caa4003d1e09645389e" kindref="member">getECG</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;ecg;}</highlight><highlight class="comment">//gets<sp/>ecg</highlight></codeline>
+<codeline lineno="83" refid="class_player_1a4885775d191fbfbac59cf284388c6b0b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a4885775d191fbfbac59cf284388c6b0b" kindref="member">getPresent</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;got_present;}</highlight></codeline>
+<codeline lineno="88" refid="class_player_1a35448f9c66824c2adfc643245758ce37" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1a35448f9c66824c2adfc643245758ce37" kindref="member">getHeight</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;height;}</highlight><highlight class="comment">//gets<sp/>height</highlight></codeline>
+<codeline lineno="93" refid="class_player_1ad9192cb7e7d2537cdabcdc249de10e5b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1ad9192cb7e7d2537cdabcdc249de10e5b" kindref="member">getAssiduity</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;assiduity;<sp/>};</highlight><highlight class="comment">//gets<sp/>assiduity</highlight></codeline>
+<codeline lineno="98" refid="class_player_1ae004ae4c13248265587f8a0d27ab3c5a" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1ae004ae4c13248265587f8a0d27ab3c5a" kindref="member">getPresences_games</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;presences_games;<sp/>};</highlight><highlight class="comment">//gets<sp/>presences<sp/>in<sp/>games</highlight></codeline>
+<codeline lineno="103" refid="class_player_1a0ed8ba4399f59a5e92239d61a99e1260" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1a0ed8ba4399f59a5e92239d61a99e1260" kindref="member">getPresences_stournaments</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;presences_stournaments;};</highlight><highlight class="comment">//gets<sp/>presences<sp/>in<sp/>s_tournaments</highlight></codeline>
+<codeline lineno="108" refid="class_player_1a4b49e80e2c4b49276a4f5d1a38bf337c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1a4b49e80e2c4b49276a4f5d1a38bf337c" kindref="member">getAssiduity_Curr_Month</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>assiduity_curr_month;};</highlight><highlight class="comment">//gets<sp/>assiduity<sp/>in<sp/>the<sp/>current<sp/>month</highlight></codeline>
+<codeline lineno="113" refid="class_player_1a0a7205a9a0a7b9b6bf02035ee104b690" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1a0a7205a9a0a7b9b6bf02035ee104b690" kindref="member">getGames_Won</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;games_won;<sp/>};</highlight><highlight class="comment">//gets<sp/>games<sp/>won<sp/>by<sp/>the<sp/>player<sp/>in<sp/>the<sp/>current<sp/>month</highlight></codeline>
+<codeline lineno="118" refid="class_player_1af7e72bf68786fafad86906bf4228c467" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1af7e72bf68786fafad86906bf4228c467" kindref="member">setPresent</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b)<sp/>{this-&gt;got_present<sp/>=<sp/>b;}</highlight></codeline>
+<codeline lineno="123" refid="class_player_1a7e5ebb8fa4bc30bf04bad367a195864b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a7e5ebb8fa4bc30bf04bad367a195864b" kindref="member">setAssiduity</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>assiduity)<sp/>{<sp/>this-&gt;assiduity<sp/>=<sp/>assiduity;<sp/>};</highlight><highlight class="comment">//sets<sp/>assiduity</highlight></codeline>
+<codeline lineno="128" refid="class_player_1a6e7482dfac54ccf8c7804dd909b70143" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a6e7482dfac54ccf8c7804dd909b70143" kindref="member">setPresences_games</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>presences_games)<sp/>{<sp/>this-&gt;presences_games<sp/>=<sp/>presences_games;<sp/>};</highlight><highlight class="comment">//sets<sp/>presences<sp/>in<sp/>games</highlight></codeline>
+<codeline lineno="133" refid="class_player_1a95c04115cff22ff76782c475f288561d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a95c04115cff22ff76782c475f288561d" kindref="member">setPresences_stournaments</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>presences_stournaments)<sp/>{<sp/>this-&gt;presences_stournaments<sp/>=<sp/>presences_stournaments;<sp/>};</highlight><highlight class="comment">//sets<sp/>presences<sp/>in<sp/>small<sp/>tournaments</highlight></codeline>
+<codeline lineno="138" refid="class_player_1a705ed15f41e065c7b03ad4ad1cb5ab91" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a705ed15f41e065c7b03ad4ad1cb5ab91" kindref="member">setAssiduity_Curr_Month</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>assiduity)<sp/>{<sp/>this-&gt;assiduity_curr_month<sp/>=<sp/>assiduity;};</highlight><highlight class="comment">//sets<sp/>the<sp/>assiduity<sp/>of<sp/>the<sp/>player<sp/>in<sp/>the<sp/>current<sp/>month</highlight></codeline>
+<codeline lineno="143" refid="class_player_1a2ff08de789327f4b3aa82f15b354ee4e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a2ff08de789327f4b3aa82f15b354ee4e" kindref="member">setGames_Won</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>games)<sp/>{<sp/>this-&gt;games_won<sp/>=<sp/>games;<sp/>};</highlight><highlight class="comment">//sets<sp/>the<sp/>number<sp/>of<sp/>games<sp/>won<sp/>by<sp/>the<sp/>player</highlight></codeline>
+<codeline lineno="148" refid="class_player_1a217985fe6c76c9e91a91f4d1c1a82c11" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a217985fe6c76c9e91a91f4d1c1a82c11" kindref="member">setHeight</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height)<sp/>{<sp/>this-&gt;height<sp/>=<sp/>height;<sp/>};</highlight><highlight class="comment">//sets<sp/>height</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a4309719d18274253a5d00e9940e042d9" kindref="member">addECG</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>last_eletro);</highlight><highlight class="comment">//adds<sp/>ecg<sp/>to<sp/>the<sp/>list</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a623da661c3b627ba79ed595fa8d9a3ea" kindref="member">show</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment">//prints<sp/>the<sp/>player<sp/>on<sp/>the<sp/>screen</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="class_player_1ae769d5edba7c2a1defb0d53efe5804a4" kindref="member">getLast_Eletro</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment">//gets<sp/>the<sp/>date<sp/>when<sp/>the<sp/>player<sp/>had<sp/>his<sp/>last<sp/>ecg</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a27612a5782370fda6e67d3e8a2fd9a2d" kindref="member">checkECG</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>&amp;<sp/>d)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment">//checks<sp/>if<sp/>the<sp/>player<sp/>had<sp/>his<sp/>ecg<sp/>in<sp/>order<sp/>on<sp/>the<sp/>date<sp/>d</highlight></codeline>
+<codeline lineno="174" refid="class_player_1a743a295b67be652909a5b1c3252f0d8c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a743a295b67be652909a5b1c3252f0d8c" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>&amp;<sp/>p1)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>name<sp/>&lt;<sp/>p1.name;<sp/>};</highlight><highlight class="comment">//compares<sp/>players</highlight></codeline>
+<codeline lineno="181" refid="class_player_1a81019960e40a67b0cefea0afd3a3100c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a81019960e40a67b0cefea0afd3a3100c" kindref="member">operator== </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>&amp;p1)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;name<sp/>==<sp/>p1.name;}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>ostream&amp;<sp/><ref refid="class_player_1a7429373489b5ccfffc0c6f7d3b237b06" kindref="member">operator&lt;&lt;</ref>(ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>&amp;<sp/>player);</highlight><highlight class="comment">//writes<sp/>date<sp/>in<sp/>ostream<sp/>out</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>istream&amp;<sp/><ref refid="class_player_1ac80a9cf20cbee01df8046ca9497b0b2d" kindref="member">operator&gt;&gt;</ref>(istream&amp;<sp/>in,<sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>&amp;<sp/>player);</highlight><highlight class="comment">//gets<sp/>date<sp/>from<sp/>instream<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/><sp/>@brief<sp/>Struct<sp/>to<sp/>store<sp/>the<sp/>Player<sp/>in<sp/>a<sp/>BST</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/><sp/>@var<sp/>player<sp/>Player<sp/>to<sp/>be<sp/>stored</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="struct_player__node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_player__node" kindref="compound">Player_node</ref><sp/>{</highlight></codeline>
+<codeline lineno="205" refid="struct_player__node_1a92957e7c45b23237ef919c046436c016" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>*<sp/><ref refid="struct_player__node_1a92957e7c45b23237ef919c046436c016" kindref="member">player</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a743a295b67be652909a5b1c3252f0d8c" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_player__node" kindref="compound">Player_node</ref><sp/>&amp;<sp/>pl_left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_player__node" kindref="compound">Player_node</ref><sp/>&amp;<sp/>p_right);</highlight><highlight class="comment">//compares<sp/>players<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/><sp/>@brief<sp/>Struct<sp/>to<sp/>store<sp/>the<sp/>Player<sp/>in<sp/>a<sp/>priority<sp/>queue</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/><sp/>@var<sp/>player<sp/>Player<sp/>to<sp/>be<sp/>stored</highlight></codeline>
+<codeline lineno="213"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="struct_player__queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_player__queue" kindref="compound">Player_queue</ref><sp/>{</highlight></codeline>
+<codeline lineno="215" refid="struct_player__queue_1a993b14d06659290be7b7d1970a3c8fe3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>*<sp/><ref refid="struct_player__queue_1a993b14d06659290be7b7d1970a3c8fe3" kindref="member">player</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a743a295b67be652909a5b1c3252f0d8c" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_player__queue" kindref="compound">Player_queue</ref><sp/>&amp;<sp/>pl_left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_player__queue" kindref="compound">Player_queue</ref><sp/>&amp;<sp/>pl_right);</highlight><highlight class="comment">//compares<sp/>players<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h"/>
+  </compounddef>
+</doxygen>

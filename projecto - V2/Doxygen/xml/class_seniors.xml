@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_seniors" kind="class" language="C++" prot="public">
+    <compoundname>Seniors</compoundname>
+    <basecompoundref refid="class_level" prot="public" virt="non-virtual">Level</basecompoundref>
+    <includes refid="_seniors_8h" local="no">Seniors.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_seniors_1a0a9323382148a6365b687d977d33c00e" prot="private" static="no" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int Seniors::age_min</definition>
+        <argsstring></argsstring>
+        <name>age_min</name>
+        <initializer>= 19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="24" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_seniors_1af7202bb14a36943cf2dad9a0eca531ed" prot="private" static="no" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int Seniors::age_max</definition>
+        <argsstring></argsstring>
+        <name>age_max</name>
+        <initializer>= 35</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="24" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_seniors_1ae02d7a048872847e295db59af893798a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Seniors::Seniors</definition>
+        <argsstring>()</argsstring>
+        <name>Seniors</name>
+        <briefdescription>
+<para>Default Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="29" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1a3063e1ce430ade54ec6b7a41a51bf942" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Seniors::~Seniors</definition>
+        <argsstring>()</argsstring>
+        <name>~Seniors</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="33" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1afb61156464d704b00aff866de6ee727a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Seniors::Seniors</definition>
+        <argsstring>(const Seniors &amp;seniors)</argsstring>
+        <name>Seniors</name>
+        <param>
+          <type>const <ref refid="class_seniors" kindref="compound">Seniors</ref> &amp;</type>
+          <declname>seniors</declname>
+        </param>
+        <briefdescription>
+<para>Copy Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seniors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of class to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="38" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1a6ec55b45cb67c34004c38a36fc3f8e64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_seniors" kindref="compound">Seniors</ref> &amp;</type>
+        <definition>Seniors&amp; Seniors::operator=</definition>
+        <argsstring>(const Seniors &amp;seniors)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_seniors" kindref="compound">Seniors</ref> &amp;</type>
+          <declname>seniors</declname>
+        </param>
+        <briefdescription>
+<para>Copy Operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seniors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of class to be copied</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Calls the base class <ref refid="class_level_1a29ac7d488564e82b888c295bbbb96f2a" kindref="member">Level::operator=</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="44" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1a856a5d37a9dbda1e1b3ad8eb90db1f2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int Seniors::getMaxAge</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxAge</name>
+        <reimplements refid="class_level_1ae7b28ba0cb8d49372c4657fbe42706e1">getMaxAge</reimplements>
+        <briefdescription>
+<para>Gets the member variable age_max. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>age_max (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="49" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1a1843edaf8811f4728f76c11c79fe5450" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int Seniors::getMinAge</definition>
+        <argsstring>()</argsstring>
+        <name>getMinAge</name>
+        <reimplements refid="class_level_1a161cf8c238fd499c112d90504cb6f587">getMinAge</reimplements>
+        <briefdescription>
+<para>Gets the member variable age_min. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>age_min (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="54" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1a27d5b434d595a0b2c65f7b23869ad29e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Seniors::addPlayer</definition>
+        <argsstring>(Player *player)</argsstring>
+        <name>addPlayer</name>
+        <reimplements refid="class_level_1abbb0a9cdb17251cea99134324b84654f">addPlayer</reimplements>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new <ref refid="class_player" kindref="compound">Player</ref> to this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="class_player" kindref="compound">Player</ref> to be added </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if it was added successfuly, false if not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1addf02a1f1031cf6679a0bf3154cc99f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Seniors::showplayers</definition>
+        <argsstring>() const</argsstring>
+        <name>showplayers</name>
+        <reimplements refid="class_level_1af69ea50948039136cdce88bbdcb01e08">showplayers</reimplements>
+        <briefdescription>
+<para>Outputs the Players of this <ref refid="class_level" kindref="compound">Level</ref> on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1a16b0ed0592df428409910698c0ece1ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Seniors::showtrainings</definition>
+        <argsstring>() const</argsstring>
+        <name>showtrainings</name>
+        <reimplements refid="class_level_1aab00625f4293cdce8de3169a3eeae243">showtrainings</reimplements>
+        <briefdescription>
+<para>Outputs the Trainings of this <ref refid="class_level" kindref="compound">Level</ref> on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1a6d666a98da195995b01d69e135203e8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Seniors::showtournaments</definition>
+        <argsstring>() const</argsstring>
+        <name>showtournaments</name>
+        <reimplements refid="class_level_1ae4ecbd2830b9fc46a77783035dab8543">showtournaments</reimplements>
+        <briefdescription>
+<para>Outputs the Tournaments of this <ref refid="class_level" kindref="compound">Level</ref> on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_seniors_1a2ece7a81ffca49ef1b365a70e4ffd58f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>virtual vector&lt;string&gt; Seniors::getCall</definition>
+        <argsstring>(unsigned int size)</argsstring>
+        <name>getCall</name>
+        <reimplements refid="class_level_1ac118b390f16a75b9a0e9df198b3190ad">getCall</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Gets names of players to be called to a <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many players to be called </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector with names of Players to be called </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="78" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds all the information about the <ref refid="class_level" kindref="compound">Level</ref> <ref refid="class_seniors" kindref="compound">Seniors</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="54">
+        <label>Seniors</label>
+        <link refid="class_seniors"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Level</label>
+        <link refid="class_level"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="56">
+        <label>Seniors</label>
+        <link refid="class_seniors"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Level</label>
+        <link refid="class_level"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" line="23" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h" bodystart="23" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_level_1a09a28b62e9b593db54b220533a5dd567" prot="public" virt="non-virtual"><scope>Seniors</scope><name>actualize_curr_parameters</name></member>
+      <member refid="class_level_1a86b0d3ec7bb14fd7002c332b328dd96d" prot="public" virt="non-virtual"><scope>Seniors</scope><name>addEvent</name></member>
+      <member refid="class_seniors_1a27d5b434d595a0b2c65f7b23869ad29e" prot="public" virt="virtual"><scope>Seniors</scope><name>addPlayer</name></member>
+      <member refid="class_seniors_1af7202bb14a36943cf2dad9a0eca531ed" prot="private" virt="non-virtual"><scope>Seniors</scope><name>age_max</name></member>
+      <member refid="class_seniors_1a0a9323382148a6365b687d977d33c00e" prot="private" virt="non-virtual"><scope>Seniors</scope><name>age_min</name></member>
+      <member refid="class_seniors_1a2ece7a81ffca49ef1b365a70e4ffd58f" prot="public" virt="virtual"><scope>Seniors</scope><name>getCall</name></member>
+      <member refid="class_level_1a6c4d3f153c3285aeaf3ec954981c5be8" prot="public" virt="non-virtual"><scope>Seniors</scope><name>getCoach</name></member>
+      <member refid="class_level_1aa03432096cfcf42293cebf2c801b7437" prot="public" virt="non-virtual"><scope>Seniors</scope><name>getEvents</name></member>
+      <member refid="class_level_1a30e6e466da1dddeb05d3591d0fddc2b8" prot="public" virt="non-virtual"><scope>Seniors</scope><name>getFutureEvents</name></member>
+      <member refid="class_seniors_1a856a5d37a9dbda1e1b3ad8eb90db1f2a" prot="public" virt="virtual"><scope>Seniors</scope><name>getMaxAge</name></member>
+      <member refid="class_seniors_1a1843edaf8811f4728f76c11c79fe5450" prot="public" virt="virtual"><scope>Seniors</scope><name>getMinAge</name></member>
+      <member refid="class_level_1a51ff82259c62111618aed20f96ec9f88" prot="public" virt="non-virtual"><scope>Seniors</scope><name>getPlayers</name></member>
+      <member refid="class_level_1ae24a0ba5c352e1cb0fa64282a89e559f" prot="public" virt="non-virtual"><scope>Seniors</scope><name>getPlayers_tree</name></member>
+      <member refid="class_level_1ab3466508279237e3b03e84b2ae161280" prot="public" virt="non-virtual"><scope>Seniors</scope><name>getTournaments</name></member>
+      <member refid="class_level_1a51174d561fe50353f7967a30b234f225" prot="public" virt="non-virtual"><scope>Seniors</scope><name>getTrainings</name></member>
+      <member refid="class_level_1a7a696c928ca5d5354db6e50e46d0f67d" prot="public" virt="non-virtual"><scope>Seniors</scope><name>Level</name></member>
+      <member refid="class_level_1a098e3e980b18013bf7f0683acbe5e2f6" prot="public" virt="non-virtual"><scope>Seniors</scope><name>Level</name></member>
+      <member refid="class_level_1ab4e4b8c386063fd8244042f7eefa3427" prot="public" virt="non-virtual"><scope>Seniors</scope><name>lowerassiduity</name></member>
+      <member refid="class_level_1a336a54c2ef7e4307e9353a200a11537e" prot="public" virt="non-virtual"><scope>Seniors</scope><name>lowerpgames</name></member>
+      <member refid="class_level_1afbb999a489e4e185bb26e965939a97e5" prot="public" virt="non-virtual"><scope>Seniors</scope><name>lowerptournaments</name></member>
+      <member refid="class_level_1a45217bde102ee160f4852d093f51ed83" prot="public" virt="non-virtual"><scope>Seniors</scope><name>makeTree</name></member>
+      <member refid="class_seniors_1a6ec55b45cb67c34004c38a36fc3f8e64" prot="public" virt="non-virtual"><scope>Seniors</scope><name>operator=</name></member>
+      <member refid="class_level_1a29ac7d488564e82b888c295bbbb96f2a" prot="public" virt="non-virtual" ambiguityscope="Level::"><scope>Seniors</scope><name>operator=</name></member>
+      <member refid="class_level_1ac7ecbf06c831f2a02cad567bcfb52ec9" prot="public" virt="non-virtual"><scope>Seniors</scope><name>raiseassiduity</name></member>
+      <member refid="class_level_1a2634c6743f1a56592c97e6cfb7a9a8b6" prot="public" virt="non-virtual"><scope>Seniors</scope><name>raiseassiduity_curr</name></member>
+      <member refid="class_level_1af91bf73255a171a3f2a256778e075fb7" prot="public" virt="non-virtual"><scope>Seniors</scope><name>raisegames_won</name></member>
+      <member refid="class_level_1a2d64a6f446a4d6c7c4959c7bc0972a84" prot="public" virt="non-virtual"><scope>Seniors</scope><name>raisepgames</name></member>
+      <member refid="class_level_1ac592cc97524f49de9114f4af20312aad" prot="public" virt="non-virtual"><scope>Seniors</scope><name>raiseptournaments</name></member>
+      <member refid="class_level_1a2752e4f84d3de5e8b72e4cf87cb0131b" prot="public" virt="non-virtual"><scope>Seniors</scope><name>remove_Tree</name></member>
+      <member refid="class_level_1a8f38f4c5bc05c7c7c4d4ea1321d91b84" prot="public" virt="non-virtual"><scope>Seniors</scope><name>removeEvent</name></member>
+      <member refid="class_level_1a68ca29bc1f8796b8ee89f6d9a77b3e2a" prot="public" virt="non-virtual"><scope>Seniors</scope><name>removeplayer</name></member>
+      <member refid="class_seniors_1ae02d7a048872847e295db59af893798a" prot="public" virt="non-virtual"><scope>Seniors</scope><name>Seniors</name></member>
+      <member refid="class_seniors_1afb61156464d704b00aff866de6ee727a" prot="public" virt="non-virtual"><scope>Seniors</scope><name>Seniors</name></member>
+      <member refid="class_level_1aa666e5fe87af336fd7350ac0b72b7c8c" prot="public" virt="non-virtual"><scope>Seniors</scope><name>setCoach</name></member>
+      <member refid="class_level_1a357810a186049d3b0692cbf2066a4ebe" prot="public" virt="virtual"><scope>Seniors</scope><name>showevents</name></member>
+      <member refid="class_seniors_1addf02a1f1031cf6679a0bf3154cc99f5" prot="public" virt="virtual"><scope>Seniors</scope><name>showplayers</name></member>
+      <member refid="class_seniors_1a6d666a98da195995b01d69e135203e8c" prot="public" virt="virtual"><scope>Seniors</scope><name>showtournaments</name></member>
+      <member refid="class_seniors_1a16b0ed0592df428409910698c0ece1ff" prot="public" virt="virtual"><scope>Seniors</scope><name>showtrainings</name></member>
+      <member refid="class_level_1ad04be01a11723a3d7d8efce4ae1884f2" prot="public" virt="virtual"><scope>Seniors</scope><name>~Level</name></member>
+      <member refid="class_seniors_1a3063e1ce430ade54ec6b7a41a51bf942" prot="public" virt="non-virtual"><scope>Seniors</scope><name>~Seniors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

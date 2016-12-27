@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.12">
+  <compound refid="class_binary_node" kind="class"><name>BinaryNode</name>
+    <member refid="class_binary_node_1a75804c1624577ae485b775408b54bd06" kind="variable"><name>element</name></member>
+    <member refid="class_binary_node_1a2b6352b5519f90f2d9c2d610b2278dac" kind="variable"><name>left</name></member>
+    <member refid="class_binary_node_1a847342c242923f34b77fc5e402fbbb4b" kind="variable"><name>right</name></member>
+    <member refid="class_binary_node_1a28a1adb9906f3ff7e12c2cb6fa2bd54e" kind="friend"><name>BST&lt; Comparable &gt;</name></member>
+    <member refid="class_binary_node_1aab3993acac2ab24a0b59edb0c3acc775" kind="friend"><name>BSTItrIn&lt; Comparable &gt;</name></member>
+    <member refid="class_binary_node_1a45a55df6f11541416d4ea7684c575c1a" kind="friend"><name>BSTItrPre&lt; Comparable &gt;</name></member>
+    <member refid="class_binary_node_1a5dc153694be266f6e772659486219da7" kind="friend"><name>BSTItrPost&lt; Comparable &gt;</name></member>
+    <member refid="class_binary_node_1a26ff00bc0d87069aed877f10fd3c80a8" kind="friend"><name>BSTItrLevel&lt; Comparable &gt;</name></member>
+    <member refid="class_binary_node_1aff89d3679c077d70b67ad16e9816d884" kind="function"><name>BinaryNode</name></member>
+  </compound>
+  <compound refid="class_b_s_t" kind="class"><name>BST</name>
+    <member refid="class_b_s_t_1a48d08a19c48c0c260a7d5db37149ad0f" kind="variable"><name>root</name></member>
+    <member refid="class_b_s_t_1a93811f042c4201e993fe39638c15f251" kind="variable"><name>ITEM_NOT_FOUND</name></member>
+    <member refid="class_b_s_t_1aab3993acac2ab24a0b59edb0c3acc775" kind="friend"><name>BSTItrIn&lt; Comparable &gt;</name></member>
+    <member refid="class_b_s_t_1a45a55df6f11541416d4ea7684c575c1a" kind="friend"><name>BSTItrPre&lt; Comparable &gt;</name></member>
+    <member refid="class_b_s_t_1a5dc153694be266f6e772659486219da7" kind="friend"><name>BSTItrPost&lt; Comparable &gt;</name></member>
+    <member refid="class_b_s_t_1a26ff00bc0d87069aed877f10fd3c80a8" kind="friend"><name>BSTItrLevel&lt; Comparable &gt;</name></member>
+    <member refid="class_b_s_t_1a3185a79cf472271f122a97d0f59022d1" kind="function"><name>BST</name></member>
+    <member refid="class_b_s_t_1a163232cc6ffcbd1a51707efcc3fa36ca" kind="function"><name>BST</name></member>
+    <member refid="class_b_s_t_1abf3125f968641c8726101c5dd18f36be" kind="function"><name>~BST</name></member>
+    <member refid="class_b_s_t_1aa52491ff35aec517961937a17a9fa493" kind="function"><name>findMin</name></member>
+    <member refid="class_b_s_t_1a03485f3b0b150f1e69a12c28d26d8092" kind="function"><name>findMax</name></member>
+    <member refid="class_b_s_t_1aaf4eb6869f68db0069534f7b2dfbe53b" kind="function"><name>find</name></member>
+    <member refid="class_b_s_t_1a10fd737b2be62437023407fdc123f728" kind="function"><name>isEmpty</name></member>
+    <member refid="class_b_s_t_1a91e830925c48040d4c4dbb7d971c3bfe" kind="function"><name>printTree</name></member>
+    <member refid="class_b_s_t_1a050d829503a88714c4ad0773cf6d3af6" kind="function"><name>makeEmpty</name></member>
+    <member refid="class_b_s_t_1a2b117df6521c7d61dac75ff2c938bae7" kind="function"><name>insert</name></member>
+    <member refid="class_b_s_t_1a6f01a0b44daf82a42022b6eb4c0df7a2" kind="function"><name>remove</name></member>
+    <member refid="class_b_s_t_1aa80c39f454c89d4a202be3d1445823f3" kind="function"><name>operator=</name></member>
+    <member refid="class_b_s_t_1adb7d0e1197c30ff79cb0fb05fcd67249" kind="function"><name>elementAt</name></member>
+    <member refid="class_b_s_t_1a4d885d655c4a4e29c2d40f2b48baf7d3" kind="function"><name>insert</name></member>
+    <member refid="class_b_s_t_1afe360f55921ac51ac78ddde6556fe946" kind="function"><name>remove</name></member>
+    <member refid="class_b_s_t_1a1b79bb91ccef69398a80bf508a2a6097" kind="function"><name>findMin</name></member>
+    <member refid="class_b_s_t_1a922e4c2dfbd460db9e31531d8d20282b" kind="function"><name>findMax</name></member>
+    <member refid="class_b_s_t_1a858dd15e9d15affeb88785d0c5a65ae3" kind="function"><name>find</name></member>
+    <member refid="class_b_s_t_1a5582f1066a084181d6a79ec0a6e9f9f2" kind="function"><name>makeEmpty</name></member>
+    <member refid="class_b_s_t_1a76247d69325065d2485349148d7940e7" kind="function"><name>printTree</name></member>
+    <member refid="class_b_s_t_1acefda5ede0b55cbb1f7deab580bd8fd9" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="class_b_s_t_itr_in" kind="class"><name>BSTItrIn</name>
+    <member refid="class_b_s_t_itr_in_1ad7cb5e89f04cf08f5615aa53614dd916" kind="variable"><name>itrStack</name></member>
+    <member refid="class_b_s_t_itr_in_1ac836e2f560fed9cc7ef8e5431a2836cc" kind="function"><name>BSTItrIn</name></member>
+    <member refid="class_b_s_t_itr_in_1ac772d3ebbac748c5f8cf9bc659f2e32c" kind="function"><name>advance</name></member>
+    <member refid="class_b_s_t_itr_in_1ac7ac215c1247bd25fc1fdb8053826a32" kind="function"><name>retrieve</name></member>
+    <member refid="class_b_s_t_itr_in_1a6f9a43217862c263a9bf15b9a08b889a" kind="function"><name>isAtEnd</name></member>
+    <member refid="class_b_s_t_itr_in_1a896191c02da37364153df2363ff28e7e" kind="function"><name>slideLeft</name></member>
+  </compound>
+  <compound refid="class_b_s_t_itr_level" kind="class"><name>BSTItrLevel</name>
+    <member refid="class_b_s_t_itr_level_1a6de8f9f3e129e2a358b00ffa35abcb0e" kind="variable"><name>itrQueue</name></member>
+    <member refid="class_b_s_t_itr_level_1a8fd5cdde93eb182c4cd5cf6b2c5efaeb" kind="function"><name>BSTItrLevel</name></member>
+    <member refid="class_b_s_t_itr_level_1ad54a6fa289a59d6050b507abe40d463b" kind="function"><name>advance</name></member>
+    <member refid="class_b_s_t_itr_level_1a0340bd9f21f72ae25348f383e67e7f91" kind="function"><name>retrieve</name></member>
+    <member refid="class_b_s_t_itr_level_1a89bc8e81dde255fd6bad917cacc0d489" kind="function"><name>isAtEnd</name></member>
+  </compound>
+  <compound refid="class_b_s_t_itr_post" kind="class"><name>BSTItrPost</name>
+    <member refid="class_b_s_t_itr_post_1add32204909b8a6c3635b926832192ced" kind="variable"><name>itrStack</name></member>
+    <member refid="class_b_s_t_itr_post_1a5a9af907c7b135acdf3b5ed9affbb9a7" kind="variable"><name>visitStack</name></member>
+    <member refid="class_b_s_t_itr_post_1acf7e537dea01978f40c40909c55c56c2" kind="function"><name>BSTItrPost</name></member>
+    <member refid="class_b_s_t_itr_post_1a376098e5a82cd02118dd4dcdec49bb26" kind="function"><name>advance</name></member>
+    <member refid="class_b_s_t_itr_post_1a72446e4d0df0bcafc14294a78faeb56e" kind="function"><name>retrieve</name></member>
+    <member refid="class_b_s_t_itr_post_1a2f330e73bb817e8bd1c797805e66ddb7" kind="function"><name>isAtEnd</name></member>
+    <member refid="class_b_s_t_itr_post_1a56a13ae3a0358eeb06a83d4de745344a" kind="function"><name>slideDown</name></member>
+  </compound>
+  <compound refid="class_b_s_t_itr_pre" kind="class"><name>BSTItrPre</name>
+    <member refid="class_b_s_t_itr_pre_1a73e938d809acba06490472e7fc1bd6d3" kind="variable"><name>itrStack</name></member>
+    <member refid="class_b_s_t_itr_pre_1a11b1cd4e783f153b9c1b64ce2ec8077e" kind="function"><name>BSTItrPre</name></member>
+    <member refid="class_b_s_t_itr_pre_1a7a743d66a842018fd833fb2b0737254d" kind="function"><name>advance</name></member>
+    <member refid="class_b_s_t_itr_pre_1af40033e97f63bf025c2e33a9fdce4c43" kind="function"><name>retrieve</name></member>
+    <member refid="class_b_s_t_itr_pre_1ae282a7b9ffa9d250bb0f6a6d79f6e8d0" kind="function"><name>isAtEnd</name></member>
+  </compound>
+  <compound refid="class_club" kind="class"><name>Club</name>
+    <member refid="class_club_1a2a5a3c100de1e900fbca18312d3239fc" kind="variable"><name>name</name></member>
+    <member refid="class_club_1a6d1b14b47c391b89424e9ecd12547794" kind="variable"><name>minis</name></member>
+    <member refid="class_club_1a7a6afb7c6982d1057e139ac5a6b93271" kind="variable"><name>juveniles</name></member>
+    <member refid="class_club_1a1640096aa470c4d5733cc75260bc68ae" kind="variable"><name>juniors</name></member>
+    <member refid="class_club_1a2033886a86dff1ce671784394d18bdbb" kind="variable"><name>seniors</name></member>
+    <member refid="class_club_1aeb457f9fc36acd9556b1e14ca43a0550" kind="variable"><name>leaveprogram</name></member>
+    <member refid="class_club_1a7e90d4c11dc9c23d469c1aa123fa1b98" kind="variable"><name>filename_players</name></member>
+    <member refid="class_club_1ad3a96ff5d22c959d5c21aa8206431633" kind="variable"><name>filename_trainings</name></member>
+    <member refid="class_club_1ad54a2d3f19d39095b5b2ff9484277ef0" kind="variable"><name>filename_tournaments</name></member>
+    <member refid="class_club_1ad3c599cd9613906927cb46b3e5adfe31" kind="variable"><name>ECG_queue</name></member>
+    <member refid="class_club_1a3ebe0ffb5259274cf5d197c07e4d8eaf" kind="variable"><name>future_birthdays</name></member>
+    <member refid="class_club_1a3a315f560e155b3cb6a577e007bbf0bf" kind="variable"><name>singleton_instance</name></member>
+    <member refid="class_club_1a0c3852dcc026792a5b3df86ac3cde541" kind="function"><name>Club</name></member>
+    <member refid="class_club_1a1c2993e141cfa6468284274359cc7de5" kind="function"><name>~Club</name></member>
+    <member refid="class_club_1aca473ab431cc852ad0f99479aace788c" kind="function"><name>getname</name></member>
+    <member refid="class_club_1a08eeadedcdbf4cfd5eaada3066b668dd" kind="function"><name>getleaveprogram</name></member>
+    <member refid="class_club_1a797110a5f4b779fec91a6fecbc0e3dda" kind="function"><name>setleaveprogram</name></member>
+    <member refid="class_club_1a8c96af96a3b46adf1d3d46694452b422" kind="function"><name>getfilename_players</name></member>
+    <member refid="class_club_1a0807e91626c347847a36551c66e38985" kind="function"><name>getfilename_trainings</name></member>
+    <member refid="class_club_1a95dd9fae1bd73060b8a64176aef5b848" kind="function"><name>getfilename_tournaments</name></member>
+    <member refid="class_club_1a215b1c939a82ae2d442d05bc58457cd4" kind="function"><name>setfilename_players</name></member>
+    <member refid="class_club_1af1693f8321d273f68b3bcfebff5d4ac9" kind="function"><name>setfilename_trainings</name></member>
+    <member refid="class_club_1a5bd4d91fd403f73a9b74778568e3e639" kind="function"><name>setfilename_tournaments</name></member>
+    <member refid="class_club_1a8bae0203ecc348fa338ff5fcfd0cd6fb" kind="function"><name>readplayers</name></member>
+    <member refid="class_club_1a918827ec97985e5f98d471f116098902" kind="function"><name>readtrainings</name></member>
+    <member refid="class_club_1ae7453aa640951df46424975ecfcbbbca" kind="function"><name>readtournaments</name></member>
+    <member refid="class_club_1acc8a8c5175c6f90db4056dd6a1e98b67" kind="function"><name>writeplayers</name></member>
+    <member refid="class_club_1a4784eaf929c6c72559ad0f6ba2895a8f" kind="function"><name>writetrainings</name></member>
+    <member refid="class_club_1a89dfe233c69897a1d5abd9d7951990d8" kind="function"><name>writetournaments</name></member>
+    <member refid="class_club_1ad196e0999b3c18c1ed3e757ccf70b92d" kind="function"><name>getLevels</name></member>
+    <member refid="class_club_1a75d763d9915a2f3fca2fc4e287cf3e43" kind="function"><name>getPlayers</name></member>
+    <member refid="class_club_1a44a4556487884659d9b316dc6c961e86" kind="function"><name>makeTree</name></member>
+    <member refid="class_club_1a389972412da4a5b1cd62965ceefad7fe" kind="function"><name>makeQueue</name></member>
+    <member refid="class_club_1aecaa2826d91ec8efdc8b8ecc5543f9d0" kind="function"><name>addPlayerQueue</name></member>
+    <member refid="class_club_1ad09dd0ccccf5bd9dd465778ad127f41a" kind="function"><name>removePlayerQueue</name></member>
+    <member refid="class_club_1a085dd799d98de3efc6e43d81718f54a3" kind="function"><name>addBirthday</name></member>
+    <member refid="class_club_1afccacb082df30292238e2da709c9c044" kind="function"><name>removeBirthday</name></member>
+    <member refid="class_club_1a7f8d7c40bf2a2e226bb39b212bc84d4c" kind="function"><name>nextBirthdays</name></member>
+    <member refid="class_club_1aefc39e233faadeb0463e959628ab4a0d" kind="function"><name>findOldPlayer</name></member>
+    <member refid="class_club_1aad02197c0f3431dbe8c2e12033e24f63" kind="function"><name>ECG_notify</name></member>
+    <member refid="class_club_1a7ef23c55751610bc2cb98a356a6bee46" kind="function"><name>showQueue</name></member>
+    <member refid="class_club_1abdfe1ed370c779a570ac66bd3a8f3a0e" kind="function"><name>getinstance</name></member>
+  </compound>
+  <compound refid="class_date" kind="class"><name>Date</name>
+    <member refid="class_date_1a6c498dee79268960e000ec3deaa555ac" kind="variable"><name>day</name></member>
+    <member refid="class_date_1af48402007169fe01234fe9bb9e7a1d2c" kind="variable"><name>month</name></member>
+    <member refid="class_date_1afc014a1ae62e56be473144050201e62a" kind="variable"><name>year</name></member>
+    <member refid="class_date_1a4e59ed4ba66eec61c27460c5d09fa1bd" kind="function"><name>Date</name></member>
+    <member refid="class_date_1a28c6604a0f8ed8216becf24abc20cf5b" kind="function"><name>Date</name></member>
+    <member refid="class_date_1a0f253815240e70f4c39cb93cc68bd3f4" kind="function"><name>getDay</name></member>
+    <member refid="class_date_1a332f6e3a2f6a40d73742b6dab7be0f64" kind="function"><name>getMonth</name></member>
+    <member refid="class_date_1a8b0869f34c2b38d108ab83ee2e770e5d" kind="function"><name>getYear</name></member>
+    <member refid="class_date_1aa4c0f619e51dca5ef53284e548d4d0af" kind="function"><name>operator&gt;</name></member>
+    <member refid="class_date_1ae5a781b0f45775eece17d7f3dd5b3703" kind="function"><name>operator&gt;=</name></member>
+    <member refid="class_date_1a352ad2bec798ce5802231d49bf0a16e8" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_date_1a50265b854c407eb0f3247b41f5cd1258" kind="function"><name>operator&lt;=</name></member>
+    <member refid="class_date_1ac906e253d7d1343e3e161fb9e1aee707" kind="function"><name>operator==</name></member>
+    <member refid="class_date_1a48e19b5b03c19466bfe245d5ae2b979a" kind="function"><name>addDays</name></member>
+    <member refid="class_date_1a16e8cb570b74e2d7a7050b53c0767542" kind="function"><name>subtractDays</name></member>
+    <member refid="class_date_1a93d53878c07ee506c78971b762a47265" kind="function"><name>diffDays</name></member>
+    <member refid="class_date_1a0ec9ecc48a4e5a4a582ff8344ae51acb" kind="function"><name>year_date</name></member>
+    <member refid="class_date_1ad367b27b98f481d3afd93cade84ef862" kind="function"><name>operator-</name></member>
+    <member refid="class_date_1a37f8fc7ca1692df7a8b265099c061721" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="class_duplicate_name" kind="class"><name>DuplicateName</name>
+    <member refid="class_duplicate_name_1a7fedfcedfdef6e90f180c608255c19bb" kind="variable"><name>name</name></member>
+    <member refid="class_duplicate_name_1a09b45905e407bc63fa159cbbe27b7c27" kind="function"><name>DuplicateName</name></member>
+    <member refid="class_duplicate_name_1a65a60c94f9cf8d06e8fbf81559741d65" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="class_event" kind="class"><name>Event</name>
+    <member refid="class_event_1ab18ac39159d39c083297acf85fcb414c" kind="variable"><name>day</name></member>
+    <member refid="class_event_1a2115a8fffbd0439519f9b125c367402a" kind="variable"><name>presences</name></member>
+    <member refid="class_event_1a5a40dd4708297f7031e29b39e039ae10" kind="function"><name>Event</name></member>
+    <member refid="class_event_1ab864fd85c758006c42cd7a1b3369b483" kind="function"><name>~Event</name></member>
+    <member refid="class_event_1aa79f43b0c42280875280ec071aa2eea1" kind="function"><name>Event</name></member>
+    <member refid="class_event_1ad13c7b9652c4e3ab546d86406097d23a" kind="function"><name>Event</name></member>
+    <member refid="class_event_1a8115e592203a26166924dcae5b064e06" kind="function"><name>operator=</name></member>
+    <member refid="class_event_1a67677233149ff7e2ebe038d3cfa35223" kind="function"><name>getPresences</name></member>
+    <member refid="class_event_1a9c016f59ee7116b2397a4823911e1a65" kind="function"><name>getDay</name></member>
+    <member refid="class_event_1a7e9fa73e721c69bdf05b894ec3178e9b" kind="function"><name>setDay</name></member>
+    <member refid="class_event_1a2e63387b12ece5fc8b38c6b1142df219" kind="function"><name>setPresences</name></member>
+    <member refid="class_event_1a3efb47d783affa24203f4ba13b355c56" kind="function"><name>addPresence</name></member>
+    <member refid="class_event_1a08af9b350f32520dca26d552d6f415b2" kind="function"><name>Istraining</name></member>
+    <member refid="class_event_1add36e9739215f6744040c11de50b26b7" kind="function"><name>isGame</name></member>
+    <member refid="class_event_1ab267b8e94c78ca51636792d75101acb5" kind="function"><name>getRank</name></member>
+    <member refid="class_event_1ad1a1a9cb471d664a2ca99effc102259b" kind="function"><name>isMajor</name></member>
+    <member refid="class_event_1a9d29f8c725da32b5fbf70ccf7961f02b" kind="function"><name>getResults</name></member>
+    <member refid="class_event_1a5ddb261642035be78677d668f9238339" kind="function"><name>setResults</name></member>
+    <member refid="class_event_1a5bccaba301e9038957ec4138df404524" kind="function"><name>setRank</name></member>
+    <member refid="class_event_1af53c2db83404a045087a271ed3c2604f" kind="function"><name>show</name></member>
+    <member refid="class_event_1a0c263fb7398dc2f0969a2bb22b47a40a" kind="function"><name>writetofile</name></member>
+    <member refid="class_event_1a7bdc01f67b0ebca8feb9650d63c8ff08" kind="function"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="structhash_funcs" kind="struct"><name>hashFuncs</name>
+    <member refid="structhash_funcs_1a521b1888977a80fcd935e8e03c09d916" kind="function"><name>operator()</name></member>
+    <member refid="structhash_funcs_1a9e171ebf004435ea1d1ceb8a30f6a954" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="class_invalid_date" kind="class"><name>InvalidDate</name>
+    <member refid="class_invalid_date_1ae88b81c9928d9f962229b4b60b1ca6e6" kind="variable"><name>day</name></member>
+    <member refid="class_invalid_date_1a63d1eb8cc29192ed24a608efaf8bb841" kind="variable"><name>month</name></member>
+    <member refid="class_invalid_date_1a796e1aee06941892afc67b4ebbbd84c3" kind="variable"><name>year</name></member>
+    <member refid="class_invalid_date_1aec8bd136d7adb6bccf44bf6d9f078a40" kind="function"><name>InvalidDate</name></member>
+    <member refid="class_invalid_date_1a665b9e90ec4cab29d400010cd73bb8ed" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="class_invalid_player" kind="class"><name>InvalidPlayer</name>
+    <member refid="class_invalid_player_1a9afbf7fc7d4d7937e53bf5e42bb65fa6" kind="variable"><name>name</name></member>
+    <member refid="class_invalid_player_1a13996adbe5a80b3db2687fc829738700" kind="variable"><name>birth</name></member>
+    <member refid="class_invalid_player_1a311099a3c76237e49e448de25aef4a89" kind="function"><name>InvalidPlayer</name></member>
+    <member refid="class_invalid_player_1a5254e7755b435020a786a2de1c20418f" kind="function"><name>show</name></member>
+  </compound>
+  <compound refid="class_juniors" kind="class"><name>Juniors</name>
+    <member refid="class_juniors_1a380885d1b43b9dec92e6f2990cc835d7" kind="variable"><name>age_min</name></member>
+    <member refid="class_juniors_1abc1799a3bcfeb5d9d71b2ea9738f303b" kind="variable"><name>age_max</name></member>
+    <member refid="class_juniors_1a36519a818f54755dfd1bd14e15b4fcea" kind="function"><name>Juniors</name></member>
+    <member refid="class_juniors_1ae9087dae0157d9a4539f5fc7e68e7478" kind="function"><name>~Juniors</name></member>
+    <member refid="class_juniors_1ab9b00b26e59661ee5aee18a3a6beb53c" kind="function"><name>Juniors</name></member>
+    <member refid="class_juniors_1adf648456072b60a7f99973c764c01c85" kind="function"><name>operator=</name></member>
+    <member refid="class_juniors_1a98c28047a2d5ff2b14651ee9eccfd2b6" kind="function"><name>getMaxAge</name></member>
+    <member refid="class_juniors_1a3110bdbaa344b2bfefa2ddcb8be8d7c6" kind="function"><name>getMinAge</name></member>
+    <member refid="class_juniors_1aa572f0d371343c8d8749b167972bd79c" kind="function"><name>addPlayer</name></member>
+    <member refid="class_juniors_1a1895a718018bd5af82242e5b29a1982d" kind="function"><name>showplayers</name></member>
+    <member refid="class_juniors_1aad300aa441c2036a6cc64dae6d2f94cc" kind="function"><name>showtrainings</name></member>
+    <member refid="class_juniors_1a2e9ea7859c38ac8509a0d3d787643a94" kind="function"><name>showtournaments</name></member>
+    <member refid="class_juniors_1ae74674e315f00640944d452bc197b4da" kind="function"><name>getCall</name></member>
+  </compound>
+  <compound refid="class_juveniles" kind="class"><name>Juveniles</name>
+    <member refid="class_juveniles_1abe88e5fb3a6166a6b987a617acad0867" kind="variable"><name>age_min</name></member>
+    <member refid="class_juveniles_1a77aa2455ece6760acf2151f0d228ad54" kind="variable"><name>age_max</name></member>
+    <member refid="class_juveniles_1a01be3288bd98fed2069a5a4d230a6a45" kind="function"><name>Juveniles</name></member>
+    <member refid="class_juveniles_1a10fac329b43ff6a3c66f115ef61e166c" kind="function"><name>~Juveniles</name></member>
+    <member refid="class_juveniles_1a8a0e4b739295e6ec014de47125e3479f" kind="function"><name>Juveniles</name></member>
+    <member refid="class_juveniles_1ac08c2dbd72b4ffeb33de675fd4a8d411" kind="function"><name>operator=</name></member>
+    <member refid="class_juveniles_1a6b7825beb91d790fc5432902aedcc1fc" kind="function"><name>getMaxAge</name></member>
+    <member refid="class_juveniles_1a033b591527e3398a05da40e5ab954b40" kind="function"><name>getMinAge</name></member>
+    <member refid="class_juveniles_1afbb8b02acca9688dfb4b25a8af4dcbd2" kind="function"><name>addPlayer</name></member>
+    <member refid="class_juveniles_1a4659df80ecf14611769f24d12f5e7e25" kind="function"><name>showplayers</name></member>
+    <member refid="class_juveniles_1a7f2818104ee9c884cd32b6cb3fe5df2d" kind="function"><name>showtrainings</name></member>
+    <member refid="class_juveniles_1a8bb4b1dec02e9b317eb059ff6c3fd6b8" kind="function"><name>showtournaments</name></member>
+    <member refid="class_juveniles_1af0dc666646d2f221a9a5105f829ff3d5" kind="function"><name>getCall</name></member>
+  </compound>
+  <compound refid="class_level" kind="class"><name>Level</name>
+    <member refid="class_level_1a8b8e823b54f5574adf2b93fed607d3b9" kind="variable"><name>players</name></member>
+    <member refid="class_level_1a2f457aec7d1555b3136cd893884e021a" kind="variable"><name>events</name></member>
+    <member refid="class_level_1ae291ffb375fbee329ba77e6e71512bbe" kind="variable"><name>players_tree</name></member>
+    <member refid="class_level_1af9714fdced40052b532675a5a6e61747" kind="variable"><name>coach</name></member>
+    <member refid="class_level_1a7a696c928ca5d5354db6e50e46d0f67d" kind="function"><name>Level</name></member>
+    <member refid="class_level_1ad04be01a11723a3d7d8efce4ae1884f2" kind="function"><name>~Level</name></member>
+    <member refid="class_level_1a098e3e980b18013bf7f0683acbe5e2f6" kind="function"><name>Level</name></member>
+    <member refid="class_level_1a29ac7d488564e82b888c295bbbb96f2a" kind="function"><name>operator=</name></member>
+    <member refid="class_level_1ae7b28ba0cb8d49372c4657fbe42706e1" kind="function"><name>getMaxAge</name></member>
+    <member refid="class_level_1a161cf8c238fd499c112d90504cb6f587" kind="function"><name>getMinAge</name></member>
+    <member refid="class_level_1a51ff82259c62111618aed20f96ec9f88" kind="function"><name>getPlayers</name></member>
+    <member refid="class_level_1aa03432096cfcf42293cebf2c801b7437" kind="function"><name>getEvents</name></member>
+    <member refid="class_level_1a6c4d3f153c3285aeaf3ec954981c5be8" kind="function"><name>getCoach</name></member>
+    <member refid="class_level_1ae24a0ba5c352e1cb0fa64282a89e559f" kind="function"><name>getPlayers_tree</name></member>
+    <member refid="class_level_1a51174d561fe50353f7967a30b234f225" kind="function"><name>getTrainings</name></member>
+    <member refid="class_level_1ab3466508279237e3b03e84b2ae161280" kind="function"><name>getTournaments</name></member>
+    <member refid="class_level_1abbb0a9cdb17251cea99134324b84654f" kind="function"><name>addPlayer</name></member>
+    <member refid="class_level_1a86b0d3ec7bb14fd7002c332b328dd96d" kind="function"><name>addEvent</name></member>
+    <member refid="class_level_1aa666e5fe87af336fd7350ac0b72b7c8c" kind="function"><name>setCoach</name></member>
+    <member refid="class_level_1af69ea50948039136cdce88bbdcb01e08" kind="function"><name>showplayers</name></member>
+    <member refid="class_level_1aab00625f4293cdce8de3169a3eeae243" kind="function"><name>showtrainings</name></member>
+    <member refid="class_level_1ae4ecbd2830b9fc46a77783035dab8543" kind="function"><name>showtournaments</name></member>
+    <member refid="class_level_1a357810a186049d3b0692cbf2066a4ebe" kind="function"><name>showevents</name></member>
+    <member refid="class_level_1a68ca29bc1f8796b8ee89f6d9a77b3e2a" kind="function"><name>removeplayer</name></member>
+    <member refid="class_level_1a8f38f4c5bc05c7c7c4d4ea1321d91b84" kind="function"><name>removeEvent</name></member>
+    <member refid="class_level_1a30e6e466da1dddeb05d3591d0fddc2b8" kind="function"><name>getFutureEvents</name></member>
+    <member refid="class_level_1ac7ecbf06c831f2a02cad567bcfb52ec9" kind="function"><name>raiseassiduity</name></member>
+    <member refid="class_level_1ab4e4b8c386063fd8244042f7eefa3427" kind="function"><name>lowerassiduity</name></member>
+    <member refid="class_level_1a2d64a6f446a4d6c7c4959c7bc0972a84" kind="function"><name>raisepgames</name></member>
+    <member refid="class_level_1a336a54c2ef7e4307e9353a200a11537e" kind="function"><name>lowerpgames</name></member>
+    <member refid="class_level_1ac592cc97524f49de9114f4af20312aad" kind="function"><name>raiseptournaments</name></member>
+    <member refid="class_level_1afbb999a489e4e185bb26e965939a97e5" kind="function"><name>lowerptournaments</name></member>
+    <member refid="class_level_1af91bf73255a171a3f2a256778e075fb7" kind="function"><name>raisegames_won</name></member>
+    <member refid="class_level_1a2634c6743f1a56592c97e6cfb7a9a8b6" kind="function"><name>raiseassiduity_curr</name></member>
+    <member refid="class_level_1ac118b390f16a75b9a0e9df198b3190ad" kind="function"><name>getCall</name></member>
+    <member refid="class_level_1a09a28b62e9b593db54b220533a5dd567" kind="function"><name>actualize_curr_parameters</name></member>
+    <member refid="class_level_1a45217bde102ee160f4852d093f51ed83" kind="function"><name>makeTree</name></member>
+    <member refid="class_level_1a2752e4f84d3de5e8b72e4cf87cb0131b" kind="function"><name>remove_Tree</name></member>
+  </compound>
+  <compound refid="class_minis" kind="class"><name>Minis</name>
+    <member refid="class_minis_1aa9d018edc8dc1dda8fd6a7adae97b7d9" kind="variable"><name>age_min</name></member>
+    <member refid="class_minis_1acf5cca3b1313409275edb60fc43558b8" kind="variable"><name>age_max</name></member>
+    <member refid="class_minis_1a05a964e8cd328440070a970e95a69aaa" kind="function"><name>Minis</name></member>
+    <member refid="class_minis_1a0ce29fd41f5c3f412401128a9dc7dc3b" kind="function"><name>~Minis</name></member>
+    <member refid="class_minis_1a8f19940186bb60864cbf4b2a50a62f44" kind="function"><name>Minis</name></member>
+    <member refid="class_minis_1a25cdc8631f19c04d7ddd16507a4bc48c" kind="function"><name>operator=</name></member>
+    <member refid="class_minis_1a995e2db860e3a5c110cbead80ab61caa" kind="function"><name>getMaxAge</name></member>
+    <member refid="class_minis_1a062e99b463e0dd1e370b46e6fb37087a" kind="function"><name>getMinAge</name></member>
+    <member refid="class_minis_1ae32db82a540e3377310359dfbecd57a3" kind="function"><name>addPlayer</name></member>
+    <member refid="class_minis_1a50dc8c8145d4903f16af6865d2f811f4" kind="function"><name>showplayers</name></member>
+    <member refid="class_minis_1a940a0e2e0175de74b7925d9ac5e9eaec" kind="function"><name>showtrainings</name></member>
+    <member refid="class_minis_1ae5f14d6896391a31f86a463844e350a5" kind="function"><name>showtournaments</name></member>
+    <member refid="class_minis_1af0e6cf169e2f1bd575cb559cfdc42bd0" kind="function"><name>getCall</name></member>
+  </compound>
+  <compound refid="class_player" kind="class"><name>Player</name>
+    <member refid="class_player_1acf0355128a99ee20ad9931b760fb2de1" kind="variable"><name>name</name></member>
+    <member refid="class_player_1ace9134e1f87503e4010379d3dfdf7e01" kind="variable"><name>birth</name></member>
+    <member refid="class_player_1a47dd52a20a6b514e3822627b267e98cb" kind="variable"><name>ecg</name></member>
+    <member refid="class_player_1ac4c0c945371d3c96c5078f2411bd2099" kind="variable"><name>got_present</name></member>
+    <member refid="class_player_1abfde98c4bd141e7fe8a3e97b3dd08912" kind="variable"><name>height</name></member>
+    <member refid="class_player_1a1a701de2973bee1f20dce2f9a6d7d521" kind="variable"><name>assiduity</name></member>
+    <member refid="class_player_1a84351a8f480b444e7eabc8a0882c1982" kind="variable"><name>presences_games</name></member>
+    <member refid="class_player_1a72b92ef929a097a250b5e63a07cba4ed" kind="variable"><name>presences_stournaments</name></member>
+    <member refid="class_player_1aed905c44e6ef0d02a4b01f06f105a464" kind="variable"><name>assiduity_curr_month</name></member>
+    <member refid="class_player_1a69b93e8d9cc231dcc6d6aa25ddc0d201" kind="variable"><name>games_won</name></member>
+    <member refid="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" kind="function"><name>Player</name></member>
+    <member refid="class_player_1a74b724a1381ef548891d0f1a583450e0" kind="function"><name>Player</name></member>
+    <member refid="class_player_1a61933c5f779b97caea5e13b58bbb06da" kind="function"><name>Player</name></member>
+    <member refid="class_player_1a4939193fc637f75bf7a11118334dae7e" kind="function"><name>getName</name></member>
+    <member refid="class_player_1a40d25243f37af60da51b8020f7518700" kind="function"><name>getBirth</name></member>
+    <member refid="class_player_1a2d1d0a9a28323caa4003d1e09645389e" kind="function"><name>getECG</name></member>
+    <member refid="class_player_1a4885775d191fbfbac59cf284388c6b0b" kind="function"><name>getPresent</name></member>
+    <member refid="class_player_1a35448f9c66824c2adfc643245758ce37" kind="function"><name>getHeight</name></member>
+    <member refid="class_player_1ad9192cb7e7d2537cdabcdc249de10e5b" kind="function"><name>getAssiduity</name></member>
+    <member refid="class_player_1ae004ae4c13248265587f8a0d27ab3c5a" kind="function"><name>getPresences_games</name></member>
+    <member refid="class_player_1a0ed8ba4399f59a5e92239d61a99e1260" kind="function"><name>getPresences_stournaments</name></member>
+    <member refid="class_player_1a4b49e80e2c4b49276a4f5d1a38bf337c" kind="function"><name>getAssiduity_Curr_Month</name></member>
+    <member refid="class_player_1a0a7205a9a0a7b9b6bf02035ee104b690" kind="function"><name>getGames_Won</name></member>
+    <member refid="class_player_1af7e72bf68786fafad86906bf4228c467" kind="function"><name>setPresent</name></member>
+    <member refid="class_player_1a7e5ebb8fa4bc30bf04bad367a195864b" kind="function"><name>setAssiduity</name></member>
+    <member refid="class_player_1a6e7482dfac54ccf8c7804dd909b70143" kind="function"><name>setPresences_games</name></member>
+    <member refid="class_player_1a95c04115cff22ff76782c475f288561d" kind="function"><name>setPresences_stournaments</name></member>
+    <member refid="class_player_1a705ed15f41e065c7b03ad4ad1cb5ab91" kind="function"><name>setAssiduity_Curr_Month</name></member>
+    <member refid="class_player_1a2ff08de789327f4b3aa82f15b354ee4e" kind="function"><name>setGames_Won</name></member>
+    <member refid="class_player_1a217985fe6c76c9e91a91f4d1c1a82c11" kind="function"><name>setHeight</name></member>
+    <member refid="class_player_1a4309719d18274253a5d00e9940e042d9" kind="function"><name>addECG</name></member>
+    <member refid="class_player_1a623da661c3b627ba79ed595fa8d9a3ea" kind="function"><name>show</name></member>
+    <member refid="class_player_1ae769d5edba7c2a1defb0d53efe5804a4" kind="function"><name>getLast_Eletro</name></member>
+    <member refid="class_player_1a27612a5782370fda6e67d3e8a2fd9a2d" kind="function"><name>checkECG</name></member>
+    <member refid="class_player_1a743a295b67be652909a5b1c3252f0d8c" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_player_1a81019960e40a67b0cefea0afd3a3100c" kind="function"><name>operator==</name></member>
+    <member refid="class_player_1a7429373489b5ccfffc0c6f7d3b237b06" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_player_1ac80a9cf20cbee01df8046ca9497b0b2d" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="struct_player__node" kind="struct"><name>Player_node</name>
+    <member refid="struct_player__node_1a92957e7c45b23237ef919c046436c016" kind="variable"><name>player</name></member>
+  </compound>
+  <compound refid="struct_player__queue" kind="struct"><name>Player_queue</name>
+    <member refid="struct_player__queue_1a993b14d06659290be7b7d1970a3c8fe3" kind="variable"><name>player</name></member>
+  </compound>
+  <compound refid="class_seniors" kind="class"><name>Seniors</name>
+    <member refid="class_seniors_1a0a9323382148a6365b687d977d33c00e" kind="variable"><name>age_min</name></member>
+    <member refid="class_seniors_1af7202bb14a36943cf2dad9a0eca531ed" kind="variable"><name>age_max</name></member>
+    <member refid="class_seniors_1ae02d7a048872847e295db59af893798a" kind="function"><name>Seniors</name></member>
+    <member refid="class_seniors_1a3063e1ce430ade54ec6b7a41a51bf942" kind="function"><name>~Seniors</name></member>
+    <member refid="class_seniors_1afb61156464d704b00aff866de6ee727a" kind="function"><name>Seniors</name></member>
+    <member refid="class_seniors_1a6ec55b45cb67c34004c38a36fc3f8e64" kind="function"><name>operator=</name></member>
+    <member refid="class_seniors_1a856a5d37a9dbda1e1b3ad8eb90db1f2a" kind="function"><name>getMaxAge</name></member>
+    <member refid="class_seniors_1a1843edaf8811f4728f76c11c79fe5450" kind="function"><name>getMinAge</name></member>
+    <member refid="class_seniors_1a27d5b434d595a0b2c65f7b23869ad29e" kind="function"><name>addPlayer</name></member>
+    <member refid="class_seniors_1addf02a1f1031cf6679a0bf3154cc99f5" kind="function"><name>showplayers</name></member>
+    <member refid="class_seniors_1a16b0ed0592df428409910698c0ece1ff" kind="function"><name>showtrainings</name></member>
+    <member refid="class_seniors_1a6d666a98da195995b01d69e135203e8c" kind="function"><name>showtournaments</name></member>
+    <member refid="class_seniors_1a2ece7a81ffca49ef1b365a70e4ffd58f" kind="function"><name>getCall</name></member>
+  </compound>
+  <compound refid="class_tournament" kind="class"><name>Tournament</name>
+    <member refid="class_tournament_1a91d494d4c49ea7313e4eaa0d6539a980" kind="variable"><name>major</name></member>
+    <member refid="class_tournament_1a3520a2a12650313f56123a1c3a58b045" kind="variable"><name>rank</name></member>
+    <member refid="class_tournament_1ae3b4728beb050f215716ccc9fabaaab4" kind="variable"><name>results</name></member>
+    <member refid="class_tournament_1a87cc832c6612caebcab61d1bea7ef1ac" kind="function"><name>Tournament</name></member>
+    <member refid="class_tournament_1a255677d318362ae4dc23b9d6a3359f61" kind="function"><name>~Tournament</name></member>
+    <member refid="class_tournament_1a653ee8a664677bf0f757234150fa71f8" kind="function"><name>Tournament</name></member>
+    <member refid="class_tournament_1a835ad322fd9309b94ce03be5523be20b" kind="function"><name>operator=</name></member>
+    <member refid="class_tournament_1a38dbc53e1d0f1eaf6b661169db87c270" kind="function"><name>Tournament</name></member>
+    <member refid="class_tournament_1a84c5301c50e0c4ac263ed3d74fa7c8c5" kind="function"><name>Tournament</name></member>
+    <member refid="class_tournament_1ab6fde765568ea9779fc10f0f2811c163" kind="function"><name>Istraining</name></member>
+    <member refid="class_tournament_1a7200351516d8d43c198ad6080b405261" kind="function"><name>show</name></member>
+    <member refid="class_tournament_1a62adb322a6d5268d4ec3e267570ff4ed" kind="function"><name>isGame</name></member>
+    <member refid="class_tournament_1ae021dc9d9aa7fb8b18bd065bfccc4b7e" kind="function"><name>getRank</name></member>
+    <member refid="class_tournament_1af733baa05b3ae1465d6b5271929b5061" kind="function"><name>isMajor</name></member>
+    <member refid="class_tournament_1abacd2d5489099f31a9688a7da4d64c40" kind="function"><name>getResults</name></member>
+    <member refid="class_tournament_1acab9ee32169ba590f4ffdb5b59b28a86" kind="function"><name>setResults</name></member>
+    <member refid="class_tournament_1a724f8fb0c0507975b6bb4817d8b5de7d" kind="function"><name>setRank</name></member>
+    <member refid="class_tournament_1a4aa375c287d890b9117a91058dcffb0c" kind="function"><name>writetofile</name></member>
+    <member refid="class_tournament_1a732b99f4a91ce76bb3db57cffd96f441" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_tournament_1a35e43e0ee6981515ba4442efa8cac7a7" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="class_training" kind="class"><name>Training</name>
+    <member refid="class_training_1ab9f70236b24b5265c7237e3e8e649ddb" kind="variable"><name>game</name></member>
+    <member refid="class_training_1af98b1bc7ed710e2fa008a72ad29dbdae" kind="function"><name>Training</name></member>
+    <member refid="class_training_1a4a40f758a773c3c63d8558eaa78b1abd" kind="function"><name>~Training</name></member>
+    <member refid="class_training_1a923c500458737327f874067ffc7ca1c9" kind="function"><name>Training</name></member>
+    <member refid="class_training_1aa6b19909ef6436a568986fb6ac8228b9" kind="function"><name>operator=</name></member>
+    <member refid="class_training_1ae39813d608325645cb3403160fc3b493" kind="function"><name>Training</name></member>
+    <member refid="class_training_1a314d31d73f207b1c9cb2720da663d225" kind="function"><name>Training</name></member>
+    <member refid="class_training_1a55530cc22aa771cf3e452c7158b5396e" kind="function"><name>isGame</name></member>
+    <member refid="class_training_1ab70fe087f382d0de9dca69ce519be91e" kind="function"><name>Istraining</name></member>
+    <member refid="class_training_1a452b188f29b887a8775972d9464da912" kind="function"><name>show</name></member>
+    <member refid="class_training_1ada723ff1f8340338a99e720a1b472334" kind="function"><name>getRank</name></member>
+    <member refid="class_training_1aaf1c4d96664a16ca141dd5a3582f9426" kind="function"><name>isMajor</name></member>
+    <member refid="class_training_1aa37e2baeee2b94cb15521e1768b99cc9" kind="function"><name>getResults</name></member>
+    <member refid="class_training_1ad587b59c44a6e95a4e52f3d3f6b89480" kind="function"><name>setResults</name></member>
+    <member refid="class_training_1a15d38322bd6a2ee8e17441bd4798b236" kind="function"><name>setRank</name></member>
+    <member refid="class_training_1a1755abc9faafbe06fb2825cb5f879016" kind="function"><name>writetofile</name></member>
+    <member refid="class_training_1a2a462cd115913a43a1f4d7cbc8635c77" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_training_1ad76466bb3f1163c39b684ae14adf0ca1" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_b_s_t_8h" kind="file"><name>BST.h</name>
+  </compound>
+  <compound refid="_club_8h" kind="file"><name>Club.h</name>
+  </compound>
+  <compound refid="_date_8h" kind="file"><name>Date.h</name>
+    <member refid="_date_8h_1a5c29d00ecf33e6d232a410f1f3d6eb70" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="_date_8h_1a5b292605462c1f43c993c0b2f5592cdc" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="_event_8h" kind="file"><name>Event.h</name>
+  </compound>
+  <compound refid="exceptions_8h" kind="file"><name>exceptions.h</name>
+  </compound>
+  <compound refid="_juniors_8h" kind="file"><name>Juniors.h</name>
+  </compound>
+  <compound refid="_juveniles_8h" kind="file"><name>Juveniles.h</name>
+  </compound>
+  <compound refid="_level_8h" kind="file"><name>Level.h</name>
+  </compound>
+  <compound refid="menus_8h" kind="file"><name>menus.h</name>
+    <member refid="menus_8h_1a3e4bdbd9a6e356b7f330a0fb23351d2f" kind="function"><name>readplayers</name></member>
+    <member refid="menus_8h_1ace86b7cf28684a8a2017b4ed1fdb2880" kind="function"><name>readtrainings</name></member>
+    <member refid="menus_8h_1a296660ecf1cf92c9e925fa842693053f" kind="function"><name>readtournaments</name></member>
+    <member refid="menus_8h_1ac75cbd14c3ddc716f3f0861ddded528f" kind="function"><name>askfordate</name></member>
+    <member refid="menus_8h_1a824038186cb0756e60e434af7e945203" kind="function"><name>printlevel</name></member>
+    <member refid="menus_8h_1a360714641d352750dcbebc422cf56ad2" kind="function"><name>initialmenu</name></member>
+    <member refid="menus_8h_1a6ebf55f20ee0236f10acad8f1a285f84" kind="function"><name>printBirthdays</name></member>
+    <member refid="menus_8h_1a6db8c98a6f3aa8636d15609e013980dd" kind="function"><name>birthdaycards</name></member>
+    <member refid="menus_8h_1afd66764eba2316fedc8d1fc68874c66c" kind="function"><name>notifyECG</name></member>
+    <member refid="menus_8h_1a6f73e3a12587c3f41155ab808099eda3" kind="function"><name>levelmenu</name></member>
+    <member refid="menus_8h_1af5ddda2f5450f4b50fe981b357643be2" kind="function"><name>monthlyprizes</name></member>
+    <member refid="menus_8h_1aa3dca5af81de7adb87edc2d4deb13183" kind="function"><name>changecoachmenu</name></member>
+    <member refid="menus_8h_1af0ca16bef0823da27700dd7a172fb5b1" kind="function"><name>playersmenu</name></member>
+    <member refid="menus_8h_1a5566a6fa86018fbbea69015e5168e99e" kind="function"><name>individualplayermenu</name></member>
+    <member refid="menus_8h_1af4ce05b6a5e6c270b85434ee3bd24bc6" kind="function"><name>actualizeECG</name></member>
+    <member refid="menus_8h_1a271de014adb6e48b8577c86b976b18fa" kind="function"><name>actualizeheight</name></member>
+    <member refid="menus_8h_1a1f0621789fda582c7f4bcd4869f1ee33" kind="function"><name>removeplayer</name></member>
+    <member refid="menus_8h_1a4afe6401b97465ae703f506fb7706e9d" kind="function"><name>regnewplayermenu</name></member>
+    <member refid="menus_8h_1a99d9b0116759420e15bdf0b7679514ab" kind="function"><name>trainingsmenu</name></member>
+    <member refid="menus_8h_1af8ce4ff7c4bbeca86d18ed3111b36eb6" kind="function"><name>tournamentsmenu</name></member>
+    <member refid="menus_8h_1af43d721f867defe35647e866690cbfc3" kind="function"><name>individualtrainingmenu</name></member>
+    <member refid="menus_8h_1a49c542576af1c3a6248146f284e42c58" kind="function"><name>editplayerstraining</name></member>
+    <member refid="menus_8h_1a95e92fc9b91ce4c419afb0d0443bbb43" kind="function"><name>individualtournamentmenu</name></member>
+    <member refid="menus_8h_1a9e19e8b74e0d58171af53685eac3b691" kind="function"><name>editranktournament</name></member>
+    <member refid="menus_8h_1af900560f4e94ad1eb7f716bf665c6cad" kind="function"><name>editplayerstournament</name></member>
+    <member refid="menus_8h_1a558620ab89ce3d63578448c4b82a1195" kind="function"><name>editresultstournament</name></member>
+    <member refid="menus_8h_1a2e44e7cf4a9a1d5754a3f8eb5b129365" kind="function"><name>calendarmenu</name></member>
+    <member refid="menus_8h_1abaed2b44b77fcd0b36239eafee3d9c6c" kind="function"><name>individualeventmenu</name></member>
+    <member refid="menus_8h_1a4ae3bb47fdc90a2c15958427eba07209" kind="function"><name>removeevent</name></member>
+    <member refid="menus_8h_1a546c4c0ca16a1858de54677140e270f6" kind="function"><name>scheduleeventmenu</name></member>
+    <member refid="menus_8h_1a3dc669f40ebb5b2de3d0ff3b67372031" kind="function"><name>askeventdate</name></member>
+    <member refid="menus_8h_1aba01328dd84a2ba711a95cae93fb862c" kind="function"><name>makecall</name></member>
+  </compound>
+  <compound refid="_minis_8h" kind="file"><name>Minis.h</name>
+  </compound>
+  <compound refid="_player_8h" kind="file"><name>Player.h</name>
+    <member refid="_player_8h_1a70a30ae5b016e3f83a50cbd606044d55" kind="function"><name>operator&lt;</name></member>
+    <member refid="_player_8h_1a6e47bba4f40f04dd67cc303a58a098d9" kind="function"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="_seniors_8h" kind="file"><name>Seniors.h</name>
+  </compound>
+  <compound refid="_tournament_8h" kind="file"><name>Tournament.h</name>
+  </compound>
+  <compound refid="_training_8h" kind="file"><name>Training.h</name>
+  </compound>
+  <compound refid="utilities_8h" kind="file"><name>utilities.h</name>
+    <member refid="utilities_8h_1a611cc9b5f655508482f3d7a9751c182a" kind="define"><name>CLEAR</name></member>
+    <member refid="utilities_8h_1a043cf626f8f6304a4c42cd1d5475699d" kind="define"><name>UTILITIES_H</name></member>
+    <member refid="utilities_8h_1abb517d31a98f5557e6974c7397f47709" kind="function"><name>removespaces</name></member>
+    <member refid="utilities_8h_1a85a86313d4e1f84be67fabd66faccaf6" kind="function"><name>actualage</name></member>
+    <member refid="utilities_8h_1a9636a7dde2fb99c3de33f47f703e465f" kind="function"><name>Isleap</name></member>
+    <member refid="utilities_8h_1a42a8022c459256f365a6c675a0b842dc" kind="function"><name>isInteger</name></member>
+    <member refid="utilities_8h_1a8d8297c071a62c5c76f4f9288a1a7fbd" kind="function"><name>convint</name></member>
+  </compound>
+  <compound refid="dir_692516b589a32b3bfce781ca9f6d1534" kind="dir"><name>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers</name>
+  </compound>
+</doxygenindex>

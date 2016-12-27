@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_event_8h" kind="file" language="C++">
+    <compoundname>Event.h</compoundname>
+    <includes refid="_player_8h" local="yes">Player.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_tournament_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h</includedby>
+    <includedby refid="_training_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h</includedby>
+    <includedby refid="_club_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</includedby>
+    <includedby refid="menus_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</includedby>
+    <incdepgraph>
+      <node id="61">
+        <label>string</label>
+      </node>
+      <node id="62">
+        <label>fstream</label>
+      </node>
+      <node id="56">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>vector</label>
+      </node>
+      <node id="59">
+        <label>iostream</label>
+      </node>
+      <node id="57">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="64">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h</label>
+        <link refid="_tournament_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h</label>
+        <link refid="_training_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</label>
+        <link refid="menus_8h"/>
+      </node>
+      <node id="63">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Minis.h</label>
+        <link refid="_minis_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h</label>
+        <link refid="_level_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juniors.h</label>
+        <link refid="_juniors_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h</label>
+        <link refid="_seniors_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juveniles.h</label>
+        <link refid="_juveniles_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_event" prot="public">Event</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Francisco Andrade </para></simplesect>
+<simplesect kind="author"><para>João Almeida</para></simplesect>
+Contains the declaration of the <ref refid="class_event" kindref="compound">Event</ref> class </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_event" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_event" kindref="compound">Event</ref>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>day;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>presences;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30" refid="class_event_1a5a40dd4708297f7031e29b39e039ae10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_event_1a5a40dd4708297f7031e29b39e039ae10" kindref="member">Event</ref>(){};</highlight></codeline>
+<codeline lineno="34" refid="class_event_1ab864fd85c758006c42cd7a1b3369b483" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_event_1ab864fd85c758006c42cd7a1b3369b483" kindref="member">~Event</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="39" refid="class_event_1aa79f43b0c42280875280ec071aa2eea1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_event_1aa79f43b0c42280875280ec071aa2eea1" kindref="member">Event</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>&amp;<sp/>ev)<sp/>{<sp/>day<sp/>=<sp/>ev.day;<sp/>presences<sp/>=<sp/>ev.presences;<sp/>};</highlight></codeline>
+<codeline lineno="44" refid="class_event_1ad13c7b9652c4e3ab546d86406097d23a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_event_1ad13c7b9652c4e3ab546d86406097d23a" kindref="member">Event</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>day):<sp/>day(day){};</highlight></codeline>
+<codeline lineno="51" refid="class_event_1a8115e592203a26166924dcae5b064e06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>&amp;<sp/><ref refid="class_event_1a8115e592203a26166924dcae5b064e06" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>&amp;<sp/>ev)<sp/>{<sp/>day<sp/>=<sp/>ev.day;<sp/>presences<sp/>=<sp/>ev.presences;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;<sp/>};</highlight></codeline>
+<codeline lineno="56" refid="class_event_1a67677233149ff7e2ebe038d3cfa35223" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="class_event_1a67677233149ff7e2ebe038d3cfa35223" kindref="member">getPresences</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>presences;<sp/>};</highlight></codeline>
+<codeline lineno="61" refid="class_event_1a9c016f59ee7116b2397a4823911e1a65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="class_event_1a9c016f59ee7116b2397a4823911e1a65" kindref="member">getDay</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;day;<sp/>};</highlight><highlight class="comment">//gets<sp/>day</highlight></codeline>
+<codeline lineno="65" refid="class_event_1a7e9fa73e721c69bdf05b894ec3178e9b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a7e9fa73e721c69bdf05b894ec3178e9b" kindref="member">setDay</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>day)<sp/>{<sp/>this-&gt;day<sp/>=<sp/>day;};</highlight><highlight class="comment">//sets<sp/>day</highlight></codeline>
+<codeline lineno="69" refid="class_event_1a2e63387b12ece5fc8b38c6b1142df219" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a2e63387b12ece5fc8b38c6b1142df219" kindref="member">setPresences</ref>(vector&lt;string&gt;<sp/>presences)<sp/>{<sp/>this-&gt;presences<sp/>=<sp/>presences;<sp/>};</highlight><highlight class="comment">//sets<sp/>new<sp/>vector<sp/>of<sp/>presences</highlight></codeline>
+<codeline lineno="73" refid="class_event_1a3efb47d783affa24203f4ba13b355c56" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a3efb47d783affa24203f4ba13b355c56" kindref="member">addPresence</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>presence)<sp/>{<sp/>presences.push_back(presence);<sp/>};</highlight><highlight class="comment">//adds<sp/>the<sp/>name<sp/>of<sp/>a<sp/>player<sp/>to<sp/>presences</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_event_1a08af9b350f32520dca26d552d6f415b2" kindref="member">Istraining</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_event_1add36e9739215f6744040c11de50b26b7" kindref="member">isGame</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_event_1ab267b8e94c78ca51636792d75101acb5" kindref="member">getRank</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_event_1ad1a1a9cb471d664a2ca99effc102259b" kindref="member">isMajor</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;pair&lt;pair&lt;unsigned<sp/>int,<sp/>unsigned<sp/>int&gt;,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/><ref refid="class_event_1a9d29f8c725da32b5fbf70ccf7961f02b" kindref="member">getResults</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a5ddb261642035be78677d668f9238339" kindref="member">setResults</ref>(vector&lt;pair&lt;pair&lt;unsigned<sp/>int,<sp/>unsigned<sp/>int&gt;,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>results)=0;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a5bccaba301e9038957ec4138df404524" kindref="member">setRank</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank)=0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1af53c2db83404a045087a271ed3c2604f" kindref="member">show</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_event_1a0c263fb7398dc2f0969a2bb22b47a40a" kindref="member">writetofile</ref>(ostream<sp/>&amp;<sp/>out)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight><highlight class="comment">//writes<sp/>event<sp/>information<sp/>to<sp/>file</highlight></codeline>
+<codeline lineno="134" refid="class_event_1a7bdc01f67b0ebca8feb9650d63c8ff08" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_event_1a7bdc01f67b0ebca8feb9650d63c8ff08" kindref="member">operator&lt; </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>&amp;<sp/>ev1)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>day<sp/>&lt;<sp/>ev1.day;<sp/>};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Event.h"/>
+  </compounddef>
+</doxygen>

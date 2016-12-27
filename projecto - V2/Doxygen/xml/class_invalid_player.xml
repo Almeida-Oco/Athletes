@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_invalid_player" kind="class" language="C++" prot="public">
+    <compoundname>InvalidPlayer</compoundname>
+    <includes refid="exceptions_8h" local="no">exceptions.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_invalid_player_1a9afbf7fc7d4d7937e53bf5e42bb65fa6" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string InvalidPlayer::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="52" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_invalid_player_1a13996adbe5a80b3db2687fc829738700" prot="private" static="no" mutable="no">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date InvalidPlayer::birth</definition>
+        <argsstring></argsstring>
+        <name>birth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="53" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_invalid_player_1a311099a3c76237e49e448de25aef4a89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InvalidPlayer::InvalidPlayer</definition>
+        <argsstring>(string name, Date birth)</argsstring>
+        <name>InvalidPlayer</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>birth</declname>
+        </param>
+        <briefdescription>
+<para>Full-Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of <ref refid="class_player" kindref="compound">Player</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>birth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Birthday of <ref refid="class_player" kindref="compound">Player</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_invalid_player_1a5254e7755b435020a786a2de1c20418f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InvalidPlayer::show</definition>
+        <argsstring>() const</argsstring>
+        <name>show</name>
+        <briefdescription>
+<para>Prints the <ref refid="class_player" kindref="compound">Player</ref> on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an Invalid Players. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="51" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="51" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_invalid_player_1a13996adbe5a80b3db2687fc829738700" prot="private" virt="non-virtual"><scope>InvalidPlayer</scope><name>birth</name></member>
+      <member refid="class_invalid_player_1a311099a3c76237e49e448de25aef4a89" prot="public" virt="non-virtual"><scope>InvalidPlayer</scope><name>InvalidPlayer</name></member>
+      <member refid="class_invalid_player_1a9afbf7fc7d4d7937e53bf5e42bb65fa6" prot="private" virt="non-virtual"><scope>InvalidPlayer</scope><name>name</name></member>
+      <member refid="class_invalid_player_1a5254e7755b435020a786a2de1c20418f" prot="public" virt="non-virtual"><scope>InvalidPlayer</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

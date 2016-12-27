@@ -1,0 +1,196 @@
+.TH "Juveniles" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Juveniles \- Holds all the information about the \fBLevel\fP \fBJuveniles\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Juveniles\&.h>\fP
+.PP
+Inherits \fBLevel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBJuveniles\fP ()"
+.br
+.RI "Default Constructor\&. "
+.ti -1c
+.RI "\fB~Juveniles\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBJuveniles\fP (const \fBJuveniles\fP &juveniles)"
+.br
+.RI "Copy Constructor\&. "
+.ti -1c
+.RI "\fBJuveniles\fP & \fBoperator=\fP (const \fBJuveniles\fP &juveniles)"
+.br
+.RI "Copy Operator\&. "
+.ti -1c
+.RI "virtual unsigned int \fBgetMaxAge\fP ()"
+.br
+.RI "Gets the member variable age_max\&. "
+.ti -1c
+.RI "virtual unsigned int \fBgetMinAge\fP ()"
+.br
+.RI "Gets the member variable age_min\&. "
+.ti -1c
+.RI "virtual bool \fBaddPlayer\fP (\fBPlayer\fP *player)"
+.br
+.RI "Adds a new \fBPlayer\fP to this \fBLevel\fP\&. "
+.ti -1c
+.RI "virtual void \fBshowplayers\fP () const"
+.br
+.RI "Outputs the Players of this \fBLevel\fP on the screen\&. "
+.ti -1c
+.RI "virtual void \fBshowtrainings\fP () const"
+.br
+.RI "Outputs the Trainings of this \fBLevel\fP on the screen\&. "
+.ti -1c
+.RI "virtual void \fBshowtournaments\fP () const"
+.br
+.RI "Outputs the Tournaments of this \fBLevel\fP on the screen\&. "
+.ti -1c
+.RI "virtual vector< string > \fBgetCall\fP (unsigned int size)"
+.br
+.RI "Gets names of players to be called to a \fBTournament\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Holds all the information about the \fBLevel\fP \fBJuveniles\fP\&. 
+.PP
+Definition at line 21 of file Juveniles\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Juveniles::Juveniles ()\fC [inline]\fP"
+
+.PP
+Default Constructor\&. 
+.PP
+Definition at line 27 of file Juveniles\&.h\&.
+.SS "Juveniles::~Juveniles ()\fC [inline]\fP"
+
+.PP
+Destructor\&. 
+.PP
+Definition at line 31 of file Juveniles\&.h\&.
+.SS "Juveniles::Juveniles (const \fBJuveniles\fP & juveniles)\fC [inline]\fP"
+
+.PP
+Copy Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIjuveniles\fP Object of class to be copied 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file Juveniles\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool Juveniles::addPlayer (\fBPlayer\fP * player)\fC [virtual]\fP"
+
+.PP
+Adds a new \fBPlayer\fP to this \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayer\fP Pointer to \fBPlayer\fP to be added 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if it was added successfuly, false if not 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBLevel\fP\&.
+.SS "virtual vector<string> Juveniles::getCall (unsigned int size)\fC [virtual]\fP"
+
+.PP
+Gets names of players to be called to a \fBTournament\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsize\fP How many players to be called 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Vector with names of Players to be called 
+.RE
+.PP
+
+.PP
+Implements \fBLevel\fP\&.
+.SS "virtual unsigned int Juveniles::getMaxAge ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Gets the member variable age_max\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+age_max (member variable) 
+.RE
+.PP
+
+.PP
+Implements \fBLevel\fP\&.
+.PP
+Definition at line 47 of file Juveniles\&.h\&.
+.SS "virtual unsigned int Juveniles::getMinAge ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Gets the member variable age_min\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+age_min (member variable) 
+.RE
+.PP
+
+.PP
+Implements \fBLevel\fP\&.
+.PP
+Definition at line 52 of file Juveniles\&.h\&.
+.SS "\fBJuveniles\fP& Juveniles::operator= (const \fBJuveniles\fP & juveniles)\fC [inline]\fP"
+
+.PP
+Copy Operator\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIjuveniles\fP Object of class to be copied
+.RE
+.PP
+Calls the base class \fBLevel::operator=\fP 
+.PP
+Definition at line 42 of file Juveniles\&.h\&.
+.SS "virtual void Juveniles::showplayers () const\fC [virtual]\fP"
+
+.PP
+Outputs the Players of this \fBLevel\fP on the screen\&. 
+.PP
+Reimplemented from \fBLevel\fP\&.
+.SS "virtual void Juveniles::showtournaments () const\fC [virtual]\fP"
+
+.PP
+Outputs the Tournaments of this \fBLevel\fP on the screen\&. 
+.PP
+Reimplemented from \fBLevel\fP\&.
+.SS "virtual void Juveniles::showtrainings () const\fC [virtual]\fP"
+
+.PP
+Outputs the Trainings of this \fBLevel\fP on the screen\&. 
+.PP
+Reimplemented from \fBLevel\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

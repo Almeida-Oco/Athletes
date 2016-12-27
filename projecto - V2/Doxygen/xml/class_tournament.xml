@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_tournament" kind="class" language="C++" prot="public">
+    <compoundname>Tournament</compoundname>
+    <basecompoundref refid="class_event" prot="public" virt="non-virtual">Event</basecompoundref>
+    <includes refid="_tournament_8h" local="no">Tournament.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tournament_1a91d494d4c49ea7313e4eaa0d6539a980" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Tournament::major</definition>
+        <argsstring></argsstring>
+        <name>major</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="26" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tournament_1a3520a2a12650313f56123a1c3a58b045" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Tournament::rank</definition>
+        <argsstring></argsstring>
+        <name>rank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="27" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tournament_1ae3b4728beb050f215716ccc9fabaaab4" prot="private" static="no" mutable="no">
+        <type>vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt; &gt;</type>
+        <definition>vector&lt; pair&lt;pair&lt;unsigned int, unsigned int&gt;, string &gt; &gt; Tournament::results</definition>
+        <argsstring></argsstring>
+        <name>results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="28" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tournament_1a87cc832c6612caebcab61d1bea7ef1ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tournament::Tournament</definition>
+        <argsstring>()</argsstring>
+        <name>Tournament</name>
+        <briefdescription>
+<para>Default Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="34" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a255677d318362ae4dc23b9d6a3359f61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Tournament::~Tournament</definition>
+        <argsstring>()</argsstring>
+        <name>~Tournament</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="38" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a653ee8a664677bf0f757234150fa71f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tournament::Tournament</definition>
+        <argsstring>(const Tournament &amp;tournament)</argsstring>
+        <name>Tournament</name>
+        <param>
+          <type>const <ref refid="class_tournament" kindref="compound">Tournament</ref> &amp;</type>
+          <declname>tournament</declname>
+        </param>
+        <briefdescription>
+<para>Copy Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tournament</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_tournament" kindref="compound">Tournament</ref> object to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a835ad322fd9309b94ce03be5523be20b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_tournament" kindref="compound">Tournament</ref> &amp;</type>
+        <definition>Tournament&amp; Tournament::operator=</definition>
+        <argsstring>(const Tournament &amp;tournament)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_tournament" kindref="compound">Tournament</ref> &amp;</type>
+          <declname>tournament</declname>
+        </param>
+        <briefdescription>
+<para>Copy Operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tournament</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_tournament" kindref="compound">Tournament</ref> object to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a38dbc53e1d0f1eaf6b661169db87c270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tournament::Tournament</definition>
+        <argsstring>(Event *ev)</argsstring>
+        <name>Tournament</name>
+        <param>
+          <type><ref refid="class_event" kindref="compound">Event</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Pointer Copy Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="class_training" kindref="compound">Training</ref> object to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a84c5301c50e0c4ac263ed3d74fa7c8c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Tournament::Tournament</definition>
+        <argsstring>(Date day, bool major)</argsstring>
+        <name>Tournament</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>major</declname>
+        </param>
+        <briefdescription>
+<para>Partial Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_date" kindref="compound">Date</ref> of the <ref refid="class_event" kindref="compound">Event</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>major</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether it was a Major <ref refid="class_tournament" kindref="compound">Tournament</ref> or not </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="59" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1ab6fde765568ea9779fc10f0f2811c163" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Tournament::Istraining</definition>
+        <argsstring>() const</argsstring>
+        <name>Istraining</name>
+        <reimplements refid="class_event_1a08af9b350f32520dca26d552d6f415b2">Istraining</reimplements>
+        <briefdescription>
+<para>Checks if this <ref refid="class_event" kindref="compound">Event</ref> is a <ref refid="class_training" kindref="compound">Training</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>False since all objects of this class are Tournaments </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="64" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a7200351516d8d43c198ad6080b405261" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tournament::show</definition>
+        <argsstring>() const</argsstring>
+        <name>show</name>
+        <reimplements refid="class_event_1af53c2db83404a045087a271ed3c2604f">show</reimplements>
+        <briefdescription>
+<para>Used to print the <ref refid="class_tournament" kindref="compound">Tournament</ref> on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a62adb322a6d5268d4ec3e267570ff4ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Tournament::isGame</definition>
+        <argsstring>() const</argsstring>
+        <name>isGame</name>
+        <reimplements refid="class_event_1add36e9739215f6744040c11de50b26b7">isGame</reimplements>
+        <briefdescription>
+<para>Checks if the <ref refid="class_training" kindref="compound">Training</ref> was a game. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>False since all objects of this class have no game parameter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="73" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1ae021dc9d9aa7fb8b18bd065bfccc4b7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int Tournament::getRank</definition>
+        <argsstring>() const</argsstring>
+        <name>getRank</name>
+        <reimplements refid="class_event_1ab267b8e94c78ca51636792d75101acb5">getRank</reimplements>
+        <briefdescription>
+<para>Gets the rank achieved by the <ref refid="class_level" kindref="compound">Level</ref> at a <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>rank (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="78" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1af733baa05b3ae1465d6b5271929b5061" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Tournament::isMajor</definition>
+        <argsstring>() const</argsstring>
+        <name>isMajor</name>
+        <reimplements refid="class_event_1ad1a1a9cb471d664a2ca99effc102259b">isMajor</reimplements>
+        <briefdescription>
+<para>Checks if <ref refid="class_tournament" kindref="compound">Tournament</ref> was a major <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>major (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="83" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1abacd2d5489099f31a9688a7da4d64c40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt; &gt;</type>
+        <definition>virtual vector&lt;pair&lt;pair&lt;unsigned int, unsigned int&gt;, string &gt; &gt; Tournament::getResults</definition>
+        <argsstring>() const</argsstring>
+        <name>getResults</name>
+        <reimplements refid="class_event_1a9d29f8c725da32b5fbf70ccf7961f02b">getResults</reimplements>
+        <briefdescription>
+<para>Gets the results of the <ref refid="class_level" kindref="compound">Level</ref> in the <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>results (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="88" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1acab9ee32169ba590f4ffdb5b59b28a86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tournament::setResults</definition>
+        <argsstring>(vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt;&gt; results)</argsstring>
+        <name>setResults</name>
+        <reimplements refid="class_event_1a5ddb261642035be78677d668f9238339">setResults</reimplements>
+        <param>
+          <type>vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt;&gt;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Changes the results obtained on the <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be changed into </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="93" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a724f8fb0c0507975b6bb4817d8b5de7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tournament::setRank</definition>
+        <argsstring>(unsigned int rank)</argsstring>
+        <name>setRank</name>
+        <reimplements refid="class_event_1a5bccaba301e9038957ec4138df404524">setRank</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>rank</declname>
+        </param>
+        <briefdescription>
+<para>Changes the rank achieved on the <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be changed into </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="98" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tournament_1a4aa375c287d890b9117a91058dcffb0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tournament::writetofile</definition>
+        <argsstring>(ostream &amp;out) const</argsstring>
+        <name>writetofile</name>
+        <reimplements refid="class_event_1a0c263fb7398dc2f0969a2bb22b47a40a">writetofile</reimplements>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Writes the <ref refid="class_tournament" kindref="compound">Tournament</ref> to a file using operator&lt;&lt;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to write to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="117" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_tournament_1a732b99f4a91ce76bb3db57cffd96f441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;out, const Tournament &amp;tournament)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_tournament" kindref="compound">Tournament</ref> &amp;</type>
+          <declname>tournament</declname>
+        </param>
+        <briefdescription>
+<para>Used to write the <ref refid="class_tournament" kindref="compound">Tournament</ref> to an Output Stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output Stream to write the <ref refid="class_tournament" kindref="compound">Tournament</ref> to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tournament</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_tournament" kindref="compound">Tournament</ref> to be written on the Output Stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>out (parameter) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_tournament_1a35e43e0ee6981515ba4442efa8cac7a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;in, Tournament &amp;tournament)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="class_tournament" kindref="compound">Tournament</ref> &amp;</type>
+          <declname>tournament</declname>
+        </param>
+        <briefdescription>
+<para>Used to read the <ref refid="class_tournament" kindref="compound">Tournament</ref> from an Input Stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input Stream from which to read the <ref refid="class_tournament" kindref="compound">Tournament</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tournament</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_tournament" kindref="compound">Tournament</ref> to be read from the Input Stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>in (parameter) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="112" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used to host information about a single <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="58">
+        <label>Tournament</label>
+        <link refid="class_tournament"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Event</label>
+        <link refid="class_event"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="60">
+        <label>Tournament</label>
+        <link refid="class_tournament"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Event</label>
+        <link refid="class_event"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" line="25" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h" bodystart="25" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_event_1a3efb47d783affa24203f4ba13b355c56" prot="public" virt="non-virtual"><scope>Tournament</scope><name>addPresence</name></member>
+      <member refid="class_event_1a5a40dd4708297f7031e29b39e039ae10" prot="public" virt="non-virtual"><scope>Tournament</scope><name>Event</name></member>
+      <member refid="class_event_1aa79f43b0c42280875280ec071aa2eea1" prot="public" virt="non-virtual"><scope>Tournament</scope><name>Event</name></member>
+      <member refid="class_event_1ad13c7b9652c4e3ab546d86406097d23a" prot="public" virt="non-virtual"><scope>Tournament</scope><name>Event</name></member>
+      <member refid="class_event_1a9c016f59ee7116b2397a4823911e1a65" prot="public" virt="non-virtual"><scope>Tournament</scope><name>getDay</name></member>
+      <member refid="class_event_1a67677233149ff7e2ebe038d3cfa35223" prot="public" virt="non-virtual"><scope>Tournament</scope><name>getPresences</name></member>
+      <member refid="class_tournament_1ae021dc9d9aa7fb8b18bd065bfccc4b7e" prot="public" virt="virtual"><scope>Tournament</scope><name>getRank</name></member>
+      <member refid="class_tournament_1abacd2d5489099f31a9688a7da4d64c40" prot="public" virt="virtual"><scope>Tournament</scope><name>getResults</name></member>
+      <member refid="class_tournament_1a62adb322a6d5268d4ec3e267570ff4ed" prot="public" virt="virtual"><scope>Tournament</scope><name>isGame</name></member>
+      <member refid="class_tournament_1af733baa05b3ae1465d6b5271929b5061" prot="public" virt="virtual"><scope>Tournament</scope><name>isMajor</name></member>
+      <member refid="class_tournament_1ab6fde765568ea9779fc10f0f2811c163" prot="public" virt="virtual"><scope>Tournament</scope><name>Istraining</name></member>
+      <member refid="class_tournament_1a91d494d4c49ea7313e4eaa0d6539a980" prot="private" virt="non-virtual"><scope>Tournament</scope><name>major</name></member>
+      <member refid="class_event_1a7bdc01f67b0ebca8feb9650d63c8ff08" prot="public" virt="non-virtual"><scope>Tournament</scope><name>operator&lt;</name></member>
+      <member refid="class_tournament_1a732b99f4a91ce76bb3db57cffd96f441" prot="public" virt="non-virtual"><scope>Tournament</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_tournament_1a835ad322fd9309b94ce03be5523be20b" prot="public" virt="non-virtual"><scope>Tournament</scope><name>operator=</name></member>
+      <member refid="class_event_1a8115e592203a26166924dcae5b064e06" prot="public" virt="non-virtual" ambiguityscope="Event::"><scope>Tournament</scope><name>operator=</name></member>
+      <member refid="class_tournament_1a35e43e0ee6981515ba4442efa8cac7a7" prot="public" virt="non-virtual"><scope>Tournament</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_tournament_1a3520a2a12650313f56123a1c3a58b045" prot="private" virt="non-virtual"><scope>Tournament</scope><name>rank</name></member>
+      <member refid="class_tournament_1ae3b4728beb050f215716ccc9fabaaab4" prot="private" virt="non-virtual"><scope>Tournament</scope><name>results</name></member>
+      <member refid="class_event_1a7e9fa73e721c69bdf05b894ec3178e9b" prot="public" virt="non-virtual"><scope>Tournament</scope><name>setDay</name></member>
+      <member refid="class_event_1a2e63387b12ece5fc8b38c6b1142df219" prot="public" virt="non-virtual"><scope>Tournament</scope><name>setPresences</name></member>
+      <member refid="class_tournament_1a724f8fb0c0507975b6bb4817d8b5de7d" prot="public" virt="virtual"><scope>Tournament</scope><name>setRank</name></member>
+      <member refid="class_tournament_1acab9ee32169ba590f4ffdb5b59b28a86" prot="public" virt="virtual"><scope>Tournament</scope><name>setResults</name></member>
+      <member refid="class_tournament_1a7200351516d8d43c198ad6080b405261" prot="public" virt="virtual"><scope>Tournament</scope><name>show</name></member>
+      <member refid="class_tournament_1a87cc832c6612caebcab61d1bea7ef1ac" prot="public" virt="non-virtual"><scope>Tournament</scope><name>Tournament</name></member>
+      <member refid="class_tournament_1a653ee8a664677bf0f757234150fa71f8" prot="public" virt="non-virtual"><scope>Tournament</scope><name>Tournament</name></member>
+      <member refid="class_tournament_1a38dbc53e1d0f1eaf6b661169db87c270" prot="public" virt="non-virtual"><scope>Tournament</scope><name>Tournament</name></member>
+      <member refid="class_tournament_1a84c5301c50e0c4ac263ed3d74fa7c8c5" prot="public" virt="non-virtual"><scope>Tournament</scope><name>Tournament</name></member>
+      <member refid="class_tournament_1a4aa375c287d890b9117a91058dcffb0c" prot="public" virt="virtual"><scope>Tournament</scope><name>writetofile</name></member>
+      <member refid="class_event_1ab864fd85c758006c42cd7a1b3369b483" prot="public" virt="virtual"><scope>Tournament</scope><name>~Event</name></member>
+      <member refid="class_tournament_1a255677d318362ae4dc23b9d6a3359f61" prot="public" virt="virtual"><scope>Tournament</scope><name>~Tournament</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

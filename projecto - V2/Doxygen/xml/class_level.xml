@@ -1,0 +1,858 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_level" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Level</compoundname>
+    <derivedcompoundref refid="class_juniors" prot="public" virt="non-virtual">Juniors</derivedcompoundref>
+    <derivedcompoundref refid="class_juveniles" prot="public" virt="non-virtual">Juveniles</derivedcompoundref>
+    <derivedcompoundref refid="class_minis" prot="public" virt="non-virtual">Minis</derivedcompoundref>
+    <derivedcompoundref refid="class_seniors" prot="public" virt="non-virtual">Seniors</derivedcompoundref>
+    <includes refid="_level_8h" local="no">Level.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_level_1a8b8e823b54f5574adf2b93fed607d3b9" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_player" kindref="compound">Player</ref> * &gt;</type>
+        <definition>vector&lt;Player *&gt; Level::players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="37" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1a2f457aec7d1555b3136cd893884e021a" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_event" kindref="compound">Event</ref> * &gt;</type>
+        <definition>vector&lt;Event *&gt; Level::events</definition>
+        <argsstring></argsstring>
+        <name>events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="38" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1ae291ffb375fbee329ba77e6e71512bbe" prot="private" static="no" mutable="no">
+        <type><ref refid="class_b_s_t" kindref="compound">BST</ref>&lt; <ref refid="struct_player__node" kindref="compound">Player_node</ref> &gt;</type>
+        <definition>BST&lt;Player_node&gt; Level::players_tree</definition>
+        <argsstring></argsstring>
+        <name>players_tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="39" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1af9714fdced40052b532675a5a6e61747" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Level::coach</definition>
+        <argsstring></argsstring>
+        <name>coach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="40" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_level_1a7a696c928ca5d5354db6e50e46d0f67d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Level::Level</definition>
+        <argsstring>()</argsstring>
+        <name>Level</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initializes the <ref refid="class_b_s_t" kindref="compound">BST</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="46" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ad04be01a11723a3d7d8efce4ae1884f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Level::~Level</definition>
+        <argsstring>()</argsstring>
+        <name>~Level</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a098e3e980b18013bf7f0683acbe5e2f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Level::Level</definition>
+        <argsstring>(const Level &amp;level)</argsstring>
+        <name>Level</name>
+        <param>
+          <type>const <ref refid="class_level" kindref="compound">Level</ref> &amp;</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of <ref refid="class_level" kindref="compound">Level</ref> to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a29ac7d488564e82b888c295bbbb96f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_level" kindref="compound">Level</ref> &amp;</type>
+        <definition>Level&amp; Level::operator=</definition>
+        <argsstring>(const Level &amp;level)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_level" kindref="compound">Level</ref> &amp;</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Copy Operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of <ref refid="class_level" kindref="compound">Level</ref> to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ae7b28ba0cb8d49372c4657fbe42706e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int Level::getMaxAge</definition>
+        <argsstring>()=0</argsstring>
+        <name>getMaxAge</name>
+        <reimplementedby refid="class_minis_1a995e2db860e3a5c110cbead80ab61caa">getMaxAge</reimplementedby>
+        <reimplementedby refid="class_juveniles_1a6b7825beb91d790fc5432902aedcc1fc">getMaxAge</reimplementedby>
+        <reimplementedby refid="class_seniors_1a856a5d37a9dbda1e1b3ad8eb90db1f2a">getMaxAge</reimplementedby>
+        <reimplementedby refid="class_juniors_1a98c28047a2d5ff2b14651ee9eccfd2b6">getMaxAge</reimplementedby>
+        <briefdescription>
+<para>Get the maximum age to be on this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Pure Virtual, to be inherited by derived classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a161cf8c238fd499c112d90504cb6f587" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int Level::getMinAge</definition>
+        <argsstring>()=0</argsstring>
+        <name>getMinAge</name>
+        <reimplementedby refid="class_minis_1a062e99b463e0dd1e370b46e6fb37087a">getMinAge</reimplementedby>
+        <reimplementedby refid="class_juveniles_1a033b591527e3398a05da40e5ab954b40">getMinAge</reimplementedby>
+        <reimplementedby refid="class_seniors_1a1843edaf8811f4728f76c11c79fe5450">getMinAge</reimplementedby>
+        <reimplementedby refid="class_juniors_1a3110bdbaa344b2bfefa2ddcb8be8d7c6">getMinAge</reimplementedby>
+        <briefdescription>
+<para>Get the minimum age to be on this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Pure Virtual, to be inherited by derived classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a51ff82259c62111618aed20f96ec9f88" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_player" kindref="compound">Player</ref> * &gt;</type>
+        <definition>vector&lt;Player *&gt; Level::getPlayers</definition>
+        <argsstring>() const</argsstring>
+        <name>getPlayers</name>
+        <briefdescription>
+<para>Gets all of the Players on this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>players (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="75" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1aa03432096cfcf42293cebf2c801b7437" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_event" kindref="compound">Event</ref> * &gt;</type>
+        <definition>vector&lt;Event *&gt; Level::getEvents</definition>
+        <argsstring>() const</argsstring>
+        <name>getEvents</name>
+        <briefdescription>
+<para>Gets all of the Events on this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>events (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="80" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a6c4d3f153c3285aeaf3ec954981c5be8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Level::getCoach</definition>
+        <argsstring>() const</argsstring>
+        <name>getCoach</name>
+        <briefdescription>
+<para>Gets the coach of this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>coach (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="85" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ae24a0ba5c352e1cb0fa64282a89e559f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_b_s_t" kindref="compound">BST</ref>&lt; <ref refid="struct_player__node" kindref="compound">Player_node</ref> &gt;</type>
+        <definition>BST&lt;Player_node&gt; Level::getPlayers_tree</definition>
+        <argsstring>() const</argsstring>
+        <name>getPlayers_tree</name>
+        <briefdescription>
+<para>Gets the <ref refid="class_b_s_t" kindref="compound">BST</ref> of players on this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>players_tree (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="90" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a51174d561fe50353f7967a30b234f225" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_event" kindref="compound">Event</ref> * &gt;</type>
+        <definition>vector&lt;Event *&gt; Level::getTrainings</definition>
+        <argsstring>() const</argsstring>
+        <name>getTrainings</name>
+        <briefdescription>
+<para>Gets all of the Trainings of this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector only with Trainings </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ab3466508279237e3b03e84b2ae161280" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_event" kindref="compound">Event</ref> * &gt;</type>
+        <definition>vector&lt;Event *&gt; Level::getTournaments</definition>
+        <argsstring>() const</argsstring>
+        <name>getTournaments</name>
+        <briefdescription>
+<para>Gets all of the Tournaments of this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector only with Tournaments </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1abbb0a9cdb17251cea99134324b84654f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Level::addPlayer</definition>
+        <argsstring>(Player *player)</argsstring>
+        <name>addPlayer</name>
+        <reimplementedby refid="class_minis_1ae32db82a540e3377310359dfbecd57a3">addPlayer</reimplementedby>
+        <reimplementedby refid="class_juveniles_1afbb8b02acca9688dfb4b25a8af4dcbd2">addPlayer</reimplementedby>
+        <reimplementedby refid="class_seniors_1a27d5b434d595a0b2c65f7b23869ad29e">addPlayer</reimplementedby>
+        <reimplementedby refid="class_juniors_1aa572f0d371343c8d8749b167972bd79c">addPlayer</reimplementedby>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new <ref refid="class_player" kindref="compound">Player</ref> to this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New <ref refid="class_player" kindref="compound">Player</ref> to be added </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the <ref refid="class_player" kindref="compound">Player</ref> was inserted successfuly, false if not</para></simplesect>
+The <ref refid="class_player" kindref="compound">Player</ref> can not be added to the <ref refid="class_level" kindref="compound">Level</ref> if his age is not within the range of admitted ages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a86b0d3ec7bb14fd7002c332b328dd96d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::addEvent</definition>
+        <argsstring>(Event *event)</argsstring>
+        <name>addEvent</name>
+        <param>
+          <type><ref refid="class_event" kindref="compound">Event</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new <ref refid="class_event" kindref="compound">Event</ref> to this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New <ref refid="class_event" kindref="compound">Event</ref> to be added </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1aa666e5fe87af336fd7350ac0b72b7c8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::setCoach</definition>
+        <argsstring>(std::string coach)</argsstring>
+        <name>setCoach</name>
+        <param>
+          <type>std::string</type>
+          <declname>coach</declname>
+        </param>
+        <briefdescription>
+<para>Changes coach name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coach</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the coach </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="117" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1af69ea50948039136cdce88bbdcb01e08" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Level::showplayers</definition>
+        <argsstring>() const</argsstring>
+        <name>showplayers</name>
+        <reimplementedby refid="class_minis_1a50dc8c8145d4903f16af6865d2f811f4">showplayers</reimplementedby>
+        <reimplementedby refid="class_juveniles_1a4659df80ecf14611769f24d12f5e7e25">showplayers</reimplementedby>
+        <reimplementedby refid="class_seniors_1addf02a1f1031cf6679a0bf3154cc99f5">showplayers</reimplementedby>
+        <reimplementedby refid="class_juniors_1a1895a718018bd5af82242e5b29a1982d">showplayers</reimplementedby>
+        <briefdescription>
+<para>Outputs the Players of this <ref refid="class_level" kindref="compound">Level</ref> to the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>Pure Virtual, to be inherited by derived classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1aab00625f4293cdce8de3169a3eeae243" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Level::showtrainings</definition>
+        <argsstring>() const</argsstring>
+        <name>showtrainings</name>
+        <reimplementedby refid="class_minis_1a940a0e2e0175de74b7925d9ac5e9eaec">showtrainings</reimplementedby>
+        <reimplementedby refid="class_juveniles_1a7f2818104ee9c884cd32b6cb3fe5df2d">showtrainings</reimplementedby>
+        <reimplementedby refid="class_seniors_1a16b0ed0592df428409910698c0ece1ff">showtrainings</reimplementedby>
+        <reimplementedby refid="class_juniors_1aad300aa441c2036a6cc64dae6d2f94cc">showtrainings</reimplementedby>
+        <briefdescription>
+<para>Outputs the Trainings of this <ref refid="class_level" kindref="compound">Level</ref> to the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>Pure Virtual, to be inherited by derived classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ae4ecbd2830b9fc46a77783035dab8543" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Level::showtournaments</definition>
+        <argsstring>() const</argsstring>
+        <name>showtournaments</name>
+        <reimplementedby refid="class_minis_1ae5f14d6896391a31f86a463844e350a5">showtournaments</reimplementedby>
+        <reimplementedby refid="class_juveniles_1a8bb4b1dec02e9b317eb059ff6c3fd6b8">showtournaments</reimplementedby>
+        <reimplementedby refid="class_seniors_1a6d666a98da195995b01d69e135203e8c">showtournaments</reimplementedby>
+        <reimplementedby refid="class_juniors_1a2e9ea7859c38ac8509a0d3d787643a94">showtournaments</reimplementedby>
+        <briefdescription>
+<para>Outputs the Tournaments of this <ref refid="class_level" kindref="compound">Level</ref> to the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>Pure Virtual, to be inherited by derived classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a357810a186049d3b0692cbf2066a4ebe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Level::showevents</definition>
+        <argsstring>() const</argsstring>
+        <name>showevents</name>
+        <briefdescription>
+<para>Outputs the next events to happen. </para>        </briefdescription>
+        <detaileddescription>
+<para>Includes both Trainings and Tournaments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a68ca29bc1f8796b8ee89f6d9a77b3e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::removeplayer</definition>
+        <argsstring>(unsigned int id)</argsstring>
+        <name>removeplayer</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Removes a <ref refid="class_player" kindref="compound">Player</ref> from this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position in the member variable players </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a8f38f4c5bc05c7c7c4d4ea1321d91b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::removeEvent</definition>
+        <argsstring>(unsigned int id)</argsstring>
+        <name>removeEvent</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Removes an <ref refid="class_event" kindref="compound">Event</ref> from this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position in the member variable events </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a30e6e466da1dddeb05d3591d0fddc2b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_event" kindref="compound">Event</ref> * &gt;</type>
+        <definition>vector&lt;Event*&gt; Level::getFutureEvents</definition>
+        <argsstring>()</argsstring>
+        <name>getFutureEvents</name>
+        <briefdescription>
+<para>Gets Events that will happen in the future. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of the Events to happen </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ac7ecbf06c831f2a02cad567bcfb52ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::raiseassiduity</definition>
+        <argsstring>(vector&lt; string &gt; players)</argsstring>
+        <name>raiseassiduity</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>players</declname>
+        </param>
+        <briefdescription>
+<para>Raises the assiduity of the Players. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of players to raise the assiduity (member varible in <ref refid="class_player" kindref="compound">Player</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ab4e4b8c386063fd8244042f7eefa3427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::lowerassiduity</definition>
+        <argsstring>(vector&lt; string &gt; players)</argsstring>
+        <name>lowerassiduity</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>players</declname>
+        </param>
+        <briefdescription>
+<para>Lowers the assiduity of the Players. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of players to lower the assiduity (member varible in <ref refid="class_player" kindref="compound">Player</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a2d64a6f446a4d6c7c4959c7bc0972a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::raisepgames</definition>
+        <argsstring>(vector&lt; string &gt; players)</argsstring>
+        <name>raisepgames</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>players</declname>
+        </param>
+        <briefdescription>
+<para>Raises the presences in games of the Players. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of players to raise the pgames (member variable in <ref refid="class_player" kindref="compound">Player</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a336a54c2ef7e4307e9353a200a11537e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::lowerpgames</definition>
+        <argsstring>(vector&lt; string &gt; players)</argsstring>
+        <name>lowerpgames</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>players</declname>
+        </param>
+        <briefdescription>
+<para>Lowers the presences in games of the Players. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of players to lower the pgames (member varible in <ref refid="class_player" kindref="compound">Player</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ac592cc97524f49de9114f4af20312aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::raiseptournaments</definition>
+        <argsstring>(vector&lt; string &gt; players)</argsstring>
+        <name>raiseptournaments</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>players</declname>
+        </param>
+        <briefdescription>
+<para>Raises the presences in tournaments of the Players. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of players to raise the ptournaments (member variable in <ref refid="class_player" kindref="compound">Player</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1afbb999a489e4e185bb26e965939a97e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::lowerptournaments</definition>
+        <argsstring>(vector&lt; string &gt; players)</argsstring>
+        <name>lowerptournaments</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>players</declname>
+        </param>
+        <briefdescription>
+<para>Lowers the presences in tournaments of the Players. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of players to lower the ptournaments (member varible in <ref refid="class_player" kindref="compound">Player</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1af91bf73255a171a3f2a256778e075fb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::raisegames_won</definition>
+        <argsstring>(vector&lt; string &gt; players, int value, vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt;&gt; results)</argsstring>
+        <name>raisegames_won</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>players</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt;&gt;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Raises the number of games in which this <ref refid="class_level" kindref="compound">Level</ref> won that the Players participated. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>players</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Players to be raised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount to be raised </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Results achieved by the <ref refid="class_level" kindref="compound">Level</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Computes how many games where won from the parameter results then multiplies it by value and adds to each player </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a2634c6743f1a56592c97e6cfb7a9a8b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::raiseassiduity_curr</definition>
+        <argsstring>(vector&lt; string &gt; player, int value)</argsstring>
+        <name>raiseassiduity_curr</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Increases the value of assiduity of Players. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of names of <ref refid="class_player" kindref="compound">Player</ref> to be increased </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points to be increased </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1ac118b390f16a75b9a0e9df198b3190ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>virtual vector&lt;string&gt; Level::getCall</definition>
+        <argsstring>(unsigned int size)=0</argsstring>
+        <name>getCall</name>
+        <reimplementedby refid="class_minis_1af0e6cf169e2f1bd575cb559cfdc42bd0">getCall</reimplementedby>
+        <reimplementedby refid="class_juveniles_1af0dc666646d2f221a9a5105f829ff3d5">getCall</reimplementedby>
+        <reimplementedby refid="class_seniors_1a2ece7a81ffca49ef1b365a70e4ffd58f">getCall</reimplementedby>
+        <reimplementedby refid="class_juniors_1ae74674e315f00640944d452bc197b4da">getCall</reimplementedby>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Makes a call for an <ref refid="class_event" kindref="compound">Event</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many Players to call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector with the players called to the <ref refid="class_event" kindref="compound">Event</ref></para></simplesect>
+Pure Virtual, to be implemented by derived classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a09a28b62e9b593db54b220533a5dd567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::actualize_curr_parameters</definition>
+        <argsstring>()</argsstring>
+        <name>actualize_curr_parameters</name>
+        <briefdescription>
+<para>Re-computes the assiduities of all the Players in this <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a45217bde102ee160f4852d093f51ed83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::makeTree</definition>
+        <argsstring>()</argsstring>
+        <name>makeTree</name>
+        <briefdescription>
+<para>Constructs the member variable players_tree with the current Players. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a2752e4f84d3de5e8b72e4cf87cb0131b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level::remove_Tree</definition>
+        <argsstring>(Player_node pl)</argsstring>
+        <name>remove_Tree</name>
+        <param>
+          <type><ref refid="struct_player__node" kindref="compound">Player_node</ref></type>
+          <declname>pl</declname>
+        </param>
+        <briefdescription>
+<para>Removes a <ref refid="class_player" kindref="compound">Player</ref> from the member variable players_tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_player" kindref="compound">Player</ref> to be removed from players_tree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="216" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="216" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds all the information about the <ref refid="class_club" kindref="compound">Club</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="39">
+        <label>Minis</label>
+        <link refid="class_minis"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>Seniors</label>
+        <link refid="class_seniors"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Juveniles</label>
+        <link refid="class_juveniles"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Juniors</label>
+        <link refid="class_juniors"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Level</label>
+        <link refid="class_level"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" line="36" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h" bodystart="36" bodyend="217"/>
+    <listofallmembers>
+      <member refid="class_level_1a09a28b62e9b593db54b220533a5dd567" prot="public" virt="non-virtual"><scope>Level</scope><name>actualize_curr_parameters</name></member>
+      <member refid="class_level_1a86b0d3ec7bb14fd7002c332b328dd96d" prot="public" virt="non-virtual"><scope>Level</scope><name>addEvent</name></member>
+      <member refid="class_level_1abbb0a9cdb17251cea99134324b84654f" prot="public" virt="virtual"><scope>Level</scope><name>addPlayer</name></member>
+      <member refid="class_level_1af9714fdced40052b532675a5a6e61747" prot="private" virt="non-virtual"><scope>Level</scope><name>coach</name></member>
+      <member refid="class_level_1a2f457aec7d1555b3136cd893884e021a" prot="private" virt="non-virtual"><scope>Level</scope><name>events</name></member>
+      <member refid="class_level_1ac118b390f16a75b9a0e9df198b3190ad" prot="public" virt="pure-virtual"><scope>Level</scope><name>getCall</name></member>
+      <member refid="class_level_1a6c4d3f153c3285aeaf3ec954981c5be8" prot="public" virt="non-virtual"><scope>Level</scope><name>getCoach</name></member>
+      <member refid="class_level_1aa03432096cfcf42293cebf2c801b7437" prot="public" virt="non-virtual"><scope>Level</scope><name>getEvents</name></member>
+      <member refid="class_level_1a30e6e466da1dddeb05d3591d0fddc2b8" prot="public" virt="non-virtual"><scope>Level</scope><name>getFutureEvents</name></member>
+      <member refid="class_level_1ae7b28ba0cb8d49372c4657fbe42706e1" prot="public" virt="pure-virtual"><scope>Level</scope><name>getMaxAge</name></member>
+      <member refid="class_level_1a161cf8c238fd499c112d90504cb6f587" prot="public" virt="pure-virtual"><scope>Level</scope><name>getMinAge</name></member>
+      <member refid="class_level_1a51ff82259c62111618aed20f96ec9f88" prot="public" virt="non-virtual"><scope>Level</scope><name>getPlayers</name></member>
+      <member refid="class_level_1ae24a0ba5c352e1cb0fa64282a89e559f" prot="public" virt="non-virtual"><scope>Level</scope><name>getPlayers_tree</name></member>
+      <member refid="class_level_1ab3466508279237e3b03e84b2ae161280" prot="public" virt="non-virtual"><scope>Level</scope><name>getTournaments</name></member>
+      <member refid="class_level_1a51174d561fe50353f7967a30b234f225" prot="public" virt="non-virtual"><scope>Level</scope><name>getTrainings</name></member>
+      <member refid="class_level_1a7a696c928ca5d5354db6e50e46d0f67d" prot="public" virt="non-virtual"><scope>Level</scope><name>Level</name></member>
+      <member refid="class_level_1a098e3e980b18013bf7f0683acbe5e2f6" prot="public" virt="non-virtual"><scope>Level</scope><name>Level</name></member>
+      <member refid="class_level_1ab4e4b8c386063fd8244042f7eefa3427" prot="public" virt="non-virtual"><scope>Level</scope><name>lowerassiduity</name></member>
+      <member refid="class_level_1a336a54c2ef7e4307e9353a200a11537e" prot="public" virt="non-virtual"><scope>Level</scope><name>lowerpgames</name></member>
+      <member refid="class_level_1afbb999a489e4e185bb26e965939a97e5" prot="public" virt="non-virtual"><scope>Level</scope><name>lowerptournaments</name></member>
+      <member refid="class_level_1a45217bde102ee160f4852d093f51ed83" prot="public" virt="non-virtual"><scope>Level</scope><name>makeTree</name></member>
+      <member refid="class_level_1a29ac7d488564e82b888c295bbbb96f2a" prot="public" virt="non-virtual"><scope>Level</scope><name>operator=</name></member>
+      <member refid="class_level_1a8b8e823b54f5574adf2b93fed607d3b9" prot="private" virt="non-virtual"><scope>Level</scope><name>players</name></member>
+      <member refid="class_level_1ae291ffb375fbee329ba77e6e71512bbe" prot="private" virt="non-virtual"><scope>Level</scope><name>players_tree</name></member>
+      <member refid="class_level_1ac7ecbf06c831f2a02cad567bcfb52ec9" prot="public" virt="non-virtual"><scope>Level</scope><name>raiseassiduity</name></member>
+      <member refid="class_level_1a2634c6743f1a56592c97e6cfb7a9a8b6" prot="public" virt="non-virtual"><scope>Level</scope><name>raiseassiduity_curr</name></member>
+      <member refid="class_level_1af91bf73255a171a3f2a256778e075fb7" prot="public" virt="non-virtual"><scope>Level</scope><name>raisegames_won</name></member>
+      <member refid="class_level_1a2d64a6f446a4d6c7c4959c7bc0972a84" prot="public" virt="non-virtual"><scope>Level</scope><name>raisepgames</name></member>
+      <member refid="class_level_1ac592cc97524f49de9114f4af20312aad" prot="public" virt="non-virtual"><scope>Level</scope><name>raiseptournaments</name></member>
+      <member refid="class_level_1a2752e4f84d3de5e8b72e4cf87cb0131b" prot="public" virt="non-virtual"><scope>Level</scope><name>remove_Tree</name></member>
+      <member refid="class_level_1a8f38f4c5bc05c7c7c4d4ea1321d91b84" prot="public" virt="non-virtual"><scope>Level</scope><name>removeEvent</name></member>
+      <member refid="class_level_1a68ca29bc1f8796b8ee89f6d9a77b3e2a" prot="public" virt="non-virtual"><scope>Level</scope><name>removeplayer</name></member>
+      <member refid="class_level_1aa666e5fe87af336fd7350ac0b72b7c8c" prot="public" virt="non-virtual"><scope>Level</scope><name>setCoach</name></member>
+      <member refid="class_level_1a357810a186049d3b0692cbf2066a4ebe" prot="public" virt="virtual"><scope>Level</scope><name>showevents</name></member>
+      <member refid="class_level_1af69ea50948039136cdce88bbdcb01e08" prot="public" virt="virtual"><scope>Level</scope><name>showplayers</name></member>
+      <member refid="class_level_1ae4ecbd2830b9fc46a77783035dab8543" prot="public" virt="virtual"><scope>Level</scope><name>showtournaments</name></member>
+      <member refid="class_level_1aab00625f4293cdce8de3169a3eeae243" prot="public" virt="virtual"><scope>Level</scope><name>showtrainings</name></member>
+      <member refid="class_level_1ad04be01a11723a3d7d8efce4ae1884f2" prot="public" virt="virtual"><scope>Level</scope><name>~Level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

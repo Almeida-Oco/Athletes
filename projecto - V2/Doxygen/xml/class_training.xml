@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_training" kind="class" language="C++" prot="public">
+    <compoundname>Training</compoundname>
+    <basecompoundref refid="class_event" prot="public" virt="non-virtual">Event</basecompoundref>
+    <includes refid="_training_8h" local="no">Training.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_training_1ab9f70236b24b5265c7237e3e8e649ddb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Training::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="20" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_training_1af98b1bc7ed710e2fa008a72ad29dbdae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Training::Training</definition>
+        <argsstring>()</argsstring>
+        <name>Training</name>
+        <briefdescription>
+<para>Default Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="25" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1a4a40f758a773c3c63d8558eaa78b1abd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Training::~Training</definition>
+        <argsstring>()</argsstring>
+        <name>~Training</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="29" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1a923c500458737327f874067ffc7ca1c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Training::Training</definition>
+        <argsstring>(const Training &amp;training)</argsstring>
+        <name>Training</name>
+        <param>
+          <type>const <ref refid="class_training" kindref="compound">Training</ref> &amp;</type>
+          <declname>training</declname>
+        </param>
+        <briefdescription>
+<para>Copy Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>training</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_training" kindref="compound">Training</ref> object to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1aa6b19909ef6436a568986fb6ac8228b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_training" kindref="compound">Training</ref> &amp;</type>
+        <definition>Training&amp; Training::operator=</definition>
+        <argsstring>(const Training &amp;training)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_training" kindref="compound">Training</ref> &amp;</type>
+          <declname>training</declname>
+        </param>
+        <briefdescription>
+<para>Copy Operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>training</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_training" kindref="compound">Training</ref> object to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1ae39813d608325645cb3403160fc3b493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Training::Training</definition>
+        <argsstring>(Event *ev)</argsstring>
+        <name>Training</name>
+        <param>
+          <type><ref refid="class_event" kindref="compound">Event</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Pointer Copy Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="class_training" kindref="compound">Training</ref> object to be copied </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1a314d31d73f207b1c9cb2720da663d225" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Training::Training</definition>
+        <argsstring>(Date day, bool game)</argsstring>
+        <name>Training</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>game</declname>
+        </param>
+        <briefdescription>
+<para>Partial Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_date" kindref="compound">Date</ref> of the <ref refid="class_event" kindref="compound">Event</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>game</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether it was a <ref refid="class_training" kindref="compound">Training</ref> game or not </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="50" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1a55530cc22aa771cf3e452c7158b5396e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Training::isGame</definition>
+        <argsstring>() const</argsstring>
+        <name>isGame</name>
+        <reimplements refid="class_event_1add36e9739215f6744040c11de50b26b7">isGame</reimplements>
+        <briefdescription>
+<para>Checks if the <ref refid="class_training" kindref="compound">Training</ref> was a game. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if it was a <ref refid="class_training" kindref="compound">Training</ref> game </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="55" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1ab70fe087f382d0de9dca69ce519be91e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Training::Istraining</definition>
+        <argsstring>() const</argsstring>
+        <name>Istraining</name>
+        <reimplements refid="class_event_1a08af9b350f32520dca26d552d6f415b2">Istraining</reimplements>
+        <briefdescription>
+<para>Checks if this <ref refid="class_event" kindref="compound">Event</ref> is a <ref refid="class_training" kindref="compound">Training</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True since all objects of this class are Trainings </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="60" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1a452b188f29b887a8775972d9464da912" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Training::show</definition>
+        <argsstring>() const</argsstring>
+        <name>show</name>
+        <reimplements refid="class_event_1af53c2db83404a045087a271ed3c2604f">show</reimplements>
+        <briefdescription>
+<para>Prints the <ref refid="class_training" kindref="compound">Training</ref> on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1ada723ff1f8340338a99e720a1b472334" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int Training::getRank</definition>
+        <argsstring>() const</argsstring>
+        <name>getRank</name>
+        <reimplements refid="class_event_1ab267b8e94c78ca51636792d75101acb5">getRank</reimplements>
+        <briefdescription>
+<para>Gets the rank achieved by the <ref refid="class_level" kindref="compound">Level</ref> at a <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 Since all objects of this class are Trainings not Tournaments </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="69" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1aaf1c4d96664a16ca141dd5a3582f9426" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Training::isMajor</definition>
+        <argsstring>() const</argsstring>
+        <name>isMajor</name>
+        <reimplements refid="class_event_1ad1a1a9cb471d664a2ca99effc102259b">isMajor</reimplements>
+        <briefdescription>
+<para>Checks if <ref refid="class_tournament" kindref="compound">Tournament</ref> was a major <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>false Since all objects of this class are Trainings not Tournaments </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="74" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1aa37e2baeee2b94cb15521e1768b99cc9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt; &gt;</type>
+        <definition>virtual vector&lt;pair&lt;pair&lt;unsigned int, unsigned int&gt;, string &gt; &gt; Training::getResults</definition>
+        <argsstring>() const</argsstring>
+        <name>getResults</name>
+        <reimplements refid="class_event_1a9d29f8c725da32b5fbf70ccf7961f02b">getResults</reimplements>
+        <briefdescription>
+<para>Gets the results of the <ref refid="class_level" kindref="compound">Level</ref> in the <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Empty vector since all objects of this class are Trainings not Tournaments </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="79" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1ad587b59c44a6e95a4e52f3d3f6b89480" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Training::setResults</definition>
+        <argsstring>(vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt;&gt; results)</argsstring>
+        <name>setResults</name>
+        <reimplements refid="class_event_1a5ddb261642035be78677d668f9238339">setResults</reimplements>
+        <param>
+          <type>vector&lt; pair&lt; pair&lt; unsigned int, unsigned int &gt;, string &gt;&gt;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Does nothing since Trainings have no results. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="83" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1a15d38322bd6a2ee8e17441bd4798b236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Training::setRank</definition>
+        <argsstring>(unsigned int rank)</argsstring>
+        <name>setRank</name>
+        <reimplements refid="class_event_1a5bccaba301e9038957ec4138df404524">setRank</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>rank</declname>
+        </param>
+        <briefdescription>
+<para>Does nothing since Trainings have no rank. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="87" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_training_1a1755abc9faafbe06fb2825cb5f879016" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Training::writetofile</definition>
+        <argsstring>(ostream &amp;out) const</argsstring>
+        <name>writetofile</name>
+        <reimplements refid="class_event_1a0c263fb7398dc2f0969a2bb22b47a40a">writetofile</reimplements>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Writes the <ref refid="class_training" kindref="compound">Training</ref> to a file using operator&lt;&lt;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to write to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="106" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_training_1a2a462cd115913a43a1f4d7cbc8635c77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;out, const Training &amp;training)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_training" kindref="compound">Training</ref> &amp;</type>
+          <declname>training</declname>
+        </param>
+        <briefdescription>
+<para>Used to write the <ref refid="class_training" kindref="compound">Training</ref> to an Output Stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output Stream to write the <ref refid="class_training" kindref="compound">Training</ref> to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>training</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_training" kindref="compound">Training</ref> to be written on the Output Stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>out (parameter) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_training_1ad76466bb3f1163c39b684ae14adf0ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;in, Training &amp;training)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="class_training" kindref="compound">Training</ref> &amp;</type>
+          <declname>training</declname>
+        </param>
+        <briefdescription>
+<para>Used to read the <ref refid="class_training" kindref="compound">Training</ref> from an Input Stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input Stream from which to read the <ref refid="class_training" kindref="compound">Training</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>training</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_training" kindref="compound">Training</ref> to be read from the Input Stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>in (parameter) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="101" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used to host information about a single <ref refid="class_training" kindref="compound">Training</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="63">
+        <label>Event</label>
+        <link refid="class_event"/>
+      </node>
+      <node id="62">
+        <label>Training</label>
+        <link refid="class_training"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="65">
+        <label>Event</label>
+        <link refid="class_event"/>
+      </node>
+      <node id="64">
+        <label>Training</label>
+        <link refid="class_training"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" line="19" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Training.h" bodystart="19" bodyend="108"/>
+    <listofallmembers>
+      <member refid="class_event_1a3efb47d783affa24203f4ba13b355c56" prot="public" virt="non-virtual"><scope>Training</scope><name>addPresence</name></member>
+      <member refid="class_event_1a5a40dd4708297f7031e29b39e039ae10" prot="public" virt="non-virtual"><scope>Training</scope><name>Event</name></member>
+      <member refid="class_event_1aa79f43b0c42280875280ec071aa2eea1" prot="public" virt="non-virtual"><scope>Training</scope><name>Event</name></member>
+      <member refid="class_event_1ad13c7b9652c4e3ab546d86406097d23a" prot="public" virt="non-virtual"><scope>Training</scope><name>Event</name></member>
+      <member refid="class_training_1ab9f70236b24b5265c7237e3e8e649ddb" prot="private" virt="non-virtual"><scope>Training</scope><name>game</name></member>
+      <member refid="class_event_1a9c016f59ee7116b2397a4823911e1a65" prot="public" virt="non-virtual"><scope>Training</scope><name>getDay</name></member>
+      <member refid="class_event_1a67677233149ff7e2ebe038d3cfa35223" prot="public" virt="non-virtual"><scope>Training</scope><name>getPresences</name></member>
+      <member refid="class_training_1ada723ff1f8340338a99e720a1b472334" prot="public" virt="virtual"><scope>Training</scope><name>getRank</name></member>
+      <member refid="class_training_1aa37e2baeee2b94cb15521e1768b99cc9" prot="public" virt="virtual"><scope>Training</scope><name>getResults</name></member>
+      <member refid="class_training_1a55530cc22aa771cf3e452c7158b5396e" prot="public" virt="virtual"><scope>Training</scope><name>isGame</name></member>
+      <member refid="class_training_1aaf1c4d96664a16ca141dd5a3582f9426" prot="public" virt="virtual"><scope>Training</scope><name>isMajor</name></member>
+      <member refid="class_training_1ab70fe087f382d0de9dca69ce519be91e" prot="public" virt="virtual"><scope>Training</scope><name>Istraining</name></member>
+      <member refid="class_event_1a7bdc01f67b0ebca8feb9650d63c8ff08" prot="public" virt="non-virtual"><scope>Training</scope><name>operator&lt;</name></member>
+      <member refid="class_training_1a2a462cd115913a43a1f4d7cbc8635c77" prot="public" virt="non-virtual"><scope>Training</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_training_1aa6b19909ef6436a568986fb6ac8228b9" prot="public" virt="non-virtual"><scope>Training</scope><name>operator=</name></member>
+      <member refid="class_event_1a8115e592203a26166924dcae5b064e06" prot="public" virt="non-virtual" ambiguityscope="Event::"><scope>Training</scope><name>operator=</name></member>
+      <member refid="class_training_1ad76466bb3f1163c39b684ae14adf0ca1" prot="public" virt="non-virtual"><scope>Training</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_event_1a7e9fa73e721c69bdf05b894ec3178e9b" prot="public" virt="non-virtual"><scope>Training</scope><name>setDay</name></member>
+      <member refid="class_event_1a2e63387b12ece5fc8b38c6b1142df219" prot="public" virt="non-virtual"><scope>Training</scope><name>setPresences</name></member>
+      <member refid="class_training_1a15d38322bd6a2ee8e17441bd4798b236" prot="public" virt="virtual"><scope>Training</scope><name>setRank</name></member>
+      <member refid="class_training_1ad587b59c44a6e95a4e52f3d3f6b89480" prot="public" virt="virtual"><scope>Training</scope><name>setResults</name></member>
+      <member refid="class_training_1a452b188f29b887a8775972d9464da912" prot="public" virt="virtual"><scope>Training</scope><name>show</name></member>
+      <member refid="class_training_1af98b1bc7ed710e2fa008a72ad29dbdae" prot="public" virt="non-virtual"><scope>Training</scope><name>Training</name></member>
+      <member refid="class_training_1a923c500458737327f874067ffc7ca1c9" prot="public" virt="non-virtual"><scope>Training</scope><name>Training</name></member>
+      <member refid="class_training_1ae39813d608325645cb3403160fc3b493" prot="public" virt="non-virtual"><scope>Training</scope><name>Training</name></member>
+      <member refid="class_training_1a314d31d73f207b1c9cb2720da663d225" prot="public" virt="non-virtual"><scope>Training</scope><name>Training</name></member>
+      <member refid="class_training_1a1755abc9faafbe06fb2825cb5f879016" prot="public" virt="virtual"><scope>Training</scope><name>writetofile</name></member>
+      <member refid="class_event_1ab864fd85c758006c42cd7a1b3369b483" prot="public" virt="virtual"><scope>Training</scope><name>~Event</name></member>
+      <member refid="class_training_1a4a40f758a773c3c63d8558eaa78b1abd" prot="public" virt="virtual"><scope>Training</scope><name>~Training</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

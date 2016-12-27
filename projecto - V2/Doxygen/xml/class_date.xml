@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_date" kind="class" language="C++" prot="public">
+    <compoundname>Date</compoundname>
+    <includes refid="_date_8h" local="no">Date.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_date_1a6c498dee79268960e000ec3deaa555ac" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Date::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="29" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_1af48402007169fe01234fe9bb9e7a1d2c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Date::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="30" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_1afc014a1ae62e56be473144050201e62a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Date::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="31" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_date_1a4e59ed4ba66eec61c27460c5d09fa1bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Date::Date</definition>
+        <argsstring>()</argsstring>
+        <name>Date</name>
+        <briefdescription>
+<para>Default Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets date to current time on the system </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a28c6604a0f8ed8216becf24abc20cf5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Date::Date</definition>
+        <argsstring>(unsigned int day, unsigned int month, unsigned int year)</argsstring>
+        <name>Date</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+<para>Contructor with day, month and year. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Day of the <ref refid="class_date" kindref="compound">Date</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Month of the <ref refid="class_date" kindref="compound">Date</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Year of the <ref refid="class_date" kindref="compound">Date</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Checks the parameters to see if all is correct, including Leap years </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a0f253815240e70f4c39cb93cc68bd3f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Date::getDay</definition>
+        <argsstring>() const</argsstring>
+        <name>getDay</name>
+        <briefdescription>
+<para>Gets the day of the <ref refid="class_date" kindref="compound">Date</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>day (member varible) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="51" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a332f6e3a2f6a40d73742b6dab7be0f64" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Date::getMonth</definition>
+        <argsstring>() const</argsstring>
+        <name>getMonth</name>
+        <briefdescription>
+<para>Gets the month of the <ref refid="class_date" kindref="compound">Date</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>month (member varible) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="56" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a8b0869f34c2b38d108ab83ee2e770e5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Date::getYear</definition>
+        <argsstring>() const</argsstring>
+        <name>getYear</name>
+        <briefdescription>
+<para>Gets the year of the <ref refid="class_date" kindref="compound">Date</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>year (member varible) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="61" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1aa4c0f619e51dca5ef53284e548d4d0af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&gt;</definition>
+        <argsstring>(const Date &amp;d1) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+<para>Operator &gt; compares two dates. </para>        </briefdescription>
+        <detaileddescription>
+<para>A date is bigger than another if it is later </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ae5a781b0f45775eece17d7f3dd5b3703" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&gt;=</definition>
+        <argsstring>(const Date &amp;d1) const</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+<para>Operator &gt;= compares two dates. </para>        </briefdescription>
+        <detaileddescription>
+<para>A date is bigger or equal than another if it is later or the same </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a352ad2bec798ce5802231d49bf0a16e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&lt;</definition>
+        <argsstring>(const Date &amp;d1) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+<para>Operator &lt; compares two dates. </para>        </briefdescription>
+        <detaileddescription>
+<para>A date is smaller than another if it is sooner </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a50265b854c407eb0f3247b41f5cd1258" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&lt;=</definition>
+        <argsstring>(const Date &amp;d1) const</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+<para>Operator &lt;= compares two dates. </para>        </briefdescription>
+        <detaileddescription>
+<para>A date is smaller or equal than another if it is sooner or the same </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ac906e253d7d1343e3e161fb9e1aee707" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator==</definition>
+        <argsstring>(const Date &amp;d1) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+<para>Operator == compares two dates. </para>        </briefdescription>
+        <detaileddescription>
+<para>A date is equal to another if the day, month and year are the same </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a48e19b5b03c19466bfe245d5ae2b979a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date Date::addDays</definition>
+        <argsstring>(unsigned int n) const</argsstring>
+        <name>addDays</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Sums n days to the date in the object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of days to sum</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Used only on hash table , takes into consideration leap years</para><para><simplesect kind="return"><para>New object with correct date </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a16e8cb570b74e2d7a7050b53c0767542" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date Date::subtractDays</definition>
+        <argsstring>(unsigned int n) const</argsstring>
+        <name>subtractDays</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Subtracts n days to the date in the object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of days to subtract</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Used only on hash table , takes into consideration leap years</para><para><simplesect kind="return"><para>New object with correct date </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a93d53878c07ee506c78971b762a47265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Date::diffDays</definition>
+        <argsstring>()</argsstring>
+        <name>diffDays</name>
+        <briefdescription>
+<para>Computates the difference in days between the date of the object and the current date. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>If object date &gt; current date returns number of days </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a0ec9ecc48a4e5a4a582ff8344ae51acb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date Date::year_date</definition>
+        <argsstring>(unsigned int year) const</argsstring>
+        <name>year_date</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+<para>Changes the year of the date. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Year to change the date into </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new date with same day and month as original but year equal to param year </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ad367b27b98f481d3afd93cade84ef862" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; Date::operator-</definition>
+        <argsstring>(const Date &amp;d1) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_date" kindref="compound">Date</ref> &amp;</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+<para>Computes the time between the two date. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_date" kindref="compound">Date</ref> to use to compute the time </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector with days passed at 0 , months passed at 1, years passed at 2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a37f8fc7ca1692df7a8b265099c061721" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Date::show</definition>
+        <argsstring>() const</argsstring>
+        <name>show</name>
+        <briefdescription>
+<para>Prints the date on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that represents a <ref refid="class_date" kindref="compound">Date</ref> of the calendar. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" line="28" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Date.h" bodystart="28" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_date_1a48e19b5b03c19466bfe245d5ae2b979a" prot="public" virt="non-virtual"><scope>Date</scope><name>addDays</name></member>
+      <member refid="class_date_1a4e59ed4ba66eec61c27460c5d09fa1bd" prot="public" virt="non-virtual"><scope>Date</scope><name>Date</name></member>
+      <member refid="class_date_1a28c6604a0f8ed8216becf24abc20cf5b" prot="public" virt="non-virtual"><scope>Date</scope><name>Date</name></member>
+      <member refid="class_date_1a6c498dee79268960e000ec3deaa555ac" prot="private" virt="non-virtual"><scope>Date</scope><name>day</name></member>
+      <member refid="class_date_1a93d53878c07ee506c78971b762a47265" prot="public" virt="non-virtual"><scope>Date</scope><name>diffDays</name></member>
+      <member refid="class_date_1a0f253815240e70f4c39cb93cc68bd3f4" prot="public" virt="non-virtual"><scope>Date</scope><name>getDay</name></member>
+      <member refid="class_date_1a332f6e3a2f6a40d73742b6dab7be0f64" prot="public" virt="non-virtual"><scope>Date</scope><name>getMonth</name></member>
+      <member refid="class_date_1a8b0869f34c2b38d108ab83ee2e770e5d" prot="public" virt="non-virtual"><scope>Date</scope><name>getYear</name></member>
+      <member refid="class_date_1af48402007169fe01234fe9bb9e7a1d2c" prot="private" virt="non-virtual"><scope>Date</scope><name>month</name></member>
+      <member refid="class_date_1ad367b27b98f481d3afd93cade84ef862" prot="public" virt="non-virtual"><scope>Date</scope><name>operator-</name></member>
+      <member refid="class_date_1a352ad2bec798ce5802231d49bf0a16e8" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&lt;</name></member>
+      <member refid="class_date_1a50265b854c407eb0f3247b41f5cd1258" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&lt;=</name></member>
+      <member refid="class_date_1ac906e253d7d1343e3e161fb9e1aee707" prot="public" virt="non-virtual"><scope>Date</scope><name>operator==</name></member>
+      <member refid="class_date_1aa4c0f619e51dca5ef53284e548d4d0af" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&gt;</name></member>
+      <member refid="class_date_1ae5a781b0f45775eece17d7f3dd5b3703" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&gt;=</name></member>
+      <member refid="class_date_1a37f8fc7ca1692df7a8b265099c061721" prot="public" virt="non-virtual"><scope>Date</scope><name>show</name></member>
+      <member refid="class_date_1a16e8cb570b74e2d7a7050b53c0767542" prot="public" virt="non-virtual"><scope>Date</scope><name>subtractDays</name></member>
+      <member refid="class_date_1afc014a1ae62e56be473144050201e62a" prot="private" virt="non-virtual"><scope>Date</scope><name>year</name></member>
+      <member refid="class_date_1a0ec9ecc48a4e5a4a582ff8344ae51acb" prot="public" virt="non-virtual"><scope>Date</scope><name>year_date</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

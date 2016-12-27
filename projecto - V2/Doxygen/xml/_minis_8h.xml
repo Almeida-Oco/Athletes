@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_minis_8h" kind="file" language="C++">
+    <compoundname>Minis.h</compoundname>
+    <includes refid="_level_8h" local="yes">Level.h</includes>
+    <includedby refid="_club_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</includedby>
+    <incdepgraph>
+      <node id="176">
+        <label>Tournament.h</label>
+        <link refid="_tournament_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>iomanip</label>
+      </node>
+      <node id="181">
+        <label>queue</label>
+      </node>
+      <node id="178">
+        <label>Training.h</label>
+        <link refid="_training_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>string</label>
+      </node>
+      <node id="175">
+        <label>fstream</label>
+      </node>
+      <node id="177">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Minis.h</label>
+        <link refid="_minis_8h"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>stack</label>
+      </node>
+      <node id="173">
+        <label>vector</label>
+      </node>
+      <node id="169">
+        <label>Level.h</label>
+        <link refid="_level_8h"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>iostream</label>
+      </node>
+      <node id="179">
+        <label>BST.h</label>
+        <link refid="_b_s_t_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>algorithm</label>
+      </node>
+      <node id="170">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="186">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</label>
+        <link refid="menus_8h"/>
+      </node>
+      <node id="184">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Minis.h</label>
+        <link refid="_minis_8h"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_minis" prot="public">Minis</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Francisco Andrade </para></simplesect>
+<simplesect kind="author"><para>João Almeida</para></simplesect>
+Contains the declaration of the derived class <ref refid="class_juniors" kindref="compound">Juniors</ref> </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>MINIS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MINIS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_level_8h" kindref="compound">Level.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_minis" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_minis" kindref="compound">Minis</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_level" kindref="compound">Level</ref>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>age_min<sp/>=<sp/>4<sp/>,<sp/>age_max<sp/>=<sp/>8;</highlight><highlight class="comment">//minimum<sp/>and<sp/>maximum<sp/>age<sp/>to<sp/>be<sp/>on<sp/>the<sp/>team</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="class_minis_1a05a964e8cd328440070a970e95a69aaa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_minis_1a05a964e8cd328440070a970e95a69aaa" kindref="member">Minis</ref>(){};</highlight></codeline>
+<codeline lineno="31" refid="class_minis_1a0ce29fd41f5c3f412401128a9dc7dc3b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_minis_1a0ce29fd41f5c3f412401128a9dc7dc3b" kindref="member">~Minis</ref>(){};</highlight></codeline>
+<codeline lineno="36" refid="class_minis_1a8f19940186bb60864cbf4b2a50a62f44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_minis_1a8f19940186bb60864cbf4b2a50a62f44" kindref="member">Minis</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_minis" kindref="compound">Minis</ref><sp/>&amp;<sp/>minis)<sp/>:<ref refid="class_level" kindref="compound">Level</ref>(minis)<sp/>{};</highlight></codeline>
+<codeline lineno="42" refid="class_minis_1a25cdc8631f19c04d7ddd16507a4bc48c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_minis" kindref="compound">Minis</ref><sp/>&amp;<sp/><ref refid="class_minis_1a25cdc8631f19c04d7ddd16507a4bc48c" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_minis" kindref="compound">Minis</ref><sp/>&amp;<sp/>minis)<sp/>{<sp/><ref refid="class_level_1a29ac7d488564e82b888c295bbbb96f2a" kindref="member">Level::operator=</ref>(minis);<sp/>};</highlight></codeline>
+<codeline lineno="47" refid="class_minis_1a995e2db860e3a5c110cbead80ab61caa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_minis_1a995e2db860e3a5c110cbead80ab61caa" kindref="member">getMaxAge</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;age_max;}</highlight></codeline>
+<codeline lineno="52" refid="class_minis_1a062e99b463e0dd1e370b46e6fb37087a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_minis_1a062e99b463e0dd1e370b46e6fb37087a" kindref="member">getMinAge</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;age_min;}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_minis_1ae32db82a540e3377310359dfbecd57a3" kindref="member">addPlayer</ref>(<ref refid="class_player" kindref="compound">Player</ref><sp/>*<sp/>player);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_minis_1a50dc8c8145d4903f16af6865d2f811f4" kindref="member">showplayers</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_minis_1a940a0e2e0175de74b7925d9ac5e9eaec" kindref="member">showtrainings</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_minis_1ae5f14d6896391a31f86a463844e350a5" kindref="member">showtournaments</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;string&gt;<sp/><ref refid="class_minis_1af0e6cf169e2f1bd575cb559cfdc42bd0" kindref="member">getCall</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)<sp/>;</highlight><highlight class="comment">//returns<sp/>vector<sp/>of<sp/>string<sp/>with<sp/>the<sp/>names<sp/>of<sp/>the<sp/>players<sp/>called<sp/>for<sp/>a<sp/>tournament</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Minis.h"/>
+  </compounddef>
+</doxygen>

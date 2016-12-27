@@ -1,0 +1,79 @@
+.TH "/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Date\&.h'\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <fstream>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBPlayer\fP"
+.br
+.RI "Holds all the information about a given \fBPlayer\fP\&. "
+.ti -1c
+.RI "struct \fBPlayer_node\fP"
+.br
+.ti -1c
+.RI "struct \fBPlayer_queue\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBPlayer_node\fP &pl_left, const \fBPlayer_node\fP &p_right)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBPlayer_queue\fP &pl_left, const \fBPlayer_queue\fP &pl_right)"
+.br
+.RI "Compares two \fBPlayer\fP nodes\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Francisco Andrade 
+.PP
+João Almeida
+.RE
+.PP
+Contains the declaration of the class \fBPlayer\fP and the Struct \fBPlayer_node\fP and \fBPlayer_queue\fP to be used in the \fBBST\fP and Priority Queue 
+.PP
+Definition in file \fBPlayer\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "bool operator< (const \fBPlayer_node\fP & pl_left, const \fBPlayer_node\fP & p_right)"
+
+.SS "bool operator< (const \fBPlayer_queue\fP & pl_left, const \fBPlayer_queue\fP & pl_right)"
+
+.PP
+Compares two \fBPlayer\fP nodes\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpl_left\fP \fBPlayer\fP to be compared 
+.br
+\fIpl_right\fP \fBPlayer\fP to be compared 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if pl_left if younger than pl_right
+.RE
+.PP
+If pl_left and pl_right were born in the same name it compares their names 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

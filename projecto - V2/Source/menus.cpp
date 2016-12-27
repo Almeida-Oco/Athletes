@@ -1006,7 +1006,7 @@ void individualtrainingmenu(unsigned int level, unsigned int id) {
 			cout << "Level: ";
 			printlevel(level);
 			cout << "Training Game: ";
-			if (training->getGame()) {
+			if (training->isGame()) {
 				cout << " Yes" << endl;
 			}
 			else {
@@ -1085,7 +1085,7 @@ void editplayerstraining(unsigned int level, Event * ev){
 		club_levels[level]->raiseassiduity_curr(participant_players, 1);
 		club_levels[level]->raiseassiduity_curr(ev->getPresences(), -1);
 	}
-	if (ev->getGame()) {
+	if (ev->isGame()) {
 		club_levels[level]->lowerpgames(ev->getPresences());
 		club_levels[level]->raisepgames(participant_players);
 		ev->setPresences(participant_players);
@@ -1119,7 +1119,7 @@ void individualtournamentmenu(unsigned int level, unsigned int id) {
 			printlevel(level);
 			cout << "Rank: " << tournament->getRank()<<endl;
 			cout << "Tournament Major: ";
-			if (tournament->getMajor()) {
+			if (tournament->isMajor()) {
 				cout << " Yes" << endl;
 			}
 			else {
@@ -1139,7 +1139,7 @@ void individualtournamentmenu(unsigned int level, unsigned int id) {
 			if (errormessage) {
 				cout << "\nThe option you introduced is not valid " << endl;//tells the user the option he had previously introduced is not valid
 			}
-			if (!tournament->getMajor()) {
+			if (!tournament->isMajor()) {
 				cout << "\n1: Edit the players that participated in the tournament" << endl;
 				cout << "2: Edit this team rank" << endl;
 				cout << "3: Edit the games of this tournament" << endl;
@@ -1280,7 +1280,7 @@ void editranktournament(unsigned int level, Event * tournament) {
 			cout << "Level: ";
 			printlevel(level);
 			cout << "Tournament Major: ";
-			if (tournament->getMajor()) {
+			if (tournament->isMajor()) {
 				cout << " Yes" << endl;
 			}
 			else {
@@ -1458,7 +1458,7 @@ void individualeventmenu(unsigned int level,unsigned int id) {
 			printlevel(level);
 			cout << "Type: ";
 			if (ev->Istraining()) {
-				if (ev->getGame()) {
+				if (ev->isGame()) {
 					cout << "Training Game" << endl;
 				}
 				else {
@@ -1466,7 +1466,7 @@ void individualeventmenu(unsigned int level,unsigned int id) {
 				}
 			}
 			else {
-				if (ev->getMajor()) {
+				if (ev->isMajor()) {
 					cout << "Major Tournament" << endl;
 				}
 				else {
@@ -1474,7 +1474,7 @@ void individualeventmenu(unsigned int level,unsigned int id) {
 				}
 
 			}
-			if (!ev->Istraining() && ev->getMajor()) {
+			if (!ev->Istraining() && ev->isMajor()) {
 				cout << "\nPlayers called for the Tournament:" << endl;
 				vector<string> vector_presences = ev->getPresences();
 				for (unsigned int i = 0; i < vector_presences.size(); i++) {

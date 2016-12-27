@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_juniors_8h" kind="file" language="C++">
+    <compoundname>Juniors.h</compoundname>
+    <includes refid="_level_8h" local="yes">Level.h</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="_club_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</includedby>
+    <incdepgraph>
+      <node id="88">
+        <label>Tournament.h</label>
+        <link refid="_tournament_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>iomanip</label>
+      </node>
+      <node id="93">
+        <label>queue</label>
+      </node>
+      <node id="90">
+        <label>Training.h</label>
+        <link refid="_training_8h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>string</label>
+      </node>
+      <node id="87">
+        <label>fstream</label>
+      </node>
+      <node id="89">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>stack</label>
+      </node>
+      <node id="85">
+        <label>vector</label>
+      </node>
+      <node id="81">
+        <label>Level.h</label>
+        <link refid="_level_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juniors.h</label>
+        <link refid="_juniors_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>iostream</label>
+      </node>
+      <node id="91">
+        <label>BST.h</label>
+        <link refid="_b_s_t_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>algorithm</label>
+      </node>
+      <node id="82">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="98">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</label>
+        <link refid="menus_8h"/>
+      </node>
+      <node id="96">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juniors.h</label>
+        <link refid="_juniors_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_juniors" prot="public">Juniors</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Francisco Andrade </para></simplesect>
+<simplesect kind="author"><para>João Almeida</para></simplesect>
+Contains the declaration of the derived class <ref refid="class_juniors" kindref="compound">Juniors</ref> </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>JUNIORS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JUNIORS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_level_8h" kindref="compound">Level.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_juniors" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_juniors" kindref="compound">Juniors</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_level" kindref="compound">Level</ref>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>age_min<sp/>=<sp/>14<sp/>,<sp/>age_max<sp/>=<sp/>18;</highlight><highlight class="comment">//minimum<sp/>and<sp/>maximum<sp/>age<sp/>to<sp/>be<sp/>on<sp/>the<sp/>team</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="class_juniors_1a36519a818f54755dfd1bd14e15b4fcea" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_juniors_1a36519a818f54755dfd1bd14e15b4fcea" kindref="member">Juniors</ref>(){};</highlight></codeline>
+<codeline lineno="33" refid="class_juniors_1ae9087dae0157d9a4539f5fc7e68e7478" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_juniors_1ae9087dae0157d9a4539f5fc7e68e7478" kindref="member">~Juniors</ref>(){};</highlight></codeline>
+<codeline lineno="38" refid="class_juniors_1ab9b00b26e59661ee5aee18a3a6beb53c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_juniors_1ab9b00b26e59661ee5aee18a3a6beb53c" kindref="member">Juniors</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_juniors" kindref="compound">Juniors</ref><sp/>&amp;<sp/>juniors)<sp/>:<ref refid="class_level" kindref="compound">Level</ref>(juniors)<sp/>{};</highlight></codeline>
+<codeline lineno="44" refid="class_juniors_1adf648456072b60a7f99973c764c01c85" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_juniors" kindref="compound">Juniors</ref><sp/>&amp;<sp/><ref refid="class_juniors_1adf648456072b60a7f99973c764c01c85" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_juniors" kindref="compound">Juniors</ref><sp/>&amp;<sp/>juniors)<sp/>{<sp/><ref refid="class_level_1a29ac7d488564e82b888c295bbbb96f2a" kindref="member">Level::operator=</ref>(juniors);<sp/>};</highlight><highlight class="comment">//assignment<sp/>operator</highlight></codeline>
+<codeline lineno="49" refid="class_juniors_1a98c28047a2d5ff2b14651ee9eccfd2b6" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_juniors_1a98c28047a2d5ff2b14651ee9eccfd2b6" kindref="member">getMaxAge</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;age_max;}</highlight></codeline>
+<codeline lineno="54" refid="class_juniors_1a3110bdbaa344b2bfefa2ddcb8be8d7c6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_juniors_1a3110bdbaa344b2bfefa2ddcb8be8d7c6" kindref="member">getMinAge</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;age_min;}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_juniors_1aa572f0d371343c8d8749b167972bd79c" kindref="member">addPlayer</ref>(<ref refid="class_player" kindref="compound">Player</ref><sp/>*<sp/>player);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_juniors_1a1895a718018bd5af82242e5b29a1982d" kindref="member">showplayers</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_juniors_1aad300aa441c2036a6cc64dae6d2f94cc" kindref="member">showtrainings</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_juniors_1a2e9ea7859c38ac8509a0d3d787643a94" kindref="member">showtournaments</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;string&gt;<sp/><ref refid="class_juniors_1ae74674e315f00640944d452bc197b4da" kindref="member">getCall</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)<sp/>;</highlight><highlight class="comment">//returns<sp/>vector<sp/>of<sp/>string<sp/>with<sp/>the<sp/>names<sp/>of<sp/>the<sp/>players<sp/>called<sp/>for<sp/>a<sp/>tournament</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juniors.h"/>
+  </compounddef>
+</doxygen>

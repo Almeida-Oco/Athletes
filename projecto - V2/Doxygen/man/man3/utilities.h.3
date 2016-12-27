@@ -1,0 +1,162 @@
+.TH "/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include 'Date\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCLEAR\fP   'clear'"
+.br
+.ti -1c
+.RI "#define \fBUTILITIES_H\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "string \fBremovespaces\fP (string s)"
+.br
+.RI "Eliminates extra spaces in string\&. "
+.ti -1c
+.RI "int \fBactualage\fP (\fBDate\fP birth)"
+.br
+.RI "Calculates how old is a person born on a given \fBDate\fP\&. "
+.ti -1c
+.RI "bool \fBIsleap\fP (int year)"
+.br
+.RI "Calculates whether or not the given year was/is a Leap Year\&. "
+.ti -1c
+.RI "bool \fBisInteger\fP (const string &s)"
+.br
+.RI "Checks if given string is an Integer\&. "
+.ti -1c
+.RI "int \fBconvint\fP (string s)"
+.br
+.RI "Converts an integer into a String\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Francisco Andrade 
+.PP
+João Almeida
+.RE
+.PP
+Contains some utility functions useful all around the Project 
+.PP
+Definition in file \fButilities\&.h\fP\&.
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CLEAR   'clear'"
+
+.PP
+Definition at line 13 of file utilities\&.h\&.
+.SS "#define UTILITIES_H"
+
+.PP
+Definition at line 17 of file utilities\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "int actualage (\fBDate\fP birth)"
+
+.PP
+Calculates how old is a person born on a given \fBDate\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbirth\fP \fBDate\fP to use in calculations 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+How old that person is 
+.RE
+.PP
+
+.SS "int convint (string s)"
+
+.PP
+Converts an integer into a String\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP String to be converted 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Integer that was in string 
+.RE
+.PP
+
+.SS "bool isInteger (const string & s)"
+
+.PP
+Checks if given string is an Integer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP String to be checked 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if string only contains numbers
+.RE
+.PP
+From http://stackoverflow.com/questions/2844817/how-do-i-check-if-a-c-string-is-an-int 
+.SS "bool Isleap (int year)"
+
+.PP
+Calculates whether or not the given year was/is a Leap Year\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIyear\fP Year to use in calculations 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if year is a Leap Year 
+.RE
+.PP
+
+.SS "string removespaces (string s)"
+
+.PP
+Eliminates extra spaces in string\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP String to have spaces removed 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+String without extra spaces
+.RE
+.PP
+It removes all spaces in the beggining and in the end, if there are spaces between the characteres
+.PP
+they are transformed into a single space 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

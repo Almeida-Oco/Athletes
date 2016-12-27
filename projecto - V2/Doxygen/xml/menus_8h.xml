@@ -1,0 +1,1162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="menus_8h" kind="file" language="C++">
+    <compoundname>menus.h</compoundname>
+    <includes refid="_date_8h" local="yes">Date.h</includes>
+    <includes refid="_event_8h" local="yes">Event.h</includes>
+    <includes refid="_club_8h" local="yes">Club.h</includes>
+    <includes refid="exceptions_8h" local="yes">exceptions.h</includes>
+    <includes refid="utilities_8h" local="yes">utilities.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">climits</includes>
+    <incdepgraph>
+      <node id="163">
+        <label>list</label>
+      </node>
+      <node id="153">
+        <label>Tournament.h</label>
+        <link refid="_tournament_8h"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>iomanip</label>
+      </node>
+      <node id="157">
+        <label>queue</label>
+      </node>
+      <node id="164">
+        <label>stdlib.h</label>
+      </node>
+      <node id="150">
+        <label>exceptions.h</label>
+        <link refid="exceptions_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>Training.h</label>
+        <link refid="_training_8h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>string</label>
+      </node>
+      <node id="147">
+        <label>fstream</label>
+      </node>
+      <node id="140">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</label>
+        <link refid="menus_8h"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>Minis.h</label>
+        <link refid="_minis_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>stack</label>
+      </node>
+      <node id="143">
+        <label>vector</label>
+      </node>
+      <node id="149">
+        <label>utilities.h</label>
+        <link refid="utilities_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>Level.h</label>
+        <link refid="_level_8h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>Juniors.h</label>
+        <link refid="_juniors_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>Seniors.h</label>
+        <link refid="_seniors_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>iostream</label>
+      </node>
+      <node id="148">
+        <label>Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>Juveniles.h</label>
+        <link refid="_juveniles_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>BST.h</label>
+        <link refid="_b_s_t_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>climits</label>
+      </node>
+      <node id="165">
+        <label>tr1/unordered_set</label>
+      </node>
+      <node id="159">
+        <label>algorithm</label>
+      </node>
+      <node id="145">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="menus_8h_1a3e4bdbd9a6e356b7f330a0fb23351d2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int readplayers</definition>
+        <argsstring>()</argsstring>
+        <name>readplayers</name>
+        <briefdescription>
+<para>Asks the user for the players text file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1 if something went wrong, 0 if all went well </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1ace86b7cf28684a8a2017b4ed1fdb2880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int readtrainings</definition>
+        <argsstring>()</argsstring>
+        <name>readtrainings</name>
+        <briefdescription>
+<para>Asks the user for the trainings text file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1 if something went wrong, 0 if all went well </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a296660ecf1cf92c9e925fa842693053f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int readtournaments</definition>
+        <argsstring>()</argsstring>
+        <name>readtournaments</name>
+        <briefdescription>
+<para>Asks the user for the tournaments text file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1 if something went wrong, 0 if all went well </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1ac75cbd14c3ddc716f3f0861ddded528f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date askfordate</definition>
+        <argsstring>()</argsstring>
+        <name>askfordate</name>
+        <briefdescription>
+<para>Asks the user to input a <ref refid="class_date" kindref="compound">Date</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="class_date" kindref="compound">Date</ref> inputted by user </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a824038186cb0756e60e434af7e945203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printlevel</definition>
+        <argsstring>(unsigned int level)</argsstring>
+        <name>printlevel</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Prints the desired level in a user friendly way. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to print, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a360714641d352750dcbebc422cf56ad2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initialmenu</definition>
+        <argsstring>()</argsstring>
+        <name>initialmenu</name>
+        <briefdescription>
+<para>Displays the initial menu. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a6ebf55f20ee0236f10acad8f1a285f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printBirthdays</definition>
+        <argsstring>(const vector&lt; Player *&gt; &amp;p)</argsstring>
+        <name>printBirthdays</name>
+        <param>
+          <type>const vector&lt; <ref refid="class_player" kindref="compound">Player</ref> *&gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Prints in an user-friendly way the Name of <ref refid="class_player" kindref="compound">Player</ref> and how many days to birthday. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of Players to print the birthdays</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The players are printed in order, from the soonest birthday to come to the latest </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a6db8c98a6f3aa8636d15609e013980dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void birthdaycards</definition>
+        <argsstring>()</argsstring>
+        <name>birthdaycards</name>
+        <briefdescription>
+<para>Displays the menu of birthday cards. </para>        </briefdescription>
+        <detaileddescription>
+<para>It asks how many days in advance does the user want to know the birthdays </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1afd66764eba2316fedc8d1fc68874c66c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void notifyECG</definition>
+        <argsstring>()</argsstring>
+        <name>notifyECG</name>
+        <briefdescription>
+<para>Displays menu that allows user to notify Players with delayed ECG. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a6f73e3a12587c3f41155ab808099eda3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void levelmenu</definition>
+        <argsstring>(unsigned int level)</argsstring>
+        <name>levelmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Displays main menu for a given <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to print main manu, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1af5ddda2f5450f4b50fe981b357643be2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void monthlyprizes</definition>
+        <argsstring>(unsigned int level)</argsstring>
+        <name>monthlyprizes</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Displays the monthly prizes for a given <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to print monthly prizes, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1aa3dca5af81de7adb87edc2d4deb13183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void changecoachmenu</definition>
+        <argsstring>(unsigned level)</argsstring>
+        <name>changecoachmenu</name>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Displays the menu to change the coach of a given <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to change coach, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1af0ca16bef0823da27700dd7a172fb5b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void playersmenu</definition>
+        <argsstring>(unsigned int level)</argsstring>
+        <name>playersmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Displays the menu of the Players of the <ref refid="class_level" kindref="compound">Level</ref> in a user-friendly way. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> of Players, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The Players shown are alphabetically ordered </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a5566a6fa86018fbbea69015e5168e99e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void individualplayermenu</definition>
+        <argsstring>(unsigned int level, unsigned int id)</argsstring>
+        <name>individualplayermenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Displays , in a user-friendly way, a menu with more detailed information about the player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> of <ref refid="class_player" kindref="compound">Player</ref>, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_player" kindref="compound">Player</ref> in the players vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1af4ce05b6a5e6c270b85434ee3bd24bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void actualizeECG</definition>
+        <argsstring>(unsigned int level, unsigned int id)</argsstring>
+        <name>actualizeECG</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Menu that allows to update the ECG of a given <ref refid="class_player" kindref="compound">Player</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> of <ref refid="class_player" kindref="compound">Player</ref>, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_player" kindref="compound">Player</ref> in the players vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a271de014adb6e48b8577c86b976b18fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void actualizeheight</definition>
+        <argsstring>(unsigned int level, unsigned int id)</argsstring>
+        <name>actualizeheight</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Menu that allows to update the height of a given <ref refid="class_player" kindref="compound">Player</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> of <ref refid="class_player" kindref="compound">Player</ref>, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_player" kindref="compound">Player</ref> in the players vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a1f0621789fda582c7f4bcd4869f1ee33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void removeplayer</definition>
+        <argsstring>(unsigned int level, unsigned int id)</argsstring>
+        <name>removeplayer</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Menu to remove a given <ref refid="class_player" kindref="compound">Player</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> of <ref refid="class_player" kindref="compound">Player</ref>, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_player" kindref="compound">Player</ref> in the players vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a4afe6401b97465ae703f506fb7706e9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void regnewplayermenu</definition>
+        <argsstring>()</argsstring>
+        <name>regnewplayermenu</name>
+        <briefdescription>
+<para>Menu that allows the user to register a new <ref refid="class_player" kindref="compound">Player</ref> on the <ref refid="class_club" kindref="compound">Club</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a99d9b0116759420e15bdf0b7679514ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trainingsmenu</definition>
+        <argsstring>(unsigned int level)</argsstring>
+        <name>trainingsmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Menu that shows, in a user-friendly way, information about the Trainings of the <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be displayed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1af8ce4ff7c4bbeca86d18ed3111b36eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tournamentsmenu</definition>
+        <argsstring>(unsigned int level)</argsstring>
+        <name>tournamentsmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Menu that shows, in a user-friendly way, information about the Tournaments of the <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be displayed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1af43d721f867defe35647e866690cbfc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void individualtrainingmenu</definition>
+        <argsstring>(unsigned int level, unsigned int id)</argsstring>
+        <name>individualtrainingmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Menu that shows, in a user-friendly way, information about a specific <ref refid="class_training" kindref="compound">Training</ref> of the <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be displayed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_training" kindref="compound">Training</ref> in the events vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a49c542576af1c3a6248146f284e42c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void editplayerstraining</definition>
+        <argsstring>(unsigned int level, Event *ev)</argsstring>
+        <name>editplayerstraining</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="class_event" kindref="compound">Event</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Menu that asks user to select Players that participated in a given <ref refid="class_training" kindref="compound">Training</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be changed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_event" kindref="compound">Event</ref> to change the participating Players </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a95e92fc9b91ce4c419afb0d0443bbb43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void individualtournamentmenu</definition>
+        <argsstring>(unsigned int level, unsigned int id)</argsstring>
+        <name>individualtournamentmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Menu that shows, in a user-friendly way, information about a specific <ref refid="class_tournament" kindref="compound">Tournament</ref> of the <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be displayed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_tournament" kindref="compound">Tournament</ref> in the events vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a9e19e8b74e0d58171af53685eac3b691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void editranktournament</definition>
+        <argsstring>(unsigned int level, Event *tournament)</argsstring>
+        <name>editranktournament</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="class_event" kindref="compound">Event</ref> *</type>
+          <declname>tournament</declname>
+        </param>
+        <briefdescription>
+<para>Changes the rank the <ref refid="class_level" kindref="compound">Level</ref> achieved in the <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be changed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tournament</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_event" kindref="compound">Event</ref> to change the rank </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1af900560f4e94ad1eb7f716bf665c6cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void editplayerstournament</definition>
+        <argsstring>(unsigned int level, Event *tournament)</argsstring>
+        <name>editplayerstournament</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="class_event" kindref="compound">Event</ref> *</type>
+          <declname>tournament</declname>
+        </param>
+        <briefdescription>
+<para>Menu that asks user to select Players that participated in a given <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be changed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tournament</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_event" kindref="compound">Event</ref> to change the participating Players </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a558620ab89ce3d63578448c4b82a1195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void editresultstournament</definition>
+        <argsstring>(unsigned int level, Event *tournament)</argsstring>
+        <name>editresultstournament</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="class_event" kindref="compound">Event</ref> *</type>
+          <declname>tournament</declname>
+        </param>
+        <briefdescription>
+<para>Changes the results of the <ref refid="class_level" kindref="compound">Level</ref> in the <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be changed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tournament</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_event" kindref="compound">Event</ref> to change the results </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a2e44e7cf4a9a1d5754a3f8eb5b129365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void calendarmenu</definition>
+        <argsstring>(unsigned int level)</argsstring>
+        <name>calendarmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Displays the menu of next events to take place. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be shown, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1abaed2b44b77fcd0b36239eafee3d9c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void individualeventmenu</definition>
+        <argsstring>(unsigned int level, unsigned int id)</argsstring>
+        <name>individualeventmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Displays a specific <ref refid="class_event" kindref="compound">Event</ref> to take place. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be shown, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_event" kindref="compound">Event</ref> in the events vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a4ae3bb47fdc90a2c15958427eba07209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void removeevent</definition>
+        <argsstring>(unsigned int level, unsigned int id)</argsstring>
+        <name>removeevent</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Interface to remove a given <ref refid="class_event" kindref="compound">Event</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be changed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_event" kindref="compound">Event</ref> in the events vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a546c4c0ca16a1858de54677140e270f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scheduleeventmenu</definition>
+        <argsstring>(unsigned int level)</argsstring>
+        <name>scheduleeventmenu</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Displays the menu that allows the user to schedule an <ref refid="class_event" kindref="compound">Event</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be changed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1a3dc669f40ebb5b2de3d0ff3b67372031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askeventdate</definition>
+        <argsstring>(unsigned int level, unsigned int event)</argsstring>
+        <name>askeventdate</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Asks the user for the <ref refid="class_date" kindref="compound">Date</ref> of an <ref refid="class_event" kindref="compound">Event</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be changed, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the <ref refid="class_event" kindref="compound">Event</ref> in the events vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="menus_8h_1aba01328dd84a2ba711a95cae93fb862c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void makecall</definition>
+        <argsstring>(unsigned int level, Event *tournament)</argsstring>
+        <name>makecall</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="class_event" kindref="compound">Event</ref> *</type>
+          <declname>tournament</declname>
+        </param>
+        <briefdescription>
+<para>Asks the user the number of Players to be called for a <ref refid="class_tournament" kindref="compound">Tournament</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_level" kindref="compound">Level</ref> to be called, 0 for <ref refid="class_minis" kindref="compound">Minis</ref>, 1 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 2 <ref refid="class_juniors" kindref="compound">Juniors</ref> , 3 <ref refid="class_seniors" kindref="compound">Seniors</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tournament</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_tournament" kindref="compound">Tournament</ref> to which the Players are being called </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" line="196" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Francisco Andrade </para></simplesect>
+<simplesect kind="author"><para>João Almeida</para></simplesect>
+Contains the declaration of the class <ref refid="class_club" kindref="compound">Club</ref> and struct <ref refid="structhash_funcs" kindref="compound">hashFuncs</ref> </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>MENUS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENUS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_date_8h" kindref="compound">Date.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_event_8h" kindref="compound">Event.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_club_8h" kindref="compound">Club.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exceptions_8h" kindref="compound">exceptions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utilities_8h" kindref="compound">utilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;climits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a3e4bdbd9a6e356b7f330a0fb23351d2f" kindref="member">readplayers</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1ace86b7cf28684a8a2017b4ed1fdb2880" kindref="member">readtrainings</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a296660ecf1cf92c9e925fa842693053f" kindref="member">readtournaments</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="class_date" kindref="compound">Date</ref><sp/><ref refid="menus_8h_1ac75cbd14c3ddc716f3f0861ddded528f" kindref="member">askfordate</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a824038186cb0756e60e434af7e945203" kindref="member">printlevel</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="51"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a360714641d352750dcbebc422cf56ad2" kindref="member">initialmenu</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a6ebf55f20ee0236f10acad8f1a285f84" kindref="member">printBirthdays</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Player<sp/>*&gt;<sp/>&amp;p);</highlight></codeline>
+<codeline lineno="62"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a6db8c98a6f3aa8636d15609e013980dd" kindref="member">birthdaycards</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1afd66764eba2316fedc8d1fc68874c66c" kindref="member">notifyECG</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a6f73e3a12587c3f41155ab808099eda3" kindref="member">levelmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="76"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1af5ddda2f5450f4b50fe981b357643be2" kindref="member">monthlyprizes</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1aa3dca5af81de7adb87edc2d4deb13183" kindref="member">changecoachmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="87"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1af0ca16bef0823da27700dd7a172fb5b1" kindref="member">playersmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="93"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a5566a6fa86018fbbea69015e5168e99e" kindref="member">individualplayermenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1af4ce05b6a5e6c270b85434ee3bd24bc6" kindref="member">actualizeECG</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a271de014adb6e48b8577c86b976b18fa" kindref="member">actualizeheight</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a1f0621789fda582c7f4bcd4869f1ee33" kindref="member">removeplayer</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a4afe6401b97465ae703f506fb7706e9d" kindref="member">regnewplayermenu</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a99d9b0116759420e15bdf0b7679514ab" kindref="member">trainingsmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="125"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1af8ce4ff7c4bbeca86d18ed3111b36eb6" kindref="member">tournamentsmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="131"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1af43d721f867defe35647e866690cbfc3" kindref="member">individualtrainingmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a49c542576af1c3a6248146f284e42c58" kindref="member">editplayerstraining</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>*<sp/>ev);</highlight></codeline>
+<codeline lineno="143"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a95e92fc9b91ce4c419afb0d0443bbb43" kindref="member">individualtournamentmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a9e19e8b74e0d58171af53685eac3b691" kindref="member">editranktournament</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>*<sp/>tournament);</highlight></codeline>
+<codeline lineno="155"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1af900560f4e94ad1eb7f716bf665c6cad" kindref="member">editplayerstournament</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>*<sp/>tournament);</highlight></codeline>
+<codeline lineno="161"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a558620ab89ce3d63578448c4b82a1195" kindref="member">editresultstournament</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>*<sp/>tournament);</highlight></codeline>
+<codeline lineno="166"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a2e44e7cf4a9a1d5754a3f8eb5b129365" kindref="member">calendarmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="172"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1abaed2b44b77fcd0b36239eafee3d9c6c" kindref="member">individualeventmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a4ae3bb47fdc90a2c15958427eba07209" kindref="member">removeevent</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a546c4c0ca16a1858de54677140e270f6" kindref="member">scheduleeventmenu</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="189"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a3dc669f40ebb5b2de3d0ff3b67372031" kindref="member">askeventdate</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>event);</highlight></codeline>
+<codeline lineno="196"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1aba01328dd84a2ba711a95cae93fb862c" kindref="member">makecall</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/><ref refid="class_event" kindref="compound">Event</ref><sp/>*<sp/>tournament);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h"/>
+  </compounddef>
+</doxygen>

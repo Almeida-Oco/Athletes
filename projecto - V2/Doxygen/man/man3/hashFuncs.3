@@ -1,0 +1,71 @@
+.TH "hashFuncs" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+hashFuncs \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Club\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "size_t \fBoperator()\fP (const \fBPlayer\fP *p1) const"
+.br
+.RI "Computates the difference in days between the birthday date and current date\&. "
+.ti -1c
+.RI "bool \fBoperator()\fP (const \fBPlayer\fP *p1, const \fBPlayer\fP *p2) const"
+.br
+.RI "Compares two pointer to players to see if the Players they are pointing is the same (needed for hash table) "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Functions used in \fBClub\fP member variable future_birthdays Chained Hash-Table 
+.PP
+Definition at line 36 of file Club\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "size_t hashFuncs::operator() (const \fBPlayer\fP * p1) const\fC [inline]\fP"
+
+.PP
+Computates the difference in days between the birthday date and current date\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp1\fP Used has hash function 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If birthday > current date returns number of days, else returns -1 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file Club\&.h\&.
+.SS "bool hashFuncs::operator() (const \fBPlayer\fP * p1, const \fBPlayer\fP * p2) const\fC [inline]\fP"
+
+.PP
+Compares two pointer to players to see if the Players they are pointing is the same (needed for hash table) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp1\fP Pointer to \fBPlayer\fP 1 
+.br
+\fIp2\fP Pointer to \fBPlayer\fP 2 Used as compare function for hash table used\&. We are only interested if the day and month are equal, the year may be different 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+1 if Players are the same , 0 if not 
+.RE
+.PP
+
+.PP
+Definition at line 56 of file Club\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

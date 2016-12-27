@@ -1,0 +1,149 @@
+.TH "BST< Comparable >" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BST< Comparable > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BST\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBST\fP (const Comparable &notFound)"
+.br
+.ti -1c
+.RI "\fBBST\fP (const \fBBST\fP &rhs)"
+.br
+.ti -1c
+.RI "\fB~BST\fP ()"
+.br
+.ti -1c
+.RI "const Comparable & \fBfindMin\fP () const"
+.br
+.ti -1c
+.RI "const Comparable & \fBfindMax\fP () const"
+.br
+.ti -1c
+.RI "const Comparable & \fBfind\fP (const Comparable &x) const"
+.br
+.ti -1c
+.RI "bool \fBisEmpty\fP () const"
+.br
+.ti -1c
+.RI "void \fBprintTree\fP () const"
+.br
+.ti -1c
+.RI "void \fBmakeEmpty\fP ()"
+.br
+.ti -1c
+.RI "void \fBinsert\fP (const Comparable &x)"
+.br
+.ti -1c
+.RI "void \fBremove\fP (const Comparable &x)"
+.br
+.ti -1c
+.RI "const \fBBST\fP & \fBoperator=\fP (const \fBBST\fP &rhs)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBBSTItrIn< Comparable >\fP"
+.br
+.ti -1c
+.RI "class \fBBSTItrPre< Comparable >\fP"
+.br
+.ti -1c
+.RI "class \fBBSTItrPost< Comparable >\fP"
+.br
+.ti -1c
+.RI "class \fBBSTItrLevel< Comparable >\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class Comparable>
+.br
+class BST< Comparable >"
+
+.PP
+Definition at line 35 of file BST\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class Comparable> \fBBST\fP< Comparable >::\fBBST\fP (const Comparable & notFound)\fC [explicit]\fP"
+
+.PP
+Definition at line 98 of file BST\&.h\&.
+.SS "template<class Comparable> \fBBST\fP< Comparable >::\fBBST\fP (const \fBBST\fP< Comparable > & rhs)"
+
+.PP
+Definition at line 103 of file BST\&.h\&.
+.SS "template<class Comparable > \fBBST\fP< Comparable >::~\fBBST\fP ()"
+
+.PP
+Definition at line 110 of file BST\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class Comparable> const Comparable & \fBBST\fP< Comparable >::find (const Comparable & x) const"
+
+.PP
+Definition at line 141 of file BST\&.h\&.
+.SS "template<class Comparable > const Comparable & \fBBST\fP< Comparable >::findMax () const"
+
+.PP
+Definition at line 134 of file BST\&.h\&.
+.SS "template<class Comparable > const Comparable & \fBBST\fP< Comparable >::findMin () const"
+
+.PP
+Definition at line 128 of file BST\&.h\&.
+.SS "template<class Comparable> void \fBBST\fP< Comparable >::insert (const Comparable & x)"
+
+.PP
+Definition at line 116 of file BST\&.h\&.
+.SS "template<class Comparable > bool \fBBST\fP< Comparable >::isEmpty () const"
+
+.PP
+Definition at line 153 of file BST\&.h\&.
+.SS "template<class Comparable > void \fBBST\fP< Comparable >::makeEmpty ()"
+
+.PP
+Definition at line 147 of file BST\&.h\&.
+.SS "template<class Comparable > const \fBBST\fP< Comparable > & \fBBST\fP< Comparable >::operator= (const \fBBST\fP< Comparable > & rhs)"
+
+.PP
+Definition at line 171 of file BST\&.h\&.
+.SS "template<class Comparable > void \fBBST\fP< Comparable >::printTree () const"
+
+.PP
+Definition at line 160 of file BST\&.h\&.
+.SS "template<class Comparable> void \fBBST\fP< Comparable >::remove (const Comparable & x)"
+
+.PP
+Definition at line 122 of file BST\&.h\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "template<class Comparable> friend class \fBBSTItrIn\fP< Comparable >\fC [friend]\fP"
+
+.PP
+Definition at line 89 of file BST\&.h\&.
+.SS "template<class Comparable> friend class \fBBSTItrLevel\fP< Comparable >\fC [friend]\fP"
+
+.PP
+Definition at line 92 of file BST\&.h\&.
+.SS "template<class Comparable> friend class \fBBSTItrPost\fP< Comparable >\fC [friend]\fP"
+
+.PP
+Definition at line 91 of file BST\&.h\&.
+.SS "template<class Comparable> friend class \fBBSTItrPre\fP< Comparable >\fC [friend]\fP"
+
+.PP
+Definition at line 90 of file BST\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

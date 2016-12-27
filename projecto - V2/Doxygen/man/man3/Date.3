@@ -1,0 +1,253 @@
+.TH "Date" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Date \- Class that represents a \fBDate\fP of the calendar\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Date\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDate\fP ()"
+.br
+.RI "Default Constructor\&. "
+.ti -1c
+.RI "\fBDate\fP (unsigned int day, unsigned int month, unsigned int year)"
+.br
+.RI "Contructor with day, month and year\&. "
+.ti -1c
+.RI "int \fBgetDay\fP () const"
+.br
+.RI "Gets the day of the \fBDate\fP\&. "
+.ti -1c
+.RI "int \fBgetMonth\fP () const"
+.br
+.RI "Gets the month of the \fBDate\fP\&. "
+.ti -1c
+.RI "int \fBgetYear\fP () const"
+.br
+.RI "Gets the year of the \fBDate\fP\&. "
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBDate\fP &d1) const"
+.br
+.RI "Operator > compares two dates\&. "
+.ti -1c
+.RI "bool \fBoperator>=\fP (const \fBDate\fP &d1) const"
+.br
+.RI "Operator >= compares two dates\&. "
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBDate\fP &d1) const"
+.br
+.RI "Operator < compares two dates\&. "
+.ti -1c
+.RI "bool \fBoperator<=\fP (const \fBDate\fP &d1) const"
+.br
+.RI "Operator <= compares two dates\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBDate\fP &d1) const"
+.br
+.RI "Operator == compares two dates\&. "
+.ti -1c
+.RI "\fBDate\fP \fBaddDays\fP (unsigned int n) const"
+.br
+.RI "Sums n days to the date in the object\&. "
+.ti -1c
+.RI "\fBDate\fP \fBsubtractDays\fP (unsigned int n) const"
+.br
+.RI "Subtracts n days to the date in the object\&. "
+.ti -1c
+.RI "unsigned int \fBdiffDays\fP ()"
+.br
+.RI "Computates the difference in days between the date of the object and the current date\&. "
+.ti -1c
+.RI "\fBDate\fP \fByear_date\fP (unsigned int year) const"
+.br
+.RI "Changes the year of the date\&. "
+.ti -1c
+.RI "vector< int > \fBoperator\-\fP (const \fBDate\fP &d1) const"
+.br
+.RI "Computes the time between the two date\&. "
+.ti -1c
+.RI "void \fBshow\fP () const"
+.br
+.RI "Prints the date on the screen\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class that represents a \fBDate\fP of the calendar\&. 
+.PP
+Definition at line 28 of file Date\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Date::Date ()"
+
+.PP
+Default Constructor\&. Sets date to current time on the system 
+.SS "Date::Date (unsigned int day, unsigned int month, unsigned int year)"
+
+.PP
+Contructor with day, month and year\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIday\fP Day of the \fBDate\fP 
+.br
+\fImonth\fP Month of the \fBDate\fP 
+.br
+\fIyear\fP Year of the \fBDate\fP
+.RE
+.PP
+Checks the parameters to see if all is correct, including Leap years 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBDate\fP Date::addDays (unsigned int n) const"
+
+.PP
+Sums n days to the date in the object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP Number of days to sum
+.RE
+.PP
+Used only on hash table , takes into consideration leap years
+.PP
+\fBReturns:\fP
+.RS 4
+New object with correct date 
+.RE
+.PP
+
+.SS "unsigned int Date::diffDays ()"
+
+.PP
+Computates the difference in days between the date of the object and the current date\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+If object date > current date returns number of days 
+.RE
+.PP
+
+.SS "int Date::getDay () const\fC [inline]\fP"
+
+.PP
+Gets the day of the \fBDate\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+day (member varible) 
+.RE
+.PP
+
+.PP
+Definition at line 51 of file Date\&.h\&.
+.SS "int Date::getMonth () const\fC [inline]\fP"
+
+.PP
+Gets the month of the \fBDate\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+month (member varible) 
+.RE
+.PP
+
+.PP
+Definition at line 56 of file Date\&.h\&.
+.SS "int Date::getYear () const\fC [inline]\fP"
+
+.PP
+Gets the year of the \fBDate\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+year (member varible) 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file Date\&.h\&.
+.SS "vector<int> Date::operator\- (const \fBDate\fP & d1) const"
+
+.PP
+Computes the time between the two date\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fId1\fP \fBDate\fP to use to compute the time 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+vector with days passed at 0 , months passed at 1, years passed at 2 
+.RE
+.PP
+
+.SS "bool Date::operator< (const \fBDate\fP & d1) const"
+
+.PP
+Operator < compares two dates\&. A date is smaller than another if it is sooner 
+.SS "bool Date::operator<= (const \fBDate\fP & d1) const"
+
+.PP
+Operator <= compares two dates\&. A date is smaller or equal than another if it is sooner or the same 
+.SS "bool Date::operator== (const \fBDate\fP & d1) const"
+
+.PP
+Operator == compares two dates\&. A date is equal to another if the day, month and year are the same 
+.SS "bool Date::operator> (const \fBDate\fP & d1) const"
+
+.PP
+Operator > compares two dates\&. A date is bigger than another if it is later 
+.SS "bool Date::operator>= (const \fBDate\fP & d1) const"
+
+.PP
+Operator >= compares two dates\&. A date is bigger or equal than another if it is later or the same 
+.SS "void Date::show () const"
+
+.PP
+Prints the date on the screen\&. 
+.SS "\fBDate\fP Date::subtractDays (unsigned int n) const"
+
+.PP
+Subtracts n days to the date in the object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP Number of days to subtract
+.RE
+.PP
+Used only on hash table , takes into consideration leap years
+.PP
+\fBReturns:\fP
+.RS 4
+New object with correct date 
+.RE
+.PP
+
+.SS "\fBDate\fP Date::year_date (unsigned int year) const"
+
+.PP
+Changes the year of the date\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIyear\fP Year to change the date into 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A new date with same day and month as original but year equal to param year 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

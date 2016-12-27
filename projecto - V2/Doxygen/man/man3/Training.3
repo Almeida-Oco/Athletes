@@ -1,0 +1,312 @@
+.TH "Training" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Training \- Used to host information about a single \fBTraining\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Training\&.h>\fP
+.PP
+Inherits \fBEvent\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTraining\fP ()"
+.br
+.RI "Default Constructor\&. "
+.ti -1c
+.RI "virtual \fB~Training\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBTraining\fP (const \fBTraining\fP &training)"
+.br
+.RI "Copy Constructor\&. "
+.ti -1c
+.RI "\fBTraining\fP & \fBoperator=\fP (const \fBTraining\fP &training)"
+.br
+.RI "Copy Operator\&. "
+.ti -1c
+.RI "\fBTraining\fP (\fBEvent\fP *ev)"
+.br
+.RI "Pointer Copy Constructor\&. "
+.ti -1c
+.RI "\fBTraining\fP (\fBDate\fP day, bool game)"
+.br
+.RI "Partial Constructor\&. "
+.ti -1c
+.RI "virtual bool \fBisGame\fP () const"
+.br
+.RI "Checks if the \fBTraining\fP was a game\&. "
+.ti -1c
+.RI "virtual bool \fBIstraining\fP () const"
+.br
+.RI "Checks if this \fBEvent\fP is a \fBTraining\fP\&. "
+.ti -1c
+.RI "virtual void \fBshow\fP () const"
+.br
+.RI "Prints the \fBTraining\fP on the screen\&. "
+.ti -1c
+.RI "virtual unsigned int \fBgetRank\fP () const"
+.br
+.RI "Gets the rank achieved by the \fBLevel\fP at a \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual bool \fBisMajor\fP () const"
+.br
+.RI "Checks if \fBTournament\fP was a major \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual vector< pair< pair< unsigned int, unsigned int >, string > > \fBgetResults\fP () const"
+.br
+.RI "Gets the results of the \fBLevel\fP in the \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual void \fBsetResults\fP (vector< pair< pair< unsigned int, unsigned int >, string >> results)"
+.br
+.RI "Does nothing since Trainings have no results\&. "
+.ti -1c
+.RI "virtual void \fBsetRank\fP (unsigned int rank)"
+.br
+.RI "Does nothing since Trainings have no rank\&. "
+.ti -1c
+.RI "virtual void \fBwritetofile\fP (ostream &out) const"
+.br
+.RI "Writes the \fBTraining\fP to a file using operator<<\&. "
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &out, const \fBTraining\fP &training)"
+.br
+.RI "Used to write the \fBTraining\fP to an Output Stream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &in, \fBTraining\fP &training)"
+.br
+.RI "Used to read the \fBTraining\fP from an Input Stream\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Used to host information about a single \fBTraining\fP\&. 
+.PP
+Definition at line 19 of file Training\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Training::Training ()\fC [inline]\fP"
+
+.PP
+Default Constructor\&. 
+.PP
+Definition at line 25 of file Training\&.h\&.
+.SS "virtual Training::~Training ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Destructor\&. 
+.PP
+Definition at line 29 of file Training\&.h\&.
+.SS "Training::Training (const \fBTraining\fP & training)"
+
+.PP
+Copy Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItraining\fP \fBTraining\fP object to be copied 
+.RE
+.PP
+
+.SS "Training::Training (\fBEvent\fP * ev)"
+
+.PP
+Pointer Copy Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIev\fP Pointer to \fBTraining\fP object to be copied 
+.RE
+.PP
+
+.SS "Training::Training (\fBDate\fP day, bool game)\fC [inline]\fP"
+
+.PP
+Partial Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIday\fP \fBDate\fP of the \fBEvent\fP 
+.br
+\fIgame\fP Whether it was a \fBTraining\fP game or not 
+.RE
+.PP
+
+.PP
+Definition at line 50 of file Training\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual unsigned int Training::getRank () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Gets the rank achieved by the \fBLevel\fP at a \fBTournament\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+0 Since all objects of this class are Trainings not Tournaments 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 69 of file Training\&.h\&.
+.SS "virtual vector<pair<pair<unsigned int, unsigned int>, string > > Training::getResults () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Gets the results of the \fBLevel\fP in the \fBTournament\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Empty vector since all objects of this class are Trainings not Tournaments 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 79 of file Training\&.h\&.
+.SS "virtual bool Training::isGame () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Checks if the \fBTraining\fP was a game\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+True if it was a \fBTraining\fP game 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 55 of file Training\&.h\&.
+.SS "virtual bool Training::isMajor () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Checks if \fBTournament\fP was a major \fBTournament\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+false Since all objects of this class are Trainings not Tournaments 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 74 of file Training\&.h\&.
+.SS "virtual bool Training::Istraining () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Checks if this \fBEvent\fP is a \fBTraining\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+True since all objects of this class are Trainings 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 60 of file Training\&.h\&.
+.SS "\fBTraining\fP& Training::operator= (const \fBTraining\fP & training)"
+
+.PP
+Copy Operator\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItraining\fP \fBTraining\fP object to be copied 
+.RE
+.PP
+
+.SS "virtual void Training::setRank (unsigned int rank)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Does nothing since Trainings have no rank\&. 
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 87 of file Training\&.h\&.
+.SS "virtual void Training::setResults (vector< pair< pair< unsigned int, unsigned int >, string >> results)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Does nothing since Trainings have no results\&. 
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 83 of file Training\&.h\&.
+.SS "virtual void Training::show () const\fC [virtual]\fP"
+
+.PP
+Prints the \fBTraining\fP on the screen\&. 
+.PP
+Implements \fBEvent\fP\&.
+.SS "virtual void Training::writetofile (ostream & out) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Writes the \fBTraining\fP to a file using operator<<\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP File to write to 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 106 of file Training\&.h\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "ostream& operator<< (ostream & out, const \fBTraining\fP & training)\fC [friend]\fP"
+
+.PP
+Used to write the \fBTraining\fP to an Output Stream\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP Output Stream to write the \fBTraining\fP to 
+.br
+\fItraining\fP \fBTraining\fP to be written on the Output Stream 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+out (parameter) 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & in, \fBTraining\fP & training)\fC [friend]\fP"
+
+.PP
+Used to read the \fBTraining\fP from an Input Stream\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin\fP Input Stream from which to read the \fBTraining\fP 
+.br
+\fItraining\fP \fBTraining\fP to be read from the Input Stream 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+in (parameter) 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

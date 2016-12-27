@@ -25,12 +25,13 @@ Training & Training::operator=(const Training & training) {
 /*
 * Constructor with pointer
 */
-Training::Training(Event * ev) :Event(*ev) { 
-	this->game = ev->getGame(); };
+Training::Training(Event * ev) :Event(*ev) {
+	this->game = ev->isGame(); };
 
 /*
 *prints training on the screen
 */
+
 void Training::show() const{
 	(this->getDay()).show();
 	cout<< "| ";

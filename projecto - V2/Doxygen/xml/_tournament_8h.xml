@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_tournament_8h" kind="file" language="C++">
+    <compoundname>Tournament.h</compoundname>
+    <includes refid="_date_8h" local="yes">Date.h</includes>
+    <includes refid="_event_8h" local="yes">Event.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_level_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h</includedby>
+    <includedby refid="_club_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</includedby>
+    <incdepgraph>
+      <node id="223">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h</label>
+        <link refid="_tournament_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>string</label>
+      </node>
+      <node id="230">
+        <label>fstream</label>
+      </node>
+      <node id="227">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>vector</label>
+      </node>
+      <node id="225">
+        <label>iostream</label>
+      </node>
+      <node id="228">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="231">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h</label>
+        <link refid="_tournament_8h"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</label>
+        <link refid="menus_8h"/>
+      </node>
+      <node id="233">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Minis.h</label>
+        <link refid="_minis_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Level.h</label>
+        <link refid="_level_8h"/>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juniors.h</label>
+        <link refid="_juniors_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Seniors.h</label>
+        <link refid="_seniors_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="235" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Juveniles.h</label>
+        <link refid="_juveniles_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_tournament" prot="public">Tournament</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Francisco Andrade </para></simplesect>
+<simplesect kind="author"><para>João Almeida</para></simplesect>
+Contains the declaration of the class <ref refid="class_training" kindref="compound">Training</ref> </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>TOURNAMENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOURNAMENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_date_8h" kindref="compound">Date.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_event_8h" kindref="compound">Event.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_tournament" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tournament" kindref="compound">Tournament</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_event" kindref="compound">Event</ref>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>major;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>vector&lt;<sp/>pair&lt;pair&lt;unsigned<sp/>int,<sp/>unsigned<sp/>int&gt;,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>results;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34" refid="class_tournament_1a87cc832c6612caebcab61d1bea7ef1ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tournament_1a87cc832c6612caebcab61d1bea7ef1ac" kindref="member">Tournament</ref>(){};</highlight><highlight class="comment">//default<sp/>constructor</highlight></codeline>
+<codeline lineno="38" refid="class_tournament_1a255677d318362ae4dc23b9d6a3359f61" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1a255677d318362ae4dc23b9d6a3359f61" kindref="member">~Tournament</ref>(){};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tournament_1a87cc832c6612caebcab61d1bea7ef1ac" kindref="member">Tournament</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_tournament" kindref="compound">Tournament</ref><sp/>&amp;<sp/>tournament);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tournament" kindref="compound">Tournament</ref><sp/>&amp;<sp/><ref refid="class_tournament_1a835ad322fd9309b94ce03be5523be20b" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_tournament" kindref="compound">Tournament</ref><sp/>&amp;<sp/>tournament);</highlight><highlight class="comment">//copy<sp/>assignment</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tournament_1a87cc832c6612caebcab61d1bea7ef1ac" kindref="member">Tournament</ref>(<ref refid="class_event" kindref="compound">Event</ref><sp/>*<sp/>ev);</highlight><highlight class="comment">//constructor<sp/>with<sp/>pointer</highlight></codeline>
+<codeline lineno="59" refid="class_tournament_1a84c5301c50e0c4ac263ed3d74fa7c8c5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tournament_1a84c5301c50e0c4ac263ed3d74fa7c8c5" kindref="member">Tournament</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>day,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>major)<sp/>:<sp/><ref refid="class_event" kindref="compound">Event</ref>(day)<sp/>{<sp/>this-&gt;major<sp/>=<sp/>major;<sp/>};</highlight><highlight class="comment">//constructor<sp/>with<sp/>day<sp/>and<sp/>major<sp/>parameter</highlight></codeline>
+<codeline lineno="64" refid="class_tournament_1ab6fde765568ea9779fc10f0f2811c163" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1ab6fde765568ea9779fc10f0f2811c163" kindref="member">Istraining</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;};</highlight><highlight class="comment">//returns<sp/>false<sp/>as<sp/>the<sp/>event<sp/>is<sp/>not<sp/>a<sp/>training</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1a7200351516d8d43c198ad6080b405261" kindref="member">show</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73" refid="class_tournament_1a62adb322a6d5268d4ec3e267570ff4ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1a62adb322a6d5268d4ec3e267570ff4ed" kindref="member">isGame</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>};</highlight><highlight class="comment">//gets<sp/>game</highlight></codeline>
+<codeline lineno="78" refid="class_tournament_1ae021dc9d9aa7fb8b18bd065bfccc4b7e" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1ae021dc9d9aa7fb8b18bd065bfccc4b7e" kindref="member">getRank</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rank;}</highlight><highlight class="comment">//gets<sp/>rank</highlight></codeline>
+<codeline lineno="83" refid="class_tournament_1af733baa05b3ae1465d6b5271929b5061" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1af733baa05b3ae1465d6b5271929b5061" kindref="member">isMajor</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>major;<sp/>};</highlight><highlight class="comment">//gets<sp/>major</highlight></codeline>
+<codeline lineno="88" refid="class_tournament_1abacd2d5489099f31a9688a7da4d64c40" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;pair&lt;pair&lt;unsigned<sp/>int,<sp/>unsigned<sp/>int&gt;,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/><ref refid="class_tournament_1abacd2d5489099f31a9688a7da4d64c40" kindref="member">getResults</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>results;};</highlight><highlight class="comment">//gets<sp/>results</highlight></codeline>
+<codeline lineno="93" refid="class_tournament_1acab9ee32169ba590f4ffdb5b59b28a86" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1acab9ee32169ba590f4ffdb5b59b28a86" kindref="member">setResults</ref>(vector&lt;pair&lt;pair&lt;unsigned<sp/>int,<sp/>unsigned<sp/>int&gt;,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&gt;&gt;<sp/>results)<sp/>{<sp/>this-&gt;results<sp/>=<sp/>results;<sp/>};</highlight><highlight class="comment">//sets<sp/>results</highlight></codeline>
+<codeline lineno="98" refid="class_tournament_1a724f8fb0c0507975b6bb4817d8b5de7d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1a724f8fb0c0507975b6bb4817d8b5de7d" kindref="member">setRank</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank)<sp/>{<sp/>this-&gt;rank<sp/>=<sp/>rank;<sp/>};</highlight><highlight class="comment">//sets<sp/>rank</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>ostream&amp;<sp/><ref refid="class_tournament_1a732b99f4a91ce76bb3db57cffd96f441" kindref="member">operator&lt;&lt;</ref>(ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_tournament" kindref="compound">Tournament</ref><sp/>&amp;<sp/>tournament);</highlight><highlight class="comment">//writes<sp/>tournament<sp/>in<sp/>ostream<sp/>out</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>istream&amp;<sp/><ref refid="class_tournament_1a35e43e0ee6981515ba4442efa8cac7a7" kindref="member">operator&gt;&gt;</ref>(istream&amp;<sp/>in,<sp/><ref refid="class_tournament" kindref="compound">Tournament</ref><sp/>&amp;<sp/>tournament);</highlight><highlight class="comment">//gets<sp/>tournament<sp/>from<sp/>instream<sp/>in</highlight></codeline>
+<codeline lineno="117" refid="class_tournament_1a4aa375c287d890b9117a91058dcffb0c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tournament_1a4aa375c287d890b9117a91058dcffb0c" kindref="member">writetofile</ref>(ostream<sp/>&amp;<sp/>out)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{out&lt;&lt;*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;};</highlight><highlight class="comment">//writes<sp/>tournament<sp/>to<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Tournament.h"/>
+  </compounddef>
+</doxygen>

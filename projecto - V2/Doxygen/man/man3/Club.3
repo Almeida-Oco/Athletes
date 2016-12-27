@@ -1,0 +1,425 @@
+.TH "Club" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Club \- Holds all the information about the \fBClub\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Club\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB~Club\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "string \fBgetname\fP () const"
+.br
+.RI "Gets the name of the \fBClub\fP\&. "
+.ti -1c
+.RI "bool \fBgetleaveprogram\fP () const"
+.br
+.RI "Gets member variable leaveprogram\&. "
+.ti -1c
+.RI "void \fBsetleaveprogram\fP (bool leaveprogram)"
+.br
+.RI "Change value of member variable setleaveprogram\&. "
+.ti -1c
+.RI "string \fBgetfilename_players\fP () const"
+.br
+.RI "Gets member variable filename_players\&. "
+.ti -1c
+.RI "string \fBgetfilename_trainings\fP () const"
+.br
+.RI "Gets member variable filename_trainings\&. "
+.ti -1c
+.RI "string \fBgetfilename_tournaments\fP () const"
+.br
+.RI "Gets member variable filename_tournaments\&. "
+.ti -1c
+.RI "void \fBsetfilename_players\fP (string filename_players)"
+.br
+.RI "Changes value of member variable filename_players\&. "
+.ti -1c
+.RI "void \fBsetfilename_trainings\fP (string filename_trainings)"
+.br
+.RI "Changes value of member variable filename_trainings\&. "
+.ti -1c
+.RI "void \fBsetfilename_tournaments\fP (string filename_tournaments)"
+.br
+.RI "Changes value of member variable filename_tournaments\&. "
+.ti -1c
+.RI "void \fBreadplayers\fP (istream &in)"
+.br
+.RI "Input operation to read all Players from a text file\&. "
+.ti -1c
+.RI "void \fBreadtrainings\fP (istream &in)"
+.br
+.RI "Input operation to read all Trainings from a text file\&. "
+.ti -1c
+.RI "void \fBreadtournaments\fP (istream &in)"
+.br
+.RI "Input operation to read all Tournaments from a text file\&. "
+.ti -1c
+.RI "void \fBwriteplayers\fP ()"
+.br
+.RI "Output operation to store all Players in a text file\&. "
+.ti -1c
+.RI "void \fBwritetrainings\fP ()"
+.br
+.RI "Output operation to store all Trainings in a text file\&. "
+.ti -1c
+.RI "void \fBwritetournaments\fP ()"
+.br
+.RI "Output operation to store all Tournaments in a text file\&. "
+.ti -1c
+.RI "vector< \fBLevel\fP * > \fBgetLevels\fP () const"
+.br
+.RI "Used to get a vector with all levels\&. "
+.ti -1c
+.RI "vector< string > \fBgetPlayers\fP () const"
+.br
+.RI "Used to get a vector with all current Players\&. "
+.ti -1c
+.RI "void \fBmakeTree\fP ()"
+.br
+.RI "Constructs the binary Tree for each \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBmakeQueue\fP ()"
+.br
+.RI "Contructs the member variable ECG_queue\&. "
+.ti -1c
+.RI "void \fBaddPlayerQueue\fP (\fBPlayer\fP *pl)"
+.br
+.RI "Adds a \fBPlayer\fP to member variable ECG_queue\&. "
+.ti -1c
+.RI "void \fBremovePlayerQueue\fP (\fBPlayer\fP *pl)"
+.br
+.RI "Removes a player from the member variable ECG_queue\&. "
+.ti -1c
+.RI "bool \fBaddBirthday\fP (\fBPlayer\fP *p1)"
+.br
+.RI "Adds the player to the hash table for future birthdays\&. "
+.ti -1c
+.RI "bool \fBremoveBirthday\fP (\fBPlayer\fP *p1)"
+.br
+.RI "Removes the given \fBPlayer\fP from the future birthday list\&. "
+.ti -1c
+.RI "vector< \fBPlayer\fP * > \fBnextBirthdays\fP (int days) const"
+.br
+.RI "Gets a list of players whose birthday is within parameter days\&. "
+.ti -1c
+.RI "bool \fBfindOldPlayer\fP (\fBPlayer\fP *p1)"
+.br
+.RI "Tries to find p1 in the future_birthdays hash table\&. "
+.ti -1c
+.RI "void \fBECG_notify\fP ()"
+.br
+.RI "Sends a notification to the first player in the member variable ECG_queue\&. "
+.ti -1c
+.RI "void \fBshowQueue\fP ()"
+.br
+.RI "Used to print the member variable ECG_queue on the screen\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBClub\fP * \fBgetinstance\fP ()"
+.br
+.RI "Gets an object of class \fBClub\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Holds all the information about the \fBClub\fP\&. 
+.PP
+Definition at line 81 of file Club\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Club::~Club ()"
+
+.PP
+Destructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Club::addBirthday (\fBPlayer\fP * p1)"
+
+.PP
+Adds the player to the hash table for future birthdays\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp1\fP Pointer to player to be added
+.RE
+.PP
+\fBPlayer\fP can only be inserted if he is older than team maximum age (defined in \fBseniors\&.h\fP)
+.PP
+if not it cannot be added to the future birthday list
+.PP
+\fBReturns:\fP
+.RS 4
+true if insert successful , false if it cannot insert player 
+.RE
+.PP
+
+.SS "void Club::addPlayerQueue (\fBPlayer\fP * pl)"
+
+.PP
+Adds a \fBPlayer\fP to member variable ECG_queue\&. 
+.SS "void Club::ECG_notify ()\fC [inline]\fP"
+
+.PP
+Sends a notification to the first player in the member variable ECG_queue\&. 
+.PP
+Definition at line 251 of file Club\&.h\&.
+.SS "bool Club::findOldPlayer (\fBPlayer\fP * p1)"
+
+.PP
+Tries to find p1 in the future_birthdays hash table\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp1\fP Pointer to player to be found 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+1 if player found , 0 if player not found 
+.RE
+.PP
+
+.SS "string Club::getfilename_players () const\fC [inline]\fP"
+
+.PP
+Gets member variable filename_players\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+filename_players (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 129 of file Club\&.h\&.
+.SS "string Club::getfilename_tournaments () const\fC [inline]\fP"
+
+.PP
+Gets member variable filename_tournaments\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+filename_tournaments (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 139 of file Club\&.h\&.
+.SS "string Club::getfilename_trainings () const\fC [inline]\fP"
+
+.PP
+Gets member variable filename_trainings\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+filename_trainings (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 134 of file Club\&.h\&.
+.SS "static \fBClub\fP* Club::getinstance ()\fC [static]\fP"
+
+.PP
+Gets an object of class \fBClub\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+singleton_instance (member variable)
+.RE
+.PP
+Checks whether member variable singleton_instance already points to an object, if it does
+.PP
+return it, if not then it initializes singleton_instance then returns it 
+.SS "bool Club::getleaveprogram () const\fC [inline]\fP"
+
+.PP
+Gets member variable leaveprogram\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+leaveprogram (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 120 of file Club\&.h\&.
+.SS "vector<\fBLevel\fP *> Club::getLevels () const\fC [inline]\fP"
+
+.PP
+Used to get a vector with all levels\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Vector of pointer to levels with Minis* at 0 , Juveniles* at 1 , Juniors* at 2 , Seniors* at 3 
+.RE
+.PP
+
+.PP
+Definition at line 189 of file Club\&.h\&.
+.SS "string Club::getname () const\fC [inline]\fP"
+
+.PP
+Gets the name of the \fBClub\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+name (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 115 of file Club\&.h\&.
+.SS "vector<string> Club::getPlayers () const"
+
+.PP
+Used to get a vector with all current Players\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Vector with the names of all the players of the \fBClub\fP, including old Players if they participated in Events 
+.RE
+.PP
+
+.SS "void Club::makeQueue ()"
+
+.PP
+Contructs the member variable ECG_queue\&. The queue contains the current players of the club of all levels 
+.SS "void Club::makeTree ()"
+
+.PP
+Constructs the binary Tree for each \fBLevel\fP\&. First it updates the information on all current Players, by resetting their assiduities and computing them again
+.PP
+after updating it adds them to the respective \fBBST\fP\&. 
+.SS "vector<\fBPlayer\fP *> Club::nextBirthdays (int days) const"
+
+.PP
+Gets a list of players whose birthday is within parameter days\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdays\fP Number of days to use
+.RE
+.PP
+Iterates all possible dates from the current day to (current_day + days) it iterates it from
+.PP
+end day to current day so that list is ordered by the closest birthday to the farthest birthdays 
+.PP
+\fBReturns:\fP
+.RS 4
+List of pointer to those players 
+.RE
+.PP
+
+.SS "void Club::readplayers (istream & in)"
+
+.PP
+Input operation to read all Players from a text file\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin\fP Istream to read the players from
+.RE
+.PP
+First it reads the current players of the club, then it reads the old players of the club 
+.SS "void Club::readtournaments (istream & in)"
+
+.PP
+Input operation to read all Tournaments from a text file\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin\fP Istream to read the trainings from
+.RE
+.PP
+Sistematically reads the Tournaments by level 
+.SS "void Club::readtrainings (istream & in)"
+
+.PP
+Input operation to read all Trainings from a text file\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin\fP Istream to read the trainings from
+.RE
+.PP
+Sistematically reads the Trainings by level 
+.SS "bool Club::removeBirthday (\fBPlayer\fP * p1)"
+
+.PP
+Removes the given \fBPlayer\fP from the future birthday list\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp1\fP Pointer to player to be removed
+.RE
+.PP
+Compares the players by name
+.PP
+\fBReturns:\fP
+.RS 4
+true if removed successfuly, false if player not found 
+.RE
+.PP
+
+.SS "void Club::removePlayerQueue (\fBPlayer\fP * pl)"
+
+.PP
+Removes a player from the member variable ECG_queue\&. If the player is not found the Queue simply remains the same 
+.SS "void Club::setfilename_players (string filename_players)\fC [inline]\fP"
+
+.PP
+Changes value of member variable filename_players\&. 
+.PP
+Definition at line 143 of file Club\&.h\&.
+.SS "void Club::setfilename_tournaments (string filename_tournaments)\fC [inline]\fP"
+
+.PP
+Changes value of member variable filename_tournaments\&. 
+.PP
+Definition at line 151 of file Club\&.h\&.
+.SS "void Club::setfilename_trainings (string filename_trainings)\fC [inline]\fP"
+
+.PP
+Changes value of member variable filename_trainings\&. 
+.PP
+Definition at line 147 of file Club\&.h\&.
+.SS "void Club::setleaveprogram (bool leaveprogram)\fC [inline]\fP"
+
+.PP
+Change value of member variable setleaveprogram\&. 
+.PP
+Definition at line 124 of file Club\&.h\&.
+.SS "void Club::showQueue ()"
+
+.PP
+Used to print the member variable ECG_queue on the screen\&. 
+.SS "void Club::writeplayers ()"
+
+.PP
+Output operation to store all Players in a text file\&. First it stores the current players of the club, then the old players of the club 
+.SS "void Club::writetournaments ()"
+
+.PP
+Output operation to store all Tournaments in a text file\&. Sistematically stores the Tournaments by level 
+.SS "void Club::writetrainings ()"
+
+.PP
+Output operation to store all Trainings in a text file\&. Sistematically stores the Trainings by level 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

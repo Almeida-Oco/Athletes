@@ -1,0 +1,514 @@
+.TH "Level" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Level \- Holds all the information about the \fBClub\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Level\&.h>\fP
+.PP
+Inherited by \fBJuniors\fP, \fBJuveniles\fP, \fBMinis\fP, and \fBSeniors\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLevel\fP ()"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "virtual \fB~Level\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBLevel\fP (const \fBLevel\fP &level)"
+.br
+.RI "Copy constructor\&. "
+.ti -1c
+.RI "\fBLevel\fP & \fBoperator=\fP (const \fBLevel\fP &level)"
+.br
+.RI "Copy Operator\&. "
+.ti -1c
+.RI "virtual unsigned int \fBgetMaxAge\fP ()=0"
+.br
+.RI "Get the maximum age to be on this \fBLevel\fP\&. "
+.ti -1c
+.RI "virtual unsigned int \fBgetMinAge\fP ()=0"
+.br
+.RI "Get the minimum age to be on this \fBLevel\fP\&. "
+.ti -1c
+.RI "vector< \fBPlayer\fP * > \fBgetPlayers\fP () const"
+.br
+.RI "Gets all of the Players on this \fBLevel\fP\&. "
+.ti -1c
+.RI "vector< \fBEvent\fP * > \fBgetEvents\fP () const"
+.br
+.RI "Gets all of the Events on this \fBLevel\fP\&. "
+.ti -1c
+.RI "string \fBgetCoach\fP () const"
+.br
+.RI "Gets the coach of this \fBLevel\fP\&. "
+.ti -1c
+.RI "\fBBST\fP< \fBPlayer_node\fP > \fBgetPlayers_tree\fP () const"
+.br
+.RI "Gets the \fBBST\fP of players on this \fBLevel\fP\&. "
+.ti -1c
+.RI "vector< \fBEvent\fP * > \fBgetTrainings\fP () const"
+.br
+.RI "Gets all of the Trainings of this \fBLevel\fP\&. "
+.ti -1c
+.RI "vector< \fBEvent\fP * > \fBgetTournaments\fP () const"
+.br
+.RI "Gets all of the Tournaments of this \fBLevel\fP\&. "
+.ti -1c
+.RI "virtual bool \fBaddPlayer\fP (\fBPlayer\fP *player)"
+.br
+.RI "Adds a new \fBPlayer\fP to this \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBaddEvent\fP (\fBEvent\fP *event)"
+.br
+.RI "Adds a new \fBEvent\fP to this \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBsetCoach\fP (std::string coach)"
+.br
+.RI "Changes coach name\&. "
+.ti -1c
+.RI "virtual void \fBshowplayers\fP () const"
+.br
+.RI "Outputs the Players of this \fBLevel\fP to the screen\&. "
+.ti -1c
+.RI "virtual void \fBshowtrainings\fP () const"
+.br
+.RI "Outputs the Trainings of this \fBLevel\fP to the screen\&. "
+.ti -1c
+.RI "virtual void \fBshowtournaments\fP () const"
+.br
+.RI "Outputs the Tournaments of this \fBLevel\fP to the screen\&. "
+.ti -1c
+.RI "virtual void \fBshowevents\fP () const"
+.br
+.RI "Outputs the next events to happen\&. "
+.ti -1c
+.RI "void \fBremoveplayer\fP (unsigned int id)"
+.br
+.RI "Removes a \fBPlayer\fP from this \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBremoveEvent\fP (unsigned int id)"
+.br
+.RI "Removes an \fBEvent\fP from this \fBLevel\fP\&. "
+.ti -1c
+.RI "vector< \fBEvent\fP * > \fBgetFutureEvents\fP ()"
+.br
+.RI "Gets Events that will happen in the future\&. "
+.ti -1c
+.RI "void \fBraiseassiduity\fP (vector< string > players)"
+.br
+.RI "Raises the assiduity of the Players\&. "
+.ti -1c
+.RI "void \fBlowerassiduity\fP (vector< string > players)"
+.br
+.RI "Lowers the assiduity of the Players\&. "
+.ti -1c
+.RI "void \fBraisepgames\fP (vector< string > players)"
+.br
+.RI "Raises the presences in games of the Players\&. "
+.ti -1c
+.RI "void \fBlowerpgames\fP (vector< string > players)"
+.br
+.RI "Lowers the presences in games of the Players\&. "
+.ti -1c
+.RI "void \fBraiseptournaments\fP (vector< string > players)"
+.br
+.RI "Raises the presences in tournaments of the Players\&. "
+.ti -1c
+.RI "void \fBlowerptournaments\fP (vector< string > players)"
+.br
+.RI "Lowers the presences in tournaments of the Players\&. "
+.ti -1c
+.RI "void \fBraisegames_won\fP (vector< string > players, int value, vector< pair< pair< unsigned int, unsigned int >, string >> results)"
+.br
+.RI "Raises the number of games in which this \fBLevel\fP won that the Players participated\&. "
+.ti -1c
+.RI "void \fBraiseassiduity_curr\fP (vector< string > player, int value)"
+.br
+.RI "Increases the value of assiduity of Players\&. "
+.ti -1c
+.RI "virtual vector< string > \fBgetCall\fP (unsigned int size)=0"
+.br
+.RI "Makes a call for an \fBEvent\fP\&. "
+.ti -1c
+.RI "void \fBactualize_curr_parameters\fP ()"
+.br
+.RI "Re-computes the assiduities of all the Players in this \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBmakeTree\fP ()"
+.br
+.RI "Constructs the member variable players_tree with the current Players\&. "
+.ti -1c
+.RI "void \fBremove_Tree\fP (\fBPlayer_node\fP pl)"
+.br
+.RI "Removes a \fBPlayer\fP from the member variable players_tree\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Holds all the information about the \fBClub\fP\&. 
+.PP
+Definition at line 36 of file Level\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Level::Level ()\fC [inline]\fP"
+
+.PP
+Default constructor\&. Initializes the \fBBST\fP 
+.PP
+Definition at line 46 of file Level\&.h\&.
+.SS "virtual Level::~Level ()\fC [virtual]\fP"
+
+.PP
+Destructor\&. 
+.SS "Level::Level (const \fBLevel\fP & level)"
+
+.PP
+Copy constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP Object of \fBLevel\fP to be copied 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Level::actualize_curr_parameters ()"
+
+.PP
+Re-computes the assiduities of all the Players in this \fBLevel\fP\&. 
+.SS "void Level::addEvent (\fBEvent\fP * event)"
+
+.PP
+Adds a new \fBEvent\fP to this \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIevent\fP New \fBEvent\fP to be added 
+.RE
+.PP
+
+.SS "virtual bool Level::addPlayer (\fBPlayer\fP * player)\fC [virtual]\fP"
+
+.PP
+Adds a new \fBPlayer\fP to this \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayer\fP New \fBPlayer\fP to be added 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if the \fBPlayer\fP was inserted successfuly, false if not
+.RE
+.PP
+The \fBPlayer\fP can not be added to the \fBLevel\fP if his age is not within the range of admitted ages 
+.PP
+Reimplemented in \fBJuniors\fP, \fBSeniors\fP, \fBJuveniles\fP, and \fBMinis\fP\&.
+.SS "virtual vector<string> Level::getCall (unsigned int size)\fC [pure virtual]\fP"
+
+.PP
+Makes a call for an \fBEvent\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsize\fP How many Players to call 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Vector with the players called to the \fBEvent\fP
+.RE
+.PP
+Pure Virtual, to be implemented by derived classes 
+.PP
+Implemented in \fBJuniors\fP, \fBSeniors\fP, \fBJuveniles\fP, and \fBMinis\fP\&.
+.SS "string Level::getCoach () const\fC [inline]\fP"
+
+.PP
+Gets the coach of this \fBLevel\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+coach (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 85 of file Level\&.h\&.
+.SS "vector<\fBEvent\fP *> Level::getEvents () const\fC [inline]\fP"
+
+.PP
+Gets all of the Events on this \fBLevel\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+events (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 80 of file Level\&.h\&.
+.SS "vector<\fBEvent\fP*> Level::getFutureEvents ()"
+
+.PP
+Gets Events that will happen in the future\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Vector of the Events to happen 
+.RE
+.PP
+
+.SS "virtual unsigned int Level::getMaxAge ()\fC [pure virtual]\fP"
+
+.PP
+Get the maximum age to be on this \fBLevel\fP\&. Pure Virtual, to be inherited by derived classes 
+.PP
+Implemented in \fBJuniors\fP, \fBSeniors\fP, \fBJuveniles\fP, and \fBMinis\fP\&.
+.SS "virtual unsigned int Level::getMinAge ()\fC [pure virtual]\fP"
+
+.PP
+Get the minimum age to be on this \fBLevel\fP\&. Pure Virtual, to be inherited by derived classes 
+.PP
+Implemented in \fBJuniors\fP, \fBSeniors\fP, \fBJuveniles\fP, and \fBMinis\fP\&.
+.SS "vector<\fBPlayer\fP *> Level::getPlayers () const\fC [inline]\fP"
+
+.PP
+Gets all of the Players on this \fBLevel\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+players (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 75 of file Level\&.h\&.
+.SS "\fBBST\fP<\fBPlayer_node\fP> Level::getPlayers_tree () const\fC [inline]\fP"
+
+.PP
+Gets the \fBBST\fP of players on this \fBLevel\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+players_tree (member variable) 
+.RE
+.PP
+
+.PP
+Definition at line 90 of file Level\&.h\&.
+.SS "vector<\fBEvent\fP *> Level::getTournaments () const"
+
+.PP
+Gets all of the Tournaments of this \fBLevel\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Vector only with Tournaments 
+.RE
+.PP
+
+.SS "vector<\fBEvent\fP *> Level::getTrainings () const"
+
+.PP
+Gets all of the Trainings of this \fBLevel\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Vector only with Trainings 
+.RE
+.PP
+
+.SS "void Level::lowerassiduity (vector< string > players)"
+
+.PP
+Lowers the assiduity of the Players\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayers\fP Vector of players to lower the assiduity (member varible in \fBPlayer\fP) 
+.RE
+.PP
+
+.SS "void Level::lowerpgames (vector< string > players)"
+
+.PP
+Lowers the presences in games of the Players\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayers\fP Vector of players to lower the pgames (member varible in \fBPlayer\fP) 
+.RE
+.PP
+
+.SS "void Level::lowerptournaments (vector< string > players)"
+
+.PP
+Lowers the presences in tournaments of the Players\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayers\fP Vector of players to lower the ptournaments (member varible in \fBPlayer\fP) 
+.RE
+.PP
+
+.SS "void Level::makeTree ()"
+
+.PP
+Constructs the member variable players_tree with the current Players\&. 
+.SS "\fBLevel\fP& Level::operator= (const \fBLevel\fP & level)"
+
+.PP
+Copy Operator\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP Object of \fBLevel\fP to be copied 
+.RE
+.PP
+
+.SS "void Level::raiseassiduity (vector< string > players)"
+
+.PP
+Raises the assiduity of the Players\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayers\fP Vector of players to raise the assiduity (member varible in \fBPlayer\fP) 
+.RE
+.PP
+
+.SS "void Level::raiseassiduity_curr (vector< string > player, int value)"
+
+.PP
+Increases the value of assiduity of Players\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayer\fP Vector of names of \fBPlayer\fP to be increased 
+.br
+\fIvalue\fP Number of points to be increased 
+.RE
+.PP
+
+.SS "void Level::raisegames_won (vector< string > players, int value, vector< pair< pair< unsigned int, unsigned int >, string >> results)"
+
+.PP
+Raises the number of games in which this \fBLevel\fP won that the Players participated\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayers\fP Players to be raised 
+.br
+\fIvalue\fP Amount to be raised 
+.br
+\fIresults\fP Results achieved by the \fBLevel\fP
+.RE
+.PP
+Computes how many games where won from the parameter results then multiplies it by value and adds to each player 
+.SS "void Level::raisepgames (vector< string > players)"
+
+.PP
+Raises the presences in games of the Players\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayers\fP Vector of players to raise the pgames (member variable in \fBPlayer\fP) 
+.RE
+.PP
+
+.SS "void Level::raiseptournaments (vector< string > players)"
+
+.PP
+Raises the presences in tournaments of the Players\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayers\fP Vector of players to raise the ptournaments (member variable in \fBPlayer\fP) 
+.RE
+.PP
+
+.SS "void Level::remove_Tree (\fBPlayer_node\fP pl)\fC [inline]\fP"
+
+.PP
+Removes a \fBPlayer\fP from the member variable players_tree\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpl\fP \fBPlayer\fP to be removed from players_tree 
+.RE
+.PP
+
+.PP
+Definition at line 216 of file Level\&.h\&.
+.SS "void Level::removeEvent (unsigned int id)"
+
+.PP
+Removes an \fBEvent\fP from this \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP Position in the member variable events 
+.RE
+.PP
+
+.SS "void Level::removeplayer (unsigned int id)"
+
+.PP
+Removes a \fBPlayer\fP from this \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP Position in the member variable players 
+.RE
+.PP
+
+.SS "void Level::setCoach (std::string coach)\fC [inline]\fP"
+
+.PP
+Changes coach name\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcoach\fP Name of the coach 
+.RE
+.PP
+
+.PP
+Definition at line 117 of file Level\&.h\&.
+.SS "virtual void Level::showevents () const\fC [virtual]\fP"
+
+.PP
+Outputs the next events to happen\&. Includes both Trainings and Tournaments 
+.SS "virtual void Level::showplayers () const\fC [virtual]\fP"
+
+.PP
+Outputs the Players of this \fBLevel\fP to the screen\&. Pure Virtual, to be inherited by derived classes 
+.PP
+Reimplemented in \fBJuniors\fP, \fBSeniors\fP, \fBJuveniles\fP, and \fBMinis\fP\&.
+.SS "virtual void Level::showtournaments () const\fC [virtual]\fP"
+
+.PP
+Outputs the Tournaments of this \fBLevel\fP to the screen\&. Pure Virtual, to be inherited by derived classes 
+.PP
+Reimplemented in \fBJuniors\fP, \fBSeniors\fP, \fBJuveniles\fP, and \fBMinis\fP\&.
+.SS "virtual void Level::showtrainings () const\fC [virtual]\fP"
+
+.PP
+Outputs the Trainings of this \fBLevel\fP to the screen\&. Pure Virtual, to be inherited by derived classes 
+.PP
+Reimplemented in \fBJuniors\fP, \fBSeniors\fP, \fBJuveniles\fP, and \fBMinis\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

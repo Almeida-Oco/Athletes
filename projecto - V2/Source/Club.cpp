@@ -439,7 +439,6 @@ void Club::showQueue() {
 	}
 }
 
-// TODO ADD EXCEPTION TO THROW WHEN DUPLICATE PLAYER
 bool Club::addBirthday(Player *p1){
 	if( this->minis->getMinAge() < actualage(p1->getBirth())){
 		if ( hashFuncs()(p1)  != -1){

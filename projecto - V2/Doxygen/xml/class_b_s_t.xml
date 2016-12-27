@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_b_s_t" kind="class" language="C++" prot="public">
+    <compoundname>BST</compoundname>
+    <includes refid="_b_s_t_8h" local="no">BST.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Comparable</declname>
+        <defname>Comparable</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_b_s_t_1a48d08a19c48c0c260a7d5db37149ad0f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+        <definition>BinaryNode&lt;Comparable&gt;* BST&lt; Comparable &gt;::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="75" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_s_t_1a93811f042c4201e993fe39638c15f251" prot="private" static="no" mutable="no">
+        <type>const Comparable</type>
+        <definition>const Comparable BST&lt; Comparable &gt;::ITEM_NOT_FOUND</definition>
+        <argsstring></argsstring>
+        <name>ITEM_NOT_FOUND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="76" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_b_s_t_1aab3993acac2ab24a0b59edb0c3acc775" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class BSTItrIn&lt; Comparable &gt;</definition>
+        <argsstring></argsstring>
+        <name>BSTItrIn&lt; Comparable &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="87" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_b_s_t_1a45a55df6f11541416d4ea7684c575c1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class BSTItrPre&lt; Comparable &gt;</definition>
+        <argsstring></argsstring>
+        <name>BSTItrPre&lt; Comparable &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="87" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_b_s_t_1a5dc153694be266f6e772659486219da7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class BSTItrPost&lt; Comparable &gt;</definition>
+        <argsstring></argsstring>
+        <name>BSTItrPost&lt; Comparable &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="87" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_b_s_t_1a26ff00bc0d87069aed877f10fd3c80a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class BSTItrLevel&lt; Comparable &gt;</definition>
+        <argsstring></argsstring>
+        <name>BSTItrLevel&lt; Comparable &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="87" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b_s_t_1a3185a79cf472271f122a97d0f59022d1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BST&lt; Comparable &gt;::BST</definition>
+        <argsstring>(const Comparable &amp;notFound)</argsstring>
+        <name>BST</name>
+        <param>
+          <type>const Comparable &amp;</type>
+          <declname>notFound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="58" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a163232cc6ffcbd1a51707efcc3fa36ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BST&lt; Comparable &gt;::BST</definition>
+        <argsstring>(const BST &amp;rhs)</argsstring>
+        <name>BST</name>
+        <param>
+          <type>const <ref refid="class_b_s_t" kindref="compound">BST</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="59" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1abf3125f968641c8726101c5dd18f36be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BST&lt; Comparable &gt;::~BST</definition>
+        <argsstring>()</argsstring>
+        <name>~BST</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="60" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1aa52491ff35aec517961937a17a9fa493" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const Comparable &amp;</type>
+        <definition>const Comparable &amp; BST&lt; Comparable &gt;::findMin</definition>
+        <argsstring>() const</argsstring>
+        <name>findMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="62" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a03485f3b0b150f1e69a12c28d26d8092" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const Comparable &amp;</type>
+        <definition>const Comparable &amp; BST&lt; Comparable &gt;::findMax</definition>
+        <argsstring>() const</argsstring>
+        <name>findMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="63" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1aaf4eb6869f68db0069534f7b2dfbe53b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const Comparable &amp;</type>
+        <definition>const Comparable &amp; BST&lt; Comparable &gt;::find</definition>
+        <argsstring>(const Comparable &amp;x) const</argsstring>
+        <name>find</name>
+        <param>
+          <type>const Comparable &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="64" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a10fd737b2be62437023407fdc123f728" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BST&lt; Comparable &gt;::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="65" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a91e830925c48040d4c4dbb7d971c3bfe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BST&lt; Comparable &gt;::printTree</definition>
+        <argsstring>() const</argsstring>
+        <name>printTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="66" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="160" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a050d829503a88714c4ad0773cf6d3af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BST&lt; Comparable &gt;::makeEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>makeEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="68" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a2b117df6521c7d61dac75ff2c938bae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BST&lt; Comparable &gt;::insert</definition>
+        <argsstring>(const Comparable &amp;x)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const Comparable &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="69" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a6f01a0b44daf82a42022b6eb4c0df7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BST&lt; Comparable &gt;::remove</definition>
+        <argsstring>(const Comparable &amp;x)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>const Comparable &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="70" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1aa80c39f454c89d4a202be3d1445823f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_b_s_t" kindref="compound">BST</ref> &amp;</type>
+        <definition>const BST&lt; Comparable &gt; &amp; BST&lt; Comparable &gt;::operator=</definition>
+        <argsstring>(const BST &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_b_s_t" kindref="compound">BST</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="72" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="171" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_b_s_t_1adb7d0e1197c30ff79cb0fb05fcd67249" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const Comparable &amp;</type>
+        <definition>const Comparable &amp; BST&lt; Comparable &gt;::elementAt</definition>
+        <argsstring>(BinaryNode&lt; Comparable &gt; *t) const</argsstring>
+        <name>elementAt</name>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="78" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="184" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a4d885d655c4a4e29c2d40f2b48baf7d3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BST&lt; Comparable &gt;::insert</definition>
+        <argsstring>(const Comparable &amp;x, BinaryNode&lt; Comparable &gt; *&amp;t) const</argsstring>
+        <name>insert</name>
+        <param>
+          <type>const Comparable &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *&amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="80" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="195" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1afe360f55921ac51ac78ddde6556fe946" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BST&lt; Comparable &gt;::remove</definition>
+        <argsstring>(const Comparable &amp;x, BinaryNode&lt; Comparable &gt; *&amp;t) const</argsstring>
+        <name>remove</name>
+        <param>
+          <type>const Comparable &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *&amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="81" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="209" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a1b79bb91ccef69398a80bf508a2a6097" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+        <definition>BinaryNode&lt; Comparable &gt; * BST&lt; Comparable &gt;::findMin</definition>
+        <argsstring>(BinaryNode&lt; Comparable &gt; *t) const</argsstring>
+        <name>findMin</name>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="82" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="232" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a922e4c2dfbd460db9e31531d8d20282b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+        <definition>BinaryNode&lt; Comparable &gt; * BST&lt; Comparable &gt;::findMax</definition>
+        <argsstring>(BinaryNode&lt; Comparable &gt; *t) const</argsstring>
+        <name>findMax</name>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="83" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="244" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a858dd15e9d15affeb88785d0c5a65ae3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+        <definition>BinaryNode&lt; Comparable &gt; * BST&lt; Comparable &gt;::find</definition>
+        <argsstring>(const Comparable &amp;x, BinaryNode&lt; Comparable &gt; *t) const</argsstring>
+        <name>find</name>
+        <param>
+          <type>const Comparable &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="84" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="255" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a5582f1066a084181d6a79ec0a6e9f9f2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BST&lt; Comparable &gt;::makeEmpty</definition>
+        <argsstring>(BinaryNode&lt; Comparable &gt; *&amp;t) const</argsstring>
+        <name>makeEmpty</name>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *&amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal method to make subtree empty. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="85" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="289" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1a76247d69325065d2485349148d7940e7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BST&lt; Comparable &gt;::printTree</definition>
+        <argsstring>(BinaryNode&lt; Comparable &gt; *t) const</argsstring>
+        <name>printTree</name>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="86" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="301" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_1acefda5ede0b55cbb1f7deab580bd8fd9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+        <definition>BinaryNode&lt; Comparable &gt; * BST&lt; Comparable &gt;::clone</definition>
+        <argsstring>(BinaryNode&lt; Comparable &gt; *t) const</argsstring>
+        <name>clone</name>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="87" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="313" bodyend="319"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="35" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="35" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="class_b_s_t_1a3185a79cf472271f122a97d0f59022d1" prot="public" virt="non-virtual"><scope>BST</scope><name>BST</name></member>
+      <member refid="class_b_s_t_1a163232cc6ffcbd1a51707efcc3fa36ca" prot="public" virt="non-virtual"><scope>BST</scope><name>BST</name></member>
+      <member refid="class_b_s_t_1aab3993acac2ab24a0b59edb0c3acc775" prot="private" virt="non-virtual"><scope>BST</scope><name>BSTItrIn&lt; Comparable &gt;</name></member>
+      <member refid="class_b_s_t_1a26ff00bc0d87069aed877f10fd3c80a8" prot="private" virt="non-virtual"><scope>BST</scope><name>BSTItrLevel&lt; Comparable &gt;</name></member>
+      <member refid="class_b_s_t_1a5dc153694be266f6e772659486219da7" prot="private" virt="non-virtual"><scope>BST</scope><name>BSTItrPost&lt; Comparable &gt;</name></member>
+      <member refid="class_b_s_t_1a45a55df6f11541416d4ea7684c575c1a" prot="private" virt="non-virtual"><scope>BST</scope><name>BSTItrPre&lt; Comparable &gt;</name></member>
+      <member refid="class_b_s_t_1acefda5ede0b55cbb1f7deab580bd8fd9" prot="private" virt="non-virtual"><scope>BST</scope><name>clone</name></member>
+      <member refid="class_b_s_t_1adb7d0e1197c30ff79cb0fb05fcd67249" prot="private" virt="non-virtual"><scope>BST</scope><name>elementAt</name></member>
+      <member refid="class_b_s_t_1aaf4eb6869f68db0069534f7b2dfbe53b" prot="public" virt="non-virtual"><scope>BST</scope><name>find</name></member>
+      <member refid="class_b_s_t_1a858dd15e9d15affeb88785d0c5a65ae3" prot="private" virt="non-virtual"><scope>BST</scope><name>find</name></member>
+      <member refid="class_b_s_t_1a03485f3b0b150f1e69a12c28d26d8092" prot="public" virt="non-virtual"><scope>BST</scope><name>findMax</name></member>
+      <member refid="class_b_s_t_1a922e4c2dfbd460db9e31531d8d20282b" prot="private" virt="non-virtual"><scope>BST</scope><name>findMax</name></member>
+      <member refid="class_b_s_t_1aa52491ff35aec517961937a17a9fa493" prot="public" virt="non-virtual"><scope>BST</scope><name>findMin</name></member>
+      <member refid="class_b_s_t_1a1b79bb91ccef69398a80bf508a2a6097" prot="private" virt="non-virtual"><scope>BST</scope><name>findMin</name></member>
+      <member refid="class_b_s_t_1a2b117df6521c7d61dac75ff2c938bae7" prot="public" virt="non-virtual"><scope>BST</scope><name>insert</name></member>
+      <member refid="class_b_s_t_1a4d885d655c4a4e29c2d40f2b48baf7d3" prot="private" virt="non-virtual"><scope>BST</scope><name>insert</name></member>
+      <member refid="class_b_s_t_1a10fd737b2be62437023407fdc123f728" prot="public" virt="non-virtual"><scope>BST</scope><name>isEmpty</name></member>
+      <member refid="class_b_s_t_1a93811f042c4201e993fe39638c15f251" prot="private" virt="non-virtual"><scope>BST</scope><name>ITEM_NOT_FOUND</name></member>
+      <member refid="class_b_s_t_1a050d829503a88714c4ad0773cf6d3af6" prot="public" virt="non-virtual"><scope>BST</scope><name>makeEmpty</name></member>
+      <member refid="class_b_s_t_1a5582f1066a084181d6a79ec0a6e9f9f2" prot="private" virt="non-virtual"><scope>BST</scope><name>makeEmpty</name></member>
+      <member refid="class_b_s_t_1aa80c39f454c89d4a202be3d1445823f3" prot="public" virt="non-virtual"><scope>BST</scope><name>operator=</name></member>
+      <member refid="class_b_s_t_1a91e830925c48040d4c4dbb7d971c3bfe" prot="public" virt="non-virtual"><scope>BST</scope><name>printTree</name></member>
+      <member refid="class_b_s_t_1a76247d69325065d2485349148d7940e7" prot="private" virt="non-virtual"><scope>BST</scope><name>printTree</name></member>
+      <member refid="class_b_s_t_1a6f01a0b44daf82a42022b6eb4c0df7a2" prot="public" virt="non-virtual"><scope>BST</scope><name>remove</name></member>
+      <member refid="class_b_s_t_1afe360f55921ac51ac78ddde6556fe946" prot="private" virt="non-virtual"><scope>BST</scope><name>remove</name></member>
+      <member refid="class_b_s_t_1a48d08a19c48c0c260a7d5db37149ad0f" prot="private" virt="non-virtual"><scope>BST</scope><name>root</name></member>
+      <member refid="class_b_s_t_1abf3125f968641c8726101c5dd18f36be" prot="public" virt="non-virtual"><scope>BST</scope><name>~BST</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

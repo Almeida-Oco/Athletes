@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_b_s_t_itr_post" kind="class" language="C++" prot="public">
+    <compoundname>BSTItrPost</compoundname>
+    <includes refid="_b_s_t_8h" local="no">BST.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class Comparable</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_b_s_t_itr_post_1add32204909b8a6c3635b926832192ced" prot="private" static="no" mutable="no">
+        <type>stack&lt; <ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; * &gt;</type>
+        <definition>stack&lt;BinaryNode&lt;Comparable&gt; *&gt; BSTItrPost&lt; Comparable &gt;::itrStack</definition>
+        <argsstring></argsstring>
+        <name>itrStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="337" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_s_t_itr_post_1a5a9af907c7b135acdf3b5ed9affbb9a7" prot="private" static="no" mutable="no">
+        <type>stack&lt; bool &gt;</type>
+        <definition>stack&lt;bool&gt; BSTItrPost&lt; Comparable &gt;::visitStack</definition>
+        <argsstring></argsstring>
+        <name>visitStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="338" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b_s_t_itr_post_1acf7e537dea01978f40c40909c55c56c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BSTItrPost&lt; Comparable &gt;::BSTItrPost</definition>
+        <argsstring>(const BST&lt; Comparable &gt; &amp;bt)</argsstring>
+        <name>BSTItrPost</name>
+        <param>
+          <type>const <ref refid="class_b_s_t" kindref="compound">BST</ref>&lt; Comparable &gt; &amp;</type>
+          <declname>bt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="330" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="344" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_itr_post_1a376098e5a82cd02118dd4dcdec49bb26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BSTItrPost&lt; Comparable &gt;::advance</definition>
+        <argsstring>()</argsstring>
+        <name>advance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="332" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="351" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_itr_post_1a72446e4d0df0bcafc14294a78faeb56e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Comparable &amp;</type>
+        <definition>Comparable&amp; BSTItrPost&lt; Comparable &gt;::retrieve</definition>
+        <argsstring>()</argsstring>
+        <name>retrieve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="333" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="333" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_itr_post_1a2f330e73bb817e8bd1c797805e66ddb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BSTItrPost&lt; Comparable &gt;::isAtEnd</definition>
+        <argsstring>()</argsstring>
+        <name>isAtEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="334" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="334" bodyend="334"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_b_s_t_itr_post_1a56a13ae3a0358eeb06a83d4de745344a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BSTItrPost&lt; Comparable &gt;::slideDown</definition>
+        <argsstring>(BinaryNode&lt; Comparable &gt; *n)</argsstring>
+        <name>slideDown</name>
+        <param>
+          <type><ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="339" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="363" bodyend="378"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="29" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="29" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="class_b_s_t_itr_post_1a376098e5a82cd02118dd4dcdec49bb26" prot="public" virt="non-virtual"><scope>BSTItrPost</scope><name>advance</name></member>
+      <member refid="class_b_s_t_itr_post_1acf7e537dea01978f40c40909c55c56c2" prot="public" virt="non-virtual"><scope>BSTItrPost</scope><name>BSTItrPost</name></member>
+      <member refid="class_b_s_t_itr_post_1a2f330e73bb817e8bd1c797805e66ddb7" prot="public" virt="non-virtual"><scope>BSTItrPost</scope><name>isAtEnd</name></member>
+      <member refid="class_b_s_t_itr_post_1add32204909b8a6c3635b926832192ced" prot="private" virt="non-virtual"><scope>BSTItrPost</scope><name>itrStack</name></member>
+      <member refid="class_b_s_t_itr_post_1a72446e4d0df0bcafc14294a78faeb56e" prot="public" virt="non-virtual"><scope>BSTItrPost</scope><name>retrieve</name></member>
+      <member refid="class_b_s_t_itr_post_1a56a13ae3a0358eeb06a83d4de745344a" prot="private" virt="non-virtual"><scope>BSTItrPost</scope><name>slideDown</name></member>
+      <member refid="class_b_s_t_itr_post_1a5a9af907c7b135acdf3b5ed9affbb9a7" prot="private" virt="non-virtual"><scope>BSTItrPost</scope><name>visitStack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

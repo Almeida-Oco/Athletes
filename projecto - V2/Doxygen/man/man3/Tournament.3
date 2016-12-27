@@ -1,0 +1,326 @@
+.TH "Tournament" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Tournament \- Used to host information about a single \fBTournament\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Tournament\&.h>\fP
+.PP
+Inherits \fBEvent\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTournament\fP ()"
+.br
+.RI "Default Constructor\&. "
+.ti -1c
+.RI "virtual \fB~Tournament\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBTournament\fP (const \fBTournament\fP &tournament)"
+.br
+.RI "Copy Constructor\&. "
+.ti -1c
+.RI "\fBTournament\fP & \fBoperator=\fP (const \fBTournament\fP &tournament)"
+.br
+.RI "Copy Operator\&. "
+.ti -1c
+.RI "\fBTournament\fP (\fBEvent\fP *ev)"
+.br
+.RI "Pointer Copy Constructor\&. "
+.ti -1c
+.RI "\fBTournament\fP (\fBDate\fP day, bool major)"
+.br
+.RI "Partial Constructor\&. "
+.ti -1c
+.RI "virtual bool \fBIstraining\fP () const"
+.br
+.RI "Checks if this \fBEvent\fP is a \fBTraining\fP\&. "
+.ti -1c
+.RI "virtual void \fBshow\fP () const"
+.br
+.RI "Used to print the \fBTournament\fP on the screen\&. "
+.ti -1c
+.RI "virtual bool \fBisGame\fP () const"
+.br
+.RI "Checks if the \fBTraining\fP was a game\&. "
+.ti -1c
+.RI "virtual unsigned int \fBgetRank\fP () const"
+.br
+.RI "Gets the rank achieved by the \fBLevel\fP at a \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual bool \fBisMajor\fP () const"
+.br
+.RI "Checks if \fBTournament\fP was a major \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual vector< pair< pair< unsigned int, unsigned int >, string > > \fBgetResults\fP () const"
+.br
+.RI "Gets the results of the \fBLevel\fP in the \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual void \fBsetResults\fP (vector< pair< pair< unsigned int, unsigned int >, string >> results)"
+.br
+.RI "Changes the results obtained on the \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual void \fBsetRank\fP (unsigned int rank)"
+.br
+.RI "Changes the rank achieved on the \fBTournament\fP\&. "
+.ti -1c
+.RI "virtual void \fBwritetofile\fP (ostream &out) const"
+.br
+.RI "Writes the \fBTournament\fP to a file using operator<<\&. "
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &out, const \fBTournament\fP &tournament)"
+.br
+.RI "Used to write the \fBTournament\fP to an Output Stream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &in, \fBTournament\fP &tournament)"
+.br
+.RI "Used to read the \fBTournament\fP from an Input Stream\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Used to host information about a single \fBTournament\fP\&. 
+.PP
+Definition at line 25 of file Tournament\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Tournament::Tournament ()\fC [inline]\fP"
+
+.PP
+Default Constructor\&. 
+.PP
+Definition at line 34 of file Tournament\&.h\&.
+.SS "virtual Tournament::~Tournament ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Destructor\&. 
+.PP
+Definition at line 38 of file Tournament\&.h\&.
+.SS "Tournament::Tournament (const \fBTournament\fP & tournament)"
+
+.PP
+Copy Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItournament\fP \fBTournament\fP object to be copied 
+.RE
+.PP
+
+.SS "Tournament::Tournament (\fBEvent\fP * ev)"
+
+.PP
+Pointer Copy Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIev\fP Pointer to \fBTraining\fP object to be copied 
+.RE
+.PP
+
+.SS "Tournament::Tournament (\fBDate\fP day, bool major)\fC [inline]\fP"
+
+.PP
+Partial Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIday\fP \fBDate\fP of the \fBEvent\fP 
+.br
+\fImajor\fP Whether it was a Major \fBTournament\fP or not 
+.RE
+.PP
+
+.PP
+Definition at line 59 of file Tournament\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual unsigned int Tournament::getRank () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Gets the rank achieved by the \fBLevel\fP at a \fBTournament\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+rank (member variable) 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 78 of file Tournament\&.h\&.
+.SS "virtual vector<pair<pair<unsigned int, unsigned int>, string > > Tournament::getResults () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Gets the results of the \fBLevel\fP in the \fBTournament\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+results (member variable) 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 88 of file Tournament\&.h\&.
+.SS "virtual bool Tournament::isGame () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Checks if the \fBTraining\fP was a game\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+False since all objects of this class have no game parameter 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 73 of file Tournament\&.h\&.
+.SS "virtual bool Tournament::isMajor () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Checks if \fBTournament\fP was a major \fBTournament\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+major (member variable) 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 83 of file Tournament\&.h\&.
+.SS "virtual bool Tournament::Istraining () const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Checks if this \fBEvent\fP is a \fBTraining\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+False since all objects of this class are Tournaments 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 64 of file Tournament\&.h\&.
+.SS "\fBTournament\fP& Tournament::operator= (const \fBTournament\fP & tournament)"
+
+.PP
+Copy Operator\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItournament\fP \fBTournament\fP object to be copied 
+.RE
+.PP
+
+.SS "virtual void Tournament::setRank (unsigned int rank)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Changes the rank achieved on the \fBTournament\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrank\fP Value to be changed into 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 98 of file Tournament\&.h\&.
+.SS "virtual void Tournament::setResults (vector< pair< pair< unsigned int, unsigned int >, string >> results)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Changes the results obtained on the \fBTournament\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresults\fP Value to be changed into 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 93 of file Tournament\&.h\&.
+.SS "virtual void Tournament::show () const\fC [virtual]\fP"
+
+.PP
+Used to print the \fBTournament\fP on the screen\&. 
+.PP
+Implements \fBEvent\fP\&.
+.SS "virtual void Tournament::writetofile (ostream & out) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Writes the \fBTournament\fP to a file using operator<<\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP File to write to 
+.RE
+.PP
+
+.PP
+Implements \fBEvent\fP\&.
+.PP
+Definition at line 117 of file Tournament\&.h\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "ostream& operator<< (ostream & out, const \fBTournament\fP & tournament)\fC [friend]\fP"
+
+.PP
+Used to write the \fBTournament\fP to an Output Stream\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP Output Stream to write the \fBTournament\fP to 
+.br
+\fItournament\fP \fBTournament\fP to be written on the Output Stream 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+out (parameter) 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & in, \fBTournament\fP & tournament)\fC [friend]\fP"
+
+.PP
+Used to read the \fBTournament\fP from an Input Stream\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin\fP Input Stream from which to read the \fBTournament\fP 
+.br
+\fItournament\fP \fBTournament\fP to be read from the Input Stream 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+in (parameter) 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

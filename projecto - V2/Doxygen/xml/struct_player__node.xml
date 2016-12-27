@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="struct_player__node" kind="struct" language="C++" prot="public">
+    <compoundname>Player_node</compoundname>
+    <includes refid="_player_8h" local="no">Player.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_player__node_1a92957e7c45b23237ef919c046436c016" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+        <definition>Player* Player_node::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h" line="205" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="49">
+        <label>Player_node</label>
+        <link refid="struct_player__node"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Player</label>
+        <link refid="class_player"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h" line="204" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Player.h" bodystart="204" bodyend="206"/>
+    <listofallmembers>
+      <member refid="struct_player__node_1a92957e7c45b23237ef919c046436c016" prot="public" virt="non-virtual"><scope>Player_node</scope><name>player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

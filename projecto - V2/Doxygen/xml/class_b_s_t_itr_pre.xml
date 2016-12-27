@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_b_s_t_itr_pre" kind="class" language="C++" prot="public">
+    <compoundname>BSTItrPre</compoundname>
+    <includes refid="_b_s_t_8h" local="no">BST.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class Comparable</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_b_s_t_itr_pre_1a73e938d809acba06490472e7fc1bd6d3" prot="private" static="no" mutable="no">
+        <type>stack&lt; <ref refid="class_binary_node" kindref="compound">BinaryNode</ref>&lt; Comparable &gt; * &gt;</type>
+        <definition>stack&lt;BinaryNode&lt;Comparable&gt; *&gt; BSTItrPre&lt; Comparable &gt;::itrStack</definition>
+        <argsstring></argsstring>
+        <name>itrStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="393" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b_s_t_itr_pre_1a11b1cd4e783f153b9c1b64ce2ec8077e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BSTItrPre&lt; Comparable &gt;::BSTItrPre</definition>
+        <argsstring>(const BST&lt; Comparable &gt; &amp;bt)</argsstring>
+        <name>BSTItrPre</name>
+        <param>
+          <type>const <ref refid="class_b_s_t" kindref="compound">BST</ref>&lt; Comparable &gt; &amp;</type>
+          <declname>bt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="386" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="398" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_itr_pre_1a7a743d66a842018fd833fb2b0737254d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BSTItrPre&lt; Comparable &gt;::advance</definition>
+        <argsstring>()</argsstring>
+        <name>advance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="388" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="405" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_itr_pre_1af40033e97f63bf025c2e33a9fdce4c43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Comparable &amp;</type>
+        <definition>Comparable&amp; BSTItrPre&lt; Comparable &gt;::retrieve</definition>
+        <argsstring>()</argsstring>
+        <name>retrieve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="389" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="389" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_s_t_itr_pre_1ae282a7b9ffa9d250bb0f6a6d79f6e8d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BSTItrPre&lt; Comparable &gt;::isAtEnd</definition>
+        <argsstring>()</argsstring>
+        <name>isAtEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="390" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="390" bodyend="390"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" line="26" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/BST.h" bodystart="26" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="class_b_s_t_itr_pre_1a7a743d66a842018fd833fb2b0737254d" prot="public" virt="non-virtual"><scope>BSTItrPre</scope><name>advance</name></member>
+      <member refid="class_b_s_t_itr_pre_1a11b1cd4e783f153b9c1b64ce2ec8077e" prot="public" virt="non-virtual"><scope>BSTItrPre</scope><name>BSTItrPre</name></member>
+      <member refid="class_b_s_t_itr_pre_1ae282a7b9ffa9d250bb0f6a6d79f6e8d0" prot="public" virt="non-virtual"><scope>BSTItrPre</scope><name>isAtEnd</name></member>
+      <member refid="class_b_s_t_itr_pre_1a73e938d809acba06490472e7fc1bd6d3" prot="private" virt="non-virtual"><scope>BSTItrPre</scope><name>itrStack</name></member>
+      <member refid="class_b_s_t_itr_pre_1af40033e97f63bf025c2e33a9fdce4c43" prot="public" virt="non-virtual"><scope>BSTItrPre</scope><name>retrieve</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

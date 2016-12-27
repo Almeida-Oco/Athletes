@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_duplicate_name" kind="class" language="C++" prot="public">
+    <compoundname>DuplicateName</compoundname>
+    <includes refid="exceptions_8h" local="no">exceptions.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_duplicate_name_1a7fedfcedfdef6e90f180c608255c19bb" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string DuplicateName::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="75" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_duplicate_name_1a09b45905e407bc63fa159cbbe27b7c27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DuplicateName::DuplicateName</definition>
+        <argsstring>(const string &amp;n)</argsstring>
+        <name>DuplicateName</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Full-Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duplicate n </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="81" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_duplicate_name_1a65a60c94f9cf8d06e8fbf81559741d65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DuplicateName::show</definition>
+        <argsstring>() const</argsstring>
+        <name>show</name>
+        <briefdescription>
+<para>Prints the name on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="85" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an Invalid Players. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="74" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="74" bodyend="86"/>
+    <listofallmembers>
+      <member refid="class_duplicate_name_1a09b45905e407bc63fa159cbbe27b7c27" prot="public" virt="non-virtual"><scope>DuplicateName</scope><name>DuplicateName</name></member>
+      <member refid="class_duplicate_name_1a7fedfcedfdef6e90f180c608255c19bb" prot="private" virt="non-virtual"><scope>DuplicateName</scope><name>name</name></member>
+      <member refid="class_duplicate_name_1a65a60c94f9cf8d06e8fbf81559741d65" prot="public" virt="non-virtual"><scope>DuplicateName</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

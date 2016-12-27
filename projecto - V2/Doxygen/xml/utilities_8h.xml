@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="utilities_8h" kind="file" language="C++">
+    <compoundname>utilities.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_date_8h" local="yes">Date.h</includes>
+    <includedby refid="_club_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</includedby>
+    <includedby refid="menus_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</includedby>
+    <incdepgraph>
+      <node id="257">
+        <label>string</label>
+      </node>
+      <node id="258">
+        <label>vector</label>
+      </node>
+      <node id="255">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h</label>
+        <link refid="utilities_8h"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>iostream</label>
+      </node>
+      <node id="259">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="262">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</label>
+        <link refid="menus_8h"/>
+      </node>
+      <node id="260">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h</label>
+        <link refid="utilities_8h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="utilities_8h_1a611cc9b5f655508482f3d7a9751c182a" prot="public" static="no">
+        <name>CLEAR</name>
+        <initializer>&quot;clear&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" line="13" column="9" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="utilities_8h_1a043cf626f8f6304a4c42cd1d5475699d" prot="public" static="no">
+        <name>UTILITIES_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" line="17" column="9" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="utilities_8h_1abb517d31a98f5557e6974c7397f47709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string removespaces</definition>
+        <argsstring>(string s)</argsstring>
+        <name>removespaces</name>
+        <param>
+          <type>string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Eliminates extra spaces in string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to have spaces removed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String without extra spaces</para></simplesect>
+It removes all spaces in the beggining and in the end, if there are spaces between the characteres</para><para>they are transformed into a single space </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utilities_8h_1a85a86313d4e1f84be67fabd66faccaf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int actualage</definition>
+        <argsstring>(Date birth)</argsstring>
+        <name>actualage</name>
+        <param>
+          <type><ref refid="class_date" kindref="compound">Date</ref></type>
+          <declname>birth</declname>
+        </param>
+        <briefdescription>
+<para>Calculates how old is a person born on a given <ref refid="class_date" kindref="compound">Date</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>birth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_date" kindref="compound">Date</ref> to use in calculations </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>How old that person is </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utilities_8h_1a9636a7dde2fb99c3de33f47f703e465f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Isleap</definition>
+        <argsstring>(int year)</argsstring>
+        <name>Isleap</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+<para>Calculates whether or not the given year was/is a Leap Year. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Year to use in calculations </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if year is a Leap Year </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utilities_8h_1a42a8022c459256f365a6c675a0b842dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isInteger</definition>
+        <argsstring>(const string &amp;s)</argsstring>
+        <name>isInteger</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Checks if given string is an Integer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to be checked </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if string only contains numbers</para></simplesect>
+From <ulink url="http://stackoverflow.com/questions/2844817/how-do-i-check-if-a-c-string-is-an-int">http://stackoverflow.com/questions/2844817/how-do-i-check-if-a-c-string-is-an-int</ulink> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="utilities_8h_1a8d8297c071a62c5c76f4f9288a1a7fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int convint</definition>
+        <argsstring>(string s)</argsstring>
+        <name>convint</name>
+        <param>
+          <type>string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Converts an integer into a String. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to be converted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Integer that was in string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Francisco Andrade </para></simplesect>
+<simplesect kind="author"><para>João Almeida</para></simplesect>
+Contains some utility functions useful all around the Project </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="comment">//USED<sp/>WITH<sp/>SYSTEM(CLEAR)<sp/>FOR<sp/>MULTI-OS<sp/>CLEAR<sp/>CONSOLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLEAR<sp/>&quot;cls&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/>//In<sp/>any<sp/>other<sp/>OS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="utilities_8h_1a611cc9b5f655508482f3d7a9751c182a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLEAR<sp/>&quot;clear&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UTILITIES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="utilities_8h_1a043cf626f8f6304a4c42cd1d5475699d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UTILITIES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_date_8h" kindref="compound">Date.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="utilities_8h_1abb517d31a98f5557e6974c7397f47709" kindref="member">removespaces</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="utilities_8h_1a85a86313d4e1f84be67fabd66faccaf6" kindref="member">actualage</ref>(<ref refid="class_date" kindref="compound">Date</ref><sp/>birth);</highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="utilities_8h_1a9636a7dde2fb99c3de33f47f703e465f" kindref="member">Isleap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year);</highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="utilities_8h_1a42a8022c459256f365a6c675a0b842dc" kindref="member">isInteger</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="utilities_8h_1a8d8297c071a62c5c76f4f9288a1a7fbd" kindref="member">convint</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s);</highlight><highlight class="comment">//converts<sp/>an<sp/>integer<sp/>to<sp/>a<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/utilities.h"/>
+  </compounddef>
+</doxygen>

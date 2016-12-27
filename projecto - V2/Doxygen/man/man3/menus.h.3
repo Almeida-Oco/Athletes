@@ -1,0 +1,532 @@
+.TH "/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Date\&.h'\fP
+.br
+\fC#include 'Event\&.h'\fP
+.br
+\fC#include 'Club\&.h'\fP
+.br
+\fC#include 'exceptions\&.h'\fP
+.br
+\fC#include 'utilities\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <iomanip>\fP
+.br
+\fC#include <climits>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBreadplayers\fP ()"
+.br
+.RI "Asks the user for the players text file\&. "
+.ti -1c
+.RI "int \fBreadtrainings\fP ()"
+.br
+.RI "Asks the user for the trainings text file\&. "
+.ti -1c
+.RI "int \fBreadtournaments\fP ()"
+.br
+.RI "Asks the user for the tournaments text file\&. "
+.ti -1c
+.RI "\fBDate\fP \fBaskfordate\fP ()"
+.br
+.RI "Asks the user to input a \fBDate\fP\&. "
+.ti -1c
+.RI "void \fBprintlevel\fP (unsigned int level)"
+.br
+.RI "Prints the desired level in a user friendly way\&. "
+.ti -1c
+.RI "void \fBinitialmenu\fP ()"
+.br
+.RI "Displays the initial menu\&. "
+.ti -1c
+.RI "void \fBprintBirthdays\fP (const vector< \fBPlayer\fP *> &p)"
+.br
+.RI "Prints in an user-friendly way the Name of \fBPlayer\fP and how many days to birthday\&. "
+.ti -1c
+.RI "void \fBbirthdaycards\fP ()"
+.br
+.RI "Displays the menu of birthday cards\&. "
+.ti -1c
+.RI "void \fBnotifyECG\fP ()"
+.br
+.RI "Displays menu that allows user to notify Players with delayed ECG\&. "
+.ti -1c
+.RI "void \fBlevelmenu\fP (unsigned int level)"
+.br
+.RI "Displays main menu for a given \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBmonthlyprizes\fP (unsigned int level)"
+.br
+.RI "Displays the monthly prizes for a given \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBchangecoachmenu\fP (unsigned level)"
+.br
+.RI "Displays the menu to change the coach of a given \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBplayersmenu\fP (unsigned int level)"
+.br
+.RI "Displays the menu of the Players of the \fBLevel\fP in a user-friendly way\&. "
+.ti -1c
+.RI "void \fBindividualplayermenu\fP (unsigned int level, unsigned int id)"
+.br
+.RI "Displays , in a user-friendly way, a menu with more detailed information about the player\&. "
+.ti -1c
+.RI "void \fBactualizeECG\fP (unsigned int level, unsigned int id)"
+.br
+.RI "Menu that allows to update the ECG of a given \fBPlayer\fP\&. "
+.ti -1c
+.RI "void \fBactualizeheight\fP (unsigned int level, unsigned int id)"
+.br
+.RI "Menu that allows to update the height of a given \fBPlayer\fP\&. "
+.ti -1c
+.RI "void \fBremoveplayer\fP (unsigned int level, unsigned int id)"
+.br
+.RI "Menu to remove a given \fBPlayer\fP\&. "
+.ti -1c
+.RI "void \fBregnewplayermenu\fP ()"
+.br
+.RI "Menu that allows the user to register a new \fBPlayer\fP on the \fBClub\fP\&. "
+.ti -1c
+.RI "void \fBtrainingsmenu\fP (unsigned int level)"
+.br
+.RI "Menu that shows, in a user-friendly way, information about the Trainings of the \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBtournamentsmenu\fP (unsigned int level)"
+.br
+.RI "Menu that shows, in a user-friendly way, information about the Tournaments of the \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBindividualtrainingmenu\fP (unsigned int level, unsigned int id)"
+.br
+.RI "Menu that shows, in a user-friendly way, information about a specific \fBTraining\fP of the \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBeditplayerstraining\fP (unsigned int level, \fBEvent\fP *ev)"
+.br
+.RI "Menu that asks user to select Players that participated in a given \fBTraining\fP\&. "
+.ti -1c
+.RI "void \fBindividualtournamentmenu\fP (unsigned int level, unsigned int id)"
+.br
+.RI "Menu that shows, in a user-friendly way, information about a specific \fBTournament\fP of the \fBLevel\fP\&. "
+.ti -1c
+.RI "void \fBeditranktournament\fP (unsigned int level, \fBEvent\fP *tournament)"
+.br
+.RI "Changes the rank the \fBLevel\fP achieved in the \fBTournament\fP\&. "
+.ti -1c
+.RI "void \fBeditplayerstournament\fP (unsigned int level, \fBEvent\fP *tournament)"
+.br
+.RI "Menu that asks user to select Players that participated in a given \fBTournament\fP\&. "
+.ti -1c
+.RI "void \fBeditresultstournament\fP (unsigned int level, \fBEvent\fP *tournament)"
+.br
+.RI "Changes the results of the \fBLevel\fP in the \fBTournament\fP\&. "
+.ti -1c
+.RI "void \fBcalendarmenu\fP (unsigned int level)"
+.br
+.RI "Displays the menu of next events to take place\&. "
+.ti -1c
+.RI "void \fBindividualeventmenu\fP (unsigned int level, unsigned int id)"
+.br
+.RI "Displays a specific \fBEvent\fP to take place\&. "
+.ti -1c
+.RI "void \fBremoveevent\fP (unsigned int level, unsigned int id)"
+.br
+.RI "Interface to remove a given \fBEvent\fP\&. "
+.ti -1c
+.RI "void \fBscheduleeventmenu\fP (unsigned int level)"
+.br
+.RI "Displays the menu that allows the user to schedule an \fBEvent\fP\&. "
+.ti -1c
+.RI "void \fBaskeventdate\fP (unsigned int level, unsigned int event)"
+.br
+.RI "Asks the user for the \fBDate\fP of an \fBEvent\fP\&. "
+.ti -1c
+.RI "void \fBmakecall\fP (unsigned int level, \fBEvent\fP *tournament)"
+.br
+.RI "Asks the user the number of Players to be called for a \fBTournament\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Francisco Andrade 
+.PP
+João Almeida
+.RE
+.PP
+Contains the declaration of the class \fBClub\fP and struct \fBhashFuncs\fP 
+.PP
+Definition in file \fBmenus\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "void actualizeECG (unsigned int level, unsigned int id)"
+
+.PP
+Menu that allows to update the ECG of a given \fBPlayer\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP of \fBPlayer\fP, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIid\fP Position of the \fBPlayer\fP in the players vector 
+.RE
+.PP
+
+.SS "void actualizeheight (unsigned int level, unsigned int id)"
+
+.PP
+Menu that allows to update the height of a given \fBPlayer\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP of \fBPlayer\fP, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIid\fP Position of the \fBPlayer\fP in the players vector 
+.RE
+.PP
+
+.SS "void askeventdate (unsigned int level, unsigned int event)"
+
+.PP
+Asks the user for the \fBDate\fP of an \fBEvent\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be changed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIevent\fP Position of the \fBEvent\fP in the events vector 
+.RE
+.PP
+
+.SS "\fBDate\fP askfordate ()"
+
+.PP
+Asks the user to input a \fBDate\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBDate\fP inputted by user 
+.RE
+.PP
+
+.SS "void birthdaycards ()"
+
+.PP
+Displays the menu of birthday cards\&. It asks how many days in advance does the user want to know the birthdays 
+.SS "void calendarmenu (unsigned int level)"
+
+.PP
+Displays the menu of next events to take place\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be shown, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.RE
+.PP
+
+.SS "void changecoachmenu (unsigned level)"
+
+.PP
+Displays the menu to change the coach of a given \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to change coach, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.RE
+.PP
+
+.SS "void editplayerstournament (unsigned int level, \fBEvent\fP * tournament)"
+
+.PP
+Menu that asks user to select Players that participated in a given \fBTournament\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be changed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fItournament\fP \fBEvent\fP to change the participating Players 
+.RE
+.PP
+
+.SS "void editplayerstraining (unsigned int level, \fBEvent\fP * ev)"
+
+.PP
+Menu that asks user to select Players that participated in a given \fBTraining\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be changed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIev\fP \fBEvent\fP to change the participating Players 
+.RE
+.PP
+
+.SS "void editranktournament (unsigned int level, \fBEvent\fP * tournament)"
+
+.PP
+Changes the rank the \fBLevel\fP achieved in the \fBTournament\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be changed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fItournament\fP \fBEvent\fP to change the rank 
+.RE
+.PP
+
+.SS "void editresultstournament (unsigned int level, \fBEvent\fP * tournament)"
+
+.PP
+Changes the results of the \fBLevel\fP in the \fBTournament\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be changed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fItournament\fP \fBEvent\fP to change the results 
+.RE
+.PP
+
+.SS "void individualeventmenu (unsigned int level, unsigned int id)"
+
+.PP
+Displays a specific \fBEvent\fP to take place\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be shown, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIid\fP Position of the \fBEvent\fP in the events vector 
+.RE
+.PP
+
+.SS "void individualplayermenu (unsigned int level, unsigned int id)"
+
+.PP
+Displays , in a user-friendly way, a menu with more detailed information about the player\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP of \fBPlayer\fP, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIid\fP Position of the \fBPlayer\fP in the players vector 
+.RE
+.PP
+
+.SS "void individualtournamentmenu (unsigned int level, unsigned int id)"
+
+.PP
+Menu that shows, in a user-friendly way, information about a specific \fBTournament\fP of the \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be displayed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIid\fP Position of the \fBTournament\fP in the events vector 
+.RE
+.PP
+
+.SS "void individualtrainingmenu (unsigned int level, unsigned int id)"
+
+.PP
+Menu that shows, in a user-friendly way, information about a specific \fBTraining\fP of the \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be displayed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIid\fP Position of the \fBTraining\fP in the events vector 
+.RE
+.PP
+
+.SS "void initialmenu ()"
+
+.PP
+Displays the initial menu\&. 
+.SS "void levelmenu (unsigned int level)"
+
+.PP
+Displays main menu for a given \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to print main manu, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.RE
+.PP
+
+.SS "void makecall (unsigned int level, \fBEvent\fP * tournament)"
+
+.PP
+Asks the user the number of Players to be called for a \fBTournament\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be called, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fItournament\fP \fBTournament\fP to which the Players are being called 
+.RE
+.PP
+
+.SS "void monthlyprizes (unsigned int level)"
+
+.PP
+Displays the monthly prizes for a given \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to print monthly prizes, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.RE
+.PP
+
+.SS "void notifyECG ()"
+
+.PP
+Displays menu that allows user to notify Players with delayed ECG\&. 
+.SS "void playersmenu (unsigned int level)"
+
+.PP
+Displays the menu of the Players of the \fBLevel\fP in a user-friendly way\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP of Players, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP
+.RE
+.PP
+The Players shown are alphabetically ordered 
+.SS "void printBirthdays (const vector< \fBPlayer\fP *> & p)"
+
+.PP
+Prints in an user-friendly way the Name of \fBPlayer\fP and how many days to birthday\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp\fP Vector of Players to print the birthdays
+.RE
+.PP
+The players are printed in order, from the soonest birthday to come to the latest 
+.SS "void printlevel (unsigned int level)"
+
+.PP
+Prints the desired level in a user friendly way\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to print, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.RE
+.PP
+
+.SS "int readplayers ()"
+
+.PP
+Asks the user for the players text file\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+1 if something went wrong, 0 if all went well 
+.RE
+.PP
+
+.SS "int readtournaments ()"
+
+.PP
+Asks the user for the tournaments text file\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+1 if something went wrong, 0 if all went well 
+.RE
+.PP
+
+.SS "int readtrainings ()"
+
+.PP
+Asks the user for the trainings text file\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+1 if something went wrong, 0 if all went well 
+.RE
+.PP
+
+.SS "void regnewplayermenu ()"
+
+.PP
+Menu that allows the user to register a new \fBPlayer\fP on the \fBClub\fP\&. 
+.SS "void removeevent (unsigned int level, unsigned int id)"
+
+.PP
+Interface to remove a given \fBEvent\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be changed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIid\fP Position of the \fBEvent\fP in the events vector 
+.RE
+.PP
+
+.SS "void removeplayer (unsigned int level, unsigned int id)"
+
+.PP
+Menu to remove a given \fBPlayer\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP of \fBPlayer\fP, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.br
+\fIid\fP Position of the \fBPlayer\fP in the players vector 
+.RE
+.PP
+
+.SS "void scheduleeventmenu (unsigned int level)"
+
+.PP
+Displays the menu that allows the user to schedule an \fBEvent\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be changed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.RE
+.PP
+
+.SS "void tournamentsmenu (unsigned int level)"
+
+.PP
+Menu that shows, in a user-friendly way, information about the Tournaments of the \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be displayed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.RE
+.PP
+
+.SS "void trainingsmenu (unsigned int level)"
+
+.PP
+Menu that shows, in a user-friendly way, information about the Trainings of the \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlevel\fP \fBLevel\fP to be displayed, 0 for \fBMinis\fP, 1 \fBJuniors\fP , 2 \fBJuniors\fP , 3 \fBSeniors\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

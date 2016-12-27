@@ -1,0 +1,196 @@
+.TH "Seniors" 3 "Tue Dec 27 2016" "Version 2" "Projeto AEDA" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Seniors \- Holds all the information about the \fBLevel\fP \fBSeniors\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Seniors\&.h>\fP
+.PP
+Inherits \fBLevel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSeniors\fP ()"
+.br
+.RI "Default Constructor\&. "
+.ti -1c
+.RI "\fB~Seniors\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBSeniors\fP (const \fBSeniors\fP &seniors)"
+.br
+.RI "Copy Constructor\&. "
+.ti -1c
+.RI "\fBSeniors\fP & \fBoperator=\fP (const \fBSeniors\fP &seniors)"
+.br
+.RI "Copy Operator\&. "
+.ti -1c
+.RI "virtual unsigned int \fBgetMaxAge\fP ()"
+.br
+.RI "Gets the member variable age_max\&. "
+.ti -1c
+.RI "virtual unsigned int \fBgetMinAge\fP ()"
+.br
+.RI "Gets the member variable age_min\&. "
+.ti -1c
+.RI "virtual bool \fBaddPlayer\fP (\fBPlayer\fP *player)"
+.br
+.RI "Adds a new \fBPlayer\fP to this \fBLevel\fP\&. "
+.ti -1c
+.RI "virtual void \fBshowplayers\fP () const"
+.br
+.RI "Outputs the Players of this \fBLevel\fP on the screen\&. "
+.ti -1c
+.RI "virtual void \fBshowtrainings\fP () const"
+.br
+.RI "Outputs the Trainings of this \fBLevel\fP on the screen\&. "
+.ti -1c
+.RI "virtual void \fBshowtournaments\fP () const"
+.br
+.RI "Outputs the Tournaments of this \fBLevel\fP on the screen\&. "
+.ti -1c
+.RI "virtual vector< string > \fBgetCall\fP (unsigned int size)"
+.br
+.RI "Gets names of players to be called to a \fBTournament\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Holds all the information about the \fBLevel\fP \fBSeniors\fP\&. 
+.PP
+Definition at line 23 of file Seniors\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Seniors::Seniors ()\fC [inline]\fP"
+
+.PP
+Default Constructor\&. 
+.PP
+Definition at line 29 of file Seniors\&.h\&.
+.SS "Seniors::~Seniors ()\fC [inline]\fP"
+
+.PP
+Destructor\&. 
+.PP
+Definition at line 33 of file Seniors\&.h\&.
+.SS "Seniors::Seniors (const \fBSeniors\fP & seniors)\fC [inline]\fP"
+
+.PP
+Copy Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIseniors\fP Object of class to be copied 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file Seniors\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool Seniors::addPlayer (\fBPlayer\fP * player)\fC [virtual]\fP"
+
+.PP
+Adds a new \fBPlayer\fP to this \fBLevel\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplayer\fP Pointer to \fBPlayer\fP to be added 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if it was added successfuly, false if not 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBLevel\fP\&.
+.SS "virtual vector<string> Seniors::getCall (unsigned int size)\fC [virtual]\fP"
+
+.PP
+Gets names of players to be called to a \fBTournament\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsize\fP How many players to be called 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Vector with names of Players to be called 
+.RE
+.PP
+
+.PP
+Implements \fBLevel\fP\&.
+.SS "virtual unsigned int Seniors::getMaxAge ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Gets the member variable age_max\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+age_max (member variable) 
+.RE
+.PP
+
+.PP
+Implements \fBLevel\fP\&.
+.PP
+Definition at line 49 of file Seniors\&.h\&.
+.SS "virtual unsigned int Seniors::getMinAge ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Gets the member variable age_min\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+age_min (member variable) 
+.RE
+.PP
+
+.PP
+Implements \fBLevel\fP\&.
+.PP
+Definition at line 54 of file Seniors\&.h\&.
+.SS "\fBSeniors\fP& Seniors::operator= (const \fBSeniors\fP & seniors)\fC [inline]\fP"
+
+.PP
+Copy Operator\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIseniors\fP Object of class to be copied
+.RE
+.PP
+Calls the base class \fBLevel::operator=\fP 
+.PP
+Definition at line 44 of file Seniors\&.h\&.
+.SS "virtual void Seniors::showplayers () const\fC [virtual]\fP"
+
+.PP
+Outputs the Players of this \fBLevel\fP on the screen\&. 
+.PP
+Reimplemented from \fBLevel\fP\&.
+.SS "virtual void Seniors::showtournaments () const\fC [virtual]\fP"
+
+.PP
+Outputs the Tournaments of this \fBLevel\fP on the screen\&. 
+.PP
+Reimplemented from \fBLevel\fP\&.
+.SS "virtual void Seniors::showtrainings () const\fC [virtual]\fP"
+
+.PP
+Outputs the Trainings of this \fBLevel\fP on the screen\&. 
+.PP
+Reimplemented from \fBLevel\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projeto AEDA from the source code\&.

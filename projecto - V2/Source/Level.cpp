@@ -171,7 +171,7 @@ void Level::showevents() const {
 			events[i]->getDay().show();
 			cout << "|";
 			if (events[i]->Istraining()) {
-				if (events[i]->getGame()) {
+				if (events[i]->isGame()) {
 					cout << " Training Game" << endl;
 				}
 				else {
@@ -179,7 +179,7 @@ void Level::showevents() const {
 				}
 			}
 			else {
-				if (events[i]->getMajor()) {
+				if (events[i]->isMajor()) {
 					cout << "Major Tournament" << endl;
 				}
 				else {

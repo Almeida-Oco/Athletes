@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="_club_8h" kind="file" language="C++">
+    <compoundname>Club.h</compoundname>
+    <includes refid="utilities_8h" local="yes">utilities.h</includes>
+    <includes refid="exceptions_8h" local="yes">exceptions.h</includes>
+    <includes refid="_player_8h" local="yes">Player.h</includes>
+    <includes refid="_date_8h" local="yes">Date.h</includes>
+    <includes refid="_minis_8h" local="yes">Minis.h</includes>
+    <includes refid="_juveniles_8h" local="yes">Juveniles.h</includes>
+    <includes refid="_juniors_8h" local="yes">Juniors.h</includes>
+    <includes refid="_seniors_8h" local="yes">Seniors.h</includes>
+    <includes refid="_event_8h" local="yes">Event.h</includes>
+    <includes refid="_tournament_8h" local="yes">Tournament.h</includes>
+    <includes refid="_training_8h" local="yes">Training.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">list</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">tr1/unordered_set</includes>
+    <includedby refid="menus_8h" local="yes">/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</includedby>
+    <incdepgraph>
+      <node id="34">
+        <label>list</label>
+      </node>
+      <node id="23">
+        <label>Tournament.h</label>
+        <link refid="_tournament_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>iomanip</label>
+      </node>
+      <node id="28">
+        <label>queue</label>
+      </node>
+      <node id="35">
+        <label>stdlib.h</label>
+      </node>
+      <node id="18">
+        <label>exceptions.h</label>
+        <link refid="exceptions_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Training.h</label>
+        <link refid="_training_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="20">
+        <label>fstream</label>
+      </node>
+      <node id="24">
+        <label>Event.h</label>
+        <link refid="_event_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Minis.h</label>
+        <link refid="_minis_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stack</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+      <node id="13">
+        <label>utilities.h</label>
+        <link refid="utilities_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Level.h</label>
+        <link refid="_level_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Juniors.h</label>
+        <link refid="_juniors_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Seniors.h</label>
+        <link refid="_seniors_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Juveniles.h</label>
+        <link refid="_juveniles_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>BST.h</label>
+        <link refid="_b_s_t_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>tr1/unordered_set</label>
+      </node>
+      <node id="30">
+        <label>algorithm</label>
+      </node>
+      <node id="19">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="38">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/menus.h</label>
+        <link refid="menus_8h"/>
+      </node>
+      <node id="37">
+        <label>/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h</label>
+        <link refid="_club_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structhash_funcs" prot="public">hashFuncs</innerclass>
+    <innerclass refid="class_club" prot="public">Club</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Francisco Andrade </para></simplesect>
+<simplesect kind="author"><para>João Almeida</para></simplesect>
+Contains the declaration of the class <ref refid="class_club" kindref="compound">Club</ref> and struct <ref refid="structhash_funcs" kindref="compound">hashFuncs</ref> </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>CLUB_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLUB_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utilities_8h" kindref="compound">utilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exceptions_8h" kindref="compound">exceptions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_date_8h" kindref="compound">Date.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_minis_8h" kindref="compound">Minis.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_juveniles_8h" kindref="compound">Juveniles.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_juniors_8h" kindref="compound">Juniors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_seniors_8h" kindref="compound">Seniors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_event_8h" kindref="compound">Event.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tournament_8h" kindref="compound">Tournament.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_training_8h" kindref="compound">Training.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tr1/unordered_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_level" kindref="compound">Level</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structhash_funcs" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhash_funcs" kindref="compound">hashFuncs</ref>{</highlight></codeline>
+<codeline lineno="43" refid="structhash_funcs_1a521b1888977a80fcd935e8e03c09d916" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structhash_funcs_1a521b1888977a80fcd935e8e03c09d916" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>*p1)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>*p1<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>p1-&gt;getBirth().diffDays()<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p1-&gt;<ref refid="class_player_1a40d25243f37af60da51b8020f7518700" kindref="member">getBirth</ref>().<ref refid="class_date_1a93d53878c07ee506c78971b762a47265" kindref="member">diffDays</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56" refid="structhash_funcs_1a9e171ebf004435ea1d1ceb8a30f6a954" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structhash_funcs_1a9e171ebf004435ea1d1ceb8a30f6a954" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>*p1<sp/>,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>*p2)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/>(p1-&gt;<ref refid="class_player_1a40d25243f37af60da51b8020f7518700" kindref="member">getBirth</ref>().<ref refid="class_date_1a0f253815240e70f4c39cb93cc68bd3f4" kindref="member">getDay</ref>()<sp/>==<sp/>p2-&gt;<ref refid="class_player_1a40d25243f37af60da51b8020f7518700" kindref="member">getBirth</ref>().<ref refid="class_date_1a0f253815240e70f4c39cb93cc68bd3f4" kindref="member">getDay</ref>())<sp/>&amp;&amp;<sp/>(p1-&gt;<ref refid="class_player_1a40d25243f37af60da51b8020f7518700" kindref="member">getBirth</ref>().<ref refid="class_date_1a332f6e3a2f6a40d73742b6dab7be0f64" kindref="member">getMonth</ref>()<sp/>==<sp/>p2-&gt;<ref refid="class_player_1a40d25243f37af60da51b8020f7518700" kindref="member">getBirth</ref>().<ref refid="class_date_1a332f6e3a2f6a40d73742b6dab7be0f64" kindref="member">getMonth</ref>())<sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="class_club" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_club" kindref="compound">Club</ref>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_level" kindref="compound">Level</ref><sp/>*<sp/><sp/>minis;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_level" kindref="compound">Level</ref><sp/>*<sp/><sp/>juveniles;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_level" kindref="compound">Level</ref><sp/>*<sp/><sp/>juniors<sp/>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_level" kindref="compound">Level</ref><sp/>*<sp/><sp/>seniors;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>leaveprogram;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_club" kindref="compound">Club</ref><sp/>*<sp/>singleton_instance;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename_players;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename_trainings;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename_tournaments;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>priority_queue&lt;Player_queue&gt;<sp/>ECG_queue;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>tr1::unordered_multiset&lt;Player<sp/>*,hashFuncs<sp/>,<sp/>hashFuncs&gt;<sp/>future_birthdays<sp/>=<sp/>tr1::unordered_multiset&lt;Player<sp/>*,hashFuncs<sp/>,<sp/>hashFuncs&gt;(367);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_club" kindref="compound">Club</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>~Club();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Club<sp/>*<sp/>getinstance();</highlight></codeline>
+<codeline lineno="115" refid="class_club_1aca473ab431cc852ad0f99479aace788c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_club_1aca473ab431cc852ad0f99479aace788c" kindref="member">getname</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>name;};</highlight></codeline>
+<codeline lineno="120" refid="class_club_1a08eeadedcdbf4cfd5eaada3066b668dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_club_1a08eeadedcdbf4cfd5eaada3066b668dd" kindref="member">getleaveprogram</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>leaveprogram;};</highlight></codeline>
+<codeline lineno="124" refid="class_club_1a797110a5f4b779fec91a6fecbc0e3dda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_club_1a797110a5f4b779fec91a6fecbc0e3dda" kindref="member">setleaveprogram</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>leaveprogram){this-&gt;leaveprogram=leaveprogram;}</highlight></codeline>
+<codeline lineno="129" refid="class_club_1a8c96af96a3b46adf1d3d46694452b422" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_club_1a8c96af96a3b46adf1d3d46694452b422" kindref="member">getfilename_players</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;filename_players;}</highlight></codeline>
+<codeline lineno="134" refid="class_club_1a0807e91626c347847a36551c66e38985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_club_1a0807e91626c347847a36551c66e38985" kindref="member">getfilename_trainings</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;filename_trainings;}</highlight></codeline>
+<codeline lineno="139" refid="class_club_1a95dd9fae1bd73060b8a64176aef5b848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_club_1a95dd9fae1bd73060b8a64176aef5b848" kindref="member">getfilename_tournaments</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;filename_tournaments;}</highlight></codeline>
+<codeline lineno="143" refid="class_club_1a215b1c939a82ae2d442d05bc58457cd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_club_1a215b1c939a82ae2d442d05bc58457cd4" kindref="member">setfilename_players</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename_players){this-&gt;filename_players=filename_players;}</highlight></codeline>
+<codeline lineno="147" refid="class_club_1af1693f8321d273f68b3bcfebff5d4ac9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_club_1af1693f8321d273f68b3bcfebff5d4ac9" kindref="member">setfilename_trainings</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename_trainings){this-&gt;filename_trainings=filename_trainings;}</highlight></codeline>
+<codeline lineno="151" refid="class_club_1a5bd4d91fd403f73a9b74778568e3e639" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_club_1a5bd4d91fd403f73a9b74778568e3e639" kindref="member">setfilename_tournaments</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename_tournaments){this-&gt;filename_tournaments=filename_tournaments;}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a3e4bdbd9a6e356b7f330a0fb23351d2f" kindref="member">readplayers</ref>(istream<sp/>&amp;in);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1ace86b7cf28684a8a2017b4ed1fdb2880" kindref="member">readtrainings</ref>(istream<sp/>&amp;in);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menus_8h_1a296660ecf1cf92c9e925fa842693053f" kindref="member">readtournaments</ref>(istream<sp/>&amp;<sp/>in);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeplayers();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writetrainings();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writetournaments();</highlight></codeline>
+<codeline lineno="189" refid="class_club_1ad196e0999b3c18c1ed3e757ccf70b92d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Level<sp/>*&gt;<sp/><ref refid="class_club_1ad196e0999b3c18c1ed3e757ccf70b92d" kindref="member">getLevels</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vector&lt;Level<sp/>*&gt;{minis,juveniles,juniors,seniors};<sp/>};</highlight><highlight class="comment">//return<sp/>a<sp/>vector<sp/>with<sp/>minis,<sp/>juveniles,<sp/>juniors...</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>vector&lt;string&gt;<sp/>getPlayers()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment">//returns<sp/>a<sp/>vector<sp/>with<sp/>thes<sp/>name<sp/>of<sp/>all<sp/>the<sp/>players<sp/>in<sp/>the<sp/>club.<sp/>It<sp/>also<sp/>includes<sp/>players<sp/>that<sp/>participated<sp/>in<sp/>certain<sp/>events<sp/>and<sp/>were<sp/>later<sp/>removed</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeTree();</highlight><highlight class="comment">//constructs<sp/>the<sp/>binary<sp/>tree</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeQueue();</highlight><highlight class="comment">//constructs<sp/>the<sp/>priority<sp/>queue</highlight></codeline>
+<codeline lineno="209"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addPlayerQueue(<ref refid="class_player" kindref="compound">Player</ref><sp/>*<sp/>pl);</highlight><highlight class="comment">//adds<sp/>a<sp/>player<sp/>to<sp/>the<sp/>queue</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removePlayerQueue(<ref refid="class_player" kindref="compound">Player</ref><sp/>*<sp/>pl);</highlight><highlight class="comment">//adds<sp/>a<sp/>player<sp/>to<sp/>the<sp/>queue</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>addBirthday(<ref refid="class_player" kindref="compound">Player</ref><sp/>*p1);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>removeBirthday(<ref refid="class_player" kindref="compound">Player</ref><sp/>*p1);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Player<sp/>*&gt;<sp/>nextBirthdays(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>days)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>findOldPlayer(<ref refid="class_player" kindref="compound">Player</ref><sp/>*p1);</highlight></codeline>
+<codeline lineno="251" refid="class_club_1aad02197c0f3431dbe8c2e12033e24f63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_club_1aad02197c0f3431dbe8c2e12033e24f63" kindref="member">ECG_notify</ref>()<sp/>{<sp/>ECG_queue.pop();<sp/>};</highlight><highlight class="comment">//sends<sp/>a<sp/>notification<sp/>to<sp/>the<sp/>first<sp/>player<sp/>in<sp/>the<sp/>queue</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>showQueue();</highlight><highlight class="comment">//prints<sp/>the<sp/>ecg<sp/>queue<sp/>on<sp/>the<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,733 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_club" kind="class" language="C++" prot="public">
+    <compoundname>Club</compoundname>
+    <includes refid="_club_8h" local="no">Club.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_club_1a2a5a3c100de1e900fbca18312d3239fc" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Club::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="82" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1a6d1b14b47c391b89424e9ecd12547794" prot="private" static="no" mutable="no">
+        <type><ref refid="class_level" kindref="compound">Level</ref> *</type>
+        <definition>Level* Club::minis</definition>
+        <argsstring></argsstring>
+        <name>minis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="83" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1a7a6afb7c6982d1057e139ac5a6b93271" prot="private" static="no" mutable="no">
+        <type><ref refid="class_level" kindref="compound">Level</ref> *</type>
+        <definition>Level* Club::juveniles</definition>
+        <argsstring></argsstring>
+        <name>juveniles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="84" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1a1640096aa470c4d5733cc75260bc68ae" prot="private" static="no" mutable="no">
+        <type><ref refid="class_level" kindref="compound">Level</ref> *</type>
+        <definition>Level* Club::juniors</definition>
+        <argsstring></argsstring>
+        <name>juniors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="85" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1a2033886a86dff1ce671784394d18bdbb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_level" kindref="compound">Level</ref> *</type>
+        <definition>Level* Club::seniors</definition>
+        <argsstring></argsstring>
+        <name>seniors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="86" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1aeb457f9fc36acd9556b1e14ca43a0550" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Club::leaveprogram</definition>
+        <argsstring></argsstring>
+        <name>leaveprogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="87" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1a7e90d4c11dc9c23d469c1aa123fa1b98" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Club::filename_players</definition>
+        <argsstring></argsstring>
+        <name>filename_players</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="89" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1ad3a96ff5d22c959d5c21aa8206431633" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Club::filename_trainings</definition>
+        <argsstring></argsstring>
+        <name>filename_trainings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="90" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1ad54a2d3f19d39095b5b2ff9484277ef0" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Club::filename_tournaments</definition>
+        <argsstring></argsstring>
+        <name>filename_tournaments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="91" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1ad3c599cd9613906927cb46b3e5adfe31" prot="private" static="no" mutable="no">
+        <type>priority_queue&lt; <ref refid="struct_player__queue" kindref="compound">Player_queue</ref> &gt;</type>
+        <definition>priority_queue&lt;Player_queue&gt; Club::ECG_queue</definition>
+        <argsstring></argsstring>
+        <name>ECG_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="92" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_club_1a3ebe0ffb5259274cf5d197c07e4d8eaf" prot="private" static="no" mutable="no">
+        <type>tr1::unordered_multiset&lt; <ref refid="class_player" kindref="compound">Player</ref> *, <ref refid="structhash_funcs" kindref="compound">hashFuncs</ref>, <ref refid="structhash_funcs" kindref="compound">hashFuncs</ref> &gt;</type>
+        <definition>tr1::unordered_multiset&lt;Player *,hashFuncs , hashFuncs&gt; Club::future_birthdays</definition>
+        <argsstring></argsstring>
+        <name>future_birthdays</name>
+        <initializer>= tr1::unordered_multiset&lt;<ref refid="class_player" kindref="compound">Player</ref> *,<ref refid="structhash_funcs" kindref="compound">hashFuncs</ref> , <ref refid="structhash_funcs" kindref="compound">hashFuncs</ref>&gt;(367)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="93" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_club_1a3a315f560e155b3cb6a577e007bbf0bf" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_club" kindref="compound">Club</ref> *</type>
+        <definition>Club* Club::singleton_instance</definition>
+        <argsstring></argsstring>
+        <name>singleton_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="88" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_club_1a0c3852dcc026792a5b3df86ac3cde541" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Club::Club</definition>
+        <argsstring>()</argsstring>
+        <name>Club</name>
+        <briefdescription>
+<para>Default constructor, private to prevent multiple object of this class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_club_1a1c2993e141cfa6468284274359cc7de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Club::~Club</definition>
+        <argsstring>()</argsstring>
+        <name>~Club</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1aca473ab431cc852ad0f99479aace788c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Club::getname</definition>
+        <argsstring>() const</argsstring>
+        <name>getname</name>
+        <briefdescription>
+<para>Gets the name of the <ref refid="class_club" kindref="compound">Club</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>name (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="115" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a08eeadedcdbf4cfd5eaada3066b668dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Club::getleaveprogram</definition>
+        <argsstring>() const</argsstring>
+        <name>getleaveprogram</name>
+        <briefdescription>
+<para>Gets member variable leaveprogram. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>leaveprogram (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="120" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a797110a5f4b779fec91a6fecbc0e3dda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::setleaveprogram</definition>
+        <argsstring>(bool leaveprogram)</argsstring>
+        <name>setleaveprogram</name>
+        <param>
+          <type>bool</type>
+          <declname>leaveprogram</declname>
+        </param>
+        <briefdescription>
+<para>Change value of member variable setleaveprogram. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="124" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a8c96af96a3b46adf1d3d46694452b422" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Club::getfilename_players</definition>
+        <argsstring>() const</argsstring>
+        <name>getfilename_players</name>
+        <briefdescription>
+<para>Gets member variable filename_players. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>filename_players (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="129" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a0807e91626c347847a36551c66e38985" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Club::getfilename_trainings</definition>
+        <argsstring>() const</argsstring>
+        <name>getfilename_trainings</name>
+        <briefdescription>
+<para>Gets member variable filename_trainings. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>filename_trainings (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="134" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a95dd9fae1bd73060b8a64176aef5b848" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Club::getfilename_tournaments</definition>
+        <argsstring>() const</argsstring>
+        <name>getfilename_tournaments</name>
+        <briefdescription>
+<para>Gets member variable filename_tournaments. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>filename_tournaments (member variable) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="139" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a215b1c939a82ae2d442d05bc58457cd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::setfilename_players</definition>
+        <argsstring>(string filename_players)</argsstring>
+        <name>setfilename_players</name>
+        <param>
+          <type>string</type>
+          <declname>filename_players</declname>
+        </param>
+        <briefdescription>
+<para>Changes value of member variable filename_players. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="143" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1af1693f8321d273f68b3bcfebff5d4ac9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::setfilename_trainings</definition>
+        <argsstring>(string filename_trainings)</argsstring>
+        <name>setfilename_trainings</name>
+        <param>
+          <type>string</type>
+          <declname>filename_trainings</declname>
+        </param>
+        <briefdescription>
+<para>Changes value of member variable filename_trainings. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="147" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a5bd4d91fd403f73a9b74778568e3e639" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::setfilename_tournaments</definition>
+        <argsstring>(string filename_tournaments)</argsstring>
+        <name>setfilename_tournaments</name>
+        <param>
+          <type>string</type>
+          <declname>filename_tournaments</declname>
+        </param>
+        <briefdescription>
+<para>Changes value of member variable filename_tournaments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="151" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a8bae0203ecc348fa338ff5fcfd0cd6fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::readplayers</definition>
+        <argsstring>(istream &amp;in)</argsstring>
+        <name>readplayers</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Input operation to read all Players from a text file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Istream to read the players from</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+First it reads the current players of the club, then it reads the old players of the club </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a918827ec97985e5f98d471f116098902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::readtrainings</definition>
+        <argsstring>(istream &amp;in)</argsstring>
+        <name>readtrainings</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Input operation to read all Trainings from a text file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Istream to read the trainings from</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Sistematically reads the Trainings by level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1ae7453aa640951df46424975ecfcbbbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::readtournaments</definition>
+        <argsstring>(istream &amp;in)</argsstring>
+        <name>readtournaments</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Input operation to read all Tournaments from a text file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Istream to read the trainings from</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Sistematically reads the Tournaments by level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1acc8a8c5175c6f90db4056dd6a1e98b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::writeplayers</definition>
+        <argsstring>()</argsstring>
+        <name>writeplayers</name>
+        <briefdescription>
+<para>Output operation to store all Players in a text file. </para>        </briefdescription>
+        <detaileddescription>
+<para>First it stores the current players of the club, then the old players of the club </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a4784eaf929c6c72559ad0f6ba2895a8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::writetrainings</definition>
+        <argsstring>()</argsstring>
+        <name>writetrainings</name>
+        <briefdescription>
+<para>Output operation to store all Trainings in a text file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sistematically stores the Trainings by level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a89dfe233c69897a1d5abd9d7951990d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::writetournaments</definition>
+        <argsstring>()</argsstring>
+        <name>writetournaments</name>
+        <briefdescription>
+<para>Output operation to store all Tournaments in a text file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sistematically stores the Tournaments by level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1ad196e0999b3c18c1ed3e757ccf70b92d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_level" kindref="compound">Level</ref> * &gt;</type>
+        <definition>vector&lt;Level *&gt; Club::getLevels</definition>
+        <argsstring>() const</argsstring>
+        <name>getLevels</name>
+        <briefdescription>
+<para>Used to get a vector with all levels. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of pointer to levels with Minis* at 0 , Juveniles* at 1 , Juniors* at 2 , Seniors* at 3 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="189" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a75d763d9915a2f3fca2fc4e287cf3e43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; Club::getPlayers</definition>
+        <argsstring>() const</argsstring>
+        <name>getPlayers</name>
+        <briefdescription>
+<para>Used to get a vector with all current Players. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector with the names of all the players of the <ref refid="class_club" kindref="compound">Club</ref>, including old Players if they participated in Events </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a44a4556487884659d9b316dc6c961e86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::makeTree</definition>
+        <argsstring>()</argsstring>
+        <name>makeTree</name>
+        <briefdescription>
+<para>Constructs the binary Tree for each <ref refid="class_level" kindref="compound">Level</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>First it updates the information on all current Players, by resetting their assiduities and computing them again</para><para>after updating it adds them to the respective <ref refid="class_b_s_t" kindref="compound">BST</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a389972412da4a5b1cd62965ceefad7fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::makeQueue</definition>
+        <argsstring>()</argsstring>
+        <name>makeQueue</name>
+        <briefdescription>
+<para>Contructs the member variable ECG_queue. </para>        </briefdescription>
+        <detaileddescription>
+<para>The queue contains the current players of the club of all levels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1aecaa2826d91ec8efdc8b8ecc5543f9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::addPlayerQueue</definition>
+        <argsstring>(Player *pl)</argsstring>
+        <name>addPlayerQueue</name>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>pl</declname>
+        </param>
+        <briefdescription>
+<para>Adds a <ref refid="class_player" kindref="compound">Player</ref> to member variable ECG_queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1ad09dd0ccccf5bd9dd465778ad127f41a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::removePlayerQueue</definition>
+        <argsstring>(Player *pl)</argsstring>
+        <name>removePlayerQueue</name>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>pl</declname>
+        </param>
+        <briefdescription>
+<para>Removes a player from the member variable ECG_queue. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the player is not found the Queue simply remains the same </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a085dd799d98de3efc6e43d81718f54a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Club::addBirthday</definition>
+        <argsstring>(Player *p1)</argsstring>
+        <name>addBirthday</name>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Adds the player to the hash table for future birthdays. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to player to be added</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<ref refid="class_player" kindref="compound">Player</ref> can only be inserted if he is older than team maximum age (defined in <ref refid="_seniors_8h" kindref="compound">seniors.h</ref>)</para><para>if not it cannot be added to the future birthday list</para><para><simplesect kind="return"><para>true if insert successful , false if it cannot insert player </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1afccacb082df30292238e2da709c9c044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Club::removeBirthday</definition>
+        <argsstring>(Player *p1)</argsstring>
+        <name>removeBirthday</name>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Removes the given <ref refid="class_player" kindref="compound">Player</ref> from the future birthday list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to player to be removed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Compares the players by name</para><para><simplesect kind="return"><para>true if removed successfuly, false if player not found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a7f8d7c40bf2a2e226bb39b212bc84d4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="class_player" kindref="compound">Player</ref> * &gt;</type>
+        <definition>vector&lt;Player *&gt; Club::nextBirthdays</definition>
+        <argsstring>(int days) const</argsstring>
+        <name>nextBirthdays</name>
+        <param>
+          <type>int</type>
+          <declname>days</declname>
+        </param>
+        <briefdescription>
+<para>Gets a list of players whose birthday is within parameter days. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>days</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of days to use</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Iterates all possible dates from the current day to (current_day + days) it iterates it from</para><para>end day to current day so that list is ordered by the closest birthday to the farthest birthdays <simplesect kind="return"><para>List of pointer to those players </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1aefc39e233faadeb0463e959628ab4a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Club::findOldPlayer</definition>
+        <argsstring>(Player *p1)</argsstring>
+        <name>findOldPlayer</name>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Tries to find p1 in the future_birthdays hash table. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to player to be found </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if player found , 0 if player not found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1aad02197c0f3431dbe8c2e12033e24f63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::ECG_notify</definition>
+        <argsstring>()</argsstring>
+        <name>ECG_notify</name>
+        <briefdescription>
+<para>Sends a notification to the first player in the member variable ECG_queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="251" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="251" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_club_1a7ef23c55751610bc2cb98a356a6bee46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Club::showQueue</definition>
+        <argsstring>()</argsstring>
+        <name>showQueue</name>
+        <briefdescription>
+<para>Used to print the member variable ECG_queue on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="255" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_club_1abdfe1ed370c779a570ac66bd3a8f3a0e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_club" kindref="compound">Club</ref> *</type>
+        <definition>static Club* Club::getinstance</definition>
+        <argsstring>()</argsstring>
+        <name>getinstance</name>
+        <briefdescription>
+<para>Gets an object of class <ref refid="class_club" kindref="compound">Club</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>singleton_instance (member variable)</para></simplesect>
+Checks whether member variable singleton_instance already points to an object, if it does</para><para>return it, if not then it initializes singleton_instance then returns it </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="110" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds all the information about the <ref refid="class_club" kindref="compound">Club</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="81" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="81" bodyend="256"/>
+    <listofallmembers>
+      <member refid="class_club_1a085dd799d98de3efc6e43d81718f54a3" prot="public" virt="non-virtual"><scope>Club</scope><name>addBirthday</name></member>
+      <member refid="class_club_1aecaa2826d91ec8efdc8b8ecc5543f9d0" prot="public" virt="non-virtual"><scope>Club</scope><name>addPlayerQueue</name></member>
+      <member refid="class_club_1a0c3852dcc026792a5b3df86ac3cde541" prot="private" virt="non-virtual"><scope>Club</scope><name>Club</name></member>
+      <member refid="class_club_1aad02197c0f3431dbe8c2e12033e24f63" prot="public" virt="non-virtual"><scope>Club</scope><name>ECG_notify</name></member>
+      <member refid="class_club_1ad3c599cd9613906927cb46b3e5adfe31" prot="private" virt="non-virtual"><scope>Club</scope><name>ECG_queue</name></member>
+      <member refid="class_club_1a7e90d4c11dc9c23d469c1aa123fa1b98" prot="private" virt="non-virtual"><scope>Club</scope><name>filename_players</name></member>
+      <member refid="class_club_1ad54a2d3f19d39095b5b2ff9484277ef0" prot="private" virt="non-virtual"><scope>Club</scope><name>filename_tournaments</name></member>
+      <member refid="class_club_1ad3a96ff5d22c959d5c21aa8206431633" prot="private" virt="non-virtual"><scope>Club</scope><name>filename_trainings</name></member>
+      <member refid="class_club_1aefc39e233faadeb0463e959628ab4a0d" prot="public" virt="non-virtual"><scope>Club</scope><name>findOldPlayer</name></member>
+      <member refid="class_club_1a3ebe0ffb5259274cf5d197c07e4d8eaf" prot="private" virt="non-virtual"><scope>Club</scope><name>future_birthdays</name></member>
+      <member refid="class_club_1a8c96af96a3b46adf1d3d46694452b422" prot="public" virt="non-virtual"><scope>Club</scope><name>getfilename_players</name></member>
+      <member refid="class_club_1a95dd9fae1bd73060b8a64176aef5b848" prot="public" virt="non-virtual"><scope>Club</scope><name>getfilename_tournaments</name></member>
+      <member refid="class_club_1a0807e91626c347847a36551c66e38985" prot="public" virt="non-virtual"><scope>Club</scope><name>getfilename_trainings</name></member>
+      <member refid="class_club_1abdfe1ed370c779a570ac66bd3a8f3a0e" prot="public" virt="non-virtual"><scope>Club</scope><name>getinstance</name></member>
+      <member refid="class_club_1a08eeadedcdbf4cfd5eaada3066b668dd" prot="public" virt="non-virtual"><scope>Club</scope><name>getleaveprogram</name></member>
+      <member refid="class_club_1ad196e0999b3c18c1ed3e757ccf70b92d" prot="public" virt="non-virtual"><scope>Club</scope><name>getLevels</name></member>
+      <member refid="class_club_1aca473ab431cc852ad0f99479aace788c" prot="public" virt="non-virtual"><scope>Club</scope><name>getname</name></member>
+      <member refid="class_club_1a75d763d9915a2f3fca2fc4e287cf3e43" prot="public" virt="non-virtual"><scope>Club</scope><name>getPlayers</name></member>
+      <member refid="class_club_1a1640096aa470c4d5733cc75260bc68ae" prot="private" virt="non-virtual"><scope>Club</scope><name>juniors</name></member>
+      <member refid="class_club_1a7a6afb7c6982d1057e139ac5a6b93271" prot="private" virt="non-virtual"><scope>Club</scope><name>juveniles</name></member>
+      <member refid="class_club_1aeb457f9fc36acd9556b1e14ca43a0550" prot="private" virt="non-virtual"><scope>Club</scope><name>leaveprogram</name></member>
+      <member refid="class_club_1a389972412da4a5b1cd62965ceefad7fe" prot="public" virt="non-virtual"><scope>Club</scope><name>makeQueue</name></member>
+      <member refid="class_club_1a44a4556487884659d9b316dc6c961e86" prot="public" virt="non-virtual"><scope>Club</scope><name>makeTree</name></member>
+      <member refid="class_club_1a6d1b14b47c391b89424e9ecd12547794" prot="private" virt="non-virtual"><scope>Club</scope><name>minis</name></member>
+      <member refid="class_club_1a2a5a3c100de1e900fbca18312d3239fc" prot="private" virt="non-virtual"><scope>Club</scope><name>name</name></member>
+      <member refid="class_club_1a7f8d7c40bf2a2e226bb39b212bc84d4c" prot="public" virt="non-virtual"><scope>Club</scope><name>nextBirthdays</name></member>
+      <member refid="class_club_1a8bae0203ecc348fa338ff5fcfd0cd6fb" prot="public" virt="non-virtual"><scope>Club</scope><name>readplayers</name></member>
+      <member refid="class_club_1ae7453aa640951df46424975ecfcbbbca" prot="public" virt="non-virtual"><scope>Club</scope><name>readtournaments</name></member>
+      <member refid="class_club_1a918827ec97985e5f98d471f116098902" prot="public" virt="non-virtual"><scope>Club</scope><name>readtrainings</name></member>
+      <member refid="class_club_1afccacb082df30292238e2da709c9c044" prot="public" virt="non-virtual"><scope>Club</scope><name>removeBirthday</name></member>
+      <member refid="class_club_1ad09dd0ccccf5bd9dd465778ad127f41a" prot="public" virt="non-virtual"><scope>Club</scope><name>removePlayerQueue</name></member>
+      <member refid="class_club_1a2033886a86dff1ce671784394d18bdbb" prot="private" virt="non-virtual"><scope>Club</scope><name>seniors</name></member>
+      <member refid="class_club_1a215b1c939a82ae2d442d05bc58457cd4" prot="public" virt="non-virtual"><scope>Club</scope><name>setfilename_players</name></member>
+      <member refid="class_club_1a5bd4d91fd403f73a9b74778568e3e639" prot="public" virt="non-virtual"><scope>Club</scope><name>setfilename_tournaments</name></member>
+      <member refid="class_club_1af1693f8321d273f68b3bcfebff5d4ac9" prot="public" virt="non-virtual"><scope>Club</scope><name>setfilename_trainings</name></member>
+      <member refid="class_club_1a797110a5f4b779fec91a6fecbc0e3dda" prot="public" virt="non-virtual"><scope>Club</scope><name>setleaveprogram</name></member>
+      <member refid="class_club_1a7ef23c55751610bc2cb98a356a6bee46" prot="public" virt="non-virtual"><scope>Club</scope><name>showQueue</name></member>
+      <member refid="class_club_1a3a315f560e155b3cb6a577e007bbf0bf" prot="private" virt="non-virtual"><scope>Club</scope><name>singleton_instance</name></member>
+      <member refid="class_club_1acc8a8c5175c6f90db4056dd6a1e98b67" prot="public" virt="non-virtual"><scope>Club</scope><name>writeplayers</name></member>
+      <member refid="class_club_1a89dfe233c69897a1d5abd9d7951990d8" prot="public" virt="non-virtual"><scope>Club</scope><name>writetournaments</name></member>
+      <member refid="class_club_1a4784eaf929c6c72559ad0f6ba2895a8f" prot="public" virt="non-virtual"><scope>Club</scope><name>writetrainings</name></member>
+      <member refid="class_club_1a1c2993e141cfa6468284274359cc7de5" prot="public" virt="non-virtual"><scope>Club</scope><name>~Club</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

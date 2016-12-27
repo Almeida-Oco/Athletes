@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="structhash_funcs" kind="struct" language="C++" prot="public">
+    <compoundname>hashFuncs</compoundname>
+    <includes refid="_club_8h" local="no">Club.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structhash_funcs_1a521b1888977a80fcd935e8e03c09d916" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t hashFuncs::operator()</definition>
+        <argsstring>(const Player *p1) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Computates the difference in days between the birthday date and current date. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used has hash function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If birthday &gt; current date returns number of days, else returns -1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="43" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structhash_funcs_1a9e171ebf004435ea1d1ceb8a30f6a954" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hashFuncs::operator()</definition>
+        <argsstring>(const Player *p1, const Player *p2) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+<para>Compares two pointer to players to see if the Players they are pointing is the same (needed for hash table) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="class_player" kindref="compound">Player</ref> 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to <ref refid="class_player" kindref="compound">Player</ref> 2 Used as compare function for hash table used. We are only interested if the day and month are equal, the year may be different </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if Players are the same , 0 if not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="56" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Functions used in <ref refid="class_club" kindref="compound">Club</ref> member variable future_birthdays Chained Hash-Table </para>    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" line="36" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/Club.h" bodystart="36" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structhash_funcs_1a521b1888977a80fcd935e8e03c09d916" prot="public" virt="non-virtual"><scope>hashFuncs</scope><name>operator()</name></member>
+      <member refid="structhash_funcs_1a9e171ebf004435ea1d1ceb8a30f6a954" prot="public" virt="non-virtual"><scope>hashFuncs</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

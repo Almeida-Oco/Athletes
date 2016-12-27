@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_invalid_date" kind="class" language="C++" prot="public">
+    <compoundname>InvalidDate</compoundname>
+    <includes refid="exceptions_8h" local="no">exceptions.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_invalid_date_1ae88b81c9928d9f962229b4b60b1ca6e6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InvalidDate::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="26" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_invalid_date_1a63d1eb8cc29192ed24a608efaf8bb841" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InvalidDate::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="27" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_invalid_date_1a796e1aee06941892afc67b4ebbbd84c3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InvalidDate::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="28" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_invalid_date_1aec8bd136d7adb6bccf44bf6d9f078a40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InvalidDate::InvalidDate</definition>
+        <argsstring>(unsigned int day, unsigned int month, unsigned int year)</argsstring>
+        <name>InvalidDate</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+<para>Full-Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Day of the <ref refid="class_date" kindref="compound">Date</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Month of the <ref refid="class_date" kindref="compound">Date</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Year of the <ref refid="class_date" kindref="compound">Date</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="36" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_invalid_date_1a665b9e90ec4cab29d400010cd73bb8ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InvalidDate::show</definition>
+        <argsstring>() const</argsstring>
+        <name>show</name>
+        <briefdescription>
+<para>Prints the date on the screen. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="40" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an Invalid <ref refid="class_date" kindref="compound">Date</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" line="25" column="1" bodyfile="/home/oco/Documents/Cprojects/Athletes/projecto - V2/Headers/exceptions.h" bodystart="25" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_invalid_date_1ae88b81c9928d9f962229b4b60b1ca6e6" prot="private" virt="non-virtual"><scope>InvalidDate</scope><name>day</name></member>
+      <member refid="class_invalid_date_1aec8bd136d7adb6bccf44bf6d9f078a40" prot="public" virt="non-virtual"><scope>InvalidDate</scope><name>InvalidDate</name></member>
+      <member refid="class_invalid_date_1a63d1eb8cc29192ed24a608efaf8bb841" prot="private" virt="non-virtual"><scope>InvalidDate</scope><name>month</name></member>
+      <member refid="class_invalid_date_1a665b9e90ec4cab29d400010cd73bb8ed" prot="public" virt="non-virtual"><scope>InvalidDate</scope><name>show</name></member>
+      <member refid="class_invalid_date_1a796e1aee06941892afc67b4ebbbd84c3" prot="private" virt="non-virtual"><scope>InvalidDate</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
