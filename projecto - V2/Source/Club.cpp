@@ -473,13 +473,10 @@ bool Club::removeBirthday(Player *p1){
 }
 
 bool Club::findOldPlayer(Player *p1){
-	auto its = this->future_birthdays.equal_range(p1);
-	if (its.first != its.second){
-		while(its.first != its.second){
-			if (*(*its.first) == *p1)
-				return true;
-			its.first++;
-		}
+	auto it = this->future_birthdays.begin();
+	while(it != this->future_birthdays.end()){
+		if ( (*it)->getName() == p1->getName() )
+			return true;
 	}
 
 	return false;
