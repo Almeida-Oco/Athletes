@@ -348,13 +348,15 @@ void birthdaycards() {
 			if (!valid)
 				cout << endl << "Invalid input, please try again " << endl;
 			if(delivered) { cout << endl << "Present delivered successfuly!" << endl; delivered= false;}
-			cout << endl << "Enter ID's of Players to give presents (0 to go back) : ";
+			cout << endl << "Enter ID's of Players to give presents (b to go back) : ";
 			getline(cin,placeholder);
 			placeholder = removespaces(placeholder);
 			if ( isInteger(placeholder))
 			option = convint(placeholder);
+			else if ( placeholder == "b")
+				break;
 			else
-			valid = false;
+				valid = false;
 
 			if (option >= 1 && option <= temp.size() ){
 				temp.at(option-1)->setPresent(true);
@@ -362,10 +364,10 @@ void birthdaycards() {
 				valid = true;
 				delivered = true;
 			}
-			else if (option != 0)
+			else
 				valid = false;
 
-		} while(option != 0);
+		} while(1);
 	}
 	else{
 		cout << "No old players birthday found within " << option << " days." << endl;
