@@ -40,6 +40,7 @@ bool Date::operator> (const Date &D1) const{
 	}
 	return false;
 }
+
 bool Date::operator>= (const Date &D1) const{
 	if (this->year > D1.year)
 		return true;
@@ -56,12 +57,15 @@ bool Date::operator>= (const Date &D1) const{
 	}
 	return false;
 }
+
 bool Date::operator<= (const Date &D1) const{
 	return !(*this > D1);
 }
+
 bool Date::operator< (const Date &D1) const{
 	return !(*this >= D1);
 }
+
 bool Date::operator== (const Date &D1) const{
 	return ( (this->day == D1.day) && (this->month == D1.month) && (this->year == D1.year) );
 }
@@ -71,7 +75,7 @@ Date Date::addDays(unsigned int n) const{
 	unsigned int months[13] = { 0, 31,28 + (unsigned int)Isleap(this->getYear()),31,30,31,30,31,31,30,31,30,31 };//array with the number of days in each month
 
 
-	while(n > months[temp.month]){
+	while(n >= months[temp.month]){
 		n-= months[temp.month];
 
 		temp.month++;
@@ -81,6 +85,7 @@ Date Date::addDays(unsigned int n) const{
 			months[2] = 28 + (unsigned int)Isleap(temp.year);
 		}
 	}
+
 	temp.day += n;
 	if (temp.day > months[temp.month]){
 		temp.day -= months[temp.month];
