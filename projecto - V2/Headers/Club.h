@@ -25,6 +25,7 @@
 #include <list>
 #include <stdlib.h>
 #include <iomanip>
+//#include <unordered_set>
 #include <tr1/unordered_set>
 
 class Level;
@@ -59,6 +60,10 @@ struct hashFuncs{
 };
 
 
+typedef tr1::unordered_multiset<Player *,hashFuncs , hashFuncs> un_mtset;
+//typedef unordered_multiset<Player *,hashFuncs , hashFuncs> un_mtset;
+
+
 /**
   @class Club
 
@@ -90,7 +95,8 @@ class Club{
 	string filename_trainings;
 	string filename_tournaments;
 	priority_queue<Player_queue> ECG_queue;
-	tr1::unordered_multiset<Player *,hashFuncs , hashFuncs> future_birthdays = tr1::unordered_multiset<Player *,hashFuncs , hashFuncs>(367);
+	un_mtset future_birthdays = un_mtset(366);
+  //un_mtset future_birthdays = un_mtset(366);
   /**
     @brief Default constructor, private to prevent multiple object of this class
   */
