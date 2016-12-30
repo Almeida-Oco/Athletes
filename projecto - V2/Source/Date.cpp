@@ -77,7 +77,6 @@ Date Date::addDays(unsigned int n) const{
 
 	while(n >= months[temp.month]){
 		n-= months[temp.month];
-
 		temp.month++;
 		if (temp.month > 12){
 			temp.month = 1;
@@ -85,9 +84,8 @@ Date Date::addDays(unsigned int n) const{
 			months[2] = 28 + (unsigned int)Isleap(temp.year);
 		}
 	}
-
 	temp.day += n;
-	if (temp.day > months[temp.month]){
+	while (temp.day > months[temp.month]){
 		temp.day -= months[temp.month];
 		temp.month++;
 		if(temp.month > 12){

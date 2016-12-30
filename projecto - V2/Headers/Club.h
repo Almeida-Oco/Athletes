@@ -25,14 +25,14 @@
 #include <list>
 #include <stdlib.h>
 #include <iomanip>
-//#include <unordered_set>
-#include <tr1/unordered_set>
+#include <unordered_set>
+//#include <tr1/unordered_set>
 
 class Level;
 
 /**
   @struct hashFuncs
-  Functions used in Club member variable future_birthdays Chained Hash-Table
+  @brief Functions used in Club member variable future_birthdays Chained Hash-Table
 */
 struct hashFuncs{
   /**
@@ -42,8 +42,6 @@ struct hashFuncs{
     @return If birthday > current date returns number of days, else returns -1
   */
   size_t operator()(const Player *p1) const{
-    //cout << *p1 << endl;
-    //cout << p1->getBirth().diffDays() << endl << endl;
     return p1->getBirth().diffDays();
   }
   /**
@@ -60,8 +58,8 @@ struct hashFuncs{
 };
 
 
-typedef tr1::unordered_multiset<Player *,hashFuncs , hashFuncs> un_mtset;
-//typedef unordered_multiset<Player *,hashFuncs , hashFuncs> un_mtset;
+//typedef tr1::unordered_multiset<Player *,hashFuncs , hashFuncs> un_mtset;
+typedef unordered_multiset<Player *,hashFuncs , hashFuncs> un_mtset;
 
 
 /**
@@ -95,8 +93,8 @@ class Club{
 	string filename_trainings;
 	string filename_tournaments;
 	priority_queue<Player_queue> ECG_queue;
-	un_mtset future_birthdays = un_mtset(366);
-  //un_mtset future_birthdays = un_mtset(366);
+  un_mtset future_birthdays = un_mtset(366);
+
   /**
     @brief Default constructor, private to prevent multiple object of this class
   */

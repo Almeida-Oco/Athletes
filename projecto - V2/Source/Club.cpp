@@ -473,11 +473,9 @@ bool Club::removeBirthday(Player *p1){
 }
 
 bool Club::findOldPlayer(Player *p1){
-	auto it = this->future_birthdays.begin();
-	while(it != this->future_birthdays.end()){
+	for(auto it = this->future_birthdays.begin() ; it != this->future_birthdays.end() ; it++)
 		if ( (*it)->getName() == p1->getName() )
 			return true;
-	}
 
 	return false;
 }
@@ -486,17 +484,18 @@ vector<Player *> Club::nextBirthdays(int days=10) const{
 	vector<Player *> temp;
 	temp.reserve(this->future_birthdays.size());
 
-
 	for(int i = 0 ; i <= days ; i++){
 		Date current_date;
 		Date end_date = current_date.addDays(i);
-		Player t( current_date.addDays(i) );
+		cout << end_date << endl;
+		Player t(end_date);
 		//if we have went through all dates
-		if((current_date.getDay() == end_date.getDay()) && (current_date.getMonth() == end_date.getMonth()) && (i != 0))
-			break;
+		//if( (i != 0) &&(current_date.getDay() == end_date.getDay()) && (current_date.getMonth() == end_date.getMonth()))
+		//	break;
 
 		auto its = this->future_birthdays.equal_range( &t );
 		while(its.first != its.second){
+			cout << **(its.first) << endl;
 			if ( !( (*(its.first))->getPresent() ) )
 				temp.push_back( *(its.first));
 			its.first++;
