@@ -10,8 +10,10 @@
 #define EXCEPTIONS_H
 
 #include<iostream>
+#include<string>
 #include"Date.h"
-	using namespace std;
+
+using namespace std;
 
 /**
 	@class InvalidDate
