@@ -47,8 +47,10 @@ void Club::readplayers(istream &in) {
 	for (unsigned int i = 0; i < size; i++) {
 		Player *p = new Player; //new player to be added to the list of players
 		in >> (*p);
-		if (!minis->addPlayer(p) && !juveniles->addPlayer(p) && !juniors->addPlayer(p) && !seniors->addPlayer(p) && !addBirthday(p))
-			throw InvalidPlayer(p->getName(), p->getBirth());
+		if (!minis->addPlayer(p) && !juveniles->addPlayer(p) && !juniors->addPlayer(p) && !seniors->addPlayer(p))
+			if (!addBirthday(p))
+				throw InvalidPlayer(p->getName(), p->getBirth());
+
 
 	}
 	//READ OLD PLAYERS
@@ -56,7 +58,7 @@ void Club::readplayers(istream &in) {
 	for (unsigned int i = 0 ; i < size ; i++){
 		Player *p = new Player;
 		in >> (*p);
-		if (!addBirthday(p))
+		if (!addBirthday(p) || (actualage(p->getBirth()) <= 35 ))
 			throw InvalidPlayer(p->getName(), p->getBirth());
 	}
 
@@ -442,7 +444,7 @@ void Club::showQueue() {
 bool Club::addBirthday(Player *p1){
 	Date current_date;
 	current_date = current_date.subtractDays(1);
-	if( actualage(p1->getBirth()) > seniors->getMaxAge() ){
+	if( actualage(p1->getBirth()) > minis->getMinAge() ){
 		if ( hashFuncs()(p1)  != -1){
 			if( !findOldPlayer(p1)){
 				//if his birthday was yesterday then update got_present parameter
