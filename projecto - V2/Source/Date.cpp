@@ -18,7 +18,7 @@ Date::Date(){
 	struct tm *timeinfo;
 	time_t t = time(0);   // gets current time
 
-	//localtime_s(&timeinfo, &t);
+	//localtime_s(timeinfo, &t);
 	timeinfo = localtime(&t);
 
 	year = timeinfo->tm_year + 1900;
