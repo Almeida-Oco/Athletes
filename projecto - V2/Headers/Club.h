@@ -93,7 +93,7 @@ class Club{
 	string filename_trainings;
 	string filename_tournaments;
 	priority_queue<Player_queue> ECG_queue;
-  un_mtset future_birthdays = un_mtset(366);
+  un_mtset future_birthdays = un_mtset(367);
 
   /**
     @brief Default constructor, private to prevent multiple object of this class

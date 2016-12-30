@@ -489,13 +489,15 @@ bool Club::findOldPlayer(Player *p1){
 
 vector<Player *> Club::nextBirthdays(int days=10) const{
 	vector<Player *> temp;
+	Date current_date;
 	temp.reserve(this->future_birthdays.size());
 
 	for(int i = 0 ; i <= days ; i++){
-		Date current_date;
 		Date end_date = current_date.addDays(i);
 		Player t(end_date);
-
+		//When it has gone across the calendar
+		if (i != 0 && current_date.getDay() == end_date.getDay() && current_date.getMonth() == end_date.getMonth() )
+			break;
 		auto its = this->future_birthdays.equal_range( &t );
 		while(its.first != its.second){
 			if ( !( (*(its.first))->getPresent() ) )
