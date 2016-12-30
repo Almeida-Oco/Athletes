@@ -1,0 +1,275 @@
+\hypertarget{class_minis}{}\section{Minis Class Reference}
+\label{class_minis}\index{Minis@{Minis}}
+
+
+Holds all the information about the \hyperlink{class_level}{Level} \hyperlink{class_minis}{Minis}.  
+
+
+
+
+{\ttfamily \#include $<$Minis.\+h$>$}
+
+Inheritance diagram for Minis\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_minis}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_minis_a05a964e8cd328440070a970e95a69aaa}{Minis} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_minis_a0ce29fd41f5c3f412401128a9dc7dc3b}{$\sim$\+Minis} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_minis_a8f19940186bb60864cbf4b2a50a62f44}{Minis} (const \hyperlink{class_minis}{Minis} \&minis)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_minis}{Minis} \& \hyperlink{class_minis_a25cdc8631f19c04d7ddd16507a4bc48c}{operator=} (const \hyperlink{class_minis}{Minis} \&minis)
+\begin{DoxyCompactList}\small\item\em Copy Operator. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_minis_a995e2db860e3a5c110cbead80ab61caa}{get\+Max\+Age} ()
+\begin{DoxyCompactList}\small\item\em Gets the member variable age\+\_\+max. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_minis_a062e99b463e0dd1e370b46e6fb37087a}{get\+Min\+Age} ()
+\begin{DoxyCompactList}\small\item\em Gets the member variable age\+\_\+min. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_minis_a75f45698aaf057d11e083694bfd31d17}{add\+Player} (\hyperlink{class_player}{Player} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Adds a new \hyperlink{class_player}{Player} to this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_minis_a062ba8858c80dcf52c792e5304ccbfeb}{showplayers} () const
+\begin{DoxyCompactList}\small\item\em Outputs the Players of this \hyperlink{class_level}{Level} on the screen. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_minis_a69059ad5f89289c70ce6dec4906e02f3}{showtrainings} () const
+\begin{DoxyCompactList}\small\item\em Outputs the Trainings of this \hyperlink{class_level}{Level} on the screen. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_minis_a1a8d585f0c4b745c9c703cc6449c778d}{showtournaments} () const
+\begin{DoxyCompactList}\small\item\em Outputs the Tournaments of this \hyperlink{class_level}{Level} on the screen. \end{DoxyCompactList}\item 
+virtual vector$<$ string $>$ \hyperlink{class_minis_ad2c86c585b05e735bb6e38f672b9bbab}{get\+Call} (unsigned int size)
+\begin{DoxyCompactList}\small\item\em Gets names of players to be called to a \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds all the information about the \hyperlink{class_level}{Level} \hyperlink{class_minis}{Minis}. 
+
+Definition at line 21 of file Minis.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_minis_a05a964e8cd328440070a970e95a69aaa}{}\label{class_minis_a05a964e8cd328440070a970e95a69aaa} 
+\index{Minis@{Minis}!Minis@{Minis}}
+\index{Minis@{Minis}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{Minis()}{Minis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Minis\+::\+Minis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor. 
+
+
+
+Definition at line 27 of file Minis.\+h.
+
+\hypertarget{class_minis_a0ce29fd41f5c3f412401128a9dc7dc3b}{}\label{class_minis_a0ce29fd41f5c3f412401128a9dc7dc3b} 
+\index{Minis@{Minis}!````~Minis@{$\sim$\+Minis}}
+\index{````~Minis@{$\sim$\+Minis}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{$\sim$\+Minis()}{~Minis()}}
+{\footnotesize\ttfamily Minis\+::$\sim$\+Minis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 31 of file Minis.\+h.
+
+\hypertarget{class_minis_a8f19940186bb60864cbf4b2a50a62f44}{}\label{class_minis_a8f19940186bb60864cbf4b2a50a62f44} 
+\index{Minis@{Minis}!Minis@{Minis}}
+\index{Minis@{Minis}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{Minis()}{Minis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Minis\+::\+Minis (\begin{DoxyParamCaption}\item[{const \hyperlink{class_minis}{Minis} \&}]{minis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minis} & Object of class to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Minis.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_minis_a75f45698aaf057d11e083694bfd31d17}{}\label{class_minis_a75f45698aaf057d11e083694bfd31d17} 
+\index{Minis@{Minis}!add\+Player@{add\+Player}}
+\index{add\+Player@{add\+Player}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{add\+Player()}{addPlayer()}}
+{\footnotesize\ttfamily bool Minis\+::add\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a new \hyperlink{class_player}{Player} to this \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \hyperlink{class_player}{Player} to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it was added successfuly, false if not 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_level_a66290778fa4bcd2f29b9ff3e605b2902}{Level}.
+
+
+
+Definition at line 12 of file Minis.\+cpp.
+
+\hypertarget{class_minis_ad2c86c585b05e735bb6e38f672b9bbab}{}\label{class_minis_ad2c86c585b05e735bb6e38f672b9bbab} 
+\index{Minis@{Minis}!get\+Call@{get\+Call}}
+\index{get\+Call@{get\+Call}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{get\+Call()}{getCall()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Minis\+::get\+Call (\begin{DoxyParamCaption}\item[{unsigned int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets names of players to be called to a \hyperlink{class_tournament}{Tournament}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & How many players to be called \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector with names of Players to be called 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_level_ac118b390f16a75b9a0e9df198b3190ad}{Level}.
+
+
+
+Definition at line 75 of file Minis.\+cpp.
+
+\hypertarget{class_minis_a995e2db860e3a5c110cbead80ab61caa}{}\label{class_minis_a995e2db860e3a5c110cbead80ab61caa} 
+\index{Minis@{Minis}!get\+Max\+Age@{get\+Max\+Age}}
+\index{get\+Max\+Age@{get\+Max\+Age}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{get\+Max\+Age()}{getMaxAge()}}
+{\footnotesize\ttfamily virtual unsigned int Minis\+::get\+Max\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the member variable age\+\_\+max. 
+
+\begin{DoxyReturn}{Returns}
+age\+\_\+max (member variable) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_level_ae7b28ba0cb8d49372c4657fbe42706e1}{Level}.
+
+
+
+Definition at line 47 of file Minis.\+h.
+
+\hypertarget{class_minis_a062e99b463e0dd1e370b46e6fb37087a}{}\label{class_minis_a062e99b463e0dd1e370b46e6fb37087a} 
+\index{Minis@{Minis}!get\+Min\+Age@{get\+Min\+Age}}
+\index{get\+Min\+Age@{get\+Min\+Age}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{get\+Min\+Age()}{getMinAge()}}
+{\footnotesize\ttfamily virtual unsigned int Minis\+::get\+Min\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the member variable age\+\_\+min. 
+
+\begin{DoxyReturn}{Returns}
+age\+\_\+min (member variable) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_level_a161cf8c238fd499c112d90504cb6f587}{Level}.
+
+
+
+Definition at line 52 of file Minis.\+h.
+
+\hypertarget{class_minis_a25cdc8631f19c04d7ddd16507a4bc48c}{}\label{class_minis_a25cdc8631f19c04d7ddd16507a4bc48c} 
+\index{Minis@{Minis}!operator=@{operator=}}
+\index{operator=@{operator=}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_minis}{Minis}\& Minis\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_minis}{Minis} \&}]{minis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy Operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minis} & Object of class to be copied\\
+\hline
+\end{DoxyParams}
+Calls the base class \hyperlink{class_level_a60eb04b65c900ae8dddf3d6251fac7b1}{Level\+::operator=} 
+
+Definition at line 42 of file Minis.\+h.
+
+\hypertarget{class_minis_a062ba8858c80dcf52c792e5304ccbfeb}{}\label{class_minis_a062ba8858c80dcf52c792e5304ccbfeb} 
+\index{Minis@{Minis}!showplayers@{showplayers}}
+\index{showplayers@{showplayers}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{showplayers()}{showplayers()}}
+{\footnotesize\ttfamily void Minis\+::showplayers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the Players of this \hyperlink{class_level}{Level} on the screen. 
+
+
+
+Reimplemented from \hyperlink{class_level_a40d22b376e72950a07de5e0a9e288029}{Level}.
+
+
+
+Definition at line 25 of file Minis.\+cpp.
+
+\hypertarget{class_minis_a1a8d585f0c4b745c9c703cc6449c778d}{}\label{class_minis_a1a8d585f0c4b745c9c703cc6449c778d} 
+\index{Minis@{Minis}!showtournaments@{showtournaments}}
+\index{showtournaments@{showtournaments}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{showtournaments()}{showtournaments()}}
+{\footnotesize\ttfamily void Minis\+::showtournaments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the Tournaments of this \hyperlink{class_level}{Level} on the screen. 
+
+
+
+Reimplemented from \hyperlink{class_level_a757c4547f3b8f7c7ecb02c7e0e6cd7c9}{Level}.
+
+
+
+Definition at line 41 of file Minis.\+cpp.
+
+\hypertarget{class_minis_a69059ad5f89289c70ce6dec4906e02f3}{}\label{class_minis_a69059ad5f89289c70ce6dec4906e02f3} 
+\index{Minis@{Minis}!showtrainings@{showtrainings}}
+\index{showtrainings@{showtrainings}!Minis@{Minis}}
+\subsubsection{\texorpdfstring{showtrainings()}{showtrainings()}}
+{\footnotesize\ttfamily void Minis\+::showtrainings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the Trainings of this \hyperlink{class_level}{Level} on the screen. 
+
+
+
+Reimplemented from \hyperlink{class_level_a4101cb725b1fd0c0836834c92b190363}{Level}.
+
+
+
+Definition at line 33 of file Minis.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\hyperlink{_minis_8h}{Minis.\+h}\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\hyperlink{_minis_8cpp}{Minis.\+cpp}\end{DoxyCompactItemize}

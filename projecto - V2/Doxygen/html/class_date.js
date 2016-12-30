@@ -7,7 +7,7 @@ var class_date =
     [ "getDay", "class_date.html#a0f253815240e70f4c39cb93cc68bd3f4", null ],
     [ "getMonth", "class_date.html#a332f6e3a2f6a40d73742b6dab7be0f64", null ],
     [ "getYear", "class_date.html#a8b0869f34c2b38d108ab83ee2e770e5d", null ],
-    [ "operator-", "class_date.html#ad367b27b98f481d3afd93cade84ef862", null ],
+    [ "operator-", "class_date.html#a23dcdfa5167af68543c2b1cd7bb0360f", null ],
     [ "operator<", "class_date.html#a352ad2bec798ce5802231d49bf0a16e8", null ],
     [ "operator<=", "class_date.html#a50265b854c407eb0f3247b41f5cd1258", null ],
     [ "operator==", "class_date.html#ac906e253d7d1343e3e161fb9e1aee707", null ],

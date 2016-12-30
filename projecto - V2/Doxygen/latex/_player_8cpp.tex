@@ -1,0 +1,95 @@
+\hypertarget{_player_8cpp}{}\section{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\+Player.cpp File Reference}
+\label{_player_8cpp}\index{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\+Player.\+cpp@{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\+Player.\+cpp}}
+{\ttfamily \#include \char`\"{}../\+Headers/\+Player.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Headers/utilities.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{_player_8cpp_a7429373489b5ccfffc0c6f7d3b237b06}{operator$<$$<$} (ostream \&out, const \hyperlink{class_player}{Player} \&player)
+\item 
+istream \& \hyperlink{_player_8cpp_ac80a9cf20cbee01df8046ca9497b0b2d}{operator$>$$>$} (istream \&in, \hyperlink{class_player}{Player} \&player)
+\item 
+bool \hyperlink{_player_8cpp_ad08b6b12c8311372c31963f85f3f88ee}{operator$<$} (const \hyperlink{struct_player__node}{Player\+\_\+node} \&pl\+\_\+left, const \hyperlink{struct_player__node}{Player\+\_\+node} \&pl\+\_\+right)
+\item 
+bool \hyperlink{_player_8cpp_a6e47bba4f40f04dd67cc303a58a098d9}{operator$<$} (const \hyperlink{struct_player__queue}{Player\+\_\+queue} \&pl\+\_\+left, const \hyperlink{struct_player__queue}{Player\+\_\+queue} \&pl\+\_\+right)
+\begin{DoxyCompactList}\small\item\em Compares two \hyperlink{class_player}{Player} nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_player_8cpp_ad08b6b12c8311372c31963f85f3f88ee}{}\label{_player_8cpp_ad08b6b12c8311372c31963f85f3f88ee} 
+\index{Player.\+cpp@{Player.\+cpp}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Player.\+cpp@{Player.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_player__node}{Player\+\_\+node} \&}]{pl\+\_\+left,  }\item[{const \hyperlink{struct_player__node}{Player\+\_\+node} \&}]{pl\+\_\+right }\end{DoxyParamCaption})}
+
+
+
+Definition at line 125 of file Player.\+cpp.
+
+\hypertarget{_player_8cpp_a6e47bba4f40f04dd67cc303a58a098d9}{}\label{_player_8cpp_a6e47bba4f40f04dd67cc303a58a098d9} 
+\index{Player.\+cpp@{Player.\+cpp}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Player.\+cpp@{Player.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_player__queue}{Player\+\_\+queue} \&}]{pl\+\_\+left,  }\item[{const \hyperlink{struct_player__queue}{Player\+\_\+queue} \&}]{pl\+\_\+right }\end{DoxyParamCaption})}
+
+
+
+Compares two \hyperlink{class_player}{Player} nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pl\+\_\+left} & \hyperlink{class_player}{Player} to be compared \\
+\hline
+{\em pl\+\_\+right} & \hyperlink{class_player}{Player} to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if pl\+\_\+left if younger than pl\+\_\+right
+\end{DoxyReturn}
+If pl\+\_\+left and pl\+\_\+right were born in the same name it compares their names 
+
+Definition at line 138 of file Player.\+cpp.
+
+\hypertarget{_player_8cpp_a7429373489b5ccfffc0c6f7d3b237b06}{}\label{_player_8cpp_a7429373489b5ccfffc0c6f7d3b237b06} 
+\index{Player.\+cpp@{Player.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Player.\+cpp@{Player.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{class_player}{Player} \&}]{player }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output Stream to write the \hyperlink{class_player}{Player} to \\
+\hline
+{\em player} & \hyperlink{class_player}{Player} to write in the Output Stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+out (parameter)
+\end{DoxyReturn}
+Friend function 
+
+Definition at line 76 of file Player.\+cpp.
+
+\hypertarget{_player_8cpp_ac80a9cf20cbee01df8046ca9497b0b2d}{}\label{_player_8cpp_ac80a9cf20cbee01df8046ca9497b0b2d} 
+\index{Player.\+cpp@{Player.\+cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Player.\+cpp@{Player.\+cpp}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\hyperlink{class_player}{Player} \&}]{player }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input Stream to read the \hyperlink{class_player}{Player} from \\
+\hline
+{\em player} & \hyperlink{class_player}{Player} to be read from the Input Stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+in (parameter)
+\end{DoxyReturn}
+Friend function 
+
+Definition at line 92 of file Player.\+cpp.
+

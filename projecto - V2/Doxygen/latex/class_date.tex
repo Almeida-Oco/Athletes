@@ -1,0 +1,346 @@
+\hypertarget{class_date}{}\section{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+
+
+Class that represents a \hyperlink{class_date}{Date} of the calendar.  
+
+
+
+
+{\ttfamily \#include $<$Date.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_date_a28c6604a0f8ed8216becf24abc20cf5b}{Date} (unsigned int day, unsigned int month, unsigned int year)
+\begin{DoxyCompactList}\small\item\em Contructor with day, month and year. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a0f253815240e70f4c39cb93cc68bd3f4}{get\+Day} () const
+\begin{DoxyCompactList}\small\item\em Gets the day of the \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}{get\+Month} () const
+\begin{DoxyCompactList}\small\item\em Gets the month of the \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+int \hyperlink{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}{get\+Year} () const
+\begin{DoxyCompactList}\small\item\em Gets the year of the \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_aa4c0f619e51dca5ef53284e548d4d0af}{operator$>$} (const \hyperlink{class_date}{Date} \&d1) const
+\begin{DoxyCompactList}\small\item\em Operator $>$ compares two dates. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_ae5a781b0f45775eece17d7f3dd5b3703}{operator$>$=} (const \hyperlink{class_date}{Date} \&d1) const
+\begin{DoxyCompactList}\small\item\em Operator $>$= compares two dates. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a352ad2bec798ce5802231d49bf0a16e8}{operator$<$} (const \hyperlink{class_date}{Date} \&d1) const
+\begin{DoxyCompactList}\small\item\em Operator $<$ compares two dates. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_a50265b854c407eb0f3247b41f5cd1258}{operator$<$=} (const \hyperlink{class_date}{Date} \&d1) const
+\begin{DoxyCompactList}\small\item\em Operator $<$= compares two dates. \end{DoxyCompactList}\item 
+bool \hyperlink{class_date_ac906e253d7d1343e3e161fb9e1aee707}{operator==} (const \hyperlink{class_date}{Date} \&d1) const
+\begin{DoxyCompactList}\small\item\em Operator == compares two dates. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_date_a48e19b5b03c19466bfe245d5ae2b979a}{add\+Days} (unsigned int n) const
+\begin{DoxyCompactList}\small\item\em Sums n days to the date in the object. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_date_a16e8cb570b74e2d7a7050b53c0767542}{subtract\+Days} (unsigned int n) const
+\begin{DoxyCompactList}\small\item\em Subtracts n days to the date in the object. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_date_a93d53878c07ee506c78971b762a47265}{diff\+Days} ()
+\begin{DoxyCompactList}\small\item\em Computates the difference in days between the date of the object and the current date. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_date_a0ec9ecc48a4e5a4a582ff8344ae51acb}{year\+\_\+date} (unsigned int year) const
+\begin{DoxyCompactList}\small\item\em Changes the year of the date. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{class_date_a23dcdfa5167af68543c2b1cd7bb0360f}{operator-\/} (const \hyperlink{class_date}{Date} \&d1) const
+\begin{DoxyCompactList}\small\item\em Computes the time between the two date. \end{DoxyCompactList}\item 
+void \hyperlink{class_date_a37f8fc7ca1692df7a8b265099c061721}{show} () const
+\begin{DoxyCompactList}\small\item\em Prints the date on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that represents a \hyperlink{class_date}{Date} of the calendar. 
+
+Definition at line 28 of file Date.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{}\label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+Sets date to current time on the system 
+
+Definition at line 8 of file Date.\+cpp.
+
+\hypertarget{class_date_a28c6604a0f8ed8216becf24abc20cf5b}{}\label{class_date_a28c6604a0f8ed8216becf24abc20cf5b} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\subsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{unsigned int}]{day,  }\item[{unsigned int}]{month,  }\item[{unsigned int}]{year }\end{DoxyParamCaption})}
+
+
+
+Contructor with day, month and year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & Day of the \hyperlink{class_date}{Date} \\
+\hline
+{\em month} & Month of the \hyperlink{class_date}{Date} \\
+\hline
+{\em year} & Year of the \hyperlink{class_date}{Date}\\
+\hline
+\end{DoxyParams}
+Checks the parameters to see if all is correct, including Leap years 
+
+Definition at line 19 of file Date.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_date_a48e19b5b03c19466bfe245d5ae2b979a}{}\label{class_date_a48e19b5b03c19466bfe245d5ae2b979a} 
+\index{Date@{Date}!add\+Days@{add\+Days}}
+\index{add\+Days@{add\+Days}!Date@{Date}}
+\subsubsection{\texorpdfstring{add\+Days()}{addDays()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Date\+::add\+Days (\begin{DoxyParamCaption}\item[{unsigned int}]{n }\end{DoxyParamCaption}) const}
+
+
+
+Sums n days to the date in the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of days to sum\\
+\hline
+\end{DoxyParams}
+Used only on hash table , takes into consideration leap years
+
+\begin{DoxyReturn}{Returns}
+New object with correct date 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Date.\+cpp.
+
+\hypertarget{class_date_a93d53878c07ee506c78971b762a47265}{}\label{class_date_a93d53878c07ee506c78971b762a47265} 
+\index{Date@{Date}!diff\+Days@{diff\+Days}}
+\index{diff\+Days@{diff\+Days}!Date@{Date}}
+\subsubsection{\texorpdfstring{diff\+Days()}{diffDays()}}
+{\footnotesize\ttfamily unsigned int Date\+::diff\+Days (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computates the difference in days between the date of the object and the current date. 
+
+\begin{DoxyReturn}{Returns}
+If object date $>$ current date returns number of days 
+\end{DoxyReturn}
+
+
+Definition at line 119 of file Date.\+cpp.
+
+\hypertarget{class_date_a0f253815240e70f4c39cb93cc68bd3f4}{}\label{class_date_a0f253815240e70f4c39cb93cc68bd3f4} 
+\index{Date@{Date}!get\+Day@{get\+Day}}
+\index{get\+Day@{get\+Day}!Date@{Date}}
+\subsubsection{\texorpdfstring{get\+Day()}{getDay()}}
+{\footnotesize\ttfamily int Date\+::get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the day of the \hyperlink{class_date}{Date}. 
+
+\begin{DoxyReturn}{Returns}
+day (member varible) 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file Date.\+h.
+
+\hypertarget{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}{}\label{class_date_a332f6e3a2f6a40d73742b6dab7be0f64} 
+\index{Date@{Date}!get\+Month@{get\+Month}}
+\index{get\+Month@{get\+Month}!Date@{Date}}
+\subsubsection{\texorpdfstring{get\+Month()}{getMonth()}}
+{\footnotesize\ttfamily int Date\+::get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the month of the \hyperlink{class_date}{Date}. 
+
+\begin{DoxyReturn}{Returns}
+month (member varible) 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file Date.\+h.
+
+\hypertarget{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}{}\label{class_date_a8b0869f34c2b38d108ab83ee2e770e5d} 
+\index{Date@{Date}!get\+Year@{get\+Year}}
+\index{get\+Year@{get\+Year}!Date@{Date}}
+\subsubsection{\texorpdfstring{get\+Year()}{getYear()}}
+{\footnotesize\ttfamily int Date\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the year of the \hyperlink{class_date}{Date}. 
+
+\begin{DoxyReturn}{Returns}
+year (member varible) 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file Date.\+h.
+
+\hypertarget{class_date_a23dcdfa5167af68543c2b1cd7bb0360f}{}\label{class_date_a23dcdfa5167af68543c2b1cd7bb0360f} 
+\index{Date@{Date}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Date\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1 }\end{DoxyParamCaption}) const}
+
+
+
+Computes the time between the two date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \hyperlink{class_date}{Date} to use to compute the time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector with days passed at 0 , months passed at 1, years passed at 2 
+\end{DoxyReturn}
+
+
+Definition at line 162 of file Date.\+cpp.
+
+\hypertarget{class_date_a352ad2bec798ce5802231d49bf0a16e8}{}\label{class_date_a352ad2bec798ce5802231d49bf0a16e8} 
+\index{Date@{Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Date\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1 }\end{DoxyParamCaption}) const}
+
+
+
+Operator $<$ compares two dates. 
+
+A date is smaller than another if it is sooner 
+
+Definition at line 65 of file Date.\+cpp.
+
+\hypertarget{class_date_a50265b854c407eb0f3247b41f5cd1258}{}\label{class_date_a50265b854c407eb0f3247b41f5cd1258} 
+\index{Date@{Date}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Date\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1 }\end{DoxyParamCaption}) const}
+
+
+
+Operator $<$= compares two dates. 
+
+A date is smaller or equal than another if it is sooner or the same 
+
+Definition at line 61 of file Date.\+cpp.
+
+\hypertarget{class_date_ac906e253d7d1343e3e161fb9e1aee707}{}\label{class_date_ac906e253d7d1343e3e161fb9e1aee707} 
+\index{Date@{Date}!operator==@{operator==}}
+\index{operator==@{operator==}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Date\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1 }\end{DoxyParamCaption}) const}
+
+
+
+Operator == compares two dates. 
+
+A date is equal to another if the day, month and year are the same 
+
+Definition at line 69 of file Date.\+cpp.
+
+\hypertarget{class_date_aa4c0f619e51dca5ef53284e548d4d0af}{}\label{class_date_aa4c0f619e51dca5ef53284e548d4d0af} 
+\index{Date@{Date}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Date\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1 }\end{DoxyParamCaption}) const}
+
+
+
+Operator $>$ compares two dates. 
+
+A date is bigger than another if it is later 
+
+Definition at line 27 of file Date.\+cpp.
+
+\hypertarget{class_date_ae5a781b0f45775eece17d7f3dd5b3703}{}\label{class_date_ae5a781b0f45775eece17d7f3dd5b3703} 
+\index{Date@{Date}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Date@{Date}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Date\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d1 }\end{DoxyParamCaption}) const}
+
+
+
+Operator $>$= compares two dates. 
+
+A date is bigger or equal than another if it is later or the same 
+
+Definition at line 44 of file Date.\+cpp.
+
+\hypertarget{class_date_a37f8fc7ca1692df7a8b265099c061721}{}\label{class_date_a37f8fc7ca1692df7a8b265099c061721} 
+\index{Date@{Date}!show@{show}}
+\index{show@{show}!Date@{Date}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Date\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Prints the date on the screen. 
+
+
+
+Definition at line 235 of file Date.\+cpp.
+
+\hypertarget{class_date_a16e8cb570b74e2d7a7050b53c0767542}{}\label{class_date_a16e8cb570b74e2d7a7050b53c0767542} 
+\index{Date@{Date}!subtract\+Days@{subtract\+Days}}
+\index{subtract\+Days@{subtract\+Days}!Date@{Date}}
+\subsubsection{\texorpdfstring{subtract\+Days()}{subtractDays()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Date\+::subtract\+Days (\begin{DoxyParamCaption}\item[{unsigned int}]{n }\end{DoxyParamCaption}) const}
+
+
+
+Subtracts n days to the date in the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of days to subtract\\
+\hline
+\end{DoxyParams}
+Used only on hash table , takes into consideration leap years
+
+\begin{DoxyReturn}{Returns}
+New object with correct date 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file Date.\+cpp.
+
+\hypertarget{class_date_a0ec9ecc48a4e5a4a582ff8344ae51acb}{}\label{class_date_a0ec9ecc48a4e5a4a582ff8344ae51acb} 
+\index{Date@{Date}!year\+\_\+date@{year\+\_\+date}}
+\index{year\+\_\+date@{year\+\_\+date}!Date@{Date}}
+\subsubsection{\texorpdfstring{year\+\_\+date()}{year\_date()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Date\+::year\+\_\+date (\begin{DoxyParamCaption}\item[{unsigned int}]{year }\end{DoxyParamCaption}) const}
+
+
+
+Changes the year of the date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & Year to change the date into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new date with same day and month as original but year equal to param year 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file Date.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\hyperlink{_date_8h}{Date.\+h}\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\hyperlink{_date_8cpp}{Date.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,717 @@
+\hypertarget{class_level}{}\section{Level Class Reference}
+\label{class_level}\index{Level@{Level}}
+
+
+Holds all the information about the \hyperlink{class_club}{Club}.  
+
+
+
+
+{\ttfamily \#include $<$Level.\+h$>$}
+
+Inheritance diagram for Level\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_level}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_level_a7a696c928ca5d5354db6e50e46d0f67d}{Level} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_level_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\+Level} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_level_a098e3e980b18013bf7f0683acbe5e2f6}{Level} (const \hyperlink{class_level}{Level} \&level)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_level}{Level} \& \hyperlink{class_level_a60eb04b65c900ae8dddf3d6251fac7b1}{operator=} (const \hyperlink{class_level}{Level} \&level)
+\begin{DoxyCompactList}\small\item\em Copy Operator. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_level_ae7b28ba0cb8d49372c4657fbe42706e1}{get\+Max\+Age} ()=0
+\begin{DoxyCompactList}\small\item\em Get the maximum age to be on this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_level_a161cf8c238fd499c112d90504cb6f587}{get\+Min\+Age} ()=0
+\begin{DoxyCompactList}\small\item\em Get the minimum age to be on this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$ \hyperlink{class_level_a51ff82259c62111618aed20f96ec9f88}{get\+Players} () const
+\begin{DoxyCompactList}\small\item\em Gets all of the Players on this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_event}{Event} $\ast$ $>$ \hyperlink{class_level_aa03432096cfcf42293cebf2c801b7437}{get\+Events} () const
+\begin{DoxyCompactList}\small\item\em Gets all of the Events on this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+string \hyperlink{class_level_a6c4d3f153c3285aeaf3ec954981c5be8}{get\+Coach} () const
+\begin{DoxyCompactList}\small\item\em Gets the coach of this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+\hyperlink{class_b_s_t}{B\+ST}$<$ \hyperlink{struct_player__node}{Player\+\_\+node} $>$ \hyperlink{class_level_ae24a0ba5c352e1cb0fa64282a89e559f}{get\+Players\+\_\+tree} () const
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_b_s_t}{B\+ST} of players on this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_event}{Event} $\ast$ $>$ \hyperlink{class_level_a58a416953fdf79d4b6388cd6bd0b4e95}{get\+Trainings} () const
+\begin{DoxyCompactList}\small\item\em Gets all of the Trainings of this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_event}{Event} $\ast$ $>$ \hyperlink{class_level_a20beb75d82f194ad901e6193ee728d81}{get\+Tournaments} () const
+\begin{DoxyCompactList}\small\item\em Gets all of the Tournaments of this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_level_a66290778fa4bcd2f29b9ff3e605b2902}{add\+Player} (\hyperlink{class_player}{Player} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Adds a new \hyperlink{class_player}{Player} to this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a86b0d3ec7bb14fd7002c332b328dd96d}{add\+Event} (\hyperlink{class_event}{Event} $\ast$event)
+\begin{DoxyCompactList}\small\item\em Adds a new \hyperlink{class_event}{Event} to this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_aa666e5fe87af336fd7350ac0b72b7c8c}{set\+Coach} (std\+::string coach)
+\begin{DoxyCompactList}\small\item\em Changes coach name. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_level_a40d22b376e72950a07de5e0a9e288029}{showplayers} () const
+\begin{DoxyCompactList}\small\item\em Outputs the Players of this \hyperlink{class_level}{Level} to the screen. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_level_a4101cb725b1fd0c0836834c92b190363}{showtrainings} () const
+\begin{DoxyCompactList}\small\item\em Outputs the Trainings of this \hyperlink{class_level}{Level} to the screen. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_level_a757c4547f3b8f7c7ecb02c7e0e6cd7c9}{showtournaments} () const
+\begin{DoxyCompactList}\small\item\em Outputs the Tournaments of this \hyperlink{class_level}{Level} to the screen. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_level_a8115b8f2e69ce1fdc21c64525c61a957}{showevents} () const
+\begin{DoxyCompactList}\small\item\em Outputs the next events to happen. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a68ca29bc1f8796b8ee89f6d9a77b3e2a}{removeplayer} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em Removes a \hyperlink{class_player}{Player} from this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a8f38f4c5bc05c7c7c4d4ea1321d91b84}{remove\+Event} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em Removes an \hyperlink{class_event}{Event} from this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_event}{Event} $\ast$ $>$ \hyperlink{class_level_a2c4cb023c042409bd7551a91f369a990}{get\+Future\+Events} ()
+\begin{DoxyCompactList}\small\item\em Gets Events that will happen in the future. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_ac7ecbf06c831f2a02cad567bcfb52ec9}{raiseassiduity} (vector$<$ string $>$ players)
+\begin{DoxyCompactList}\small\item\em Raises the assiduity of the Players. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_ab4e4b8c386063fd8244042f7eefa3427}{lowerassiduity} (vector$<$ string $>$ players)
+\begin{DoxyCompactList}\small\item\em Lowers the assiduity of the Players. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a2d64a6f446a4d6c7c4959c7bc0972a84}{raisepgames} (vector$<$ string $>$ players)
+\begin{DoxyCompactList}\small\item\em Raises the presences in games of the Players. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a336a54c2ef7e4307e9353a200a11537e}{lowerpgames} (vector$<$ string $>$ players)
+\begin{DoxyCompactList}\small\item\em Lowers the presences in games of the Players. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_ac592cc97524f49de9114f4af20312aad}{raiseptournaments} (vector$<$ string $>$ players)
+\begin{DoxyCompactList}\small\item\em Raises the presences in tournaments of the Players. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_afbb999a489e4e185bb26e965939a97e5}{lowerptournaments} (vector$<$ string $>$ players)
+\begin{DoxyCompactList}\small\item\em Lowers the presences in tournaments of the Players. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_af91bf73255a171a3f2a256778e075fb7}{raisegames\+\_\+won} (vector$<$ string $>$ players, int value, vector$<$ pair$<$ pair$<$ unsigned int, unsigned int $>$, string $>$$>$ results)
+\begin{DoxyCompactList}\small\item\em Raises the number of games in which this \hyperlink{class_level}{Level} won that the Players participated. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a2634c6743f1a56592c97e6cfb7a9a8b6}{raiseassiduity\+\_\+curr} (vector$<$ string $>$ player, int value)
+\begin{DoxyCompactList}\small\item\em Increases the value of assiduity of Players. \end{DoxyCompactList}\item 
+virtual vector$<$ string $>$ \hyperlink{class_level_ac118b390f16a75b9a0e9df198b3190ad}{get\+Call} (unsigned int size)=0
+\begin{DoxyCompactList}\small\item\em Makes a call for an \hyperlink{class_event}{Event}. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a09a28b62e9b593db54b220533a5dd567}{actualize\+\_\+curr\+\_\+parameters} ()
+\begin{DoxyCompactList}\small\item\em Re-\/computes the assiduities of all the Players in this \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a45217bde102ee160f4852d093f51ed83}{make\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Constructs the member variable players\+\_\+tree with the current Players. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a2752e4f84d3de5e8b72e4cf87cb0131b}{remove\+\_\+\+Tree} (\hyperlink{struct_player__node}{Player\+\_\+node} pl)
+\begin{DoxyCompactList}\small\item\em Removes a \hyperlink{class_player}{Player} from the member variable players\+\_\+tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds all the information about the \hyperlink{class_club}{Club}. 
+
+Definition at line 36 of file Level.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_level_a7a696c928ca5d5354db6e50e46d0f67d}{}\label{class_level_a7a696c928ca5d5354db6e50e46d0f67d} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+Initializes the \hyperlink{class_b_s_t}{B\+ST} 
+
+Definition at line 46 of file Level.\+h.
+
+\hypertarget{class_level_a249eac1e8f19ff44134efa5e986feaca}{}\label{class_level_a249eac1e8f19ff44134efa5e986feaca} 
+\index{Level@{Level}!````~Level@{$\sim$\+Level}}
+\index{````~Level@{$\sim$\+Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{$\sim$\+Level()}{~Level()}}
+{\footnotesize\ttfamily Level\+::$\sim$\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 8 of file Level.\+cpp.
+
+\hypertarget{class_level_a098e3e980b18013bf7f0683acbe5e2f6}{}\label{class_level_a098e3e980b18013bf7f0683acbe5e2f6} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{const \hyperlink{class_level}{Level} \&}]{level }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Object of \hyperlink{class_level}{Level} to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Level.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_level_a09a28b62e9b593db54b220533a5dd567}{}\label{class_level_a09a28b62e9b593db54b220533a5dd567} 
+\index{Level@{Level}!actualize\+\_\+curr\+\_\+parameters@{actualize\+\_\+curr\+\_\+parameters}}
+\index{actualize\+\_\+curr\+\_\+parameters@{actualize\+\_\+curr\+\_\+parameters}!Level@{Level}}
+\subsubsection{\texorpdfstring{actualize\+\_\+curr\+\_\+parameters()}{actualize\_curr\_parameters()}}
+{\footnotesize\ttfamily void Level\+::actualize\+\_\+curr\+\_\+parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Re-\/computes the assiduities of all the Players in this \hyperlink{class_level}{Level}. 
+
+
+
+Definition at line 338 of file Level.\+cpp.
+
+\hypertarget{class_level_a86b0d3ec7bb14fd7002c332b328dd96d}{}\label{class_level_a86b0d3ec7bb14fd7002c332b328dd96d} 
+\index{Level@{Level}!add\+Event@{add\+Event}}
+\index{add\+Event@{add\+Event}!Level@{Level}}
+\subsubsection{\texorpdfstring{add\+Event()}{addEvent()}}
+{\footnotesize\ttfamily void Level\+::add\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{class_event}{Event} $\ast$}]{event }\end{DoxyParamCaption})}
+
+
+
+Adds a new \hyperlink{class_event}{Event} to this \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & New \hyperlink{class_event}{Event} to be added \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file Level.\+cpp.
+
+\hypertarget{class_level_a66290778fa4bcd2f29b9ff3e605b2902}{}\label{class_level_a66290778fa4bcd2f29b9ff3e605b2902} 
+\index{Level@{Level}!add\+Player@{add\+Player}}
+\index{add\+Player@{add\+Player}!Level@{Level}}
+\subsubsection{\texorpdfstring{add\+Player()}{addPlayer()}}
+{\footnotesize\ttfamily bool Level\+::add\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a new \hyperlink{class_player}{Player} to this \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & New \hyperlink{class_player}{Player} to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the \hyperlink{class_player}{Player} was inserted successfuly, false if not
+\end{DoxyReturn}
+The \hyperlink{class_player}{Player} can not be added to the \hyperlink{class_level}{Level} if his age is not within the range of admitted ages 
+
+Reimplemented in \hyperlink{class_juniors_a23915dab5b0c30a978f08a653483db53}{Juniors}, \hyperlink{class_seniors_a4ee5683212625ee909b5c04d08bc8823}{Seniors}, \hyperlink{class_juveniles_a596c6380325142d8c49c8d8db7b9fa31}{Juveniles}, and \hyperlink{class_minis_a75f45698aaf057d11e083694bfd31d17}{Minis}.
+
+
+
+Definition at line 85 of file Level.\+cpp.
+
+\hypertarget{class_level_ac118b390f16a75b9a0e9df198b3190ad}{}\label{class_level_ac118b390f16a75b9a0e9df198b3190ad} 
+\index{Level@{Level}!get\+Call@{get\+Call}}
+\index{get\+Call@{get\+Call}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Call()}{getCall()}}
+{\footnotesize\ttfamily virtual vector$<$string$>$ Level\+::get\+Call (\begin{DoxyParamCaption}\item[{unsigned int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Makes a call for an \hyperlink{class_event}{Event}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & How many Players to call \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector with the players called to the \hyperlink{class_event}{Event}
+\end{DoxyReturn}
+Pure Virtual, to be implemented by derived classes 
+
+Implemented in \hyperlink{class_juniors_ace1da8267f2a92dbfb9e27f7b6b95d26}{Juniors}, \hyperlink{class_seniors_a3b2fbe1e5d735c7659a195cea6333a0b}{Seniors}, \hyperlink{class_juveniles_a062cff0b64c844c3e9cc9b41e768cce6}{Juveniles}, and \hyperlink{class_minis_ad2c86c585b05e735bb6e38f672b9bbab}{Minis}.
+
+\hypertarget{class_level_a6c4d3f153c3285aeaf3ec954981c5be8}{}\label{class_level_a6c4d3f153c3285aeaf3ec954981c5be8} 
+\index{Level@{Level}!get\+Coach@{get\+Coach}}
+\index{get\+Coach@{get\+Coach}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Coach()}{getCoach()}}
+{\footnotesize\ttfamily string Level\+::get\+Coach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the coach of this \hyperlink{class_level}{Level}. 
+
+\begin{DoxyReturn}{Returns}
+coach (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file Level.\+h.
+
+\hypertarget{class_level_aa03432096cfcf42293cebf2c801b7437}{}\label{class_level_aa03432096cfcf42293cebf2c801b7437} 
+\index{Level@{Level}!get\+Events@{get\+Events}}
+\index{get\+Events@{get\+Events}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Events()}{getEvents()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_event}{Event} $\ast$$>$ Level\+::get\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets all of the Events on this \hyperlink{class_level}{Level}. 
+
+\begin{DoxyReturn}{Returns}
+events (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file Level.\+h.
+
+\hypertarget{class_level_a2c4cb023c042409bd7551a91f369a990}{}\label{class_level_a2c4cb023c042409bd7551a91f369a990} 
+\index{Level@{Level}!get\+Future\+Events@{get\+Future\+Events}}
+\index{get\+Future\+Events@{get\+Future\+Events}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Future\+Events()}{getFutureEvents()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_event}{Event} $\ast$ $>$ Level\+::get\+Future\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets Events that will happen in the future. 
+
+\begin{DoxyReturn}{Returns}
+Vector of the Events to happen 
+\end{DoxyReturn}
+
+
+Definition at line 217 of file Level.\+cpp.
+
+\hypertarget{class_level_ae7b28ba0cb8d49372c4657fbe42706e1}{}\label{class_level_ae7b28ba0cb8d49372c4657fbe42706e1} 
+\index{Level@{Level}!get\+Max\+Age@{get\+Max\+Age}}
+\index{get\+Max\+Age@{get\+Max\+Age}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Max\+Age()}{getMaxAge()}}
+{\footnotesize\ttfamily virtual unsigned int Level\+::get\+Max\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the maximum age to be on this \hyperlink{class_level}{Level}. 
+
+Pure Virtual, to be inherited by derived classes 
+
+Implemented in \hyperlink{class_juniors_a98c28047a2d5ff2b14651ee9eccfd2b6}{Juniors}, \hyperlink{class_seniors_a856a5d37a9dbda1e1b3ad8eb90db1f2a}{Seniors}, \hyperlink{class_juveniles_a6b7825beb91d790fc5432902aedcc1fc}{Juveniles}, and \hyperlink{class_minis_a995e2db860e3a5c110cbead80ab61caa}{Minis}.
+
+\hypertarget{class_level_a161cf8c238fd499c112d90504cb6f587}{}\label{class_level_a161cf8c238fd499c112d90504cb6f587} 
+\index{Level@{Level}!get\+Min\+Age@{get\+Min\+Age}}
+\index{get\+Min\+Age@{get\+Min\+Age}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Min\+Age()}{getMinAge()}}
+{\footnotesize\ttfamily virtual unsigned int Level\+::get\+Min\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the minimum age to be on this \hyperlink{class_level}{Level}. 
+
+Pure Virtual, to be inherited by derived classes 
+
+Implemented in \hyperlink{class_juniors_a3110bdbaa344b2bfefa2ddcb8be8d7c6}{Juniors}, \hyperlink{class_seniors_a1843edaf8811f4728f76c11c79fe5450}{Seniors}, \hyperlink{class_juveniles_a033b591527e3398a05da40e5ab954b40}{Juveniles}, and \hyperlink{class_minis_a062e99b463e0dd1e370b46e6fb37087a}{Minis}.
+
+\hypertarget{class_level_a51ff82259c62111618aed20f96ec9f88}{}\label{class_level_a51ff82259c62111618aed20f96ec9f88} 
+\index{Level@{Level}!get\+Players@{get\+Players}}
+\index{get\+Players@{get\+Players}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Players()}{getPlayers()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_player}{Player} $\ast$$>$ Level\+::get\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets all of the Players on this \hyperlink{class_level}{Level}. 
+
+\begin{DoxyReturn}{Returns}
+players (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file Level.\+h.
+
+\hypertarget{class_level_ae24a0ba5c352e1cb0fa64282a89e559f}{}\label{class_level_ae24a0ba5c352e1cb0fa64282a89e559f} 
+\index{Level@{Level}!get\+Players\+\_\+tree@{get\+Players\+\_\+tree}}
+\index{get\+Players\+\_\+tree@{get\+Players\+\_\+tree}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Players\+\_\+tree()}{getPlayers\_tree()}}
+{\footnotesize\ttfamily \hyperlink{class_b_s_t}{B\+ST}$<$\hyperlink{struct_player__node}{Player\+\_\+node}$>$ Level\+::get\+Players\+\_\+tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the \hyperlink{class_b_s_t}{B\+ST} of players on this \hyperlink{class_level}{Level}. 
+
+\begin{DoxyReturn}{Returns}
+players\+\_\+tree (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Level.\+h.
+
+\hypertarget{class_level_a20beb75d82f194ad901e6193ee728d81}{}\label{class_level_a20beb75d82f194ad901e6193ee728d81} 
+\index{Level@{Level}!get\+Tournaments@{get\+Tournaments}}
+\index{get\+Tournaments@{get\+Tournaments}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Tournaments()}{getTournaments()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_event}{Event} $\ast$ $>$ Level\+::get\+Tournaments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets all of the Tournaments of this \hyperlink{class_level}{Level}. 
+
+\begin{DoxyReturn}{Returns}
+Vector only with Tournaments 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Level.\+cpp.
+
+\hypertarget{class_level_a58a416953fdf79d4b6388cd6bd0b4e95}{}\label{class_level_a58a416953fdf79d4b6388cd6bd0b4e95} 
+\index{Level@{Level}!get\+Trainings@{get\+Trainings}}
+\index{get\+Trainings@{get\+Trainings}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Trainings()}{getTrainings()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_event}{Event} $\ast$ $>$ Level\+::get\+Trainings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets all of the Trainings of this \hyperlink{class_level}{Level}. 
+
+\begin{DoxyReturn}{Returns}
+Vector only with Trainings 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file Level.\+cpp.
+
+\hypertarget{class_level_ab4e4b8c386063fd8244042f7eefa3427}{}\label{class_level_ab4e4b8c386063fd8244042f7eefa3427} 
+\index{Level@{Level}!lowerassiduity@{lowerassiduity}}
+\index{lowerassiduity@{lowerassiduity}!Level@{Level}}
+\subsubsection{\texorpdfstring{lowerassiduity()}{lowerassiduity()}}
+{\footnotesize\ttfamily void Level\+::lowerassiduity (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{players }\end{DoxyParamCaption})}
+
+
+
+Lowers the assiduity of the Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & Vector of players to lower the assiduity (member varible in \hyperlink{class_player}{Player}) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file Level.\+cpp.
+
+\hypertarget{class_level_a336a54c2ef7e4307e9353a200a11537e}{}\label{class_level_a336a54c2ef7e4307e9353a200a11537e} 
+\index{Level@{Level}!lowerpgames@{lowerpgames}}
+\index{lowerpgames@{lowerpgames}!Level@{Level}}
+\subsubsection{\texorpdfstring{lowerpgames()}{lowerpgames()}}
+{\footnotesize\ttfamily void Level\+::lowerpgames (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{players }\end{DoxyParamCaption})}
+
+
+
+Lowers the presences in games of the Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & Vector of players to lower the pgames (member varible in \hyperlink{class_player}{Player}) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 269 of file Level.\+cpp.
+
+\hypertarget{class_level_afbb999a489e4e185bb26e965939a97e5}{}\label{class_level_afbb999a489e4e185bb26e965939a97e5} 
+\index{Level@{Level}!lowerptournaments@{lowerptournaments}}
+\index{lowerptournaments@{lowerptournaments}!Level@{Level}}
+\subsubsection{\texorpdfstring{lowerptournaments()}{lowerptournaments()}}
+{\footnotesize\ttfamily void Level\+::lowerptournaments (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{players }\end{DoxyParamCaption})}
+
+
+
+Lowers the presences in tournaments of the Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & Vector of players to lower the ptournaments (member varible in \hyperlink{class_player}{Player}) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 293 of file Level.\+cpp.
+
+\hypertarget{class_level_a45217bde102ee160f4852d093f51ed83}{}\label{class_level_a45217bde102ee160f4852d093f51ed83} 
+\index{Level@{Level}!make\+Tree@{make\+Tree}}
+\index{make\+Tree@{make\+Tree}!Level@{Level}}
+\subsubsection{\texorpdfstring{make\+Tree()}{makeTree()}}
+{\footnotesize\ttfamily void Level\+::make\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs the member variable players\+\_\+tree with the current Players. 
+
+
+
+Definition at line 359 of file Level.\+cpp.
+
+\hypertarget{class_level_a60eb04b65c900ae8dddf3d6251fac7b1}{}\label{class_level_a60eb04b65c900ae8dddf3d6251fac7b1} 
+\index{Level@{Level}!operator=@{operator=}}
+\index{operator=@{operator=}!Level@{Level}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_level}{Level} \& Level\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_level}{Level} \&}]{level }\end{DoxyParamCaption})}
+
+
+
+Copy Operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Object of \hyperlink{class_level}{Level} to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Level.\+cpp.
+
+\hypertarget{class_level_ac7ecbf06c831f2a02cad567bcfb52ec9}{}\label{class_level_ac7ecbf06c831f2a02cad567bcfb52ec9} 
+\index{Level@{Level}!raiseassiduity@{raiseassiduity}}
+\index{raiseassiduity@{raiseassiduity}!Level@{Level}}
+\subsubsection{\texorpdfstring{raiseassiduity()}{raiseassiduity()}}
+{\footnotesize\ttfamily void Level\+::raiseassiduity (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{players }\end{DoxyParamCaption})}
+
+
+
+Raises the assiduity of the Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & Vector of players to raise the assiduity (member varible in \hyperlink{class_player}{Player}) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 232 of file Level.\+cpp.
+
+\hypertarget{class_level_a2634c6743f1a56592c97e6cfb7a9a8b6}{}\label{class_level_a2634c6743f1a56592c97e6cfb7a9a8b6} 
+\index{Level@{Level}!raiseassiduity\+\_\+curr@{raiseassiduity\+\_\+curr}}
+\index{raiseassiduity\+\_\+curr@{raiseassiduity\+\_\+curr}!Level@{Level}}
+\subsubsection{\texorpdfstring{raiseassiduity\+\_\+curr()}{raiseassiduity\_curr()}}
+{\footnotesize\ttfamily void Level\+::raiseassiduity\+\_\+curr (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{player,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Increases the value of assiduity of Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Vector of names of \hyperlink{class_player}{Player} to be increased \\
+\hline
+{\em value} & Number of points to be increased \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 326 of file Level.\+cpp.
+
+\hypertarget{class_level_af91bf73255a171a3f2a256778e075fb7}{}\label{class_level_af91bf73255a171a3f2a256778e075fb7} 
+\index{Level@{Level}!raisegames\+\_\+won@{raisegames\+\_\+won}}
+\index{raisegames\+\_\+won@{raisegames\+\_\+won}!Level@{Level}}
+\subsubsection{\texorpdfstring{raisegames\+\_\+won()}{raisegames\_won()}}
+{\footnotesize\ttfamily void Level\+::raisegames\+\_\+won (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{players,  }\item[{int}]{value,  }\item[{vector$<$ pair$<$ pair$<$ unsigned int, unsigned int $>$, string $>$$>$}]{results }\end{DoxyParamCaption})}
+
+
+
+Raises the number of games in which this \hyperlink{class_level}{Level} won that the Players participated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & Players to be raised \\
+\hline
+{\em value} & Amount to be raised \\
+\hline
+{\em results} & Results achieved by the \hyperlink{class_level}{Level}\\
+\hline
+\end{DoxyParams}
+Computes how many games where won from the parameter results then multiplies it by value and adds to each player 
+
+Definition at line 307 of file Level.\+cpp.
+
+\hypertarget{class_level_a2d64a6f446a4d6c7c4959c7bc0972a84}{}\label{class_level_a2d64a6f446a4d6c7c4959c7bc0972a84} 
+\index{Level@{Level}!raisepgames@{raisepgames}}
+\index{raisepgames@{raisepgames}!Level@{Level}}
+\subsubsection{\texorpdfstring{raisepgames()}{raisepgames()}}
+{\footnotesize\ttfamily void Level\+::raisepgames (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{players }\end{DoxyParamCaption})}
+
+
+
+Raises the presences in games of the Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & Vector of players to raise the pgames (member variable in \hyperlink{class_player}{Player}) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 257 of file Level.\+cpp.
+
+\hypertarget{class_level_ac592cc97524f49de9114f4af20312aad}{}\label{class_level_ac592cc97524f49de9114f4af20312aad} 
+\index{Level@{Level}!raiseptournaments@{raiseptournaments}}
+\index{raiseptournaments@{raiseptournaments}!Level@{Level}}
+\subsubsection{\texorpdfstring{raiseptournaments()}{raiseptournaments()}}
+{\footnotesize\ttfamily void Level\+::raiseptournaments (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{players }\end{DoxyParamCaption})}
+
+
+
+Raises the presences in tournaments of the Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & Vector of players to raise the ptournaments (member variable in \hyperlink{class_player}{Player}) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 281 of file Level.\+cpp.
+
+\hypertarget{class_level_a2752e4f84d3de5e8b72e4cf87cb0131b}{}\label{class_level_a2752e4f84d3de5e8b72e4cf87cb0131b} 
+\index{Level@{Level}!remove\+\_\+\+Tree@{remove\+\_\+\+Tree}}
+\index{remove\+\_\+\+Tree@{remove\+\_\+\+Tree}!Level@{Level}}
+\subsubsection{\texorpdfstring{remove\+\_\+\+Tree()}{remove\_Tree()}}
+{\footnotesize\ttfamily void Level\+::remove\+\_\+\+Tree (\begin{DoxyParamCaption}\item[{\hyperlink{struct_player__node}{Player\+\_\+node}}]{pl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a \hyperlink{class_player}{Player} from the member variable players\+\_\+tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pl} & \hyperlink{class_player}{Player} to be removed from players\+\_\+tree \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file Level.\+h.
+
+\hypertarget{class_level_a8f38f4c5bc05c7c7c4d4ea1321d91b84}{}\label{class_level_a8f38f4c5bc05c7c7c4d4ea1321d91b84} 
+\index{Level@{Level}!remove\+Event@{remove\+Event}}
+\index{remove\+Event@{remove\+Event}!Level@{Level}}
+\subsubsection{\texorpdfstring{remove\+Event()}{removeEvent()}}
+{\footnotesize\ttfamily void Level\+::remove\+Event (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Removes an \hyperlink{class_event}{Event} from this \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Position in the member variable events \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 210 of file Level.\+cpp.
+
+\hypertarget{class_level_a68ca29bc1f8796b8ee89f6d9a77b3e2a}{}\label{class_level_a68ca29bc1f8796b8ee89f6d9a77b3e2a} 
+\index{Level@{Level}!removeplayer@{removeplayer}}
+\index{removeplayer@{removeplayer}!Level@{Level}}
+\subsubsection{\texorpdfstring{removeplayer()}{removeplayer()}}
+{\footnotesize\ttfamily void Level\+::removeplayer (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Removes a \hyperlink{class_player}{Player} from this \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Position in the member variable players \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 197 of file Level.\+cpp.
+
+\hypertarget{class_level_aa666e5fe87af336fd7350ac0b72b7c8c}{}\label{class_level_aa666e5fe87af336fd7350ac0b72b7c8c} 
+\index{Level@{Level}!set\+Coach@{set\+Coach}}
+\index{set\+Coach@{set\+Coach}!Level@{Level}}
+\subsubsection{\texorpdfstring{set\+Coach()}{setCoach()}}
+{\footnotesize\ttfamily void Level\+::set\+Coach (\begin{DoxyParamCaption}\item[{std\+::string}]{coach }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes coach name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coach} & Name of the coach \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 117 of file Level.\+h.
+
+\hypertarget{class_level_a8115b8f2e69ce1fdc21c64525c61a957}{}\label{class_level_a8115b8f2e69ce1fdc21c64525c61a957} 
+\index{Level@{Level}!showevents@{showevents}}
+\index{showevents@{showevents}!Level@{Level}}
+\subsubsection{\texorpdfstring{showevents()}{showevents()}}
+{\footnotesize\ttfamily void Level\+::showevents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the next events to happen. 
+
+Includes both Trainings and Tournaments 
+
+Definition at line 164 of file Level.\+cpp.
+
+\hypertarget{class_level_a40d22b376e72950a07de5e0a9e288029}{}\label{class_level_a40d22b376e72950a07de5e0a9e288029} 
+\index{Level@{Level}!showplayers@{showplayers}}
+\index{showplayers@{showplayers}!Level@{Level}}
+\subsubsection{\texorpdfstring{showplayers()}{showplayers()}}
+{\footnotesize\ttfamily void Level\+::showplayers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the Players of this \hyperlink{class_level}{Level} to the screen. 
+
+Pure Virtual, to be inherited by derived classes 
+
+Reimplemented in \hyperlink{class_juniors_aa312c32ccc0c9d3193036c20849b8669}{Juniors}, \hyperlink{class_seniors_a671c22ddbb0c2df27adf12364db0380a}{Seniors}, \hyperlink{class_juveniles_ae66be24e5e17ce8583ff59c45ff4a772}{Juveniles}, and \hyperlink{class_minis_a062ba8858c80dcf52c792e5304ccbfeb}{Minis}.
+
+
+
+Definition at line 116 of file Level.\+cpp.
+
+\hypertarget{class_level_a757c4547f3b8f7c7ecb02c7e0e6cd7c9}{}\label{class_level_a757c4547f3b8f7c7ecb02c7e0e6cd7c9} 
+\index{Level@{Level}!showtournaments@{showtournaments}}
+\index{showtournaments@{showtournaments}!Level@{Level}}
+\subsubsection{\texorpdfstring{showtournaments()}{showtournaments()}}
+{\footnotesize\ttfamily void Level\+::showtournaments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the Tournaments of this \hyperlink{class_level}{Level} to the screen. 
+
+Pure Virtual, to be inherited by derived classes 
+
+Reimplemented in \hyperlink{class_juniors_a05afe7596b708ad635ac709499e66bc1}{Juniors}, \hyperlink{class_seniors_a5782adf80e1221220aa9e7bcaca5a3e3}{Seniors}, \hyperlink{class_juveniles_a8502c64d6a2cefda618003da25db3cda}{Juveniles}, and \hyperlink{class_minis_a1a8d585f0c4b745c9c703cc6449c778d}{Minis}.
+
+
+
+Definition at line 146 of file Level.\+cpp.
+
+\hypertarget{class_level_a4101cb725b1fd0c0836834c92b190363}{}\label{class_level_a4101cb725b1fd0c0836834c92b190363} 
+\index{Level@{Level}!showtrainings@{showtrainings}}
+\index{showtrainings@{showtrainings}!Level@{Level}}
+\subsubsection{\texorpdfstring{showtrainings()}{showtrainings()}}
+{\footnotesize\ttfamily void Level\+::showtrainings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the Trainings of this \hyperlink{class_level}{Level} to the screen. 
+
+Pure Virtual, to be inherited by derived classes 
+
+Reimplemented in \hyperlink{class_juniors_ad74d069390fffeda607de3584a0453de}{Juniors}, \hyperlink{class_seniors_a1f993a8ff143cc2e6dee8f3c81ed4cf3}{Seniors}, \hyperlink{class_juveniles_a168139683f59bca317a7d55cd33be5ac}{Juveniles}, and \hyperlink{class_minis_a69059ad5f89289c70ce6dec4906e02f3}{Minis}.
+
+
+
+Definition at line 128 of file Level.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\hyperlink{_level_8h}{Level.\+h}\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\hyperlink{_level_8cpp}{Level.\+cpp}\end{DoxyCompactItemize}

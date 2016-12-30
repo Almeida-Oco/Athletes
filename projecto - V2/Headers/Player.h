@@ -197,7 +197,7 @@ public:
   friend istream& operator>>(istream& in, Player & player);//gets date from instream in
 };
 
-/*
+/**
   @struct Player_node
   @brief Struct to store the Player in a BST
   @var player Player to be stored
@@ -208,7 +208,7 @@ struct Player_node {
 
 bool operator<(const Player_node & pl_left, const Player_node & p_right);//compares players nodes
 
-/*
+/**
   @struct Player_queue
   @brief Struct to store the Player in a priority queue
   @var player Player to be stored

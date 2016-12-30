@@ -1,0 +1,425 @@
+\hypertarget{class_tournament}{}\section{Tournament Class Reference}
+\label{class_tournament}\index{Tournament@{Tournament}}
+
+
+Used to host information about a single \hyperlink{class_tournament}{Tournament}.  
+
+
+
+
+{\ttfamily \#include $<$Tournament.\+h$>$}
+
+Inheritance diagram for Tournament\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tournament}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tournament_a87cc832c6612caebcab61d1bea7ef1ac}{Tournament} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_tournament_a255677d318362ae4dc23b9d6a3359f61}{$\sim$\+Tournament} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tournament_a653ee8a664677bf0f757234150fa71f8}{Tournament} (const \hyperlink{class_tournament}{Tournament} \&tournament)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tournament}{Tournament} \& \hyperlink{class_tournament_a0eadb353ccff0b3c64b19d65f3353771}{operator=} (const \hyperlink{class_tournament}{Tournament} \&tournament)
+\begin{DoxyCompactList}\small\item\em Copy Operator. \end{DoxyCompactList}\item 
+\hyperlink{class_tournament_a38dbc53e1d0f1eaf6b661169db87c270}{Tournament} (\hyperlink{class_event}{Event} $\ast$ev)
+\begin{DoxyCompactList}\small\item\em Pointer Copy Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tournament_a84c5301c50e0c4ac263ed3d74fa7c8c5}{Tournament} (\hyperlink{class_date}{Date} day, bool major)
+\begin{DoxyCompactList}\small\item\em Partial Constructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_tournament_ab6fde765568ea9779fc10f0f2811c163}{Istraining} () const
+\begin{DoxyCompactList}\small\item\em Checks if this \hyperlink{class_event}{Event} is a \hyperlink{class_training}{Training}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tournament_a35bd5292194edb5d5c220838b68cda75}{show} () const
+\begin{DoxyCompactList}\small\item\em Used to print the \hyperlink{class_tournament}{Tournament} on the screen. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_tournament_a62adb322a6d5268d4ec3e267570ff4ed}{is\+Game} () const
+\begin{DoxyCompactList}\small\item\em Checks if the \hyperlink{class_training}{Training} was a game. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_tournament_ae021dc9d9aa7fb8b18bd065bfccc4b7e}{get\+Rank} () const
+\begin{DoxyCompactList}\small\item\em Gets the rank achieved by the \hyperlink{class_level}{Level} at a \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_tournament_af733baa05b3ae1465d6b5271929b5061}{is\+Major} () const
+\begin{DoxyCompactList}\small\item\em Checks if \hyperlink{class_tournament}{Tournament} was a major \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+virtual vector$<$ pair$<$ pair$<$ unsigned int, unsigned int $>$, string $>$ $>$ \hyperlink{class_tournament_abacd2d5489099f31a9688a7da4d64c40}{get\+Results} () const
+\begin{DoxyCompactList}\small\item\em Gets the results of the \hyperlink{class_level}{Level} in the \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tournament_acab9ee32169ba590f4ffdb5b59b28a86}{set\+Results} (vector$<$ pair$<$ pair$<$ unsigned int, unsigned int $>$, string $>$$>$ results)
+\begin{DoxyCompactList}\small\item\em Changes the results obtained on the \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tournament_a724f8fb0c0507975b6bb4817d8b5de7d}{set\+Rank} (unsigned int rank)
+\begin{DoxyCompactList}\small\item\em Changes the rank achieved on the \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tournament_a4aa375c287d890b9117a91058dcffb0c}{writetofile} (ostream \&out) const
+\begin{DoxyCompactList}\small\item\em Writes the \hyperlink{class_tournament}{Tournament} to a file using operator$<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_tournament_a732b99f4a91ce76bb3db57cffd96f441}{operator$<$$<$} (ostream \&out, const \hyperlink{class_tournament}{Tournament} \&tournament)
+\begin{DoxyCompactList}\small\item\em Used to write the \hyperlink{class_tournament}{Tournament} to an Output Stream. \end{DoxyCompactList}\item 
+istream \& \hyperlink{class_tournament_a35e43e0ee6981515ba4442efa8cac7a7}{operator$>$$>$} (istream \&in, \hyperlink{class_tournament}{Tournament} \&tournament)
+\begin{DoxyCompactList}\small\item\em Used to read the \hyperlink{class_tournament}{Tournament} from an Input Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to host information about a single \hyperlink{class_tournament}{Tournament}. 
+
+Definition at line 25 of file Tournament.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tournament_a87cc832c6612caebcab61d1bea7ef1ac}{}\label{class_tournament_a87cc832c6612caebcab61d1bea7ef1ac} 
+\index{Tournament@{Tournament}!Tournament@{Tournament}}
+\index{Tournament@{Tournament}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{Tournament()}{Tournament()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Tournament\+::\+Tournament (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor. 
+
+
+
+Definition at line 34 of file Tournament.\+h.
+
+\hypertarget{class_tournament_a255677d318362ae4dc23b9d6a3359f61}{}\label{class_tournament_a255677d318362ae4dc23b9d6a3359f61} 
+\index{Tournament@{Tournament}!````~Tournament@{$\sim$\+Tournament}}
+\index{````~Tournament@{$\sim$\+Tournament}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{$\sim$\+Tournament()}{~Tournament()}}
+{\footnotesize\ttfamily virtual Tournament\+::$\sim$\+Tournament (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 38 of file Tournament.\+h.
+
+\hypertarget{class_tournament_a653ee8a664677bf0f757234150fa71f8}{}\label{class_tournament_a653ee8a664677bf0f757234150fa71f8} 
+\index{Tournament@{Tournament}!Tournament@{Tournament}}
+\index{Tournament@{Tournament}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{Tournament()}{Tournament()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Tournament\+::\+Tournament (\begin{DoxyParamCaption}\item[{const \hyperlink{class_tournament}{Tournament} \&}]{tournament }\end{DoxyParamCaption})}
+
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tournament} & \hyperlink{class_tournament}{Tournament} object to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file Tournament.\+cpp.
+
+\hypertarget{class_tournament_a38dbc53e1d0f1eaf6b661169db87c270}{}\label{class_tournament_a38dbc53e1d0f1eaf6b661169db87c270} 
+\index{Tournament@{Tournament}!Tournament@{Tournament}}
+\index{Tournament@{Tournament}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{Tournament()}{Tournament()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Tournament\+::\+Tournament (\begin{DoxyParamCaption}\item[{\hyperlink{class_event}{Event} $\ast$}]{ev }\end{DoxyParamCaption})}
+
+
+
+Pointer Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ev} & Pointer to \hyperlink{class_training}{Training} object to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file Tournament.\+cpp.
+
+\hypertarget{class_tournament_a84c5301c50e0c4ac263ed3d74fa7c8c5}{}\label{class_tournament_a84c5301c50e0c4ac263ed3d74fa7c8c5} 
+\index{Tournament@{Tournament}!Tournament@{Tournament}}
+\index{Tournament@{Tournament}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{Tournament()}{Tournament()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Tournament\+::\+Tournament (\begin{DoxyParamCaption}\item[{\hyperlink{class_date}{Date}}]{day,  }\item[{bool}]{major }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Partial Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & \hyperlink{class_date}{Date} of the \hyperlink{class_event}{Event} \\
+\hline
+{\em major} & Whether it was a Major \hyperlink{class_tournament}{Tournament} or not \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Tournament.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tournament_ae021dc9d9aa7fb8b18bd065bfccc4b7e}{}\label{class_tournament_ae021dc9d9aa7fb8b18bd065bfccc4b7e} 
+\index{Tournament@{Tournament}!get\+Rank@{get\+Rank}}
+\index{get\+Rank@{get\+Rank}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{get\+Rank()}{getRank()}}
+{\footnotesize\ttfamily virtual unsigned int Tournament\+::get\+Rank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the rank achieved by the \hyperlink{class_level}{Level} at a \hyperlink{class_tournament}{Tournament}. 
+
+\begin{DoxyReturn}{Returns}
+rank (member variable) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_ab267b8e94c78ca51636792d75101acb5}{Event}.
+
+
+
+Definition at line 78 of file Tournament.\+h.
+
+\hypertarget{class_tournament_abacd2d5489099f31a9688a7da4d64c40}{}\label{class_tournament_abacd2d5489099f31a9688a7da4d64c40} 
+\index{Tournament@{Tournament}!get\+Results@{get\+Results}}
+\index{get\+Results@{get\+Results}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{get\+Results()}{getResults()}}
+{\footnotesize\ttfamily virtual vector$<$pair$<$pair$<$unsigned int, unsigned int$>$, string $>$ $>$ Tournament\+::get\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the results of the \hyperlink{class_level}{Level} in the \hyperlink{class_tournament}{Tournament}. 
+
+\begin{DoxyReturn}{Returns}
+results (member variable) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_a9d29f8c725da32b5fbf70ccf7961f02b}{Event}.
+
+
+
+Definition at line 88 of file Tournament.\+h.
+
+\hypertarget{class_tournament_a62adb322a6d5268d4ec3e267570ff4ed}{}\label{class_tournament_a62adb322a6d5268d4ec3e267570ff4ed} 
+\index{Tournament@{Tournament}!is\+Game@{is\+Game}}
+\index{is\+Game@{is\+Game}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{is\+Game()}{isGame()}}
+{\footnotesize\ttfamily virtual bool Tournament\+::is\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the \hyperlink{class_training}{Training} was a game. 
+
+\begin{DoxyReturn}{Returns}
+False since all objects of this class have no game parameter 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_add36e9739215f6744040c11de50b26b7}{Event}.
+
+
+
+Definition at line 73 of file Tournament.\+h.
+
+\hypertarget{class_tournament_af733baa05b3ae1465d6b5271929b5061}{}\label{class_tournament_af733baa05b3ae1465d6b5271929b5061} 
+\index{Tournament@{Tournament}!is\+Major@{is\+Major}}
+\index{is\+Major@{is\+Major}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{is\+Major()}{isMajor()}}
+{\footnotesize\ttfamily virtual bool Tournament\+::is\+Major (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if \hyperlink{class_tournament}{Tournament} was a major \hyperlink{class_tournament}{Tournament}. 
+
+\begin{DoxyReturn}{Returns}
+major (member variable) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_ad1a1a9cb471d664a2ca99effc102259b}{Event}.
+
+
+
+Definition at line 83 of file Tournament.\+h.
+
+\hypertarget{class_tournament_ab6fde765568ea9779fc10f0f2811c163}{}\label{class_tournament_ab6fde765568ea9779fc10f0f2811c163} 
+\index{Tournament@{Tournament}!Istraining@{Istraining}}
+\index{Istraining@{Istraining}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{Istraining()}{Istraining()}}
+{\footnotesize\ttfamily virtual bool Tournament\+::\+Istraining (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if this \hyperlink{class_event}{Event} is a \hyperlink{class_training}{Training}. 
+
+\begin{DoxyReturn}{Returns}
+False since all objects of this class are Tournaments 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_a08af9b350f32520dca26d552d6f415b2}{Event}.
+
+
+
+Definition at line 64 of file Tournament.\+h.
+
+\hypertarget{class_tournament_a0eadb353ccff0b3c64b19d65f3353771}{}\label{class_tournament_a0eadb353ccff0b3c64b19d65f3353771} 
+\index{Tournament@{Tournament}!operator=@{operator=}}
+\index{operator=@{operator=}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_tournament}{Tournament} \& Tournament\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_tournament}{Tournament} \&}]{tournament }\end{DoxyParamCaption})}
+
+
+
+Copy Operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tournament} & \hyperlink{class_tournament}{Tournament} object to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Tournament.\+cpp.
+
+\hypertarget{class_tournament_a724f8fb0c0507975b6bb4817d8b5de7d}{}\label{class_tournament_a724f8fb0c0507975b6bb4817d8b5de7d} 
+\index{Tournament@{Tournament}!set\+Rank@{set\+Rank}}
+\index{set\+Rank@{set\+Rank}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{set\+Rank()}{setRank()}}
+{\footnotesize\ttfamily virtual void Tournament\+::set\+Rank (\begin{DoxyParamCaption}\item[{unsigned int}]{rank }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Changes the rank achieved on the \hyperlink{class_tournament}{Tournament}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank} & Value to be changed into \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_event_a5bccaba301e9038957ec4138df404524}{Event}.
+
+
+
+Definition at line 98 of file Tournament.\+h.
+
+\hypertarget{class_tournament_acab9ee32169ba590f4ffdb5b59b28a86}{}\label{class_tournament_acab9ee32169ba590f4ffdb5b59b28a86} 
+\index{Tournament@{Tournament}!set\+Results@{set\+Results}}
+\index{set\+Results@{set\+Results}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{set\+Results()}{setResults()}}
+{\footnotesize\ttfamily virtual void Tournament\+::set\+Results (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ pair$<$ unsigned int, unsigned int $>$, string $>$$>$}]{results }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Changes the results obtained on the \hyperlink{class_tournament}{Tournament}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em results} & Value to be changed into \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_event_a5ddb261642035be78677d668f9238339}{Event}.
+
+
+
+Definition at line 93 of file Tournament.\+h.
+
+\hypertarget{class_tournament_a35bd5292194edb5d5c220838b68cda75}{}\label{class_tournament_a35bd5292194edb5d5c220838b68cda75} 
+\index{Tournament@{Tournament}!show@{show}}
+\index{show@{show}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Tournament\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to print the \hyperlink{class_tournament}{Tournament} on the screen. 
+
+
+
+Implements \hyperlink{class_event_af53c2db83404a045087a271ed3c2604f}{Event}.
+
+
+
+Definition at line 40 of file Tournament.\+cpp.
+
+\hypertarget{class_tournament_a4aa375c287d890b9117a91058dcffb0c}{}\label{class_tournament_a4aa375c287d890b9117a91058dcffb0c} 
+\index{Tournament@{Tournament}!writetofile@{writetofile}}
+\index{writetofile@{writetofile}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{writetofile()}{writetofile()}}
+{\footnotesize\ttfamily virtual void Tournament\+::writetofile (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes the \hyperlink{class_tournament}{Tournament} to a file using operator$<$$<$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & File to write to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_event_a0c263fb7398dc2f0969a2bb22b47a40a}{Event}.
+
+
+
+Definition at line 117 of file Tournament.\+h.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_tournament_a732b99f4a91ce76bb3db57cffd96f441}{}\label{class_tournament_a732b99f4a91ce76bb3db57cffd96f441} 
+\index{Tournament@{Tournament}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{class_tournament}{Tournament} \&}]{tournament }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Used to write the \hyperlink{class_tournament}{Tournament} to an Output Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output Stream to write the \hyperlink{class_tournament}{Tournament} to \\
+\hline
+{\em tournament} & \hyperlink{class_tournament}{Tournament} to be written on the Output Stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+out (parameter) 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file Tournament.\+cpp.
+
+\hypertarget{class_tournament_a35e43e0ee6981515ba4442efa8cac7a7}{}\label{class_tournament_a35e43e0ee6981515ba4442efa8cac7a7} 
+\index{Tournament@{Tournament}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Tournament@{Tournament}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\hyperlink{class_tournament}{Tournament} \&}]{tournament }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Used to read the \hyperlink{class_tournament}{Tournament} from an Input Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input Stream from which to read the \hyperlink{class_tournament}{Tournament} \\
+\hline
+{\em tournament} & \hyperlink{class_tournament}{Tournament} to be read from the Input Stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+in (parameter) 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file Tournament.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\hyperlink{_tournament_8h}{Tournament.\+h}\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\hyperlink{_tournament_8cpp}{Tournament.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,415 @@
+\hypertarget{class_training}{}\section{Training Class Reference}
+\label{class_training}\index{Training@{Training}}
+
+
+Used to host information about a single \hyperlink{class_training}{Training}.  
+
+
+
+
+{\ttfamily \#include $<$Training.\+h$>$}
+
+Inheritance diagram for Training\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_training}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_training_af98b1bc7ed710e2fa008a72ad29dbdae}{Training} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_training_a4a40f758a773c3c63d8558eaa78b1abd}{$\sim$\+Training} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_training_a923c500458737327f874067ffc7ca1c9}{Training} (const \hyperlink{class_training}{Training} \&training)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_training}{Training} \& \hyperlink{class_training_aea6dff02f1a10d73ec15ceb310fb7b3f}{operator=} (const \hyperlink{class_training}{Training} \&training)
+\begin{DoxyCompactList}\small\item\em Copy Operator. \end{DoxyCompactList}\item 
+\hyperlink{class_training_ae39813d608325645cb3403160fc3b493}{Training} (\hyperlink{class_event}{Event} $\ast$ev)
+\begin{DoxyCompactList}\small\item\em Pointer Copy Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_training_a314d31d73f207b1c9cb2720da663d225}{Training} (\hyperlink{class_date}{Date} day, bool game)
+\begin{DoxyCompactList}\small\item\em Partial Constructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_training_a55530cc22aa771cf3e452c7158b5396e}{is\+Game} () const
+\begin{DoxyCompactList}\small\item\em Checks if the \hyperlink{class_training}{Training} was a game. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_training_ab70fe087f382d0de9dca69ce519be91e}{Istraining} () const
+\begin{DoxyCompactList}\small\item\em Checks if this \hyperlink{class_event}{Event} is a \hyperlink{class_training}{Training}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_training_a9391fa1f4862855341d6243e75f9efef}{show} () const
+\begin{DoxyCompactList}\small\item\em Prints the \hyperlink{class_training}{Training} on the screen. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{class_training_ada723ff1f8340338a99e720a1b472334}{get\+Rank} () const
+\begin{DoxyCompactList}\small\item\em Gets the rank achieved by the \hyperlink{class_level}{Level} at a \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_training_aaf1c4d96664a16ca141dd5a3582f9426}{is\+Major} () const
+\begin{DoxyCompactList}\small\item\em Checks if \hyperlink{class_tournament}{Tournament} was a major \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+virtual vector$<$ pair$<$ pair$<$ unsigned int, unsigned int $>$, string $>$ $>$ \hyperlink{class_training_aa37e2baeee2b94cb15521e1768b99cc9}{get\+Results} () const
+\begin{DoxyCompactList}\small\item\em Gets the results of the \hyperlink{class_level}{Level} in the \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_training_ad587b59c44a6e95a4e52f3d3f6b89480}{set\+Results} (vector$<$ pair$<$ pair$<$ unsigned int, unsigned int $>$, string $>$$>$ results)
+\begin{DoxyCompactList}\small\item\em Does nothing since Trainings have no results. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_training_a15d38322bd6a2ee8e17441bd4798b236}{set\+Rank} (unsigned int rank)
+\begin{DoxyCompactList}\small\item\em Does nothing since Trainings have no rank. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_training_a1755abc9faafbe06fb2825cb5f879016}{writetofile} (ostream \&out) const
+\begin{DoxyCompactList}\small\item\em Writes the \hyperlink{class_training}{Training} to a file using operator$<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_training_a2a462cd115913a43a1f4d7cbc8635c77}{operator$<$$<$} (ostream \&out, const \hyperlink{class_training}{Training} \&training)
+\begin{DoxyCompactList}\small\item\em Used to write the \hyperlink{class_training}{Training} to an Output Stream. \end{DoxyCompactList}\item 
+istream \& \hyperlink{class_training_ad76466bb3f1163c39b684ae14adf0ca1}{operator$>$$>$} (istream \&in, \hyperlink{class_training}{Training} \&training)
+\begin{DoxyCompactList}\small\item\em Used to read the \hyperlink{class_training}{Training} from an Input Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to host information about a single \hyperlink{class_training}{Training}. 
+
+Definition at line 19 of file Training.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_training_af98b1bc7ed710e2fa008a72ad29dbdae}{}\label{class_training_af98b1bc7ed710e2fa008a72ad29dbdae} 
+\index{Training@{Training}!Training@{Training}}
+\index{Training@{Training}!Training@{Training}}
+\subsubsection{\texorpdfstring{Training()}{Training()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Training\+::\+Training (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor. 
+
+
+
+Definition at line 25 of file Training.\+h.
+
+\hypertarget{class_training_a4a40f758a773c3c63d8558eaa78b1abd}{}\label{class_training_a4a40f758a773c3c63d8558eaa78b1abd} 
+\index{Training@{Training}!````~Training@{$\sim$\+Training}}
+\index{````~Training@{$\sim$\+Training}!Training@{Training}}
+\subsubsection{\texorpdfstring{$\sim$\+Training()}{~Training()}}
+{\footnotesize\ttfamily virtual Training\+::$\sim$\+Training (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 29 of file Training.\+h.
+
+\hypertarget{class_training_a923c500458737327f874067ffc7ca1c9}{}\label{class_training_a923c500458737327f874067ffc7ca1c9} 
+\index{Training@{Training}!Training@{Training}}
+\index{Training@{Training}!Training@{Training}}
+\subsubsection{\texorpdfstring{Training()}{Training()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Training\+::\+Training (\begin{DoxyParamCaption}\item[{const \hyperlink{class_training}{Training} \&}]{training }\end{DoxyParamCaption})}
+
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em training} & \hyperlink{class_training}{Training} object to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file Training.\+cpp.
+
+\hypertarget{class_training_ae39813d608325645cb3403160fc3b493}{}\label{class_training_ae39813d608325645cb3403160fc3b493} 
+\index{Training@{Training}!Training@{Training}}
+\index{Training@{Training}!Training@{Training}}
+\subsubsection{\texorpdfstring{Training()}{Training()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Training\+::\+Training (\begin{DoxyParamCaption}\item[{\hyperlink{class_event}{Event} $\ast$}]{ev }\end{DoxyParamCaption})}
+
+
+
+Pointer Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ev} & Pointer to \hyperlink{class_training}{Training} object to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Training.\+cpp.
+
+\hypertarget{class_training_a314d31d73f207b1c9cb2720da663d225}{}\label{class_training_a314d31d73f207b1c9cb2720da663d225} 
+\index{Training@{Training}!Training@{Training}}
+\index{Training@{Training}!Training@{Training}}
+\subsubsection{\texorpdfstring{Training()}{Training()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Training\+::\+Training (\begin{DoxyParamCaption}\item[{\hyperlink{class_date}{Date}}]{day,  }\item[{bool}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Partial Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & \hyperlink{class_date}{Date} of the \hyperlink{class_event}{Event} \\
+\hline
+{\em game} & Whether it was a \hyperlink{class_training}{Training} game or not \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file Training.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_training_ada723ff1f8340338a99e720a1b472334}{}\label{class_training_ada723ff1f8340338a99e720a1b472334} 
+\index{Training@{Training}!get\+Rank@{get\+Rank}}
+\index{get\+Rank@{get\+Rank}!Training@{Training}}
+\subsubsection{\texorpdfstring{get\+Rank()}{getRank()}}
+{\footnotesize\ttfamily virtual unsigned int Training\+::get\+Rank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the rank achieved by the \hyperlink{class_level}{Level} at a \hyperlink{class_tournament}{Tournament}. 
+
+\begin{DoxyReturn}{Returns}
+0 Since all objects of this class are Trainings not Tournaments 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_ab267b8e94c78ca51636792d75101acb5}{Event}.
+
+
+
+Definition at line 69 of file Training.\+h.
+
+\hypertarget{class_training_aa37e2baeee2b94cb15521e1768b99cc9}{}\label{class_training_aa37e2baeee2b94cb15521e1768b99cc9} 
+\index{Training@{Training}!get\+Results@{get\+Results}}
+\index{get\+Results@{get\+Results}!Training@{Training}}
+\subsubsection{\texorpdfstring{get\+Results()}{getResults()}}
+{\footnotesize\ttfamily virtual vector$<$pair$<$pair$<$unsigned int, unsigned int$>$, string $>$ $>$ Training\+::get\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the results of the \hyperlink{class_level}{Level} in the \hyperlink{class_tournament}{Tournament}. 
+
+\begin{DoxyReturn}{Returns}
+Empty vector since all objects of this class are Trainings not Tournaments 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_a9d29f8c725da32b5fbf70ccf7961f02b}{Event}.
+
+
+
+Definition at line 79 of file Training.\+h.
+
+\hypertarget{class_training_a55530cc22aa771cf3e452c7158b5396e}{}\label{class_training_a55530cc22aa771cf3e452c7158b5396e} 
+\index{Training@{Training}!is\+Game@{is\+Game}}
+\index{is\+Game@{is\+Game}!Training@{Training}}
+\subsubsection{\texorpdfstring{is\+Game()}{isGame()}}
+{\footnotesize\ttfamily virtual bool Training\+::is\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the \hyperlink{class_training}{Training} was a game. 
+
+\begin{DoxyReturn}{Returns}
+True if it was a \hyperlink{class_training}{Training} game 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_add36e9739215f6744040c11de50b26b7}{Event}.
+
+
+
+Definition at line 55 of file Training.\+h.
+
+\hypertarget{class_training_aaf1c4d96664a16ca141dd5a3582f9426}{}\label{class_training_aaf1c4d96664a16ca141dd5a3582f9426} 
+\index{Training@{Training}!is\+Major@{is\+Major}}
+\index{is\+Major@{is\+Major}!Training@{Training}}
+\subsubsection{\texorpdfstring{is\+Major()}{isMajor()}}
+{\footnotesize\ttfamily virtual bool Training\+::is\+Major (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if \hyperlink{class_tournament}{Tournament} was a major \hyperlink{class_tournament}{Tournament}. 
+
+\begin{DoxyReturn}{Returns}
+false Since all objects of this class are Trainings not Tournaments 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_ad1a1a9cb471d664a2ca99effc102259b}{Event}.
+
+
+
+Definition at line 74 of file Training.\+h.
+
+\hypertarget{class_training_ab70fe087f382d0de9dca69ce519be91e}{}\label{class_training_ab70fe087f382d0de9dca69ce519be91e} 
+\index{Training@{Training}!Istraining@{Istraining}}
+\index{Istraining@{Istraining}!Training@{Training}}
+\subsubsection{\texorpdfstring{Istraining()}{Istraining()}}
+{\footnotesize\ttfamily virtual bool Training\+::\+Istraining (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if this \hyperlink{class_event}{Event} is a \hyperlink{class_training}{Training}. 
+
+\begin{DoxyReturn}{Returns}
+True since all objects of this class are Trainings 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_event_a08af9b350f32520dca26d552d6f415b2}{Event}.
+
+
+
+Definition at line 60 of file Training.\+h.
+
+\hypertarget{class_training_aea6dff02f1a10d73ec15ceb310fb7b3f}{}\label{class_training_aea6dff02f1a10d73ec15ceb310fb7b3f} 
+\index{Training@{Training}!operator=@{operator=}}
+\index{operator=@{operator=}!Training@{Training}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_training}{Training} \& Training\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_training}{Training} \&}]{training }\end{DoxyParamCaption})}
+
+
+
+Copy Operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em training} & \hyperlink{class_training}{Training} object to be copied \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Training.\+cpp.
+
+\hypertarget{class_training_a15d38322bd6a2ee8e17441bd4798b236}{}\label{class_training_a15d38322bd6a2ee8e17441bd4798b236} 
+\index{Training@{Training}!set\+Rank@{set\+Rank}}
+\index{set\+Rank@{set\+Rank}!Training@{Training}}
+\subsubsection{\texorpdfstring{set\+Rank()}{setRank()}}
+{\footnotesize\ttfamily virtual void Training\+::set\+Rank (\begin{DoxyParamCaption}\item[{unsigned int}]{rank }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Does nothing since Trainings have no rank. 
+
+
+
+Implements \hyperlink{class_event_a5bccaba301e9038957ec4138df404524}{Event}.
+
+
+
+Definition at line 87 of file Training.\+h.
+
+\hypertarget{class_training_ad587b59c44a6e95a4e52f3d3f6b89480}{}\label{class_training_ad587b59c44a6e95a4e52f3d3f6b89480} 
+\index{Training@{Training}!set\+Results@{set\+Results}}
+\index{set\+Results@{set\+Results}!Training@{Training}}
+\subsubsection{\texorpdfstring{set\+Results()}{setResults()}}
+{\footnotesize\ttfamily virtual void Training\+::set\+Results (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ pair$<$ unsigned int, unsigned int $>$, string $>$$>$}]{results }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Does nothing since Trainings have no results. 
+
+
+
+Implements \hyperlink{class_event_a5ddb261642035be78677d668f9238339}{Event}.
+
+
+
+Definition at line 83 of file Training.\+h.
+
+\hypertarget{class_training_a9391fa1f4862855341d6243e75f9efef}{}\label{class_training_a9391fa1f4862855341d6243e75f9efef} 
+\index{Training@{Training}!show@{show}}
+\index{show@{show}!Training@{Training}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Training\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Prints the \hyperlink{class_training}{Training} on the screen. 
+
+
+
+Implements \hyperlink{class_event_af53c2db83404a045087a271ed3c2604f}{Event}.
+
+
+
+Definition at line 35 of file Training.\+cpp.
+
+\hypertarget{class_training_a1755abc9faafbe06fb2825cb5f879016}{}\label{class_training_a1755abc9faafbe06fb2825cb5f879016} 
+\index{Training@{Training}!writetofile@{writetofile}}
+\index{writetofile@{writetofile}!Training@{Training}}
+\subsubsection{\texorpdfstring{writetofile()}{writetofile()}}
+{\footnotesize\ttfamily virtual void Training\+::writetofile (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Writes the \hyperlink{class_training}{Training} to a file using operator$<$$<$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & File to write to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_event_a0c263fb7398dc2f0969a2bb22b47a40a}{Event}.
+
+
+
+Definition at line 106 of file Training.\+h.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_training_a2a462cd115913a43a1f4d7cbc8635c77}{}\label{class_training_a2a462cd115913a43a1f4d7cbc8635c77} 
+\index{Training@{Training}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Training@{Training}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{class_training}{Training} \&}]{training }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Used to write the \hyperlink{class_training}{Training} to an Output Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output Stream to write the \hyperlink{class_training}{Training} to \\
+\hline
+{\em training} & \hyperlink{class_training}{Training} to be written on the Output Stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+out (parameter) 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Training.\+cpp.
+
+\hypertarget{class_training_ad76466bb3f1163c39b684ae14adf0ca1}{}\label{class_training_ad76466bb3f1163c39b684ae14adf0ca1} 
+\index{Training@{Training}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Training@{Training}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\hyperlink{class_training}{Training} \&}]{training }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Used to read the \hyperlink{class_training}{Training} from an Input Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input Stream from which to read the \hyperlink{class_training}{Training} \\
+\hline
+{\em training} & \hyperlink{class_training}{Training} to be read from the Input Stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+in (parameter) 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Training.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\hyperlink{_training_8h}{Training.\+h}\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\hyperlink{_training_8cpp}{Training.\+cpp}\end{DoxyCompactItemize}

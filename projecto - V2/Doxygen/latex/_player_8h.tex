@@ -1,0 +1,66 @@
+\hypertarget{_player_8h}{}\section{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\+Player.h File Reference}
+\label{_player_8h}\index{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\+Player.\+h@{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\+Player.\+h}}
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_player}{Player}
+\begin{DoxyCompactList}\small\item\em Holds all the information about a given \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_player__node}{Player\+\_\+node}
+\begin{DoxyCompactList}\small\item\em Struct to store the \hyperlink{class_player}{Player} in a \hyperlink{class_b_s_t}{B\+ST}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_player__queue}{Player\+\_\+queue}
+\begin{DoxyCompactList}\small\item\em Struct to store the \hyperlink{class_player}{Player} in a priority queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_player_8h_a70a30ae5b016e3f83a50cbd606044d55}{operator$<$} (const \hyperlink{struct_player__node}{Player\+\_\+node} \&pl\+\_\+left, const \hyperlink{struct_player__node}{Player\+\_\+node} \&p\+\_\+right)
+\item 
+bool \hyperlink{_player_8h_a6e47bba4f40f04dd67cc303a58a098d9}{operator$<$} (const \hyperlink{struct_player__queue}{Player\+\_\+queue} \&pl\+\_\+left, const \hyperlink{struct_player__queue}{Player\+\_\+queue} \&pl\+\_\+right)
+\begin{DoxyCompactList}\small\item\em Compares two \hyperlink{class_player}{Player} nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Francisco Andrade 
+
+João Almeida
+\end{DoxyAuthor}
+Contains the declaration of the class \hyperlink{class_player}{Player} and the Struct \hyperlink{struct_player__node}{Player\+\_\+node} and \hyperlink{struct_player__queue}{Player\+\_\+queue} to be used in the \hyperlink{class_b_s_t}{B\+ST} and Priority Queue 
+
+\subsection{Function Documentation}
+\hypertarget{_player_8h_a70a30ae5b016e3f83a50cbd606044d55}{}\label{_player_8h_a70a30ae5b016e3f83a50cbd606044d55} 
+\index{Player.\+h@{Player.\+h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Player.\+h@{Player.\+h}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_player__node}{Player\+\_\+node} \&}]{pl\+\_\+left,  }\item[{const \hyperlink{struct_player__node}{Player\+\_\+node} \&}]{p\+\_\+right }\end{DoxyParamCaption})}
+
+
+
+Definition at line 125 of file Player.\+cpp.
+
+\hypertarget{_player_8h_a6e47bba4f40f04dd67cc303a58a098d9}{}\label{_player_8h_a6e47bba4f40f04dd67cc303a58a098d9} 
+\index{Player.\+h@{Player.\+h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Player.\+h@{Player.\+h}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_player__queue}{Player\+\_\+queue} \&}]{pl\+\_\+left,  }\item[{const \hyperlink{struct_player__queue}{Player\+\_\+queue} \&}]{pl\+\_\+right }\end{DoxyParamCaption})}
+
+
+
+Compares two \hyperlink{class_player}{Player} nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pl\+\_\+left} & \hyperlink{class_player}{Player} to be compared \\
+\hline
+{\em pl\+\_\+right} & \hyperlink{class_player}{Player} to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if pl\+\_\+left if younger than pl\+\_\+right
+\end{DoxyReturn}
+If pl\+\_\+left and pl\+\_\+right were born in the same name it compares their names 
+
+Definition at line 138 of file Player.\+cpp.
+

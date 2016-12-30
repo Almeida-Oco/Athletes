@@ -1,0 +1,131 @@
+\hypertarget{utilities_8cpp}{}\section{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/utilities.cpp File Reference}
+\label{utilities_8cpp}\index{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/utilities.\+cpp@{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/utilities.\+cpp}}
+{\ttfamily \#include \char`\"{}../\+Headers/utilities.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{utilities_8cpp_abb517d31a98f5557e6974c7397f47709}{removespaces} (string s)
+\begin{DoxyCompactList}\small\item\em Eliminates extra spaces in string. \end{DoxyCompactList}\item 
+int \hyperlink{utilities_8cpp_a85a86313d4e1f84be67fabd66faccaf6}{actualage} (\hyperlink{class_date}{Date} birth)
+\begin{DoxyCompactList}\small\item\em Calculates how old is a person born on a given \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+bool \hyperlink{utilities_8cpp_a9636a7dde2fb99c3de33f47f703e465f}{Isleap} (int year)
+\begin{DoxyCompactList}\small\item\em Calculates whether or not the given year was/is a Leap Year. \end{DoxyCompactList}\item 
+bool \hyperlink{utilities_8cpp_a42a8022c459256f365a6c675a0b842dc}{is\+Integer} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Checks if given string is an Integer. \end{DoxyCompactList}\item 
+int \hyperlink{utilities_8cpp_a8d8297c071a62c5c76f4f9288a1a7fbd}{convint} (string s)
+\begin{DoxyCompactList}\small\item\em Converts an integer into a String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{utilities_8cpp_a85a86313d4e1f84be67fabd66faccaf6}{}\label{utilities_8cpp_a85a86313d4e1f84be67fabd66faccaf6} 
+\index{utilities.\+cpp@{utilities.\+cpp}!actualage@{actualage}}
+\index{actualage@{actualage}!utilities.\+cpp@{utilities.\+cpp}}
+\subsubsection{\texorpdfstring{actualage()}{actualage()}}
+{\footnotesize\ttfamily int actualage (\begin{DoxyParamCaption}\item[{\hyperlink{class_date}{Date}}]{birth }\end{DoxyParamCaption})}
+
+
+
+Calculates how old is a person born on a given \hyperlink{class_date}{Date}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em birth} & \hyperlink{class_date}{Date} to use in calculations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+How old that person is 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file utilities.\+cpp.
+
+\hypertarget{utilities_8cpp_a8d8297c071a62c5c76f4f9288a1a7fbd}{}\label{utilities_8cpp_a8d8297c071a62c5c76f4f9288a1a7fbd} 
+\index{utilities.\+cpp@{utilities.\+cpp}!convint@{convint}}
+\index{convint@{convint}!utilities.\+cpp@{utilities.\+cpp}}
+\subsubsection{\texorpdfstring{convint()}{convint()}}
+{\footnotesize\ttfamily int convint (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Converts an integer into a String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Integer that was in string 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file utilities.\+cpp.
+
+\hypertarget{utilities_8cpp_a42a8022c459256f365a6c675a0b842dc}{}\label{utilities_8cpp_a42a8022c459256f365a6c675a0b842dc} 
+\index{utilities.\+cpp@{utilities.\+cpp}!is\+Integer@{is\+Integer}}
+\index{is\+Integer@{is\+Integer}!utilities.\+cpp@{utilities.\+cpp}}
+\subsubsection{\texorpdfstring{is\+Integer()}{isInteger()}}
+{\footnotesize\ttfamily bool is\+Integer (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Checks if given string is an Integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if string only contains numbers
+\end{DoxyReturn}
+From \href{http://stackoverflow.com/questions/2844817/how-do-i-check-if-a-c-string-is-an-int}{\tt http\+://stackoverflow.\+com/questions/2844817/how-\/do-\/i-\/check-\/if-\/a-\/c-\/string-\/is-\/an-\/int} 
+
+Definition at line 74 of file utilities.\+cpp.
+
+\hypertarget{utilities_8cpp_a9636a7dde2fb99c3de33f47f703e465f}{}\label{utilities_8cpp_a9636a7dde2fb99c3de33f47f703e465f} 
+\index{utilities.\+cpp@{utilities.\+cpp}!Isleap@{Isleap}}
+\index{Isleap@{Isleap}!utilities.\+cpp@{utilities.\+cpp}}
+\subsubsection{\texorpdfstring{Isleap()}{Isleap()}}
+{\footnotesize\ttfamily bool Isleap (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+Calculates whether or not the given year was/is a Leap Year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & Year to use in calculations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if year is a Leap Year 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file utilities.\+cpp.
+
+\hypertarget{utilities_8cpp_abb517d31a98f5557e6974c7397f47709}{}\label{utilities_8cpp_abb517d31a98f5557e6974c7397f47709} 
+\index{utilities.\+cpp@{utilities.\+cpp}!removespaces@{removespaces}}
+\index{removespaces@{removespaces}!utilities.\+cpp@{utilities.\+cpp}}
+\subsubsection{\texorpdfstring{removespaces()}{removespaces()}}
+{\footnotesize\ttfamily string removespaces (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Eliminates extra spaces in string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String to have spaces removed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String without extra spaces
+\end{DoxyReturn}
+It removes all spaces in the beggining and in the end, if there are spaces between the characteres
+
+they are transformed into a single space 
+
+Definition at line 10 of file utilities.\+cpp.
+

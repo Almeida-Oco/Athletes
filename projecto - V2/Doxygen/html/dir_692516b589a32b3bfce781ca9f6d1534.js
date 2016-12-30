@@ -13,10 +13,7 @@ var dir_692516b589a32b3bfce781ca9f6d1534 =
       [ "BSTItrIn", "class_b_s_t_itr_in.html", "class_b_s_t_itr_in" ],
       [ "BSTItrLevel", "class_b_s_t_itr_level.html", "class_b_s_t_itr_level" ]
     ] ],
-    [ "Club.h", "_club_8h.html", [
-      [ "hashFuncs", "structhash_funcs.html", "structhash_funcs" ],
-      [ "Club", "class_club.html", "class_club" ]
-    ] ],
+    [ "Club.h", "_club_8h.html", "_club_8h" ],
     [ "Date.h", "_date_8h.html", "_date_8h" ],
     [ "Event.h", "_event_8h.html", [
       [ "Event", "class_event.html", "class_event" ]

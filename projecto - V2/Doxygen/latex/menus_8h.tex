@@ -1,0 +1,698 @@
+\hypertarget{menus_8h}{}\section{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/menus.h File Reference}
+\label{menus_8h}\index{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/menus.\+h@{/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/menus.\+h}}
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Event.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Club.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}exceptions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilities.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{menus_8h_a3e4bdbd9a6e356b7f330a0fb23351d2f}{readplayers} ()
+\begin{DoxyCompactList}\small\item\em Asks the user for the players text file. \end{DoxyCompactList}\item 
+int \hyperlink{menus_8h_ace86b7cf28684a8a2017b4ed1fdb2880}{readtrainings} ()
+\begin{DoxyCompactList}\small\item\em Asks the user for the trainings text file. \end{DoxyCompactList}\item 
+int \hyperlink{menus_8h_a296660ecf1cf92c9e925fa842693053f}{readtournaments} ()
+\begin{DoxyCompactList}\small\item\em Asks the user for the tournaments text file. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{menus_8h_ac75cbd14c3ddc716f3f0861ddded528f}{askfordate} ()
+\begin{DoxyCompactList}\small\item\em Asks the user to input a \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a824038186cb0756e60e434af7e945203}{printlevel} (unsigned int level)
+\begin{DoxyCompactList}\small\item\em Prints the desired level in a user friendly way. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a360714641d352750dcbebc422cf56ad2}{initialmenu} ()
+\begin{DoxyCompactList}\small\item\em Displays the initial menu. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a6ebf55f20ee0236f10acad8f1a285f84}{print\+Birthdays} (const vector$<$ \hyperlink{class_player}{Player} $\ast$$>$ \&p)
+\begin{DoxyCompactList}\small\item\em Prints in an user-\/friendly way the Name of \hyperlink{class_player}{Player} and how many days to birthday. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a6db8c98a6f3aa8636d15609e013980dd}{birthdaycards} ()
+\begin{DoxyCompactList}\small\item\em Displays the menu of birthday cards. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_afd66764eba2316fedc8d1fc68874c66c}{notify\+E\+CG} ()
+\begin{DoxyCompactList}\small\item\em Displays menu that allows user to notify Players with delayed E\+CG. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a6f73e3a12587c3f41155ab808099eda3}{levelmenu} (unsigned int level)
+\begin{DoxyCompactList}\small\item\em Displays main menu for a given \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_af5ddda2f5450f4b50fe981b357643be2}{monthlyprizes} (unsigned int level)
+\begin{DoxyCompactList}\small\item\em Displays the monthly prizes for a given \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_aa3dca5af81de7adb87edc2d4deb13183}{changecoachmenu} (unsigned level)
+\begin{DoxyCompactList}\small\item\em Displays the menu to change the coach of a given \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_af0ca16bef0823da27700dd7a172fb5b1}{playersmenu} (unsigned int level)
+\begin{DoxyCompactList}\small\item\em Displays the menu of the Players of the \hyperlink{class_level}{Level} in a user-\/friendly way. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a5566a6fa86018fbbea69015e5168e99e}{individualplayermenu} (unsigned int level, unsigned int id)
+\begin{DoxyCompactList}\small\item\em Displays , in a user-\/friendly way, a menu with more detailed information about the player. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_af4ce05b6a5e6c270b85434ee3bd24bc6}{actualize\+E\+CG} (unsigned int level, unsigned int id)
+\begin{DoxyCompactList}\small\item\em Menu that allows to update the E\+CG of a given \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a271de014adb6e48b8577c86b976b18fa}{actualizeheight} (unsigned int level, unsigned int id)
+\begin{DoxyCompactList}\small\item\em Menu that allows to update the height of a given \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a1f0621789fda582c7f4bcd4869f1ee33}{removeplayer} (unsigned int level, unsigned int id)
+\begin{DoxyCompactList}\small\item\em Menu to remove a given \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a4afe6401b97465ae703f506fb7706e9d}{regnewplayermenu} ()
+\begin{DoxyCompactList}\small\item\em Menu that allows the user to register a new \hyperlink{class_player}{Player} on the \hyperlink{class_club}{Club}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a99d9b0116759420e15bdf0b7679514ab}{trainingsmenu} (unsigned int level)
+\begin{DoxyCompactList}\small\item\em Menu that shows, in a user-\/friendly way, information about the Trainings of the \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_af8ce4ff7c4bbeca86d18ed3111b36eb6}{tournamentsmenu} (unsigned int level)
+\begin{DoxyCompactList}\small\item\em Menu that shows, in a user-\/friendly way, information about the Tournaments of the \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_af43d721f867defe35647e866690cbfc3}{individualtrainingmenu} (unsigned int level, unsigned int id)
+\begin{DoxyCompactList}\small\item\em Menu that shows, in a user-\/friendly way, information about a specific \hyperlink{class_training}{Training} of the \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a49c542576af1c3a6248146f284e42c58}{editplayerstraining} (unsigned int level, \hyperlink{class_event}{Event} $\ast$ev)
+\begin{DoxyCompactList}\small\item\em Menu that asks user to select Players that participated in a given \hyperlink{class_training}{Training}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a95e92fc9b91ce4c419afb0d0443bbb43}{individualtournamentmenu} (unsigned int level, unsigned int id)
+\begin{DoxyCompactList}\small\item\em Menu that shows, in a user-\/friendly way, information about a specific \hyperlink{class_tournament}{Tournament} of the \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a9e19e8b74e0d58171af53685eac3b691}{editranktournament} (unsigned int level, \hyperlink{class_event}{Event} $\ast$tournament)
+\begin{DoxyCompactList}\small\item\em Changes the rank the \hyperlink{class_level}{Level} achieved in the \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_af900560f4e94ad1eb7f716bf665c6cad}{editplayerstournament} (unsigned int level, \hyperlink{class_event}{Event} $\ast$tournament)
+\begin{DoxyCompactList}\small\item\em Menu that asks user to select Players that participated in a given \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a558620ab89ce3d63578448c4b82a1195}{editresultstournament} (unsigned int level, \hyperlink{class_event}{Event} $\ast$tournament)
+\begin{DoxyCompactList}\small\item\em Changes the results of the \hyperlink{class_level}{Level} in the \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a2e44e7cf4a9a1d5754a3f8eb5b129365}{calendarmenu} (unsigned int level)
+\begin{DoxyCompactList}\small\item\em Displays the menu of next events to take place. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_abaed2b44b77fcd0b36239eafee3d9c6c}{individualeventmenu} (unsigned int level, unsigned int id)
+\begin{DoxyCompactList}\small\item\em Displays a specific \hyperlink{class_event}{Event} to take place. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a4ae3bb47fdc90a2c15958427eba07209}{removeevent} (unsigned int level, unsigned int id)
+\begin{DoxyCompactList}\small\item\em Interface to remove a given \hyperlink{class_event}{Event}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a546c4c0ca16a1858de54677140e270f6}{scheduleeventmenu} (unsigned int level)
+\begin{DoxyCompactList}\small\item\em Displays the menu that allows the user to schedule an \hyperlink{class_event}{Event}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_a3dc669f40ebb5b2de3d0ff3b67372031}{askeventdate} (unsigned int level, unsigned int event)
+\begin{DoxyCompactList}\small\item\em Asks the user for the \hyperlink{class_date}{Date} of an \hyperlink{class_event}{Event}. \end{DoxyCompactList}\item 
+void \hyperlink{menus_8h_aba01328dd84a2ba711a95cae93fb862c}{makecall} (unsigned int level, \hyperlink{class_event}{Event} $\ast$tournament)
+\begin{DoxyCompactList}\small\item\em Asks the user the number of Players to be called for a \hyperlink{class_tournament}{Tournament}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Francisco Andrade 
+
+João Almeida
+\end{DoxyAuthor}
+Contains the declaration of the class \hyperlink{class_club}{Club} and struct \hyperlink{structhash_funcs}{hash\+Funcs} 
+
+\subsection{Function Documentation}
+\hypertarget{menus_8h_af4ce05b6a5e6c270b85434ee3bd24bc6}{}\label{menus_8h_af4ce05b6a5e6c270b85434ee3bd24bc6} 
+\index{menus.\+h@{menus.\+h}!actualize\+E\+CG@{actualize\+E\+CG}}
+\index{actualize\+E\+CG@{actualize\+E\+CG}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{actualize\+E\+C\+G()}{actualizeECG()}}
+{\footnotesize\ttfamily void actualize\+E\+CG (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Menu that allows to update the E\+CG of a given \hyperlink{class_player}{Player}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} of \hyperlink{class_player}{Player}, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em id} & Position of the \hyperlink{class_player}{Player} in the players vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 690 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a271de014adb6e48b8577c86b976b18fa}{}\label{menus_8h_a271de014adb6e48b8577c86b976b18fa} 
+\index{menus.\+h@{menus.\+h}!actualizeheight@{actualizeheight}}
+\index{actualizeheight@{actualizeheight}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{actualizeheight()}{actualizeheight()}}
+{\footnotesize\ttfamily void actualizeheight (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Menu that allows to update the height of a given \hyperlink{class_player}{Player}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} of \hyperlink{class_player}{Player}, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em id} & Position of the \hyperlink{class_player}{Player} in the players vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 711 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a3dc669f40ebb5b2de3d0ff3b67372031}{}\label{menus_8h_a3dc669f40ebb5b2de3d0ff3b67372031} 
+\index{menus.\+h@{menus.\+h}!askeventdate@{askeventdate}}
+\index{askeventdate@{askeventdate}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{askeventdate()}{askeventdate()}}
+{\footnotesize\ttfamily void askeventdate (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{event }\end{DoxyParamCaption})}
+
+
+
+Asks the user for the \hyperlink{class_date}{Date} of an \hyperlink{class_event}{Event}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be changed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em event} & Position of the \hyperlink{class_event}{Event} in the events vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1605 of file menus.\+cpp.
+
+\hypertarget{menus_8h_ac75cbd14c3ddc716f3f0861ddded528f}{}\label{menus_8h_ac75cbd14c3ddc716f3f0861ddded528f} 
+\index{menus.\+h@{menus.\+h}!askfordate@{askfordate}}
+\index{askfordate@{askfordate}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{askfordate()}{askfordate()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} askfordate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asks the user to input a \hyperlink{class_date}{Date}. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_date}{Date} inputted by user 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a6db8c98a6f3aa8636d15609e013980dd}{}\label{menus_8h_a6db8c98a6f3aa8636d15609e013980dd} 
+\index{menus.\+h@{menus.\+h}!birthdaycards@{birthdaycards}}
+\index{birthdaycards@{birthdaycards}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{birthdaycards()}{birthdaycards()}}
+{\footnotesize\ttfamily void birthdaycards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the menu of birthday cards. 
+
+It asks how many days in advance does the user want to know the birthdays 
+
+Definition at line 320 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a2e44e7cf4a9a1d5754a3f8eb5b129365}{}\label{menus_8h_a2e44e7cf4a9a1d5754a3f8eb5b129365} 
+\index{menus.\+h@{menus.\+h}!calendarmenu@{calendarmenu}}
+\index{calendarmenu@{calendarmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{calendarmenu()}{calendarmenu()}}
+{\footnotesize\ttfamily void calendarmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level }\end{DoxyParamCaption})}
+
+
+
+Displays the menu of next events to take place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be shown, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1406 of file menus.\+cpp.
+
+\hypertarget{menus_8h_aa3dca5af81de7adb87edc2d4deb13183}{}\label{menus_8h_aa3dca5af81de7adb87edc2d4deb13183} 
+\index{menus.\+h@{menus.\+h}!changecoachmenu@{changecoachmenu}}
+\index{changecoachmenu@{changecoachmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{changecoachmenu()}{changecoachmenu()}}
+{\footnotesize\ttfamily void changecoachmenu (\begin{DoxyParamCaption}\item[{unsigned}]{level }\end{DoxyParamCaption})}
+
+
+
+Displays the menu to change the coach of a given \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to change coach, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 546 of file menus.\+cpp.
+
+\hypertarget{menus_8h_af900560f4e94ad1eb7f716bf665c6cad}{}\label{menus_8h_af900560f4e94ad1eb7f716bf665c6cad} 
+\index{menus.\+h@{menus.\+h}!editplayerstournament@{editplayerstournament}}
+\index{editplayerstournament@{editplayerstournament}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{editplayerstournament()}{editplayerstournament()}}
+{\footnotesize\ttfamily void editplayerstournament (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{\hyperlink{class_event}{Event} $\ast$}]{tournament }\end{DoxyParamCaption})}
+
+
+
+Menu that asks user to select Players that participated in a given \hyperlink{class_tournament}{Tournament}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be changed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em tournament} & \hyperlink{class_event}{Event} to change the participating Players \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1219 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a49c542576af1c3a6248146f284e42c58}{}\label{menus_8h_a49c542576af1c3a6248146f284e42c58} 
+\index{menus.\+h@{menus.\+h}!editplayerstraining@{editplayerstraining}}
+\index{editplayerstraining@{editplayerstraining}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{editplayerstraining()}{editplayerstraining()}}
+{\footnotesize\ttfamily void editplayerstraining (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{\hyperlink{class_event}{Event} $\ast$}]{ev }\end{DoxyParamCaption})}
+
+
+
+Menu that asks user to select Players that participated in a given \hyperlink{class_training}{Training}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be changed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em ev} & \hyperlink{class_event}{Event} to change the participating Players \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1056 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a9e19e8b74e0d58171af53685eac3b691}{}\label{menus_8h_a9e19e8b74e0d58171af53685eac3b691} 
+\index{menus.\+h@{menus.\+h}!editranktournament@{editranktournament}}
+\index{editranktournament@{editranktournament}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{editranktournament()}{editranktournament()}}
+{\footnotesize\ttfamily void editranktournament (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{\hyperlink{class_event}{Event} $\ast$}]{tournament }\end{DoxyParamCaption})}
+
+
+
+Changes the rank the \hyperlink{class_level}{Level} achieved in the \hyperlink{class_tournament}{Tournament}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be changed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em tournament} & \hyperlink{class_event}{Event} to change the rank \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1272 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a558620ab89ce3d63578448c4b82a1195}{}\label{menus_8h_a558620ab89ce3d63578448c4b82a1195} 
+\index{menus.\+h@{menus.\+h}!editresultstournament@{editresultstournament}}
+\index{editresultstournament@{editresultstournament}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{editresultstournament()}{editresultstournament()}}
+{\footnotesize\ttfamily void editresultstournament (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{\hyperlink{class_event}{Event} $\ast$}]{tournament }\end{DoxyParamCaption})}
+
+
+
+Changes the results of the \hyperlink{class_level}{Level} in the \hyperlink{class_tournament}{Tournament}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be changed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em tournament} & \hyperlink{class_event}{Event} to change the results \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1327 of file menus.\+cpp.
+
+\hypertarget{menus_8h_abaed2b44b77fcd0b36239eafee3d9c6c}{}\label{menus_8h_abaed2b44b77fcd0b36239eafee3d9c6c} 
+\index{menus.\+h@{menus.\+h}!individualeventmenu@{individualeventmenu}}
+\index{individualeventmenu@{individualeventmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{individualeventmenu()}{individualeventmenu()}}
+{\footnotesize\ttfamily void individualeventmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Displays a specific \hyperlink{class_event}{Event} to take place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be shown, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em id} & Position of the \hyperlink{class_event}{Event} in the events vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1447 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a5566a6fa86018fbbea69015e5168e99e}{}\label{menus_8h_a5566a6fa86018fbbea69015e5168e99e} 
+\index{menus.\+h@{menus.\+h}!individualplayermenu@{individualplayermenu}}
+\index{individualplayermenu@{individualplayermenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{individualplayermenu()}{individualplayermenu()}}
+{\footnotesize\ttfamily void individualplayermenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Displays , in a user-\/friendly way, a menu with more detailed information about the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} of \hyperlink{class_player}{Player}, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em id} & Position of the \hyperlink{class_player}{Player} in the players vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 619 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a95e92fc9b91ce4c419afb0d0443bbb43}{}\label{menus_8h_a95e92fc9b91ce4c419afb0d0443bbb43} 
+\index{menus.\+h@{menus.\+h}!individualtournamentmenu@{individualtournamentmenu}}
+\index{individualtournamentmenu@{individualtournamentmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{individualtournamentmenu()}{individualtournamentmenu()}}
+{\footnotesize\ttfamily void individualtournamentmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Menu that shows, in a user-\/friendly way, information about a specific \hyperlink{class_tournament}{Tournament} of the \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be displayed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em id} & Position of the \hyperlink{class_tournament}{Tournament} in the events vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1108 of file menus.\+cpp.
+
+\hypertarget{menus_8h_af43d721f867defe35647e866690cbfc3}{}\label{menus_8h_af43d721f867defe35647e866690cbfc3} 
+\index{menus.\+h@{menus.\+h}!individualtrainingmenu@{individualtrainingmenu}}
+\index{individualtrainingmenu@{individualtrainingmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{individualtrainingmenu()}{individualtrainingmenu()}}
+{\footnotesize\ttfamily void individualtrainingmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Menu that shows, in a user-\/friendly way, information about a specific \hyperlink{class_training}{Training} of the \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be displayed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em id} & Position of the \hyperlink{class_training}{Training} in the events vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 996 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a360714641d352750dcbebc422cf56ad2}{}\label{menus_8h_a360714641d352750dcbebc422cf56ad2} 
+\index{menus.\+h@{menus.\+h}!initialmenu@{initialmenu}}
+\index{initialmenu@{initialmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{initialmenu()}{initialmenu()}}
+{\footnotesize\ttfamily void initialmenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the initial menu. 
+
+
+
+Definition at line 238 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a6f73e3a12587c3f41155ab808099eda3}{}\label{menus_8h_a6f73e3a12587c3f41155ab808099eda3} 
+\index{menus.\+h@{menus.\+h}!levelmenu@{levelmenu}}
+\index{levelmenu@{levelmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{levelmenu()}{levelmenu()}}
+{\footnotesize\ttfamily void levelmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level }\end{DoxyParamCaption})}
+
+
+
+Displays main menu for a given \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to print main manu, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 437 of file menus.\+cpp.
+
+\hypertarget{menus_8h_aba01328dd84a2ba711a95cae93fb862c}{}\label{menus_8h_aba01328dd84a2ba711a95cae93fb862c} 
+\index{menus.\+h@{menus.\+h}!makecall@{makecall}}
+\index{makecall@{makecall}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{makecall()}{makecall()}}
+{\footnotesize\ttfamily void makecall (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{\hyperlink{class_event}{Event} $\ast$}]{tournament }\end{DoxyParamCaption})}
+
+
+
+Asks the user the number of Players to be called for a \hyperlink{class_tournament}{Tournament}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be called, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em tournament} & \hyperlink{class_tournament}{Tournament} to which the Players are being called \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1653 of file menus.\+cpp.
+
+\hypertarget{menus_8h_af5ddda2f5450f4b50fe981b357643be2}{}\label{menus_8h_af5ddda2f5450f4b50fe981b357643be2} 
+\index{menus.\+h@{menus.\+h}!monthlyprizes@{monthlyprizes}}
+\index{monthlyprizes@{monthlyprizes}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{monthlyprizes()}{monthlyprizes()}}
+{\footnotesize\ttfamily void monthlyprizes (\begin{DoxyParamCaption}\item[{unsigned int}]{level }\end{DoxyParamCaption})}
+
+
+
+Displays the monthly prizes for a given \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to print monthly prizes, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 512 of file menus.\+cpp.
+
+\hypertarget{menus_8h_afd66764eba2316fedc8d1fc68874c66c}{}\label{menus_8h_afd66764eba2316fedc8d1fc68874c66c} 
+\index{menus.\+h@{menus.\+h}!notify\+E\+CG@{notify\+E\+CG}}
+\index{notify\+E\+CG@{notify\+E\+CG}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{notify\+E\+C\+G()}{notifyECG()}}
+{\footnotesize\ttfamily void notify\+E\+CG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays menu that allows user to notify Players with delayed E\+CG. 
+
+
+
+Definition at line 383 of file menus.\+cpp.
+
+\hypertarget{menus_8h_af0ca16bef0823da27700dd7a172fb5b1}{}\label{menus_8h_af0ca16bef0823da27700dd7a172fb5b1} 
+\index{menus.\+h@{menus.\+h}!playersmenu@{playersmenu}}
+\index{playersmenu@{playersmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{playersmenu()}{playersmenu()}}
+{\footnotesize\ttfamily void playersmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level }\end{DoxyParamCaption})}
+
+
+
+Displays the menu of the Players of the \hyperlink{class_level}{Level} in a user-\/friendly way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} of Players, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors}\\
+\hline
+\end{DoxyParams}
+The Players shown are alphabetically ordered 
+
+Definition at line 579 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a6ebf55f20ee0236f10acad8f1a285f84}{}\label{menus_8h_a6ebf55f20ee0236f10acad8f1a285f84} 
+\index{menus.\+h@{menus.\+h}!print\+Birthdays@{print\+Birthdays}}
+\index{print\+Birthdays@{print\+Birthdays}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{print\+Birthdays()}{printBirthdays()}}
+{\footnotesize\ttfamily void print\+Birthdays (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{class_player}{Player} $\ast$$>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Prints in an user-\/friendly way the Name of \hyperlink{class_player}{Player} and how many days to birthday. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Vector of Players to print the birthdays\\
+\hline
+\end{DoxyParams}
+The players are printed in order, from the soonest birthday to come to the latest 
+
+Definition at line 304 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a824038186cb0756e60e434af7e945203}{}\label{menus_8h_a824038186cb0756e60e434af7e945203} 
+\index{menus.\+h@{menus.\+h}!printlevel@{printlevel}}
+\index{printlevel@{printlevel}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{printlevel()}{printlevel()}}
+{\footnotesize\ttfamily void printlevel (\begin{DoxyParamCaption}\item[{unsigned int}]{level }\end{DoxyParamCaption})}
+
+
+
+Prints the desired level in a user friendly way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to print, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a3e4bdbd9a6e356b7f330a0fb23351d2f}{}\label{menus_8h_a3e4bdbd9a6e356b7f330a0fb23351d2f} 
+\index{menus.\+h@{menus.\+h}!readplayers@{readplayers}}
+\index{readplayers@{readplayers}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{readplayers()}{readplayers()}}
+{\footnotesize\ttfamily int readplayers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asks the user for the players text file. 
+
+\begin{DoxyReturn}{Returns}
+1 if something went wrong, 0 if all went well 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a296660ecf1cf92c9e925fa842693053f}{}\label{menus_8h_a296660ecf1cf92c9e925fa842693053f} 
+\index{menus.\+h@{menus.\+h}!readtournaments@{readtournaments}}
+\index{readtournaments@{readtournaments}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{readtournaments()}{readtournaments()}}
+{\footnotesize\ttfamily int readtournaments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asks the user for the tournaments text file. 
+
+\begin{DoxyReturn}{Returns}
+1 if something went wrong, 0 if all went well 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file menus.\+cpp.
+
+\hypertarget{menus_8h_ace86b7cf28684a8a2017b4ed1fdb2880}{}\label{menus_8h_ace86b7cf28684a8a2017b4ed1fdb2880} 
+\index{menus.\+h@{menus.\+h}!readtrainings@{readtrainings}}
+\index{readtrainings@{readtrainings}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{readtrainings()}{readtrainings()}}
+{\footnotesize\ttfamily int readtrainings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asks the user for the trainings text file. 
+
+\begin{DoxyReturn}{Returns}
+1 if something went wrong, 0 if all went well 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a4afe6401b97465ae703f506fb7706e9d}{}\label{menus_8h_a4afe6401b97465ae703f506fb7706e9d} 
+\index{menus.\+h@{menus.\+h}!regnewplayermenu@{regnewplayermenu}}
+\index{regnewplayermenu@{regnewplayermenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{regnewplayermenu()}{regnewplayermenu()}}
+{\footnotesize\ttfamily void regnewplayermenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Menu that allows the user to register a new \hyperlink{class_player}{Player} on the \hyperlink{class_club}{Club}. 
+
+
+
+Definition at line 767 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a4ae3bb47fdc90a2c15958427eba07209}{}\label{menus_8h_a4ae3bb47fdc90a2c15958427eba07209} 
+\index{menus.\+h@{menus.\+h}!removeevent@{removeevent}}
+\index{removeevent@{removeevent}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{removeevent()}{removeevent()}}
+{\footnotesize\ttfamily void removeevent (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Interface to remove a given \hyperlink{class_event}{Event}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be changed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em id} & Position of the \hyperlink{class_event}{Event} in the events vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1525 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a1f0621789fda582c7f4bcd4869f1ee33}{}\label{menus_8h_a1f0621789fda582c7f4bcd4869f1ee33} 
+\index{menus.\+h@{menus.\+h}!removeplayer@{removeplayer}}
+\index{removeplayer@{removeplayer}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{removeplayer()}{removeplayer()}}
+{\footnotesize\ttfamily void removeplayer (\begin{DoxyParamCaption}\item[{unsigned int}]{level,  }\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Menu to remove a given \hyperlink{class_player}{Player}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} of \hyperlink{class_player}{Player}, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+{\em id} & Position of the \hyperlink{class_player}{Player} in the players vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 747 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a546c4c0ca16a1858de54677140e270f6}{}\label{menus_8h_a546c4c0ca16a1858de54677140e270f6} 
+\index{menus.\+h@{menus.\+h}!scheduleeventmenu@{scheduleeventmenu}}
+\index{scheduleeventmenu@{scheduleeventmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{scheduleeventmenu()}{scheduleeventmenu()}}
+{\footnotesize\ttfamily void scheduleeventmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level }\end{DoxyParamCaption})}
+
+
+
+Displays the menu that allows the user to schedule an \hyperlink{class_event}{Event}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be changed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1544 of file menus.\+cpp.
+
+\hypertarget{menus_8h_af8ce4ff7c4bbeca86d18ed3111b36eb6}{}\label{menus_8h_af8ce4ff7c4bbeca86d18ed3111b36eb6} 
+\index{menus.\+h@{menus.\+h}!tournamentsmenu@{tournamentsmenu}}
+\index{tournamentsmenu@{tournamentsmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{tournamentsmenu()}{tournamentsmenu()}}
+{\footnotesize\ttfamily void tournamentsmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level }\end{DoxyParamCaption})}
+
+
+
+Menu that shows, in a user-\/friendly way, information about the Tournaments of the \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be displayed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 956 of file menus.\+cpp.
+
+\hypertarget{menus_8h_a99d9b0116759420e15bdf0b7679514ab}{}\label{menus_8h_a99d9b0116759420e15bdf0b7679514ab} 
+\index{menus.\+h@{menus.\+h}!trainingsmenu@{trainingsmenu}}
+\index{trainingsmenu@{trainingsmenu}!menus.\+h@{menus.\+h}}
+\subsubsection{\texorpdfstring{trainingsmenu()}{trainingsmenu()}}
+{\footnotesize\ttfamily void trainingsmenu (\begin{DoxyParamCaption}\item[{unsigned int}]{level }\end{DoxyParamCaption})}
+
+
+
+Menu that shows, in a user-\/friendly way, information about the Trainings of the \hyperlink{class_level}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \hyperlink{class_level}{Level} to be displayed, 0 for \hyperlink{class_minis}{Minis}, 1 \hyperlink{class_juniors}{Juniors} , 2 \hyperlink{class_juniors}{Juniors} , 3 \hyperlink{class_seniors}{Seniors} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 915 of file menus.\+cpp.
+

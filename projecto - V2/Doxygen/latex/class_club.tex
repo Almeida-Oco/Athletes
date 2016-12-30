@@ -1,0 +1,583 @@
+\hypertarget{class_club}{}\section{Club Class Reference}
+\label{class_club}\index{Club@{Club}}
+
+
+Holds all the information about the \hyperlink{class_club}{Club}.  
+
+
+
+
+{\ttfamily \#include $<$Club.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_club_a1c2993e141cfa6468284274359cc7de5}{$\sim$\+Club} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+string \hyperlink{class_club_aca473ab431cc852ad0f99479aace788c}{getname} () const
+\begin{DoxyCompactList}\small\item\em Gets the name of the \hyperlink{class_club}{Club}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_club_a08eeadedcdbf4cfd5eaada3066b668dd}{getleaveprogram} () const
+\begin{DoxyCompactList}\small\item\em Gets member variable leaveprogram. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a797110a5f4b779fec91a6fecbc0e3dda}{setleaveprogram} (bool leaveprogram)
+\begin{DoxyCompactList}\small\item\em Change value of member variable setleaveprogram. \end{DoxyCompactList}\item 
+string \hyperlink{class_club_a8c96af96a3b46adf1d3d46694452b422}{getfilename\+\_\+players} () const
+\begin{DoxyCompactList}\small\item\em Gets member variable filename\+\_\+players. \end{DoxyCompactList}\item 
+string \hyperlink{class_club_a0807e91626c347847a36551c66e38985}{getfilename\+\_\+trainings} () const
+\begin{DoxyCompactList}\small\item\em Gets member variable filename\+\_\+trainings. \end{DoxyCompactList}\item 
+string \hyperlink{class_club_a95dd9fae1bd73060b8a64176aef5b848}{getfilename\+\_\+tournaments} () const
+\begin{DoxyCompactList}\small\item\em Gets member variable filename\+\_\+tournaments. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a215b1c939a82ae2d442d05bc58457cd4}{setfilename\+\_\+players} (string filename\+\_\+players)
+\begin{DoxyCompactList}\small\item\em Changes value of member variable filename\+\_\+players. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_af1693f8321d273f68b3bcfebff5d4ac9}{setfilename\+\_\+trainings} (string filename\+\_\+trainings)
+\begin{DoxyCompactList}\small\item\em Changes value of member variable filename\+\_\+trainings. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a5bd4d91fd403f73a9b74778568e3e639}{setfilename\+\_\+tournaments} (string filename\+\_\+tournaments)
+\begin{DoxyCompactList}\small\item\em Changes value of member variable filename\+\_\+tournaments. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a8bae0203ecc348fa338ff5fcfd0cd6fb}{readplayers} (istream \&in)
+\begin{DoxyCompactList}\small\item\em Input operation to read all Players from a text file. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a918827ec97985e5f98d471f116098902}{readtrainings} (istream \&in)
+\begin{DoxyCompactList}\small\item\em Input operation to read all Trainings from a text file. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_ae7453aa640951df46424975ecfcbbbca}{readtournaments} (istream \&in)
+\begin{DoxyCompactList}\small\item\em Input operation to read all Tournaments from a text file. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_acc8a8c5175c6f90db4056dd6a1e98b67}{writeplayers} ()
+\begin{DoxyCompactList}\small\item\em Output operation to store all Players in a text file. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a4784eaf929c6c72559ad0f6ba2895a8f}{writetrainings} ()
+\begin{DoxyCompactList}\small\item\em Output operation to store all Trainings in a text file. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a89dfe233c69897a1d5abd9d7951990d8}{writetournaments} ()
+\begin{DoxyCompactList}\small\item\em Output operation to store all Tournaments in a text file. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_level}{Level} $\ast$ $>$ \hyperlink{class_club_ad196e0999b3c18c1ed3e757ccf70b92d}{get\+Levels} () const
+\begin{DoxyCompactList}\small\item\em Used to get a vector with all levels. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_club_ae3423e40b8af98a1e3844cbdc0ca87f7}{get\+Players} () const
+\begin{DoxyCompactList}\small\item\em Used to get a vector with all current Players. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a44a4556487884659d9b316dc6c961e86}{make\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Constructs the binary Tree for each \hyperlink{class_level}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a389972412da4a5b1cd62965ceefad7fe}{make\+Queue} ()
+\begin{DoxyCompactList}\small\item\em Contructs the member variable E\+C\+G\+\_\+queue. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_aecaa2826d91ec8efdc8b8ecc5543f9d0}{add\+Player\+Queue} (\hyperlink{class_player}{Player} $\ast$pl)
+\begin{DoxyCompactList}\small\item\em Adds a \hyperlink{class_player}{Player} to member variable E\+C\+G\+\_\+queue. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_ad09dd0ccccf5bd9dd465778ad127f41a}{remove\+Player\+Queue} (\hyperlink{class_player}{Player} $\ast$pl)
+\begin{DoxyCompactList}\small\item\em Removes a player from the member variable E\+C\+G\+\_\+queue. \end{DoxyCompactList}\item 
+bool \hyperlink{class_club_a085dd799d98de3efc6e43d81718f54a3}{add\+Birthday} (\hyperlink{class_player}{Player} $\ast$p1)
+\begin{DoxyCompactList}\small\item\em Adds the player to the hash table for future birthdays. \end{DoxyCompactList}\item 
+bool \hyperlink{class_club_afccacb082df30292238e2da709c9c044}{remove\+Birthday} (\hyperlink{class_player}{Player} $\ast$p1)
+\begin{DoxyCompactList}\small\item\em Removes the given \hyperlink{class_player}{Player} from the future birthday list. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$ \hyperlink{class_club_a63871ced4b025d0a3ab488c9a47a4d07}{next\+Birthdays} (int days) const
+\begin{DoxyCompactList}\small\item\em Gets a list of players whose birthday is within parameter days. \end{DoxyCompactList}\item 
+bool \hyperlink{class_club_aefc39e233faadeb0463e959628ab4a0d}{find\+Old\+Player} (\hyperlink{class_player}{Player} $\ast$p1)
+\begin{DoxyCompactList}\small\item\em Tries to find p1 in the future\+\_\+birthdays hash table. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_aad02197c0f3431dbe8c2e12033e24f63}{E\+C\+G\+\_\+notify} ()
+\begin{DoxyCompactList}\small\item\em Sends a notification to the first player in the member variable E\+C\+G\+\_\+queue. \end{DoxyCompactList}\item 
+void \hyperlink{class_club_a7ef23c55751610bc2cb98a356a6bee46}{show\+Queue} ()
+\begin{DoxyCompactList}\small\item\em Used to print the member variable E\+C\+G\+\_\+queue on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_club}{Club} $\ast$ \hyperlink{class_club_aefc364f93d7b49202fe8fa35c01da4cf}{getinstance} ()
+\begin{DoxyCompactList}\small\item\em Gets an object of class \hyperlink{class_club}{Club}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds all the information about the \hyperlink{class_club}{Club}. 
+
+Definition at line 84 of file Club.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_club_a1c2993e141cfa6468284274359cc7de5}{}\label{class_club_a1c2993e141cfa6468284274359cc7de5} 
+\index{Club@{Club}!````~Club@{$\sim$\+Club}}
+\index{````~Club@{$\sim$\+Club}!Club@{Club}}
+\subsubsection{\texorpdfstring{$\sim$\+Club()}{~Club()}}
+{\footnotesize\ttfamily Club\+::$\sim$\+Club (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+Definition at line 20 of file Club.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_club_a085dd799d98de3efc6e43d81718f54a3}{}\label{class_club_a085dd799d98de3efc6e43d81718f54a3} 
+\index{Club@{Club}!add\+Birthday@{add\+Birthday}}
+\index{add\+Birthday@{add\+Birthday}!Club@{Club}}
+\subsubsection{\texorpdfstring{add\+Birthday()}{addBirthday()}}
+{\footnotesize\ttfamily bool Club\+::add\+Birthday (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} $\ast$}]{p1 }\end{DoxyParamCaption})}
+
+
+
+Adds the player to the hash table for future birthdays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Pointer to player to be added\\
+\hline
+\end{DoxyParams}
+\hyperlink{class_player}{Player} can only be inserted if he is older than team maximum age (defined in \hyperlink{_seniors_8h}{seniors.\+h})
+
+if not it cannot be added to the future birthday list
+
+\begin{DoxyReturn}{Returns}
+true if insert successful , false if it cannot insert player 
+\end{DoxyReturn}
+
+
+Definition at line 442 of file Club.\+cpp.
+
+\hypertarget{class_club_aecaa2826d91ec8efdc8b8ecc5543f9d0}{}\label{class_club_aecaa2826d91ec8efdc8b8ecc5543f9d0} 
+\index{Club@{Club}!add\+Player\+Queue@{add\+Player\+Queue}}
+\index{add\+Player\+Queue@{add\+Player\+Queue}!Club@{Club}}
+\subsubsection{\texorpdfstring{add\+Player\+Queue()}{addPlayerQueue()}}
+{\footnotesize\ttfamily void Club\+::add\+Player\+Queue (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} $\ast$}]{pl }\end{DoxyParamCaption})}
+
+
+
+Adds a \hyperlink{class_player}{Player} to member variable E\+C\+G\+\_\+queue. 
+
+
+
+Definition at line 397 of file Club.\+cpp.
+
+\hypertarget{class_club_aad02197c0f3431dbe8c2e12033e24f63}{}\label{class_club_aad02197c0f3431dbe8c2e12033e24f63} 
+\index{Club@{Club}!E\+C\+G\+\_\+notify@{E\+C\+G\+\_\+notify}}
+\index{E\+C\+G\+\_\+notify@{E\+C\+G\+\_\+notify}!Club@{Club}}
+\subsubsection{\texorpdfstring{E\+C\+G\+\_\+notify()}{ECG\_notify()}}
+{\footnotesize\ttfamily void Club\+::\+E\+C\+G\+\_\+notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sends a notification to the first player in the member variable E\+C\+G\+\_\+queue. 
+
+
+
+Definition at line 255 of file Club.\+h.
+
+\hypertarget{class_club_aefc39e233faadeb0463e959628ab4a0d}{}\label{class_club_aefc39e233faadeb0463e959628ab4a0d} 
+\index{Club@{Club}!find\+Old\+Player@{find\+Old\+Player}}
+\index{find\+Old\+Player@{find\+Old\+Player}!Club@{Club}}
+\subsubsection{\texorpdfstring{find\+Old\+Player()}{findOldPlayer()}}
+{\footnotesize\ttfamily bool Club\+::find\+Old\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} $\ast$}]{p1 }\end{DoxyParamCaption})}
+
+
+
+Tries to find p1 in the future\+\_\+birthdays hash table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Pointer to player to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if player found , 0 if player not found 
+\end{DoxyReturn}
+
+
+Definition at line 475 of file Club.\+cpp.
+
+\hypertarget{class_club_a8c96af96a3b46adf1d3d46694452b422}{}\label{class_club_a8c96af96a3b46adf1d3d46694452b422} 
+\index{Club@{Club}!getfilename\+\_\+players@{getfilename\+\_\+players}}
+\index{getfilename\+\_\+players@{getfilename\+\_\+players}!Club@{Club}}
+\subsubsection{\texorpdfstring{getfilename\+\_\+players()}{getfilename\_players()}}
+{\footnotesize\ttfamily string Club\+::getfilename\+\_\+players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets member variable filename\+\_\+players. 
+
+\begin{DoxyReturn}{Returns}
+filename\+\_\+players (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file Club.\+h.
+
+\hypertarget{class_club_a95dd9fae1bd73060b8a64176aef5b848}{}\label{class_club_a95dd9fae1bd73060b8a64176aef5b848} 
+\index{Club@{Club}!getfilename\+\_\+tournaments@{getfilename\+\_\+tournaments}}
+\index{getfilename\+\_\+tournaments@{getfilename\+\_\+tournaments}!Club@{Club}}
+\subsubsection{\texorpdfstring{getfilename\+\_\+tournaments()}{getfilename\_tournaments()}}
+{\footnotesize\ttfamily string Club\+::getfilename\+\_\+tournaments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets member variable filename\+\_\+tournaments. 
+
+\begin{DoxyReturn}{Returns}
+filename\+\_\+tournaments (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file Club.\+h.
+
+\hypertarget{class_club_a0807e91626c347847a36551c66e38985}{}\label{class_club_a0807e91626c347847a36551c66e38985} 
+\index{Club@{Club}!getfilename\+\_\+trainings@{getfilename\+\_\+trainings}}
+\index{getfilename\+\_\+trainings@{getfilename\+\_\+trainings}!Club@{Club}}
+\subsubsection{\texorpdfstring{getfilename\+\_\+trainings()}{getfilename\_trainings()}}
+{\footnotesize\ttfamily string Club\+::getfilename\+\_\+trainings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets member variable filename\+\_\+trainings. 
+
+\begin{DoxyReturn}{Returns}
+filename\+\_\+trainings (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 138 of file Club.\+h.
+
+\hypertarget{class_club_aefc364f93d7b49202fe8fa35c01da4cf}{}\label{class_club_aefc364f93d7b49202fe8fa35c01da4cf} 
+\index{Club@{Club}!getinstance@{getinstance}}
+\index{getinstance@{getinstance}!Club@{Club}}
+\subsubsection{\texorpdfstring{getinstance()}{getinstance()}}
+{\footnotesize\ttfamily \hyperlink{class_club}{Club} $\ast$ Club\+::getinstance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets an object of class \hyperlink{class_club}{Club}. 
+
+\begin{DoxyReturn}{Returns}
+singleton\+\_\+instance (member variable)
+\end{DoxyReturn}
+Checks whether member variable singleton\+\_\+instance already points to an object, if it does
+
+return it, if not then it initializes singleton\+\_\+instance then returns it 
+
+Definition at line 32 of file Club.\+cpp.
+
+\hypertarget{class_club_a08eeadedcdbf4cfd5eaada3066b668dd}{}\label{class_club_a08eeadedcdbf4cfd5eaada3066b668dd} 
+\index{Club@{Club}!getleaveprogram@{getleaveprogram}}
+\index{getleaveprogram@{getleaveprogram}!Club@{Club}}
+\subsubsection{\texorpdfstring{getleaveprogram()}{getleaveprogram()}}
+{\footnotesize\ttfamily bool Club\+::getleaveprogram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets member variable leaveprogram. 
+
+\begin{DoxyReturn}{Returns}
+leaveprogram (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 124 of file Club.\+h.
+
+\hypertarget{class_club_ad196e0999b3c18c1ed3e757ccf70b92d}{}\label{class_club_ad196e0999b3c18c1ed3e757ccf70b92d} 
+\index{Club@{Club}!get\+Levels@{get\+Levels}}
+\index{get\+Levels@{get\+Levels}!Club@{Club}}
+\subsubsection{\texorpdfstring{get\+Levels()}{getLevels()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_level}{Level} $\ast$$>$ Club\+::get\+Levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to get a vector with all levels. 
+
+\begin{DoxyReturn}{Returns}
+Vector of pointer to levels with Minis$\ast$ at 0 , Juveniles$\ast$ at 1 , Juniors$\ast$ at 2 , Seniors$\ast$ at 3 
+\end{DoxyReturn}
+
+
+Definition at line 193 of file Club.\+h.
+
+\hypertarget{class_club_aca473ab431cc852ad0f99479aace788c}{}\label{class_club_aca473ab431cc852ad0f99479aace788c} 
+\index{Club@{Club}!getname@{getname}}
+\index{getname@{getname}!Club@{Club}}
+\subsubsection{\texorpdfstring{getname()}{getname()}}
+{\footnotesize\ttfamily string Club\+::getname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the name of the \hyperlink{class_club}{Club}. 
+
+\begin{DoxyReturn}{Returns}
+name (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 119 of file Club.\+h.
+
+\hypertarget{class_club_ae3423e40b8af98a1e3844cbdc0ca87f7}{}\label{class_club_ae3423e40b8af98a1e3844cbdc0ca87f7} 
+\index{Club@{Club}!get\+Players@{get\+Players}}
+\index{get\+Players@{get\+Players}!Club@{Club}}
+\subsubsection{\texorpdfstring{get\+Players()}{getPlayers()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Club\+::get\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Used to get a vector with all current Players. 
+
+\begin{DoxyReturn}{Returns}
+Vector with the names of all the players of the \hyperlink{class_club}{Club}, including old Players if they participated in Events 
+\end{DoxyReturn}
+
+
+Definition at line 310 of file Club.\+cpp.
+
+\hypertarget{class_club_a389972412da4a5b1cd62965ceefad7fe}{}\label{class_club_a389972412da4a5b1cd62965ceefad7fe} 
+\index{Club@{Club}!make\+Queue@{make\+Queue}}
+\index{make\+Queue@{make\+Queue}!Club@{Club}}
+\subsubsection{\texorpdfstring{make\+Queue()}{makeQueue()}}
+{\footnotesize\ttfamily void Club\+::make\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Contructs the member variable E\+C\+G\+\_\+queue. 
+
+The queue contains the current players of the club of all levels 
+
+Definition at line 354 of file Club.\+cpp.
+
+\hypertarget{class_club_a44a4556487884659d9b316dc6c961e86}{}\label{class_club_a44a4556487884659d9b316dc6c961e86} 
+\index{Club@{Club}!make\+Tree@{make\+Tree}}
+\index{make\+Tree@{make\+Tree}!Club@{Club}}
+\subsubsection{\texorpdfstring{make\+Tree()}{makeTree()}}
+{\footnotesize\ttfamily void Club\+::make\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs the binary Tree for each \hyperlink{class_level}{Level}. 
+
+First it updates the information on all current Players, by resetting their assiduities and computing them again
+
+after updating it adds them to the respective \hyperlink{class_b_s_t}{B\+ST}. 
+
+Definition at line 338 of file Club.\+cpp.
+
+\hypertarget{class_club_a63871ced4b025d0a3ab488c9a47a4d07}{}\label{class_club_a63871ced4b025d0a3ab488c9a47a4d07} 
+\index{Club@{Club}!next\+Birthdays@{next\+Birthdays}}
+\index{next\+Birthdays@{next\+Birthdays}!Club@{Club}}
+\subsubsection{\texorpdfstring{next\+Birthdays()}{nextBirthdays()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$ Club\+::next\+Birthdays (\begin{DoxyParamCaption}\item[{int}]{days = {\ttfamily 10} }\end{DoxyParamCaption}) const}
+
+
+
+Gets a list of players whose birthday is within parameter days. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em days} & Number of days to use\\
+\hline
+\end{DoxyParams}
+Iterates all possible dates from the current day to (current\+\_\+day + days) it iterates it from
+
+end day to current day so that list is ordered by the closest birthday to the farthest birthdays \begin{DoxyReturn}{Returns}
+List of pointer to those players 
+\end{DoxyReturn}
+
+
+Definition at line 483 of file Club.\+cpp.
+
+\hypertarget{class_club_a8bae0203ecc348fa338ff5fcfd0cd6fb}{}\label{class_club_a8bae0203ecc348fa338ff5fcfd0cd6fb} 
+\index{Club@{Club}!readplayers@{readplayers}}
+\index{readplayers@{readplayers}!Club@{Club}}
+\subsubsection{\texorpdfstring{readplayers()}{readplayers()}}
+{\footnotesize\ttfamily void Club\+::readplayers (\begin{DoxyParamCaption}\item[{istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+Input operation to read all Players from a text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Istream to read the players from\\
+\hline
+\end{DoxyParams}
+First it reads the current players of the club, then it reads the old players of the club 
+
+Definition at line 43 of file Club.\+cpp.
+
+\hypertarget{class_club_ae7453aa640951df46424975ecfcbbbca}{}\label{class_club_ae7453aa640951df46424975ecfcbbbca} 
+\index{Club@{Club}!readtournaments@{readtournaments}}
+\index{readtournaments@{readtournaments}!Club@{Club}}
+\subsubsection{\texorpdfstring{readtournaments()}{readtournaments()}}
+{\footnotesize\ttfamily void Club\+::readtournaments (\begin{DoxyParamCaption}\item[{istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+Input operation to read all Tournaments from a text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Istream to read the trainings from\\
+\hline
+\end{DoxyParams}
+Sistematically reads the Tournaments by level 
+
+Definition at line 122 of file Club.\+cpp.
+
+\hypertarget{class_club_a918827ec97985e5f98d471f116098902}{}\label{class_club_a918827ec97985e5f98d471f116098902} 
+\index{Club@{Club}!readtrainings@{readtrainings}}
+\index{readtrainings@{readtrainings}!Club@{Club}}
+\subsubsection{\texorpdfstring{readtrainings()}{readtrainings()}}
+{\footnotesize\ttfamily void Club\+::readtrainings (\begin{DoxyParamCaption}\item[{istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+Input operation to read all Trainings from a text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Istream to read the trainings from\\
+\hline
+\end{DoxyParams}
+Sistematically reads the Trainings by level 
+
+Definition at line 68 of file Club.\+cpp.
+
+\hypertarget{class_club_afccacb082df30292238e2da709c9c044}{}\label{class_club_afccacb082df30292238e2da709c9c044} 
+\index{Club@{Club}!remove\+Birthday@{remove\+Birthday}}
+\index{remove\+Birthday@{remove\+Birthday}!Club@{Club}}
+\subsubsection{\texorpdfstring{remove\+Birthday()}{removeBirthday()}}
+{\footnotesize\ttfamily bool Club\+::remove\+Birthday (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} $\ast$}]{p1 }\end{DoxyParamCaption})}
+
+
+
+Removes the given \hyperlink{class_player}{Player} from the future birthday list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Pointer to player to be removed\\
+\hline
+\end{DoxyParams}
+Compares the players by name
+
+\begin{DoxyReturn}{Returns}
+true if removed successfuly, false if player not found 
+\end{DoxyReturn}
+
+
+Definition at line 459 of file Club.\+cpp.
+
+\hypertarget{class_club_ad09dd0ccccf5bd9dd465778ad127f41a}{}\label{class_club_ad09dd0ccccf5bd9dd465778ad127f41a} 
+\index{Club@{Club}!remove\+Player\+Queue@{remove\+Player\+Queue}}
+\index{remove\+Player\+Queue@{remove\+Player\+Queue}!Club@{Club}}
+\subsubsection{\texorpdfstring{remove\+Player\+Queue()}{removePlayerQueue()}}
+{\footnotesize\ttfamily void Club\+::remove\+Player\+Queue (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} $\ast$}]{pl }\end{DoxyParamCaption})}
+
+
+
+Removes a player from the member variable E\+C\+G\+\_\+queue. 
+
+If the player is not found the Queue simply remains the same 
+
+Definition at line 411 of file Club.\+cpp.
+
+\hypertarget{class_club_a215b1c939a82ae2d442d05bc58457cd4}{}\label{class_club_a215b1c939a82ae2d442d05bc58457cd4} 
+\index{Club@{Club}!setfilename\+\_\+players@{setfilename\+\_\+players}}
+\index{setfilename\+\_\+players@{setfilename\+\_\+players}!Club@{Club}}
+\subsubsection{\texorpdfstring{setfilename\+\_\+players()}{setfilename\_players()}}
+{\footnotesize\ttfamily void Club\+::setfilename\+\_\+players (\begin{DoxyParamCaption}\item[{string}]{filename\+\_\+players }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes value of member variable filename\+\_\+players. 
+
+
+
+Definition at line 147 of file Club.\+h.
+
+\hypertarget{class_club_a5bd4d91fd403f73a9b74778568e3e639}{}\label{class_club_a5bd4d91fd403f73a9b74778568e3e639} 
+\index{Club@{Club}!setfilename\+\_\+tournaments@{setfilename\+\_\+tournaments}}
+\index{setfilename\+\_\+tournaments@{setfilename\+\_\+tournaments}!Club@{Club}}
+\subsubsection{\texorpdfstring{setfilename\+\_\+tournaments()}{setfilename\_tournaments()}}
+{\footnotesize\ttfamily void Club\+::setfilename\+\_\+tournaments (\begin{DoxyParamCaption}\item[{string}]{filename\+\_\+tournaments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes value of member variable filename\+\_\+tournaments. 
+
+
+
+Definition at line 155 of file Club.\+h.
+
+\hypertarget{class_club_af1693f8321d273f68b3bcfebff5d4ac9}{}\label{class_club_af1693f8321d273f68b3bcfebff5d4ac9} 
+\index{Club@{Club}!setfilename\+\_\+trainings@{setfilename\+\_\+trainings}}
+\index{setfilename\+\_\+trainings@{setfilename\+\_\+trainings}!Club@{Club}}
+\subsubsection{\texorpdfstring{setfilename\+\_\+trainings()}{setfilename\_trainings()}}
+{\footnotesize\ttfamily void Club\+::setfilename\+\_\+trainings (\begin{DoxyParamCaption}\item[{string}]{filename\+\_\+trainings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes value of member variable filename\+\_\+trainings. 
+
+
+
+Definition at line 151 of file Club.\+h.
+
+\hypertarget{class_club_a797110a5f4b779fec91a6fecbc0e3dda}{}\label{class_club_a797110a5f4b779fec91a6fecbc0e3dda} 
+\index{Club@{Club}!setleaveprogram@{setleaveprogram}}
+\index{setleaveprogram@{setleaveprogram}!Club@{Club}}
+\subsubsection{\texorpdfstring{setleaveprogram()}{setleaveprogram()}}
+{\footnotesize\ttfamily void Club\+::setleaveprogram (\begin{DoxyParamCaption}\item[{bool}]{leaveprogram }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change value of member variable setleaveprogram. 
+
+
+
+Definition at line 128 of file Club.\+h.
+
+\hypertarget{class_club_a7ef23c55751610bc2cb98a356a6bee46}{}\label{class_club_a7ef23c55751610bc2cb98a356a6bee46} 
+\index{Club@{Club}!show\+Queue@{show\+Queue}}
+\index{show\+Queue@{show\+Queue}!Club@{Club}}
+\subsubsection{\texorpdfstring{show\+Queue()}{showQueue()}}
+{\footnotesize\ttfamily void Club\+::show\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to print the member variable E\+C\+G\+\_\+queue on the screen. 
+
+
+
+Definition at line 427 of file Club.\+cpp.
+
+\hypertarget{class_club_acc8a8c5175c6f90db4056dd6a1e98b67}{}\label{class_club_acc8a8c5175c6f90db4056dd6a1e98b67} 
+\index{Club@{Club}!writeplayers@{writeplayers}}
+\index{writeplayers@{writeplayers}!Club@{Club}}
+\subsubsection{\texorpdfstring{writeplayers()}{writeplayers()}}
+{\footnotesize\ttfamily void Club\+::writeplayers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Output operation to store all Players in a text file. 
+
+First it stores the current players of the club, then the old players of the club 
+
+Definition at line 157 of file Club.\+cpp.
+
+\hypertarget{class_club_a89dfe233c69897a1d5abd9d7951990d8}{}\label{class_club_a89dfe233c69897a1d5abd9d7951990d8} 
+\index{Club@{Club}!writetournaments@{writetournaments}}
+\index{writetournaments@{writetournaments}!Club@{Club}}
+\subsubsection{\texorpdfstring{writetournaments()}{writetournaments()}}
+{\footnotesize\ttfamily void Club\+::writetournaments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Output operation to store all Tournaments in a text file. 
+
+Sistematically stores the Tournaments by level 
+
+Definition at line 249 of file Club.\+cpp.
+
+\hypertarget{class_club_a4784eaf929c6c72559ad0f6ba2895a8f}{}\label{class_club_a4784eaf929c6c72559ad0f6ba2895a8f} 
+\index{Club@{Club}!writetrainings@{writetrainings}}
+\index{writetrainings@{writetrainings}!Club@{Club}}
+\subsubsection{\texorpdfstring{writetrainings()}{writetrainings()}}
+{\footnotesize\ttfamily void Club\+::writetrainings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Output operation to store all Trainings in a text file. 
+
+Sistematically stores the Trainings by level 
+
+Definition at line 188 of file Club.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\hyperlink{_club_8h}{Club.\+h}\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\hyperlink{_club_8cpp}{Club.\+cpp}\end{DoxyCompactItemize}

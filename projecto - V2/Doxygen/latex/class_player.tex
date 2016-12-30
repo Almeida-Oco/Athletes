@@ -1,0 +1,615 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+Holds all the information about a given \hyperlink{class_player}{Player}.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_player_a74b724a1381ef548891d0f1a583450e0}{Player} (\hyperlink{class_date}{Date} birth\+\_\+date)
+\begin{DoxyCompactList}\small\item\em Partial Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_player_a61933c5f779b97caea5e13b58bbb06da}{Player} (string name, \hyperlink{class_date}{Date} birth\+\_\+date, unsigned int height)
+\begin{DoxyCompactList}\small\item\em Full Constructor. \end{DoxyCompactList}\item 
+string \hyperlink{class_player_a4939193fc637f75bf7a11118334dae7e}{get\+Name} () const
+\begin{DoxyCompactList}\small\item\em Gets the name of the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_player_a40d25243f37af60da51b8020f7518700}{get\+Birth} () const
+\begin{DoxyCompactList}\small\item\em Gets the birthday of the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_date}{Date} $>$ \hyperlink{class_player_a2d1d0a9a28323caa4003d1e09645389e}{get\+E\+CG} () const
+\begin{DoxyCompactList}\small\item\em Gets the E\+CG history of the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a4885775d191fbfbac59cf284388c6b0b}{get\+Present} () const
+\begin{DoxyCompactList}\small\item\em Checks if the \hyperlink{class_player}{Player} got a present. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_player_a35448f9c66824c2adfc643245758ce37}{get\+Height} () const
+\begin{DoxyCompactList}\small\item\em Gets the height of the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_player_ad9192cb7e7d2537cdabcdc249de10e5b}{get\+Assiduity} () const
+\begin{DoxyCompactList}\small\item\em Gets the assiduity in Trainings of the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_player_ae004ae4c13248265587f8a0d27ab3c5a}{get\+Presences\+\_\+games} () const
+\begin{DoxyCompactList}\small\item\em Gets the assiduity in \hyperlink{class_training}{Training} games of the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_player_a0ed8ba4399f59a5e92239d61a99e1260}{get\+Presences\+\_\+stournaments} () const
+\begin{DoxyCompactList}\small\item\em Gets the assiduity in small Tournaments of the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_player_a4b49e80e2c4b49276a4f5d1a38bf337c}{get\+Assiduity\+\_\+\+Curr\+\_\+\+Month} () const
+\begin{DoxyCompactList}\small\item\em Gets the assiduity this month of the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_player_a0a7205a9a0a7b9b6bf02035ee104b690}{get\+Games\+\_\+\+Won} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of games won in which the \hyperlink{class_player}{Player} participated. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_af7e72bf68786fafad86906bf4228c467}{set\+Present} (bool b)
+\begin{DoxyCompactList}\small\item\em Changes the value of get\+\_\+presents (member variable) \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a7e5ebb8fa4bc30bf04bad367a195864b}{set\+Assiduity} (unsigned int assiduity)
+\begin{DoxyCompactList}\small\item\em Changes the value of assiduity (member variable) \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a6e7482dfac54ccf8c7804dd909b70143}{set\+Presences\+\_\+games} (unsigned int presences\+\_\+games)
+\begin{DoxyCompactList}\small\item\em Changes the value of presences\+\_\+games (member variable) \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a95c04115cff22ff76782c475f288561d}{set\+Presences\+\_\+stournaments} (unsigned int presences\+\_\+stournaments)
+\begin{DoxyCompactList}\small\item\em Changes the value of presences\+\_\+stournaments (member variable) \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a705ed15f41e065c7b03ad4ad1cb5ab91}{set\+Assiduity\+\_\+\+Curr\+\_\+\+Month} (unsigned int assiduity)
+\begin{DoxyCompactList}\small\item\em Changes the value of assiduity\+\_\+curr\+\_\+month (member variable) \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a2ff08de789327f4b3aa82f15b354ee4e}{set\+Games\+\_\+\+Won} (unsigned int games)
+\begin{DoxyCompactList}\small\item\em Changes the value of games\+\_\+won (member variable) \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a217985fe6c76c9e91a91f4d1c1a82c11}{set\+Height} (unsigned int height)
+\begin{DoxyCompactList}\small\item\em Changes the value of height (member variable) \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a4309719d18274253a5d00e9940e042d9}{add\+E\+CG} (\hyperlink{class_date}{Date} last\+\_\+eletro)
+\begin{DoxyCompactList}\small\item\em Adds a new E\+CG date to member varible ecg. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a623da661c3b627ba79ed595fa8d9a3ea}{show} () const
+\begin{DoxyCompactList}\small\item\em Prints the \hyperlink{class_player}{Player} on the screen. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_player_ae769d5edba7c2a1defb0d53efe5804a4}{get\+Last\+\_\+\+Eletro} () const
+\begin{DoxyCompactList}\small\item\em Gets the last E\+CG date. \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a27612a5782370fda6e67d3e8a2fd9a2d}{check\+E\+CG} (const \hyperlink{class_date}{Date} \&d) const
+\begin{DoxyCompactList}\small\item\em Checks if \hyperlink{class_player}{Player} has E\+CG in order in the given \hyperlink{class_date}{Date}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a743a295b67be652909a5b1c3252f0d8c}{operator$<$} (const \hyperlink{class_player}{Player} \&p1) const
+\begin{DoxyCompactList}\small\item\em Operator$<$ Used to compare Players. \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a81019960e40a67b0cefea0afd3a3100c}{operator==} (const \hyperlink{class_player}{Player} \&p1) const
+\begin{DoxyCompactList}\small\item\em Operator== Used to compare Players. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_player_a7429373489b5ccfffc0c6f7d3b237b06}{operator$<$$<$} (ostream \&out, const \hyperlink{class_player}{Player} \&player)
+\begin{DoxyCompactList}\small\item\em Used to write the \hyperlink{class_player}{Player} in an Output Stream. \end{DoxyCompactList}\item 
+istream \& \hyperlink{class_player_ac80a9cf20cbee01df8046ca9497b0b2d}{operator$>$$>$} (istream \&in, \hyperlink{class_player}{Player} \&player)
+\begin{DoxyCompactList}\small\item\em Used to read the \hyperlink{class_player}{Player} from an Input Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds all the information about a given \hyperlink{class_player}{Player}. 
+
+Definition at line 32 of file Player.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+Initializes the \hyperlink{class_date}{Date} with all 0 
+
+Definition at line 48 of file Player.\+h.
+
+\hypertarget{class_player_a74b724a1381ef548891d0f1a583450e0}{}\label{class_player_a74b724a1381ef548891d0f1a583450e0} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{class_date}{Date}}]{birth\+\_\+date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Partial Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em birth\+\_\+date} & The birthday of the \hyperlink{class_player}{Player}\\
+\hline
+\end{DoxyParams}
+Initializes the \hyperlink{class_date}{Date} with the parameter given, the rest is either blank or 0 
+
+Definition at line 54 of file Player.\+h.
+
+\hypertarget{class_player_a61933c5f779b97caea5e13b58bbb06da}{}\label{class_player_a61933c5f779b97caea5e13b58bbb06da} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\hyperlink{class_date}{Date}}]{birth\+\_\+date,  }\item[{unsigned int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Full Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the \hyperlink{class_player}{Player} \\
+\hline
+{\em birth\+\_\+date} & The birthday of the \hyperlink{class_player}{Player} \\
+\hline
+{\em height} & The height of the \hyperlink{class_player}{Player}\\
+\hline
+\end{DoxyParams}
+All the other member variables are initialized to 0 
+
+Definition at line 62 of file Player.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_a4309719d18274253a5d00e9940e042d9}{}\label{class_player_a4309719d18274253a5d00e9940e042d9} 
+\index{Player@{Player}!add\+E\+CG@{add\+E\+CG}}
+\index{add\+E\+CG@{add\+E\+CG}!Player@{Player}}
+\subsubsection{\texorpdfstring{add\+E\+C\+G()}{addECG()}}
+{\footnotesize\ttfamily void Player\+::add\+E\+CG (\begin{DoxyParamCaption}\item[{\hyperlink{class_date}{Date}}]{last\+\_\+eletro }\end{DoxyParamCaption})}
+
+
+
+Adds a new E\+CG date to member varible ecg. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em last\+\_\+eletro} & \hyperlink{class_date}{Date} to be added \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file Player.\+cpp.
+
+\hypertarget{class_player_a27612a5782370fda6e67d3e8a2fd9a2d}{}\label{class_player_a27612a5782370fda6e67d3e8a2fd9a2d} 
+\index{Player@{Player}!check\+E\+CG@{check\+E\+CG}}
+\index{check\+E\+CG@{check\+E\+CG}!Player@{Player}}
+\subsubsection{\texorpdfstring{check\+E\+C\+G()}{checkECG()}}
+{\footnotesize\ttfamily bool Player\+::check\+E\+CG (\begin{DoxyParamCaption}\item[{const \hyperlink{class_date}{Date} \&}]{d }\end{DoxyParamCaption}) const}
+
+
+
+Checks if \hyperlink{class_player}{Player} has E\+CG in order in the given \hyperlink{class_date}{Date}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \hyperlink{class_date}{Date} to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file Player.\+cpp.
+
+\hypertarget{class_player_ad9192cb7e7d2537cdabcdc249de10e5b}{}\label{class_player_ad9192cb7e7d2537cdabcdc249de10e5b} 
+\index{Player@{Player}!get\+Assiduity@{get\+Assiduity}}
+\index{get\+Assiduity@{get\+Assiduity}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Assiduity()}{getAssiduity()}}
+{\footnotesize\ttfamily unsigned int Player\+::get\+Assiduity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the assiduity in Trainings of the \hyperlink{class_player}{Player}. 
+
+\begin{DoxyReturn}{Returns}
+assiduity (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Player.\+h.
+
+\hypertarget{class_player_a4b49e80e2c4b49276a4f5d1a38bf337c}{}\label{class_player_a4b49e80e2c4b49276a4f5d1a38bf337c} 
+\index{Player@{Player}!get\+Assiduity\+\_\+\+Curr\+\_\+\+Month@{get\+Assiduity\+\_\+\+Curr\+\_\+\+Month}}
+\index{get\+Assiduity\+\_\+\+Curr\+\_\+\+Month@{get\+Assiduity\+\_\+\+Curr\+\_\+\+Month}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Assiduity\+\_\+\+Curr\+\_\+\+Month()}{getAssiduity\_Curr\_Month()}}
+{\footnotesize\ttfamily unsigned int Player\+::get\+Assiduity\+\_\+\+Curr\+\_\+\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the assiduity this month of the \hyperlink{class_player}{Player}. 
+
+\begin{DoxyReturn}{Returns}
+assiduity\+\_\+curr\+\_\+month (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Player.\+h.
+
+\hypertarget{class_player_a40d25243f37af60da51b8020f7518700}{}\label{class_player_a40d25243f37af60da51b8020f7518700} 
+\index{Player@{Player}!get\+Birth@{get\+Birth}}
+\index{get\+Birth@{get\+Birth}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Birth()}{getBirth()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Player\+::get\+Birth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the birthday of the \hyperlink{class_player}{Player}. 
+
+\begin{DoxyReturn}{Returns}
+birth\+\_\+date (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Player.\+h.
+
+\hypertarget{class_player_a2d1d0a9a28323caa4003d1e09645389e}{}\label{class_player_a2d1d0a9a28323caa4003d1e09645389e} 
+\index{Player@{Player}!get\+E\+CG@{get\+E\+CG}}
+\index{get\+E\+CG@{get\+E\+CG}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+E\+C\+G()}{getECG()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_date}{Date}$>$ Player\+::get\+E\+CG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the E\+CG history of the \hyperlink{class_player}{Player}. 
+
+\begin{DoxyReturn}{Returns}
+ecg (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Player.\+h.
+
+\hypertarget{class_player_a0a7205a9a0a7b9b6bf02035ee104b690}{}\label{class_player_a0a7205a9a0a7b9b6bf02035ee104b690} 
+\index{Player@{Player}!get\+Games\+\_\+\+Won@{get\+Games\+\_\+\+Won}}
+\index{get\+Games\+\_\+\+Won@{get\+Games\+\_\+\+Won}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Games\+\_\+\+Won()}{getGames\_Won()}}
+{\footnotesize\ttfamily unsigned int Player\+::get\+Games\+\_\+\+Won (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the number of games won in which the \hyperlink{class_player}{Player} participated. 
+
+\begin{DoxyReturn}{Returns}
+games\+\_\+won (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Player.\+h.
+
+\hypertarget{class_player_a35448f9c66824c2adfc643245758ce37}{}\label{class_player_a35448f9c66824c2adfc643245758ce37} 
+\index{Player@{Player}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily unsigned int Player\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the height of the \hyperlink{class_player}{Player}. 
+
+\begin{DoxyReturn}{Returns}
+height (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file Player.\+h.
+
+\hypertarget{class_player_ae769d5edba7c2a1defb0d53efe5804a4}{}\label{class_player_ae769d5edba7c2a1defb0d53efe5804a4} 
+\index{Player@{Player}!get\+Last\+\_\+\+Eletro@{get\+Last\+\_\+\+Eletro}}
+\index{get\+Last\+\_\+\+Eletro@{get\+Last\+\_\+\+Eletro}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Last\+\_\+\+Eletro()}{getLast\_Eletro()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Player\+::get\+Last\+\_\+\+Eletro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the last E\+CG date. 
+
+\begin{DoxyReturn}{Returns}
+Last E\+CG date 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file Player.\+cpp.
+
+\hypertarget{class_player_a4939193fc637f75bf7a11118334dae7e}{}\label{class_player_a4939193fc637f75bf7a11118334dae7e} 
+\index{Player@{Player}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Player\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the name of the \hyperlink{class_player}{Player}. 
+
+\begin{DoxyReturn}{Returns}
+name (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Player.\+h.
+
+\hypertarget{class_player_ae004ae4c13248265587f8a0d27ab3c5a}{}\label{class_player_ae004ae4c13248265587f8a0d27ab3c5a} 
+\index{Player@{Player}!get\+Presences\+\_\+games@{get\+Presences\+\_\+games}}
+\index{get\+Presences\+\_\+games@{get\+Presences\+\_\+games}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Presences\+\_\+games()}{getPresences\_games()}}
+{\footnotesize\ttfamily unsigned int Player\+::get\+Presences\+\_\+games (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the assiduity in \hyperlink{class_training}{Training} games of the \hyperlink{class_player}{Player}. 
+
+\begin{DoxyReturn}{Returns}
+presences\+\_\+games (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file Player.\+h.
+
+\hypertarget{class_player_a0ed8ba4399f59a5e92239d61a99e1260}{}\label{class_player_a0ed8ba4399f59a5e92239d61a99e1260} 
+\index{Player@{Player}!get\+Presences\+\_\+stournaments@{get\+Presences\+\_\+stournaments}}
+\index{get\+Presences\+\_\+stournaments@{get\+Presences\+\_\+stournaments}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Presences\+\_\+stournaments()}{getPresences\_stournaments()}}
+{\footnotesize\ttfamily unsigned int Player\+::get\+Presences\+\_\+stournaments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the assiduity in small Tournaments of the \hyperlink{class_player}{Player}. 
+
+\begin{DoxyReturn}{Returns}
+presences\+\_\+stournaments (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Player.\+h.
+
+\hypertarget{class_player_a4885775d191fbfbac59cf284388c6b0b}{}\label{class_player_a4885775d191fbfbac59cf284388c6b0b} 
+\index{Player@{Player}!get\+Present@{get\+Present}}
+\index{get\+Present@{get\+Present}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Present()}{getPresent()}}
+{\footnotesize\ttfamily bool Player\+::get\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the \hyperlink{class_player}{Player} got a present. 
+
+\begin{DoxyReturn}{Returns}
+got\+\_\+present (member variable) 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Player.\+h.
+
+\hypertarget{class_player_a743a295b67be652909a5b1c3252f0d8c}{}\label{class_player_a743a295b67be652909a5b1c3252f0d8c} 
+\index{Player@{Player}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Player@{Player}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Player\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_player}{Player} \&}]{p1 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator$<$ Used to compare Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \hyperlink{class_player}{Player} with which to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{class_player}{Player} is smaller than p1
+\end{DoxyReturn}
+A \hyperlink{class_player}{Player} is considered smaller than another if its name is first alphabetically than the other 
+
+Definition at line 174 of file Player.\+h.
+
+\hypertarget{class_player_a81019960e40a67b0cefea0afd3a3100c}{}\label{class_player_a81019960e40a67b0cefea0afd3a3100c} 
+\index{Player@{Player}!operator==@{operator==}}
+\index{operator==@{operator==}!Player@{Player}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Player\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_player}{Player} \&}]{p1 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator== Used to compare Players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \hyperlink{class_player}{Player} with which to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{class_player}{Player} is equal to p1
+\end{DoxyReturn}
+A \hyperlink{class_player}{Player} is considered equal to another if their names are the same 
+
+Definition at line 181 of file Player.\+h.
+
+\hypertarget{class_player_a7e5ebb8fa4bc30bf04bad367a195864b}{}\label{class_player_a7e5ebb8fa4bc30bf04bad367a195864b} 
+\index{Player@{Player}!set\+Assiduity@{set\+Assiduity}}
+\index{set\+Assiduity@{set\+Assiduity}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Assiduity()}{setAssiduity()}}
+{\footnotesize\ttfamily void Player\+::set\+Assiduity (\begin{DoxyParamCaption}\item[{unsigned int}]{assiduity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the value of assiduity (member variable) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em assiduity} & Value to change the member value into \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Player.\+h.
+
+\hypertarget{class_player_a705ed15f41e065c7b03ad4ad1cb5ab91}{}\label{class_player_a705ed15f41e065c7b03ad4ad1cb5ab91} 
+\index{Player@{Player}!set\+Assiduity\+\_\+\+Curr\+\_\+\+Month@{set\+Assiduity\+\_\+\+Curr\+\_\+\+Month}}
+\index{set\+Assiduity\+\_\+\+Curr\+\_\+\+Month@{set\+Assiduity\+\_\+\+Curr\+\_\+\+Month}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Assiduity\+\_\+\+Curr\+\_\+\+Month()}{setAssiduity\_Curr\_Month()}}
+{\footnotesize\ttfamily void Player\+::set\+Assiduity\+\_\+\+Curr\+\_\+\+Month (\begin{DoxyParamCaption}\item[{unsigned int}]{assiduity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the value of assiduity\+\_\+curr\+\_\+month (member variable) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em assiduity} & Value to change the member value into \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 138 of file Player.\+h.
+
+\hypertarget{class_player_a2ff08de789327f4b3aa82f15b354ee4e}{}\label{class_player_a2ff08de789327f4b3aa82f15b354ee4e} 
+\index{Player@{Player}!set\+Games\+\_\+\+Won@{set\+Games\+\_\+\+Won}}
+\index{set\+Games\+\_\+\+Won@{set\+Games\+\_\+\+Won}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Games\+\_\+\+Won()}{setGames\_Won()}}
+{\footnotesize\ttfamily void Player\+::set\+Games\+\_\+\+Won (\begin{DoxyParamCaption}\item[{unsigned int}]{games }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the value of games\+\_\+won (member variable) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em games} & Value to change the member value into \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 143 of file Player.\+h.
+
+\hypertarget{class_player_a217985fe6c76c9e91a91f4d1c1a82c11}{}\label{class_player_a217985fe6c76c9e91a91f4d1c1a82c11} 
+\index{Player@{Player}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Height()}{setHeight()}}
+{\footnotesize\ttfamily void Player\+::set\+Height (\begin{DoxyParamCaption}\item[{unsigned int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the value of height (member variable) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & Value to change the member value into \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 148 of file Player.\+h.
+
+\hypertarget{class_player_a6e7482dfac54ccf8c7804dd909b70143}{}\label{class_player_a6e7482dfac54ccf8c7804dd909b70143} 
+\index{Player@{Player}!set\+Presences\+\_\+games@{set\+Presences\+\_\+games}}
+\index{set\+Presences\+\_\+games@{set\+Presences\+\_\+games}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Presences\+\_\+games()}{setPresences\_games()}}
+{\footnotesize\ttfamily void Player\+::set\+Presences\+\_\+games (\begin{DoxyParamCaption}\item[{unsigned int}]{presences\+\_\+games }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the value of presences\+\_\+games (member variable) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em presences\+\_\+games} & Value to change the member value into \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 128 of file Player.\+h.
+
+\hypertarget{class_player_a95c04115cff22ff76782c475f288561d}{}\label{class_player_a95c04115cff22ff76782c475f288561d} 
+\index{Player@{Player}!set\+Presences\+\_\+stournaments@{set\+Presences\+\_\+stournaments}}
+\index{set\+Presences\+\_\+stournaments@{set\+Presences\+\_\+stournaments}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Presences\+\_\+stournaments()}{setPresences\_stournaments()}}
+{\footnotesize\ttfamily void Player\+::set\+Presences\+\_\+stournaments (\begin{DoxyParamCaption}\item[{unsigned int}]{presences\+\_\+stournaments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the value of presences\+\_\+stournaments (member variable) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em presences\+\_\+stournaments} & Value to change the member value into \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 133 of file Player.\+h.
+
+\hypertarget{class_player_af7e72bf68786fafad86906bf4228c467}{}\label{class_player_af7e72bf68786fafad86906bf4228c467} 
+\index{Player@{Player}!set\+Present@{set\+Present}}
+\index{set\+Present@{set\+Present}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Present()}{setPresent()}}
+{\footnotesize\ttfamily void Player\+::set\+Present (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the value of get\+\_\+presents (member variable) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Value to change the member value into \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 118 of file Player.\+h.
+
+\hypertarget{class_player_a623da661c3b627ba79ed595fa8d9a3ea}{}\label{class_player_a623da661c3b627ba79ed595fa8d9a3ea} 
+\index{Player@{Player}!show@{show}}
+\index{show@{show}!Player@{Player}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Player\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Prints the \hyperlink{class_player}{Player} on the screen. 
+
+
+
+Definition at line 21 of file Player.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_player_a7429373489b5ccfffc0c6f7d3b237b06}{}\label{class_player_a7429373489b5ccfffc0c6f7d3b237b06} 
+\index{Player@{Player}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Player@{Player}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{class_player}{Player} \&}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Used to write the \hyperlink{class_player}{Player} in an Output Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output Stream to write the \hyperlink{class_player}{Player} to \\
+\hline
+{\em player} & \hyperlink{class_player}{Player} to write in the Output Stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+out (parameter)
+\end{DoxyReturn}
+Friend function 
+
+Definition at line 76 of file Player.\+cpp.
+
+\hypertarget{class_player_ac80a9cf20cbee01df8046ca9497b0b2d}{}\label{class_player_ac80a9cf20cbee01df8046ca9497b0b2d} 
+\index{Player@{Player}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Player@{Player}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\hyperlink{class_player}{Player} \&}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Used to read the \hyperlink{class_player}{Player} from an Input Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input Stream to read the \hyperlink{class_player}{Player} from \\
+\hline
+{\em player} & \hyperlink{class_player}{Player} to be read from the Input Stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+in (parameter)
+\end{DoxyReturn}
+Friend function 
+
+Definition at line 92 of file Player.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\hyperlink{_player_8h}{Player.\+h}\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Source/\hyperlink{_player_8cpp}{Player.\+cpp}\end{DoxyCompactItemize}

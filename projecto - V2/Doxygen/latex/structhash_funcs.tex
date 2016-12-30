@@ -1,0 +1,79 @@
+\hypertarget{structhash_funcs}{}\section{hash\+Funcs Struct Reference}
+\label{structhash_funcs}\index{hash\+Funcs@{hash\+Funcs}}
+
+
+Functions used in \hyperlink{class_club}{Club} member variable future\+\_\+birthdays Chained Hash-\/\+Table.  
+
+
+
+
+{\ttfamily \#include $<$Club.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{structhash_funcs_a521b1888977a80fcd935e8e03c09d916}{operator()} (const \hyperlink{class_player}{Player} $\ast$p1) const
+\begin{DoxyCompactList}\small\item\em Computates the difference in days between the birthday date and current date. \end{DoxyCompactList}\item 
+bool \hyperlink{structhash_funcs_a9e171ebf004435ea1d1ceb8a30f6a954}{operator()} (const \hyperlink{class_player}{Player} $\ast$p1, const \hyperlink{class_player}{Player} $\ast$p2) const
+\begin{DoxyCompactList}\small\item\em Compares two pointer to players to see if the Players they are pointing is the same (needed for hash table) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions used in \hyperlink{class_club}{Club} member variable future\+\_\+birthdays Chained Hash-\/\+Table. 
+
+Definition at line 37 of file Club.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structhash_funcs_a521b1888977a80fcd935e8e03c09d916}{}\label{structhash_funcs_a521b1888977a80fcd935e8e03c09d916} 
+\index{hash\+Funcs@{hash\+Funcs}!operator()@{operator()}}
+\index{operator()@{operator()}!hash\+Funcs@{hash\+Funcs}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily size\+\_\+t hash\+Funcs\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_player}{Player} $\ast$}]{p1 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Computates the difference in days between the birthday date and current date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Used has hash function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If birthday $>$ current date returns number of days, else returns -\/1 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Club.\+h.
+
+\hypertarget{structhash_funcs_a9e171ebf004435ea1d1ceb8a30f6a954}{}\label{structhash_funcs_a9e171ebf004435ea1d1ceb8a30f6a954} 
+\index{hash\+Funcs@{hash\+Funcs}!operator()@{operator()}}
+\index{operator()@{operator()}!hash\+Funcs@{hash\+Funcs}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool hash\+Funcs\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_player}{Player} $\ast$}]{p1,  }\item[{const \hyperlink{class_player}{Player} $\ast$}]{p2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compares two pointer to players to see if the Players they are pointing is the same (needed for hash table) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Pointer to \hyperlink{class_player}{Player} 1 \\
+\hline
+{\em p2} & Pointer to \hyperlink{class_player}{Player} 2 Used as compare function for hash table used. We are only interested if the day and month are equal, the year may be different \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if Players are the same , 0 if not 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file Club.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/oco/\+Documents/\+Cprojects/\+Athletes/projecto -\/ V2/\+Headers/\hyperlink{_club_8h}{Club.\+h}\end{DoxyCompactItemize}
