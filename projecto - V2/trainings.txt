@@ -1,13 +1,28 @@
 Padroense
 Minis
-
-0
+Alex Ferguson
+2
+5/05/2014 ; 0 ; 2 ; Joao Rodrigues ; Ivo Marques ; 
+5/06/2016 ; 1 ; 1 ; Joao Rodrigues ; 
 Juveniles
-
-0
+Jorge Jesus
+1
+6/07/2013 ; 1 ; 2 ; Antonio Silva ; Rodrigo Andrade ; 
 Juniors
-
-0
+Fernando Santos
+2
+5/05/2014 ; 0 ; 0 ; 
+5/06/2016 ; 1 ; 0 ; 
 Seniors
-
-0
+Pep Guardiola
+10
+5/05/2013 ; 0 ; 5 ; Cristiano Ronaldo ; Fabio Paim ; Ricardo Carvalho ; Ronaldinho ; Zico ; 
+9/09/2014 ; 0 ; 4 ; Cristiano Ronaldo ; Francisco Piedade ; Ricardo Carvalho ; Ronaldinho ; 
+5/06/2016 ; 1 ; 5 ; Cristiano Ronaldo ; Francisco Piedade ; Paulo Futre ; Ricardo Carvalho ; Ronaldinho ; 
+8/06/2016 ; 1 ; 5 ; Cristiano Ronaldo ; Fabio Paim ; Ricardo Carvalho ; Ronaldinho ; Zico ; 
+23/06/2016 ; 0 ; 2 ; Cristiano Ronaldo ; Ronaldinho ; 
+18/11/2016 ; 0 ; 6 ; Cristiano Ronaldo ; Fabio Paim ; Paulo Ferreira ; Ricardo Carvalho ; Ronaldinho ; Zico ; 
+25/11/2016 ; 0 ; 0 ; 
+12/12/2016 ; 0 ; 3 ; Cristiano Ronaldo ; Paulo Ferreira ; Quaresma ; 
+13/12/2016 ; 0 ; 0 ; 
+19/12/2016 ; 0 ; 1 ; Ronaldinho ; 
