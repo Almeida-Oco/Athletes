@@ -440,9 +440,14 @@ void Club::showQueue() {
 }
 
 bool Club::addBirthday(Player *p1){
+	Date current_date;
+	current_date = current_date.subtractDays(1);
 	if( this->minis->getMinAge() < actualage(p1->getBirth())){
 		if ( hashFuncs()(p1)  != -1){
 			if( !findOldPlayer(p1)){
+				//if his birthday was yesterday then update got_present parameter
+				if (p1->getBirth().getDay() == current_date.getDay() && p1->getBirth().getMonth() == current_date.getMonth() )
+					p1->setPresent(false);
 				this->future_birthdays.insert(p1);
 				return true;
 			}

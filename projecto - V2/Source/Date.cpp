@@ -124,7 +124,16 @@ Date Date::subtractDays(unsigned int n) const{
 		}
 	}
 	temp.day -= n;
+	if( temp.day == 0){
+		temp.month--;
+		if(temp.month == 0){
+			temp.year--;
+			months[2] = (unsigned int)Isleap(temp.year);
+			temp.month = 12;
 
+		}
+		temp.day = months[temp.month];
+	}
 	return temp;
 }
 

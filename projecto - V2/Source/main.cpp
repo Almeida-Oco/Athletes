@@ -37,9 +37,7 @@ int main(){
 	club->writetrainings();//writes trainings information in the file
 	club->writetournaments();//writes tournaments information in the file
 
-	//system(CLEAR);
+	system(CLEAR);
 
 	return 0;
-
-
 }
