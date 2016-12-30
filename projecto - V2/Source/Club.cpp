@@ -487,15 +487,10 @@ vector<Player *> Club::nextBirthdays(int days=10) const{
 	for(int i = 0 ; i <= days ; i++){
 		Date current_date;
 		Date end_date = current_date.addDays(i);
-		cout << end_date << endl;
 		Player t(end_date);
-		//if we have went through all dates
-		//if( (i != 0) &&(current_date.getDay() == end_date.getDay()) && (current_date.getMonth() == end_date.getMonth()))
-		//	break;
 
 		auto its = this->future_birthdays.equal_range( &t );
 		while(its.first != its.second){
-			cout << **(its.first) << endl;
 			if ( !( (*(its.first))->getPresent() ) )
 				temp.push_back( *(its.first));
 			its.first++;
