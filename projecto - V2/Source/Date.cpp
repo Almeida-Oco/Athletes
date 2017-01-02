@@ -6,16 +6,16 @@ using namespace std;
 
 
 Date::Date(){
-/*
+
 	struct tm timeinfo;
 	time_t t = time(0);   // gets current time
 	localtime_s(&timeinfo, &t);
 	year = timeinfo.tm_year + 1900;
 	month = timeinfo.tm_mon + 1;
 	day = timeinfo.tm_mday;
-*/
+
 	//ACHO QUE ASSIM TBM DEVE DAR
-	struct tm *timeinfo;
+/*	struct tm *timeinfo;
 	time_t t = time(0);   // gets current time
 
 	//localtime_s(timeinfo, &t);
@@ -23,7 +23,7 @@ Date::Date(){
 
 	year = timeinfo->tm_year + 1900;
 	month = timeinfo->tm_mon + 1;
-	day = timeinfo->tm_mday;
+	day = timeinfo->tm_mday;*/
 
 }
 

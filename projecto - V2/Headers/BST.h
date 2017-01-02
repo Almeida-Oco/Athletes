@@ -1,3 +1,14 @@
+/**
+  @file BST.h
+  @author Ana Paula Rocha
+  @author Henrique Cardoso
+  @author Rosaldo Rossetii
+
+  Contains the declaration of the class BST
+  This file is available on Moodle.
+*/
+
+
 // -*- Mode: c++; --*-
 
 #ifndef _BST_H_
@@ -29,10 +40,10 @@ class BinaryNode
   Comparable element;
   BinaryNode *left;
   BinaryNode *right;
-  
+
   BinaryNode( const Comparable & theElement, BinaryNode *lt, BinaryNode *rt )
     : element( theElement ), left( lt ), right( rt ) { }
-    
+
   friend class BST<Comparable>;
   friend class BSTItrIn<Comparable>;
   friend class BSTItrPre<Comparable>;
@@ -47,25 +58,25 @@ class BST
   explicit BST( const Comparable & notFound );
   BST( const BST & rhs );
   ~BST( );
-  
+
   const Comparable & findMin( ) const;
   const Comparable & findMax( ) const;
   const Comparable & find( const Comparable & x ) const;
   bool isEmpty( ) const;
   void printTree( ) const;
-  
+
   void makeEmpty( );
   void insert( const Comparable & x );
   void remove( const Comparable & x );
-  
+
   const BST & operator=( const BST & rhs );
-  
+
  private:
   BinaryNode<Comparable> *root;
   const Comparable ITEM_NOT_FOUND;
-  
+
   const Comparable & elementAt( BinaryNode<Comparable> *t ) const;
-  
+
   void insert( const Comparable & x, BinaryNode<Comparable> * & t ) const;
   void remove( const Comparable & x, BinaryNode<Comparable> * & t ) const;
   BinaryNode<Comparable> * findMin( BinaryNode<Comparable> *t ) const;
@@ -74,7 +85,7 @@ class BST
   void makeEmpty( BinaryNode<Comparable> * & t ) const;
   void printTree( BinaryNode<Comparable> *t ) const;
   BinaryNode<Comparable> * clone( BinaryNode<Comparable> *t ) const;
-  
+
   friend class BSTItrIn<Comparable>;
   friend class BSTItrPre<Comparable>;
   friend class BSTItrPost<Comparable>;
@@ -90,7 +101,7 @@ BST<Comparable>::BST( const Comparable & notFound ) :
 
 template <class Comparable>
 BST<Comparable>::BST( const BST<Comparable> & rhs ) : root( NULL ), ITEM_NOT_FOUND( rhs.ITEM_NOT_FOUND )
-{ 
+{
   *this = rhs;
 }
 
@@ -317,7 +328,7 @@ template <class Comparable>
 class BSTItrPost {
 public:
   BSTItrPost(const BST<Comparable> &bt);
-  
+
   void advance();
   Comparable &retrieve() { return itrStack.top()->element; }
   bool isAtEnd() {return itrStack.empty(); }
@@ -350,7 +361,7 @@ void BSTItrPost<Comparable>::advance ()
 
 template <class Comparable>
 void BSTItrPost<Comparable>::slideDown(BinaryNode<Comparable> *n)
-{ 
+{
   while (n) {
     itrStack.push(n);
     if (n->left) {
@@ -373,7 +384,7 @@ template <class Comparable>
 class BSTItrPre {
 public:
   BSTItrPre(const BST<Comparable> &bt);
-  
+
   void advance();
   Comparable &retrieve() { return itrStack.top()->element; }
   bool isAtEnd() {return itrStack.empty(); }
@@ -415,7 +426,7 @@ template <class Comparable>
 class BSTItrIn {
 public:
   BSTItrIn(const BST<Comparable> &bt);
-  
+
   void advance();
   Comparable &retrieve() { return itrStack.top()->element; }
   bool isAtEnd() {return itrStack.empty(); }
@@ -457,7 +468,7 @@ template <class Comparable>
 class BSTItrLevel {
 public:
   BSTItrLevel(const BST<Comparable> &bt);
-  
+
   void advance();
   Comparable &retrieve() { return itrQueue.front()->element; }
   bool isAtEnd() {return itrQueue.empty(); }

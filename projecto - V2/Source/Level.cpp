@@ -132,7 +132,7 @@ void Level::showtrainings() const {
 	Date current_date;//current_date
 	for (unsigned int i = 0; i < trainings.size(); i++) {
 		if (trainings[i]->getDay() < current_date) {
-			cout << "  " << count << "|     ";
+			cout << setw(3) << count << "|     ";
 			trainings[i]->show();
 			cout << "\n";
 			count++;

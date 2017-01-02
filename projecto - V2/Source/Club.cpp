@@ -58,7 +58,7 @@ void Club::readplayers(istream &in) {
 	for (unsigned int i = 0 ; i < size ; i++){
 		Player *p = new Player;
 		in >> (*p);
-		if (!addBirthday(p) || (actualage(p->getBirth()) <= 35 ))
+		if (!addBirthday(p))
 			throw InvalidPlayer(p->getName(), p->getBirth());
 	}
 
